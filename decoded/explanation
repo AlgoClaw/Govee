@@ -63,7 +63,7 @@ a30501ff0501c8141402ee140100ff00000000__
 a3ff0000000000000000000000000000000000__
 ________________________________________
 
-# For first line, the gap of 6-character gap (3 hexadecimal digits, with padding) is filled with "01xx02".
+# For the first line, the 6-character gap (3 hexadecimal digits, with padding) is filled with "01xx02".
 # "xx" is the number of lines (in hexadecimal), excluding the last line (count all of the lines starting with "a3").
 # In this example there are 7 lines starting with "a3", so the padded hexadecimal is "07".
 
