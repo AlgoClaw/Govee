@@ -1,0 +1,129 @@
+###########
+# Starting with the middle:
+###########
+
+# Here are the 8 Bluetooth packets captured when setting the scene to "Forest" for the H61A8.
+# If these Bluetooth commands are converted to base64 (see last step) and sent in a single message, the scene successfully sets on the device.
+
+a30001070203260001000a0201ff1901b40a0ad9
+a30102c81405ffff0000ffffffffff00ffff9412
+a302ff00140196000000002300020f050201ff0a
+a3031401fb000001fa0a0404ff00b4ff0047ffb3
+a304ffe3ff00000000000000001a00000001025d
+a30501ff0501c8141402ee140100ff0000000092
+a3ff00000000000000000000000000000000005c
+330504d4000000000000000000000000000000e6
+
+
+###########
+# Starting with the API to get the LAN scene commands
+###########
+
+# If the data for the H61A8 is pulled via Govee's (no-key-required) API, "Forest" has the following "scenceParam":
+
+AyYAAQAKAgH/GQG0CgoCyBQF//8AAP//////AP//lP8AFAGWAAAAACMAAg8FAgH/FAH7AAAB+goEBP8AtP8AR///4/8AAAAAAAAAABoAAAABAgH/BQHIFBQC7hQBAP8AAAAAAAAAAA==
+
+# Convert this "scenceParam" to hexadecimal (from base64):
+
+03260001000a0201ff1901b40a0a02c81405ffff0000ffffffffff00ffff94ff00140196000000002300020f050201ff1401fb000001fa0a0404ff00b4ff0047ffffe3ff00000000000000001a000000010201ff0501c8141402ee140100ff0000000000000000
+
+# Rearrange for line breaks, and you get the following (underscores added).
+# This largely matches the Bluetooth commands.
+
+__________03260001000a0201ff1901b40a0a__
+____02c81405ffff0000ffffffffff00ffff94__
+____ff00140196000000002300020f050201ff__
+____1401fb000001fa0a0404ff00b4ff0047ff__
+____ffe3ff00000000000000001a0000000102__
+____01ff0501c8141402ee140100ff00000000__
+____00000000____________________________
+________________________________________
+
+# For every line, except the last, the prefix is "a30x", where "x" is the increment (indexed).
+# Except, on the second to last line, the prefix is "a3ff"
+
+a300______03260001000a0201ff1901b40a0a__
+a30102c81405ffff0000ffffffffff00ffff94__
+a302ff00140196000000002300020f050201ff__
+a3031401fb000001fa0a0404ff00b4ff0047ff__
+a304ffe3ff00000000000000001a0000000102__
+a30501ff0501c8141402ee140100ff00000000__
+a3ff00000000____________________________
+________________________________________
+
+# For the second to last line, padding is added (all 0s), except for the last 2 characters ("00000000000000000000000000")
+
+a300______03260001000a0201ff1901b40a0a__
+a30102c81405ffff0000ffffffffff00ffff94__
+a302ff00140196000000002300020f050201ff__
+a3031401fb000001fa0a0404ff00b4ff0047ff__
+a304ffe3ff00000000000000001a0000000102__
+a30501ff0501c8141402ee140100ff00000000__
+a3ff0000000000000000000000000000000000__
+________________________________________
+
+# For first line, the gap of 6-character gap (3 hexadecimal digits, with padding) is filled with "01xx02".
+# "xx" is the number of lines (in hexadecimal), excluding the last line (count all of the lines starting with "a3").
+# In this example there are 7 lines starting with "a3", so the padded hexadecimal is "07".
+
+a30001070203260001000a0201ff1901b40a0a__
+a30102c81405ffff0000ffffffffff00ffff94__
+a302ff00140196000000002300020f050201ff__
+a3031401fb000001fa0a0404ff00b4ff0047ff__
+a304ffe3ff00000000000000001a0000000102__
+a30501ff0501c8141402ee140100ff00000000__
+a3ff0000000000000000000000000000000000__
+________________________________________
+
+# The last line can be calculated using the known method for calculating hex commands, given the "sceneCode".
+# The line starts with "330504"
+# Then the *4* digit hexadecimal of the sceneCode (the decimal sceneCode for "Forest" is 212, thus the hexadecimal is "00d4").
+# Do the 'ol switcheroo ("00d4" becomes "d400").
+# Then the padding of 0s ("0000000000000000000000000000")
+
+a30001070203260001000a0201ff1901b40a0a__
+a30102c81405ffff0000ffffffffff00ffff94__
+a302ff00140196000000002300020f050201ff__
+a3031401fb000001fa0a0404ff00b4ff0047ff__
+a304ffe3ff00000000000000001a0000000102__
+a30501ff0501c8141402ee140100ff00000000__
+a3ff0000000000000000000000000000000000__
+330504d4000000000000000000000000000000__
+
+# The last 2 digits of each line is the checksum for that line (d9, 12, 0a, b3, 5d, 92, 5c, e6)
+
+a30001070203260001000a0201ff1901b40a0ad9
+a30102c81405ffff0000ffffffffff00ffff9412
+a302ff00140196000000002300020f050201ff0a
+a3031401fb000001fa0a0404ff00b4ff0047ffb3
+a304ffe3ff00000000000000001a00000001025d
+a30501ff0501c8141402ee140100ff0000000092
+a3ff00000000000000000000000000000000005c
+330504d4000000000000000000000000000000e6
+
+# Convert each line to base64
+
+owABBwIDJgABAAoCAf8ZAbQKCtk=
+owECyBQF//8AAP//////AP//lBI=
+owL/ABQBlgAAAAAjAAIPBQIB/wo=
+owMUAfsAAAH6CgQE/wC0/wBH/7M=
+owT/4/8AAAAAAAAAABoAAAABAl0=
+owUB/wUByBQUAu4UAQD/AAAAAJI=
+o/8AAAAAAAAAAAAAAAAAAAAAAFw=
+MwUE1AAAAAAAAAAAAAAAAAAAAOY=
+
+# Format message for device and send to IP on udp port 4003
+{"msg":
+	{"data":
+		{"command":[
+			"owABBwIDJgABAAoCAf8ZAbQKCtk=", 
+			"owECyBQF//8AAP//////AP//lBI=", 
+			"owL/ABQBlgAAAAAjAAIPBQIB/wo=", 
+			"owMUAfsAAAH6CgQE/wC0/wBH/7M=", 
+			"owT/4/8AAAAAAAAAABoAAAABAl0=", 
+			"owUB/wUByBQUAu4UAQD/AAAAAJI=", 
+			"o/8AAAAAAAAAAAAAAAAAAAAAAFw=", 
+			"MwUE1AAAAAAAAAAAAAAAAAAAAOY="
+		]}
+	,"cmd":"ptReal"}
+}
