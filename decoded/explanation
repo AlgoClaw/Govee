@@ -20,6 +20,7 @@ a3ff00000000000000000000000000000000005c
 ###########
 
 # If the data for the H61A8 is pulled via Govee's (no-key-required) API, "Forest" has the following "scenceParam":
+# curl "https://app2.govee.com/appsku/v1/light-effect-libraries?sku=H61A8" -H 'AppVersion: 9999999' -s > govee_H61A8_scenes_raw.json
 
 AyYAAQAKAgH/GQG0CgoCyBQF//8AAP//////AP//lP8AFAGWAAAAACMAAg8FAgH/FAH7AAAB+goEBP8AtP8AR///4/8AAAAAAAAAABoAAAABAgH/BQHIFBQC7hQBAP8AAAAAAAAAAA==
 
