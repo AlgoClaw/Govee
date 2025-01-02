@@ -63,7 +63,10 @@ a30501ff0501c8141402ee140100ff00000000__
 a3ff0000000000000000000000000000000000__
 ________________________________________
 
+# ERROR
 # For the first line, the 6-character gap (3 hexadecimal digits, with padding) is filled with "01xx02".
+# NOT ALWAYS CORRECT -- sometimes "01xx02" is "01xx" -- where the converted scenceParam only leaves a 2 byte (4 character) gap.
+#
 # "xx" is the number of lines (in hexadecimal), excluding the last line (count all of the lines starting with "a3").
 # In this example there are 7 lines starting with "a3", so the padded hexadecimal is "07".
 
@@ -80,7 +83,10 @@ ________________________________________
 # The line starts with "330504"
 # Then the *4* digit hexadecimal of the sceneCode (the decimal sceneCode for "Forest" is 212, thus the hexadecimal is "00d4").
 # Do the 'ol switcheroo ("00d4" becomes "d400").
+
+# ERROR
 # Then the padding of 0s ("0000000000000000000000000000")
+# NOT ALWAYS CORRECT -- there is data sometimes in this range (especially at the 2nd byte), requiring less zeros to pad.
 
 a30001070203260001000a0201ff1901b40a0a__
 a30102c81405ffff0000ffffffffff00ffff94__
