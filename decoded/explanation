@@ -65,7 +65,8 @@ ________________________________________
 
 # ERROR
 # For the first line, the 6-character gap (3 hexadecimal digits, with padding) is filled with "01xx02".
-# NOT ALWAYS CORRECT -- sometimes "01xx02" is "01xx" -- where the converted scenceParam only leaves a 2 byte (4 character) gap.
+# NOTE: H6079 - Aurora - is "0106" (the "01" seems to be staic, the "06" matches the line count, but scenceParam only leaves a 2 byte (4 character) gap and "02" should *not* be added). How to know if gap is smaller?
+# NOTE: H6066 - Mirage - is "010204" (the "01" seems to be staic, the "02" matches the line count - but the "04" is unknown...)
 #
 # "xx" is the number of lines (in hexadecimal), excluding the last line (count all of the lines starting with "a3").
 # In this example there are 7 lines starting with "a3", so the padded hexadecimal is "07".
@@ -87,6 +88,7 @@ ________________________________________
 # ERROR
 # Then the padding of 0s ("0000000000000000000000000000")
 # NOT ALWAYS CORRECT -- there is data sometimes in this range (especially at the 2nd byte), requiring less zeros to pad.
+# Padding should be to end of command, not fixed.
 
 a30001070203260001000a0201ff1901b40a0a__
 a30102c81405ffff0000ffffffffff00ffff94__
