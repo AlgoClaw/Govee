@@ -1,0 +1,665 @@
+[
+  {
+    "name": "Hallucinating",
+    "code": 2560,
+    "params_b64": "EgAAAAAmGQoCBwEFAAf/AG7/l3D//wABAQEGcv//I8kx/5M=",
+    "hex_cmd": [
+      "a300010302120000000026190a02070105000782",
+      "a301ff006eff9770ffff000101010672ffff237d",
+      "a3ffc931ff9300000000000000000000000000c8",
+      "330504000a000000000000000000000000000038"
+    ],
+    "b64_cmd": [
+      "owABAwISAAAAACYZCgIHAQUAB4I=",
+      "owH/AG7/l3D//wABAQEGcv//I30=",
+      "o//JMf+TAAAAAAAAAAAAAAAAAMg=",
+      "MwUEAAoAAAAAAAAAAAAAAAAAADg="
+    ]
+  },
+  {
+    "name": "Matrix",
+    "code": 2561,
+    "params_b64": "EgAAAAAYHhQBCgEFAAcvAIsBAQE0AKsBAQFnPcsBAQGIZ9g=",
+    "hex_cmd": [
+      "a3000103021200000000181e14010a01050007ab",
+      "a3012f008b0101013400ab010101673dcb010108",
+      "a3ff018867d8000000000000000000000000006a",
+      "330504010a000000000000000000000000000039"
+    ],
+    "b64_cmd": [
+      "owABAwISAAAAABgeFAEKAQUAB6s=",
+      "owEvAIsBAQE0AKsBAQFnPcsBAQg=",
+      "o/8BiGfYAAAAAAAAAAAAAAAAAGo=",
+      "MwUEAQoAAAAAAAAAAAAAAAAAADk="
+    ]
+  },
+  {
+    "name": "Collapse",
+    "code": 2562,
+    "params_b64": "EgAAAAAmGSABDwEFAAcA+v9W/9YAdcIA/+UBAQFKu95TpeE=",
+    "hex_cmd": [
+      "a3000103021200000000261920010f01050007a3",
+      "a30100faff56ffd60075c200ffe50101014abb85",
+      "a3ffde53a5e10000000000000000000000000095",
+      "330504020a00000000000000000000000000003a"
+    ],
+    "b64_cmd": [
+      "owABAwISAAAAACYZIAEPAQUAB6M=",
+      "owEA+v9W/9YAdcIA/+UBAQFKu4U=",
+      "o//eU6XhAAAAAAAAAAAAAAAAAJU=",
+      "MwUEAgoAAAAAAAAAAAAAAAAAADo="
+    ]
+  },
+  {
+    "name": "Pixel",
+    "code": 2563,
+    "params_b64": "EgAAAAAmGQACCgEFAAODOOz/AG4A//8=",
+    "hex_cmd": [
+      "a3000102021200000000261900020a0105000380",
+      "a3ff8338ecff006e00ffff00000000000000009a",
+      "330504030a00000000000000000000000000003b"
+    ],
+    "b64_cmd": [
+      "owABAgISAAAAACYZAAIKAQUAA4A=",
+      "o/+DOOz/AG4A//8AAAAAAAAAAJo=",
+      "MwUEAwoAAAAAAAAAAAAAAAAAADs="
+    ]
+  },
+  {
+    "name": "Cubic",
+    "code": 2564,
+    "params_b64": "EgAAAAAmBwoBCgEFAAj//wD/8GwBAQGK3WkAqQABAQFo2NYHvrg=",
+    "hex_cmd": [
+      "a300010302120000000026070a010a010500089d",
+      "a301ffff00fff06c0101018add6900a900010157",
+      "a3ff0168d8d607beb8000000000000000000003a",
+      "330504040a00000000000000000000000000003c"
+    ],
+    "b64_cmd": [
+      "owABAwISAAAAACYHCgEKAQUACJ0=",
+      "owH//wD/8GwBAQGK3WkAqQABAVc=",
+      "o/8BaNjWB764AAAAAAAAAAAAADo=",
+      "MwUEBAoAAAAAAAAAAAAAAAAAADw="
+    ]
+  },
+  {
+    "name": "Crawl",
+    "code": 2565,
+    "params_b64": "EgAAAAAmGRgBBwEFAAUBAQHsV2b/ABDgAADHADo=",
+    "hex_cmd": [
+      "a300010202120000000026191801070105000590",
+      "a3ff010101ec5766ff0010e00000c7003a000072",
+      "330504050a00000000000000000000000000003d"
+    ],
+    "b64_cmd": [
+      "owABAgISAAAAACYZGAEHAQUABZA=",
+      "o/8BAQHsV2b/ABDgAADHADoAAHI=",
+      "MwUEBQoAAAAAAAAAAAAAAAAAAD0="
+    ]
+  },
+  {
+    "name": "Phantom",
+    "code": 2566,
+    "params_b64": "EgAAAAAmGRQBCgEFAAgBAQEDqzYBAQFOzcQBAQH/a2sBAQH//wA=",
+    "hex_cmd": [
+      "a3000103021200000000261914010a010500089d",
+      "a30101010103ab360101014ecdc4010101ff6bee",
+      "a3ff6b010101ffff000000000000000000000036",
+      "330504060a00000000000000000000000000003e"
+    ],
+    "b64_cmd": [
+      "owABAwISAAAAACYZFAEKAQUACJ0=",
+      "owEBAQEDqzYBAQFOzcQBAQH/a+4=",
+      "o/9rAQEB//8AAAAAAAAAAAAAADY=",
+      "MwUEBgoAAAAAAAAAAAAAAAAAAD4="
+    ]
+  },
+  {
+    "name": "Layering",
+    "code": 2567,
+    "params_b64": "EgAAAAAmGBACCQEFAAjvdnTHADoBAQEA/wAAjAABAQEAAP8AEYk=",
+    "hex_cmd": [
+      "a300010302120000000026181002090105000898",
+      "a301ef7674c7003a01010100ff00008c000101c0",
+      "a3ff010000ff001189000000000000000000003a",
+      "330504070a00000000000000000000000000003f"
+    ],
+    "b64_cmd": [
+      "owABAwISAAAAACYYEAIJAQUACJg=",
+      "owHvdnTHADoBAQEA/wAAjAABAcA=",
+      "o/8BAAD/ABGJAAAAAAAAAAAAADo=",
+      "MwUEBwoAAAAAAAAAAAAAAAAAAD8="
+    ]
+  },
+  {
+    "name": "Mirage",
+    "code": 2573,
+    "params_b64": "EgAAAAAnFR0BAAEFAAIAD57//2U=",
+    "hex_cmd": [
+      "a300010202120000000027151d01000105000298",
+      "a3ff000f9effff650000000000000000000000a8",
+      "3305040d0a000000000000000000000000000035"
+    ],
+    "b64_cmd": [
+      "owABAgISAAAAACcVHQEAAQUAApg=",
+      "o/8AD57//2UAAAAAAAAAAAAAAKg=",
+      "MwUEDQoAAAAAAAAAAAAAAAAAADU="
+    ]
+  },
+  {
+    "name": "Emerald",
+    "code": 7508,
+    "params_b64": "EgAAAAAmFU8BBwEoBQAHA6s2AQEBAQEBA6s2AQEBAQEBA6s2",
+    "hex_cmd": [
+      "a300010302120000000026154f010701280500e7",
+      "a3010703ab3601010101010103ab3601010101a5",
+      "a3ff010103ab36000000000000000000000000c2",
+      "330504541d00000000000000000000000000007b"
+    ],
+    "b64_cmd": [
+      "owABAwISAAAAACYVTwEHASgFAOc=",
+      "owEHA6s2AQEBAQEBA6s2AQEBAaU=",
+      "o/8BAQOrNgAAAAAAAAAAAAAAAMI=",
+      "MwUEVB0AAAAAAAAAAAAAAAAAAHs="
+    ]
+  },
+  {
+    "name": "Glistening",
+    "code": 7509,
+    "params_b64": "EgAAAAAmGRoBEQEFAAcAsNFgzesAsNEBAQEAsNEAsNEBAQE=",
+    "hex_cmd": [
+      "a300010302120000000026191a01110105000787",
+      "a30100b0d160cdeb00b0d101010100b0d100b034",
+      "a3ffd1010101000000000000000000000000008c",
+      "330504551d00000000000000000000000000007a"
+    ],
+    "b64_cmd": [
+      "owABAwISAAAAACYZGgERAQUAB4c=",
+      "owEAsNFgzesAsNEBAQEAsNEAsDQ=",
+      "o//RAQEBAAAAAAAAAAAAAAAAAIw=",
+      "MwUEVR0AAAAAAAAAAAAAAAAAAHo="
+    ]
+  },
+  {
+    "name": "Illusion",
+    "code": 7510,
+    "params_b64": "EgAAAAAnFR4BAAEFAAJscdkKCgo=",
+    "hex_cmd": [
+      "a300010202120000000027151e0100010500029b",
+      "a3ff6c71d90a0a0a000000000000000000000092",
+      "330504561d000000000000000000000000000079"
+    ],
+    "b64_cmd": [
+      "owABAgISAAAAACcVHgEAAQUAAps=",
+      "o/9scdkKCgoAAAAAAAAAAAAAAJI=",
+      "MwUEVh0AAAAAAAAAAAAAAAAAAHk="
+    ]
+  },
+  {
+    "name": "Ocean",
+    "code": 2520,
+    "params_b64": "EgAAAD8mFS0CAgFkBQAEABKJAAD/F7T/AP//",
+    "hex_cmd": [
+      "a300010202120000003f26152d020201640500f1",
+      "a3ff040012890000ff17b4ff00ffff0000000060",
+      "330504d8090000000000000000000000000000e3"
+    ],
+    "b64_cmd": [
+      "owABAgISAAAAPyYVLQICAWQFAPE=",
+      "o/8EABKJAAD/F7T/AP//AAAAAGA=",
+      "MwUE2AkAAAAAAAAAAAAAAAAAAOM="
+    ]
+  },
+  {
+    "name": "Forest",
+    "code": 2521,
+    "params_b64": "EgAAAD8mFTYBAgFkBQAG/545AP8AB8oAmdUTyuwB/+sk",
+    "hex_cmd": [
+      "a300010202120000003f261536010201640500e9",
+      "a3ff06ff9e3900ff0007ca0099d513caec01ffb7",
+      "330504d9090000000000000000000000000000e2"
+    ],
+    "b64_cmd": [
+      "owABAgISAAAAPyYVNgECAWQFAOk=",
+      "o/8G/545AP8AB8oAmdUTyuwB/7c=",
+      "MwUE2QkAAAAAAAAAAAAAAAAAAOI="
+    ]
+  },
+  {
+    "name": "Sunset Glow",
+    "code": 2522,
+    "params_b64": "EgAAAD8mFQoBAgFkBQAFZACX3wA//1MA/5wA+UwA",
+    "hex_cmd": [
+      "a300010202120000003f26150a010201640500d5",
+      "a3ff05640097df003fff5300ff9c00f94c000030",
+      "330504da090000000000000000000000000000e1"
+    ],
+    "b64_cmd": [
+      "owABAgISAAAAPyYVCgECAWQFANU=",
+      "o/8FZACX3wA//1MA/5wA+UwAADA=",
+      "MwUE2gkAAAAAAAAAAAAAAAAAAOE="
+    ]
+  },
+  {
+    "name": "Rainbow",
+    "code": 2523,
+    "params_b64": "EgAAAD8mFVIBAgFkBQAH/wAA/38A//8AAP8AAAD/AP//iwD/",
+    "hex_cmd": [
+      "a300010302120000003f2615520102016405008c",
+      "a30107ff0000ff7f00ffff0000ff000000ff00da",
+      "a3ffffff8b00ff00000000000000000000000028",
+      "330504db090000000000000000000000000000e0"
+    ],
+    "b64_cmd": [
+      "owABAwISAAAAPyYVUgECAWQFAIw=",
+      "owEH/wAA/38A//8AAP8AAAD/ANo=",
+      "o////4sA/wAAAAAAAAAAAAAAACg=",
+      "MwUE2wkAAAAAAAAAAAAAAAAAAOA="
+    ]
+  },
+  {
+    "name": "Aurora",
+    "code": 2524,
+    "params_b64": "EgAAAD8mFTwBAgEeBQAFGf+ZXNAfA6s2AItFAGQA",
+    "hex_cmd": [
+      "a300010202120000003f26153c0102011e050099",
+      "a3ff0519ff995cd01f03ab36008b450064000081",
+      "330504dc090000000000000000000000000000e7"
+    ],
+    "b64_cmd": [
+      "owABAgISAAAAPyYVPAECAR4FAJk=",
+      "o/8FGf+ZXNAfA6s2AItFAGQAAIE=",
+      "MwUE3AkAAAAAAAAAAAAAAAAAAOc="
+    ]
+  },
+  {
+    "name": "Fire",
+    "code": 2526,
+    "params_b64": "EgAAAD8mFUcBAgFkBQAF2AEB+1YH/3EA/6sF/9IA",
+    "hex_cmd": [
+      "a300010202120000003f26154701020164050098",
+      "a3ff05d80101fb5607ff7100ffab05ffd20000d9",
+      "330504de090000000000000000000000000000e5"
+    ],
+    "b64_cmd": [
+      "owABAgISAAAAPyYVRwECAWQFAJg=",
+      "o/8F2AEB+1YH/3EA/6sF/9IAANk=",
+      "MwUE3gkAAAAAAAAAAAAAAAAAAOU="
+    ]
+  },
+  {
+    "name": "Flower Field",
+    "code": 2527,
+    "params_b64": "EgAAAAAmGxYACgEFAAf/AAD/fwD//wAA/wAAAP8A//+LAP8=",
+    "hex_cmd": [
+      "a3000103021200000000261b16000a0105000793",
+      "a301ff0000ff7f00ffff0000ff000000ff00ff22",
+      "a3ffff8b00ff00000000000000000000000000d7",
+      "330504df090000000000000000000000000000e4"
+    ],
+    "b64_cmd": [
+      "owABAwISAAAAACYbFgAKAQUAB5M=",
+      "owH/AAD/fwD//wAA/wAAAP8A/yI=",
+      "o///iwD/AAAAAAAAAAAAAAAAANc=",
+      "MwUE3wkAAAAAAAAAAAAAAAAAAOQ="
+    ]
+  },
+  {
+    "name": "Ripple",
+    "code": 2528,
+    "params_b64": "EgAAEAArIWQBDagGBQYBBQADAP//IS2+QE7K",
+    "hex_cmd": [
+      "a30001020212000010002b2164010da80605066f",
+      "a3ff0105000300ffff212dbe404eca000000002d",
+      "330504e0090000000000000000000000000000db"
+    ],
+    "b64_cmd": [
+      "owABAgISAAAQACshZAENqAYFBm8=",
+      "o/8BBQADAP//IS2+QE7KAAAAAC0=",
+      "MwUE4AkAAAAAAAAAAAAAAAAAANs="
+    ]
+  },
+  {
+    "name": "White Light",
+    "code": 8265,
+    "params_b64": "EgAAAAAmFTICAgFkBQAB////",
+    "hex_cmd": [
+      "a3000102021200000000261532020201640500d1",
+      "a3ff01ffffff00000000000000000000000000a2",
+      "330504492000000000000000000000000000005b"
+    ],
+    "b64_cmd": [
+      "owABAgISAAAAACYVMgICAWQFANE=",
+      "o/8B////AAAAAAAAAAAAAAAAAKI=",
+      "MwUESSAAAAAAAAAAAAAAAAAAAFs="
+    ]
+  },
+  {
+    "name": "Movie",
+    "code": 2529,
+    "params_b64": "EgAAAAAmFTIAAgFkBQABAHi0",
+    "hex_cmd": [
+      "a3000102021200000000261532000201640500d3",
+      "a3ff010078b40000000000000000000000000091",
+      "330504e1090000000000000000000000000000da"
+    ],
+    "b64_cmd": [
+      "owABAgISAAAAACYVMgACAWQFANM=",
+      "o/8BAHi0AAAAAAAAAAAAAAAAAJE=",
+      "MwUE4QkAAAAAAAAAAAAAAAAAANo="
+    ]
+  },
+  {
+    "name": "Leisure",
+    "code": 34,
+    "params_b64": "",
+    "hex_cmd": [
+      "3305042200000000000000000000000000000010"
+    ],
+    "b64_cmd": [
+      "MwUEIgAAAAAAAAAAAAAAAAAAABA="
+    ]
+  },
+  {
+    "name": "Night Light",
+    "code": 2,
+    "params_b64": "",
+    "hex_cmd": [
+      "3305040200000000000000000000000000000030"
+    ],
+    "b64_cmd": [
+      "MwUEAgAAAAAAAAAAAAAAAAAAADA="
+    ]
+  },
+  {
+    "name": "Romantic",
+    "code": 2530,
+    "params_b64": "EgAAAD8mFTIBAgFIBQAFiwD/5ADn/zuD/2lK/5F2",
+    "hex_cmd": [
+      "a300010202120000003f261532010201480500c1",
+      "a3ff058b00ffe400e7ff3b83ff694aff917600ad",
+      "330504e2090000000000000000000000000000d9"
+    ],
+    "b64_cmd": [
+      "owABAgISAAAAPyYVMgECAUgFAME=",
+      "o/8FiwD/5ADn/zuD/2lK/5F2AK0=",
+      "MwUE4gkAAAAAAAAAAAAAAAAAANk="
+    ]
+  },
+  {
+    "name": "Dreamland",
+    "code": 2531,
+    "params_b64": "EgAAAD8mFSQBAgFYBQAFby29iwD/Zz3LH4zQsWPT",
+    "hex_cmd": [
+      "a300010202120000003f261524010201580500c7",
+      "a3ff056f2dbd8b00ff673dcb1f8cd0b163d30001",
+      "330504e3090000000000000000000000000000d8"
+    ],
+    "b64_cmd": [
+      "owABAgISAAAAPyYVJAECAVgFAMc=",
+      "o/8Fby29iwD/Zz3LH4zQsWPTAAE=",
+      "MwUE4wkAAAAAAAAAAAAAAAAAANg="
+    ]
+  },
+  {
+    "name": "Dance Party",
+    "code": 2532,
+    "params_b64": "EgAAAAAnFU0BAAEFAAf/AAD/fwD//wAA/wAAAP8A//+LAP8=",
+    "hex_cmd": [
+      "a300010302120000000027154d010001050007cc",
+      "a301ff0000ff7f00ffff0000ff000000ff00ff22",
+      "a3ffff8b00ff00000000000000000000000000d7",
+      "330504e4090000000000000000000000000000df"
+    ],
+    "b64_cmd": [
+      "owABAwISAAAAACcVTQEAAQUAB8w=",
+      "owH/AAD/fwD//wAA/wAAAP8A/yI=",
+      "o///iwD/AAAAAAAAAAAAAAAAANc=",
+      "MwUE5AkAAAAAAAAAAAAAAAAAAN8="
+    ]
+  },
+  {
+    "name": "Disco",
+    "code": 2533,
+    "params_b64": "EgAAAD8mFV0CAgAAB/8AAP9/AP//AAD/AAAA/wD//4sA/w==",
+    "hex_cmd": [
+      "a300010202120000003f26155d0202000007ff19",
+      "a3ff0000ff7f00ffff0000ff000000ff00ffffdc",
+      "330504e5090000000000000000000000000000de"
+    ],
+    "b64_cmd": [
+      "owABAgISAAAAPyYVXQICAAAH/xk=",
+      "o/8AAP9/AP//AAD/AAAA/wD//9w=",
+      "MwUE5QkAAAAAAAAAAAAAAAAAAN4="
+    ]
+  },
+  {
+    "name": "Siren",
+    "code": 2534,
+    "params_b64": "EgAAAD8mGV0AAQAAAwAA//8AAP///w==",
+    "hex_cmd": [
+      "a300010202120000003f26195d000100000300ef",
+      "a3ff00ffff0000ffffff000000000000000000a3",
+      "330504e6090000000000000000000000000000dd"
+    ],
+    "b64_cmd": [
+      "owABAgISAAAAPyYZXQABAAADAO8=",
+      "o/8A//8AAP///wAAAAAAAAAAAKM=",
+      "MwUE5gkAAAAAAAAAAAAAAAAAAN0="
+    ]
+  },
+  {
+    "name": "Breathe",
+    "code": 10,
+    "params_b64": "",
+    "hex_cmd": [
+      "3305040a00000000000000000000000000000038"
+    ],
+    "b64_cmd": [
+      "MwUECgAAAAAAAAAAAAAAAAAAADg="
+    ]
+  },
+  {
+    "name": "Energetic",
+    "code": 2535,
+    "params_b64": "EgAAAD8mGWQCAgEFAAbsmAD/3wB3tgoAiVUA///FAD8=",
+    "hex_cmd": [
+      "a300010202120000003f261964020201050006d6",
+      "a3ffec9800ffdf0077b60a00895500ffffc500da",
+      "330504e7090000000000000000000000000000dc"
+    ],
+    "b64_cmd": [
+      "owABAgISAAAAPyYZZAICAQUABtY=",
+      "o//smAD/3wB3tgoAiVUA///FANo=",
+      "MwUE5wkAAAAAAAAAAAAAAAAAANw="
+    ]
+  },
+  {
+    "name": "Soothing",
+    "code": 2536,
+    "params_b64": "EgAAAAAmFTIBCAFkBQAH/74L/8Vz/+Jv/7h1/8Vz/5F2////",
+    "hex_cmd": [
+      "a3000103021200000000261532010801640500d9",
+      "a30107ffbe0bffc573ffe26fffb875ffc573ff50",
+      "a3ff9176ffffff00000000000000000000000044",
+      "330504e8090000000000000000000000000000d3"
+    ],
+    "b64_cmd": [
+      "owABAwISAAAAACYVMgEIAWQFANk=",
+      "owEH/74L/8Vz/+Jv/7h1/8Vz/1A=",
+      "o/+Rdv///wAAAAAAAAAAAAAAAEQ=",
+      "MwUE6AkAAAAAAAAAAAAAAAAAANM="
+    ]
+  },
+  {
+    "name": "Dreamlike",
+    "code": 2537,
+    "params_b64": "EgAAAD8mFUEBAgFVBQAEugH/3gD/ABj/AP//",
+    "hex_cmd": [
+      "a300010202120000003f261541010201550500af",
+      "a3ff04ba01ffde00ff0018ff00ffff00000000da",
+      "330504e9090000000000000000000000000000d2"
+    ],
+    "b64_cmd": [
+      "owABAgISAAAAPyYVQQECAVUFAK8=",
+      "o/8EugH/3gD/ABj/AP//AAAAANo=",
+      "MwUE6QkAAAAAAAAAAAAAAAAAANI="
+    ]
+  },
+  {
+    "name": "Meditation",
+    "code": 2538,
+    "params_b64": "EgAAAAAnFQoCAAEFAAV1wd3Q9N4AnaW5+vjM2/0=",
+    "hex_cmd": [
+      "a300010202120000000027150a0200010500058b",
+      "a3ff75c1ddd0f4de009da5b9faf8ccdbfd0000a6",
+      "330504ea090000000000000000000000000000d1"
+    ],
+    "b64_cmd": [
+      "owABAgISAAAAACcVCgIAAQUABYs=",
+      "o/91wd3Q9N4AnaW5+vjM2/0AAKY=",
+      "MwUE6gkAAAAAAAAAAAAAAAAAANE="
+    ]
+  },
+  {
+    "name": "Optimistic",
+    "code": 2539,
+    "params_b64": "EgAAAAAnFQ8BAAEFAAT6wYaWyKzphYfFAD8=",
+    "hex_cmd": [
+      "a300010202120000000027150f0100010500048c",
+      "a3fffac18696c8ace98587c5003f000000000002",
+      "330504eb090000000000000000000000000000d0"
+    ],
+    "b64_cmd": [
+      "owABAgISAAAAACcVDwEAAQUABIw=",
+      "o//6wYaWyKzphYfFAD8AAAAAAAI=",
+      "MwUE6wkAAAAAAAAAAAAAAAAAANA="
+    ]
+  },
+  {
+    "name": "Refreshing",
+    "code": 2540,
+    "params_b64": "EgAAAD8mFUgBAgFNBQADEZNSjMkZwODm",
+    "hex_cmd": [
+      "a300010202120000003f2615480102014d0500be",
+      "a3ff031193528cc919c0e0e60000000000000015",
+      "330504ec090000000000000000000000000000d7"
+    ],
+    "b64_cmd": [
+      "owABAgISAAAAPyYVSAECAU0FAL4=",
+      "o/8DEZNSjMkZwODmAAAAAAAAABU=",
+      "MwUE7AkAAAAAAAAAAAAAAAAAANc="
+    ]
+  },
+  {
+    "name": "Sweet",
+    "code": 2541,
+    "params_b64": "EgAAAD8mFRQBAgFkBQAG/5F2/+Jv/7h1/38A/8Vz/5F2",
+    "hex_cmd": [
+      "a300010202120000003f261514010201640500cb",
+      "a3ff06ff9176ffe26fffb875ff7f00ffc573ff34",
+      "330504ed090000000000000000000000000000d6"
+    ],
+    "b64_cmd": [
+      "owABAgISAAAAPyYVFAECAWQFAMs=",
+      "o/8G/5F2/+Jv/7h1/38A/8Vz/zQ=",
+      "MwUE7QkAAAAAAAAAAAAAAAAAANY="
+    ]
+  },
+  {
+    "name": "Poker",
+    "code": 2542,
+    "params_b64": "EgAAAAAnFzgCAAEF////AAf/AAD/fwD//wAA/wAAAP8A//+LAP8=",
+    "hex_cmd": [
+      "a300010302120000000027173802000105ffffbf",
+      "a301ff0007ff0000ff7f00ffff0000ff000000da",
+      "a3ffff00ffff8b00ff00000000000000000000d7",
+      "330504ee090000000000000000000000000000d5"
+    ],
+    "b64_cmd": [
+      "owABAwISAAAAACcXOAIAAQX//78=",
+      "owH/AAf/AAD/fwD//wAA/wAAANo=",
+      "o///AP//iwD/AAAAAAAAAAAAANc=",
+      "MwUE7gkAAAAAAAAAAAAAAAAAANU="
+    ]
+  },
+  {
+    "name": "Stacking",
+    "code": 2543,
+    "params_b64": "EgAAAD8YFUwCAQEFAAf/AAD//wAA/wAA//8AAP//fwCLAP8=",
+    "hex_cmd": [
+      "a300010302120000003f18154c020101050007cf",
+      "a301ff0000ffff0000ff0000ffff0000ffff7fdd",
+      "a3ff008b00ff0000000000000000000000000028",
+      "330504ef090000000000000000000000000000d4"
+    ],
+    "b64_cmd": [
+      "owABAwISAAAAPxgVTAIBAQUAB88=",
+      "owH/AAD//wAA/wAA//8AAP//f90=",
+      "o/8AiwD/AAAAAAAAAAAAAAAAACg=",
+      "MwUE7wkAAAAAAAAAAAAAAAAAANQ="
+    ]
+  },
+  {
+    "name": "Intersection",
+    "code": 2544,
+    "params_b64": "EgAAHAArIUIBCwEFAAb/AAAA/wAAAP///wAA//+LAP8=",
+    "hex_cmd": [
+      "a3000102021200001c002b2142010b01050006ec",
+      "a3ffff000000ff000000ffffff0000ffff8b0028",
+      "330504f0090000000000000000000000000000cb"
+    ],
+    "b64_cmd": [
+      "owABAgISAAAcACshQgELAQUABuw=",
+      "o///AAAA/wAAAP///wAA//+LACg=",
+      "MwUE8AkAAAAAAAAAAAAAAAAAAMs="
+    ]
+  },
+  {
+    "name": "Kaleidoscope",
+    "code": 2545,
+    "params_b64": "EgAAAD8mGVQBAgEFAAgKN/8K/1v/TF6WTP9M/+3/4gz/DJ4MKf8=",
+    "hex_cmd": [
+      "a300010302120000003f261954010201050008ea",
+      "a3010a37ff0aff5bff4c5e964cff4cffedffe245",
+      "a3ff0cff0c9e0c29ff00000000000000000000e7",
+      "330504f1090000000000000000000000000000ca"
+    ],
+    "b64_cmd": [
+      "owABAwISAAAAPyYZVAECAQUACOo=",
+      "owEKN/8K/1v/TF6WTP9M/+3/4kU=",
+      "o/8M/wyeDCn/AAAAAAAAAAAAAOc=",
+      "MwUE8QkAAAAAAAAAAAAAAAAAAMo="
+    ]
+  },
+  {
+    "name": "Flow",
+    "code": 2546,
+    "params_b64": "EgAAAD8mB0YBBagGBAYBBQAFB764PczHaNjWnOrvxP/5",
+    "hex_cmd": [
+      "a300010202120000003f2607460105a806040640",
+      "a3ff0105000507beb83dccc768d8d69ceaefc451",
+      "330504f2090000000000000000000000000000c9"
+    ],
+    "b64_cmd": [
+      "owABAgISAAAAPyYHRgEFqAYEBkA=",
+      "o/8BBQAFB764PczHaNjWnOrvxFE=",
+      "MwUE8gkAAAAAAAAAAAAAAAAAAMk="
+    ]
+  },
+  {
+    "name": "Profound",
+    "code": 7511,
+    "params_b64": "EgAAAD8mGTIBAgEFAAZvLb2mY8yymNw6hv8BAQGDOOw=",
+    "hex_cmd": [
+      "a300010202120000003f26193201020105000683",
+      "a3ff6f2dbda663ccb298dc3a86ff0101018338a5",
+      "330504571d000000000000000000000000000078"
+    ],
+    "b64_cmd": [
+      "owABAgISAAAAPyYZMgECAQUABoM=",
+      "o/9vLb2mY8yymNw6hv8BAQGDOKU=",
+      "MwUEVx0AAAAAAAAAAAAAAAAAAHg="
+    ]
+  }
+]
