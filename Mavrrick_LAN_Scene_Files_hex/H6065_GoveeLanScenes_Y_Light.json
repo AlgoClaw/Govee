@@ -1,0 +1,611 @@
+[
+  {
+    "name": "Ocean/Deep Sea",
+    "cmd_b64": [
+      "owABAgQmFU8DBAEgBQAEABKJAGQ=",
+      "o/8A/xe0/wD//wAAAAAAAAAAAP8=",
+      "MwUETQsCRwAAAAAAAAAAAAAAADE="
+    ],
+    "cmd_hex": [
+      "a30001020426154f030401200500040012890064",
+      "a3ff00ff17b4ff00ffff000000000000000000ff",
+      "3305044d0b024700000000000000000000000031"
+    ]
+  },
+  {
+    "name": "Romantic",
+    "cmd_b64": [
+      "owABAgQnFUIBAAEFAAWLAP/kAEQ=",
+      "o//n/zuD/2lK/5F2AAAAAAAAADg=",
+      "MwUEWgsCRwAAAAAAAAAAAAAAACY="
+    ],
+    "cmd_hex": [
+      "a3000102042715420100010500058b00ffe40044",
+      "a3ffe7ff3b83ff694aff91760000000000000038",
+      "3305045a0b024700000000000000000000000026"
+    ]
+  },
+  {
+    "name": "Sunset Glow",
+    "cmd_b64": [
+      "owABAgQmFSQDAgEeBQAFZACX34E=",
+      "o/8AP/9TAP+cAPlMAAAAAAAAABk=",
+      "MwUETwsCRwAAAAAAAAAAAAAAADM="
+    ],
+    "cmd_hex": [
+      "a3000102042615240302011e050005640097df81",
+      "a3ff003fff5300ff9c00f94c0000000000000019",
+      "3305044f0b024700000000000000000000000033"
+    ]
+  },
+  {
+    "name": "Rainbow",
+    "cmd_b64": [
+      "owABAgQmFVADBAEmBQAH/wAA/+U=",
+      "o/9/AP//AAD/AAAA/wD//4sA/1c=",
+      "MwUEUAsCRwAAAAAAAAAAAAAAACw="
+    ],
+    "cmd_hex": [
+      "a30001020426155003040126050007ff0000ffe5",
+      "a3ff7f00ffff0000ff000000ff00ffff8b00ff57",
+      "330504500b02470000000000000000000000002c"
+    ]
+  },
+  {
+    "name": "Fire",
+    "cmd_b64": [
+      "owABAgQmFVUDFAwCAv8BJQUABQI=",
+      "o//YAQH7Vgf/cQD/qwUBAQEAAPA=",
+      "MwUEVAsCRwAAAAAAAAAAAAAAACg="
+    ],
+    "cmd_hex": [
+      "a30001020426155503140c0202ff012505000502",
+      "a3ffd80101fb5607ff7100ffab050101010000f0",
+      "330504540b024700000000000000000000000028"
+    ]
+  },
+  {
+    "name": "Forest",
+    "cmd_b64": [
+      "owABAgQmFS0DAgEiBQAG/545AMM=",
+      "o///AAfKAJnVE8rsAf/rJAAAACY=",
+      "MwUETgsCRwAAAAAAAAAAAAAAADI="
+    ],
+    "cmd_hex": [
+      "a30001020426152d03020122050006ff9e3900c3",
+      "a3ffff0007ca0099d513caec01ffeb2400000026",
+      "3305044e0b024700000000000000000000000032"
+    ]
+  },
+  {
+    "name": "Colorful",
+    "cmd_b64": [
+      "owABAwQmFWEDBwFkBQAIAAD/AGQ=",
+      "owEA/wD//wD/////AP//AP8Absw=",
+      "o///AG4AAAAAAAAAAAAAAAAAAM0=",
+      "MwUEWQsCRwAAAAAAAAAAAAAAACU="
+    ],
+    "cmd_hex": [
+      "a300010304261561030701640500080000ff0064",
+      "a30100ff00ffff00ffffffff00ffff00ff006ecc",
+      "a3ffff006e0000000000000000000000000000cd",
+      "330504590b024700000000000000000000000025"
+    ]
+  },
+  {
+    "name": "Night Light",
+    "cmd_b64": [
+      "MwUEAgAARwAAAAAAAAAAAAAAAHc="
+    ],
+    "cmd_hex": [
+      "3305040200004700000000000000000000000077"
+    ]
+  },
+  {
+    "name": "Spring",
+    "cmd_b64": [
+      "owABBwIDKQACCgUCAf8ZAAAAAGU=",
+      "owEC+jIG/zgA/38AAP8AAAAAANY=",
+      "owL//4sA/wAAgAAAAAAjAAIeCmA=",
+      "owMAAf//AAAAAAH6AATxAB3/dTg=",
+      "owQA/8AA/0sAAAD/AAH6AB0AADU=",
+      "owUAAQABMgAByDIyAsgyAgD/AFg=",
+      "o////wAAAAAAAAAAAAAAAAAAAFw=",
+      "MwUE9ycAAAAAAAAAAAAAAAAAAOI="
+    ],
+    "cmd_hex": [
+      "a300010702032900020a050201ff190000000065",
+      "a30102fa3206ff3800ff7f0000ff0000000000d6",
+      "a302ffff8b00ff000080000000002300021e0a60",
+      "a3030001ffff0000000001fa0004f1001dff7538",
+      "a30400ffc000ff4b000000ff0001fa001d000035",
+      "a30500010001320001c8323202c8320200ff0058",
+      "a3ffffff0000000000000000000000000000005c",
+      "330504f7270000000000000000000000000000e2"
+    ]
+  },
+  {
+    "name": "Summer",
+    "cmd_b64": [
+      "owABBwIEGhAAAAEAAf//AIAUFCk=",
+      "owECABQBAP8AAACAAACAABqBAtM=",
+      "owIZFAAB//8AgBQUAgAUAf9RSd0=",
+      "owMAAIAAAIABGoECGRQAAf//ADQ=",
+      "owSAFBQCABQB/wAAAACAAACAAs0=",
+      "owUaGQAAAQAB//8AgBQUAgAUATI=",
+      "o/8A/wAAAIAAAIAAAAAAAAAAAKM=",
+      "MwUE+CcAAAAAAAAAAAAAAAAAAO0="
+    ],
+    "cmd_hex": [
+      "a300010702041a100000010001ffff0080141429",
+      "a3010200140100ff00000080000080001a8102d3",
+      "a30219140001ffff0080141402001401ff5149dd",
+      "a303000080000080011a810219140001ffff0034",
+      "a30480141402001401ff000000008000008002cd",
+      "a3051a190000010001ffff008014140200140132",
+      "a3ff00ff000000800000800000000000000000a3",
+      "330504f8270000000000000000000000000000ed"
+    ]
+  },
+  {
+    "name": "Illusion",
+    "cmd_b64": [
+      "owABAgQnFR4BAAEFAAJscdkKCks=",
+      "o/8KAAAAAAAAAAAAAAAAAAAAAFY=",
+      "MwUEVh0ALQAAAAAAAAAAAAAAAFQ="
+    ],
+    "cmd_hex": [
+      "a30001020427151e0100010500026c71d90a0a4b",
+      "a3ff0a0000000000000000000000000000000056",
+      "330504561d002d00000000000000000000000054"
+    ]
+  },
+  {
+    "name": "Thunderclap",
+    "cmd_b64": [
+      "owABAgQnPFMAAoM47Nvk7gAAAGg=",
+      "o/8AAAAAAAAAAAAAAAAAAAAAAFw=",
+      "MwUE2RwARwAAAAAAAAAAAAAAALA="
+    ],
+    "cmd_hex": [
+      "a300010204273c5300028338ecdbe4ee00000068",
+      "a3ff00000000000000000000000000000000005c",
+      "330504d91c0047000000000000000000000000b0"
+    ]
+  },
+  {
+    "name": "Aurora",
+    "cmd_b64": [
+      "owABAgQmFTMDAQEeBQAGGf+ZXJk=",
+      "o//QHwOrNgCLRQBkACkAKQAAAKc=",
+      "MwUEUQsCRwAAAAAAAAAAAAAAAC0="
+    ],
+    "cmd_hex": [
+      "a3000102042615330301011e05000619ff995c99",
+      "a3ffd01f03ab36008b45006400290029000000a7",
+      "330504510b02470000000000000000000000002d"
+    ]
+  },
+  {
+    "name": "Leisure",
+    "cmd_b64": [
+      "MwUEIgAARwAAAAAAAAAAAAAAAFc="
+    ],
+    "cmd_hex": [
+      "3305042200004700000000000000000000000057"
+    ]
+  },
+  {
+    "name": "Birthday",
+    "cmd_b64": [
+      "owABAgQnFU0BAAEFAAf/028N30g=",
+      "o/+m/2tr/3Cm/5dwxP8ACdb/AC8=",
+      "MwUEXgsARwAAAAAAAAAAAAAAACA="
+    ],
+    "cmd_hex": [
+      "a30001020427154d010001050007ffd36f0ddf48",
+      "a3ffa6ff6b6bff70a6ff9770c4ff0009d6ff002f",
+      "3305045e0b004700000000000000000000000020"
+    ]
+  },
+  {
+    "name": "Fireworks",
+    "cmd_b64": [
+      "owABAgQnOzIAAQAF+cgOMf+TBuo=",
+      "o/9y//8jybNA8wAAAAAAAAAAAMQ=",
+      "MwUE1BwARwAAAAAAAAAAAAAAAL0="
+    ],
+    "cmd_hex": [
+      "a300010204273b3200010005f9c80e31ff9306ea",
+      "a3ff72ffff23c9b340f3000000000000000000c4",
+      "330504d41c0047000000000000000000000000bd"
+    ]
+  },
+  {
+    "name": "Meteor",
+    "cmd_b64": [
+      "owABAgQmFUsDBAEmBQAGAQEBAf8=",
+      "o/8BAQEBAYsA/wEBAQEBAQAAACk=",
+      "MwUEVQsCRwAAAAAAAAAAAAAAACk="
+    ],
+    "cmd_hex": [
+      "a30001020426154b0304012605000601010101ff",
+      "a3ff01010101018b00ff01010101010100000029",
+      "330504550b024700000000000000000000000029"
+    ]
+  },
+  {
+    "name": "Father's Day",
+    "cmd_b64": [
+      "owABAgQnFTwBAAEFAAUAD604bV0=",
+      "o//MALDRBlHB////AAAAAAAAAJg=",
+      "MwUEXAsARwAAAAAAAAAAAAAAACI="
+    ],
+    "cmd_hex": [
+      "a30001020427153c010001050005000fad386d5d",
+      "a3ffcc00b0d10651c1ffffff0000000000000098",
+      "3305045c0b004700000000000000000000000022"
+    ]
+  },
+  {
+    "name": "Mother's Day",
+    "cmd_b64": [
+      "owABAgQnFRoBAAEFAAb/QlH/AJw=",
+      "o/9h2QEB/wAA0QDE////AAAAAPE=",
+      "MwUEWwsARwAAAAAAAAAAAAAAACU="
+    ],
+    "cmd_hex": [
+      "a30001020427151a010001050006ff4251ff009c",
+      "a3ff61d90101ff0000d100c4ffffff00000000f1",
+      "3305045b0b004700000000000000000000000025"
+    ]
+  },
+  {
+    "name": "Halloween",
+    "cmd_b64": [
+      "owABAwQmGUMDAgEFAAj/hgD/fy0=",
+      "owEAxQA/xQA/AA+eABKJAQEBAag=",
+      "o/8BAQAAAAAAAAAAAAAAAAAAAFw=",
+      "MwUEXQsCRwAAAAAAAAAAAAAAACE="
+    ],
+    "cmd_hex": [
+      "a300010304261943030201050008ff8600ff7f2d",
+      "a30100c5003fc5003f000f9e00128901010101a8",
+      "a3ff01010000000000000000000000000000005c",
+      "3305045d0b024700000000000000000000000021"
+    ]
+  },
+  {
+    "name": "Valentine's Day",
+    "cmd_b64": [
+      "owABAwRYADIBZAMKAgQAAAoBAa8=",
+      "owEAAAoBAQAABv+Rdv8AbuMAk1c=",
+      "o//eNNL/AGH/dX4AAAAAAAAAAA4=",
+      "MwUE0xwARwAAAAAAAAAAAAAAALo="
+    ],
+    "cmd_hex": [
+      "a3000103045800320164030a020400000a0101af",
+      "a30100000a0101000006ff9176ff006ee3009357",
+      "a3ffde34d2ff0061ff757e00000000000000000e",
+      "330504d31c0047000000000000000000000000ba"
+    ]
+  },
+  {
+    "name": "Easter",
+    "cmd_b64": [
+      "owABAgQmGTwBBwEFAAf/AAD/f90=",
+      "o/8A//8AAP8AAAD/AP//iwD/ACg=",
+      "MwUE0hwHRwAAAAAAAAAAAAAAALw="
+    ],
+    "cmd_hex": [
+      "a30001020426193c010701050007ff0000ff7fdd",
+      "a3ff00ffff0000ff000000ff00ffff8b00ff0028",
+      "330504d21c0747000000000000000000000000bc"
+    ]
+  },
+  {
+    "name": "Swing",
+    "cmd_b64": [
+      "owABAwRYAFEBZAMMAgQLAAYAAcw=",
+      "owEVAAYBBCAABP/ib//ib//Fc9k=",
+      "o///xXMAAAAAAAAAAAAAAAAAABU=",
+      "MwUE0BwARwAAAAAAAAAAAAAAALk="
+    ],
+    "cmd_hex": [
+      "a3000103045800510164030c02040b00060001cc",
+      "a3011500060104200004ffe26fffe26fffc573d9",
+      "a3ffffc573000000000000000000000000000015",
+      "330504d01c0047000000000000000000000000b9"
+    ]
+  },
+  {
+    "name": "Christmas",
+    "cmd_b64": [
+      "owABAgRYAEMBZAMMAgQIAAwCAdQ=",
+      "o/8AEAwBAwAAA/8AAP9/AAD/AME=",
+      "MwUE0RwARwAAAAAAAAAAAAAAALg="
+    ],
+    "cmd_hex": [
+      "a3000102045800430164030c020408000c0201d4",
+      "a3ff00100c0103000003ff0000ff7f0000ff00c1",
+      "330504d11c0047000000000000000000000000b8"
+    ]
+  },
+  {
+    "name": "Glitter",
+    "cmd_b64": [
+      "owABAgRYACkBZAADAQQAAAX/Qg4=",
+      "o/9R62HcDd+moNwdAQEBAAAAAE8=",
+      "MwUEzxwARwAAAAAAAAAAAAAAAKY="
+    ],
+    "cmd_hex": [
+      "a300010204580029016400030104000005ff420e",
+      "a3ff51eb61dc0ddfa6a0dc1d010101000000004f",
+      "330504cf1c0047000000000000000000000000a6"
+    ]
+  },
+  {
+    "name": "Starry Sky",
+    "cmd_b64": [
+      "owABAwQnFR0BAAEFAAgAD54ZCwQ=",
+      "owGMLQCLMACaLQCL92W6AQEBAK0=",
+      "o////wAAAAAAAAAAAAAAAAAAAFw=",
+      "MwUExhwARwAAAAAAAAAAAAAAAK8="
+    ],
+    "cmd_hex": [
+      "a30001030427151d010001050008000f9e190b04",
+      "a3018c2d008b30009a2d008bf765ba01010100ad",
+      "a3ffffff0000000000000000000000000000005c",
+      "330504c61c0047000000000000000000000000af"
+    ]
+  },
+  {
+    "name": "Poker",
+    "cmd_b64": [
+      "owABAwQnFzgBAAEF////AAf/AK8=",
+      "owEA/38A//8AAP8AAAD/AP//i6k=",
+      "o/8A/wAAAAAAAAAAAAAAAAAAAKM=",
+      "MwUEzhwARwAAAAAAAAAAAAAAAKc="
+    ],
+    "cmd_hex": [
+      "a30001030427173801000105ffffff0007ff00af",
+      "a30100ff7f00ffff0000ff000000ff00ffff8ba9",
+      "a3ff00ff000000000000000000000000000000a3",
+      "330504ce1c0047000000000000000000000000a7"
+    ]
+  },
+  {
+    "name": "Firefly",
+    "cmd_b64": [
+      "owABAgQnPSUBAAoeARQyFAW/0tU=",
+      "o/8A3d8A4+UW/+Jv/9NvAAAAAH8=",
+      "MwUExxwARwAAAAAAAAAAAAAAAK4="
+    ],
+    "cmd_hex": [
+      "a300010204273d2501000a1e0114321405bfd2d5",
+      "a3ff00dddf00e3e516ffe26fffd36f000000007f",
+      "330504c71c0047000000000000000000000000ae"
+    ]
+  },
+  {
+    "name": "Stacking",
+    "cmd_b64": [
+      "owABAgQYFR8BAQEFAAf/AAD//0o=",
+      "o/8AAP8AAP//AAD//38AiwD/AKg=",
+      "MwUEVgsCRwAAAAAAAAAAAAAAACo="
+    ],
+    "cmd_hex": [
+      "a30001020418151f010101050007ff0000ffff4a",
+      "a3ff0000ff0000ffff0000ffff7f008b00ff00a8",
+      "330504560b02470000000000000000000000002a"
+    ]
+  },
+  {
+    "name": "Energetic",
+    "cmd_b64": [
+      "owABAgQmGWQBFAwDAP8BBQAG7PQ=",
+      "o/+YAP/fAHe2CgCJVQD//8UAPwk=",
+      "MwUEzBwCRwAAAAAAAAAAAAAAAKc="
+    ],
+    "cmd_hex": [
+      "a30001020426196401140c0300ff01050006ecf4",
+      "a3ff9800ffdf0077b60a00895500ffffc5003f09",
+      "330504cc1c0247000000000000000000000000a7"
+    ]
+  },
+  {
+    "name": "Star",
+    "cmd_b64": [
+      "owABAwQnFQ8DAAEFAAgAEokAEh4=",
+      "owGJABKJ/9gx/9gxABKJABKJALA=",
+      "o/8SiQAAAAAAAAAAAAAAAAAAAMc=",
+      "MwUEUwsARwAAAAAAAAAAAAAAAC0="
+    ],
+    "cmd_hex": [
+      "a30001030427150f03000105000800128900121e",
+      "a30189001289ffd831ffd83100128900128900b0",
+      "a3ff1289000000000000000000000000000000c7",
+      "330504530b00470000000000000000000000002d"
+    ]
+  },
+  {
+    "name": "Dreamlike",
+    "cmd_b64": [
+      "owABAgQmFVQDAgEjBQAFugH/3no=",
+      "o/8A/wAY/wD//wD//wAAAAAAAEQ=",
+      "MwUEWAsCRwAAAAAAAAAAAAAAACQ="
+    ],
+    "cmd_hex": [
+      "a30001020426155403020123050005ba01ffde7a",
+      "a3ff00ff0018ff00ffff00ffff00000000000044",
+      "330504580b024700000000000000000000000024"
+    ]
+  },
+  {
+    "name": "Ripple",
+    "cmd_b64": [
+      "owABAgQmFUUDAQEmBQAHALDRYPQ=",
+      "o//N6wCw0QEBAQCw0QCw0QEBARs=",
+      "MwUEUgsCRwAAAAAAAAAAAAAAAC4="
+    ],
+    "cmd_hex": [
+      "a3000102042615450301012605000700b0d160f4",
+      "a3ffcdeb00b0d101010100b0d100b0d10101011b",
+      "330504520b02470000000000000000000000002e"
+    ]
+  },
+  {
+    "name": "Refreshing",
+    "cmd_b64": [
+      "owABAgQmFT0DAgEgBQADEZNSjNA=",
+      "o//JGcDg5gAAAAAAAAAAAAAAAEo=",
+      "MwUEVwsCRwAAAAAAAAAAAAAAACs="
+    ],
+    "cmd_hex": [
+      "a30001020426153d030201200500031193528cd0",
+      "a3ffc919c0e0e60000000000000000000000004a",
+      "330504570b02470000000000000000000000002b"
+    ]
+  },
+  {
+    "name": "Crawl",
+    "cmd_b64": [
+      "owABAgRYADcBZAMKAQELAAoBAKc=",
+      "o/8VAAoBAQAAA/9AAjH/k0sZt0U=",
+      "MwUE2hwARwAAAAAAAAAAAAAAALM="
+    ],
+    "cmd_hex": [
+      "a3000102045800370164030a01010b000a0100a7",
+      "a3ff15000a0101000003ff400231ff934b19b745",
+      "330504da1c0047000000000000000000000000b3"
+    ]
+  },
+  {
+    "name": "Soothing",
+    "cmd_b64": [
+      "owABAgQmFTIDAgEnBQAH/74L/zU=",
+      "o//Fc//ib/+4df/Fc/+Rdv///wQ=",
+      "MwUEzRwCRwAAAAAAAAAAAAAAAKY="
+    ],
+    "cmd_hex": [
+      "a30001020426153203020127050007ffbe0bff35",
+      "a3ffc573ffe26fffb875ffc573ff9176ffffff04",
+      "330504cd1c0247000000000000000000000000a6"
+    ]
+  },
+  {
+    "name": "Breathe",
+    "cmd_b64": [
+      "MwUECgAARwAAAAAAAAAAAAAAAH8="
+    ],
+    "cmd_hex": [
+      "3305040a0000470000000000000000000000007f"
+    ]
+  },
+  {
+    "name": "Spin",
+    "cmd_b64": [
+      "owABAwRYAFEAZAMMAQQQAAwBBNs=",
+      "owEgAAwCBAIABYM47G8tvaZjzC4=",
+      "o/+ymNy40OsAAAAAAAAAAAAAACk=",
+      "MwUE2BwARwAAAAAAAAAAAAAAALE="
+    ],
+    "cmd_hex": [
+      "a3000103045800510064030c010410000c0104db",
+      "a30120000c02040200058338ec6f2dbda663cc2e",
+      "a3ffb298dcb8d0eb000000000000000000000029",
+      "330504d81c0047000000000000000000000000b1"
+    ]
+  },
+  {
+    "name": "Sports",
+    "cmd_b64": [
+      "owABAwRYAE0BZAMKAgQTAAoBAsA=",
+      "owETAAoBAgYRBP//AKYH/wD///U=",
+      "o///GFEAAAAAAAAAAAAAAAAAAOo=",
+      "MwUEyxwARwAAAAAAAAAAAAAAAKI="
+    ],
+    "cmd_hex": [
+      "a30001030458004d0164030a020413000a0102c0",
+      "a30113000a0102061104ffff00a607ff00fffff5",
+      "a3ffff18510000000000000000000000000000ea",
+      "330504cb1c0047000000000000000000000000a2"
+    ]
+  },
+  {
+    "name": "Split",
+    "cmd_b64": [
+      "owABAwRYAE0BZAMKAQAMAAoBANo=",
+      "owESAAoBAAMABCEtvv/mAP8AboY=",
+      "o/8x/5MAAAAAAAAAAAAAAAAAAAE=",
+      "MwUE1xwARwAAAAAAAAAAAAAAAL4="
+    ],
+    "cmd_hex": [
+      "a30001030458004d0164030a01000c000a0100da",
+      "a30112000a0100030004212dbeffe600ff006e86",
+      "a3ff31ff93000000000000000000000000000001",
+      "330504d71c0047000000000000000000000000be"
+    ]
+  },
+  {
+    "name": "Technology",
+    "cmd_b64": [
+      "owABAgRYADkBZAMMAQIAAAwBAqM=",
+      "o/8AAAwBAhIAA/8AbgAPrQD//3E=",
+      "MwUEyhwARwAAAAAAAAAAAAAAAKM="
+    ],
+    "cmd_hex": [
+      "a3000102045800390164030c010200000c0102a3",
+      "a3ff00000c0102120003ff006e000fad00ffff71",
+      "330504ca1c0047000000000000000000000000a3"
+    ]
+  },
+  {
+    "name": "Crossing",
+    "cmd_b64": [
+      "owABAgRYADIBZAMIAgAgAAQBBIM=",
+      "o/8AAAoBAxMUAgD///8AbgAAAMA=",
+      "MwUE1hwARwAAAAAAAAAAAAAAAL8="
+    ],
+    "cmd_hex": [
+      "a300010204580032016403080200200004010483",
+      "a3ff00000a010313140200ffffff006e000000c0",
+      "330504d61c0047000000000000000000000000bf"
+    ]
+  },
+  {
+    "name": "Flow",
+    "cmd_b64": [
+      "owABAgQmGjIDFAwDAP8BBQAEMXw=",
+      "o///kwAPrf//AP8AbgAAAAAAAAM=",
+      "MwUE1RwCRwAAAAAAAAAAAAAAAL4="
+    ],
+    "cmd_hex": [
+      "a300010204261a3203140c0300ff01050004317c",
+      "a3ffff93000fadffff00ff006e00000000000003",
+      "330504d51c0247000000000000000000000000be"
+    ]
+  },
+  {
+    "name": "Movie",
+    "cmd_b64": [
+      "owABAgQAAAAPCQB4tABfuABfuG4=",
+      "o/8AAAAAAAAAAAAAAAAAAAAAAFw=",
+      "MwUEyRwARwAAAAAAAAAAAAAAAKA="
+    ],
+    "cmd_hex": [
+      "a3000102040000000f090078b4005fb8005fb86e",
+      "a3ff00000000000000000000000000000000005c",
+      "330504c91c0047000000000000000000000000a0"
+    ]
+  },
+  {
+    "name": "Night Light",
+    "cmd_b64": [
+      "MwUEAgAARwAAAAAAAAAAAAAAAHc="
+    ],
+    "cmd_hex": [
+      "3305040200004700000000000000000000000077"
+    ]
+  }
+]

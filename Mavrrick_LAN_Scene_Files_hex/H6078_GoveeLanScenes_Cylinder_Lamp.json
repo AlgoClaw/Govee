@@ -1,0 +1,1563 @@
+[
+  {
+    "name": "Aurora",
+    "cmd_b64": [
+      "MwUEBAAAAAAAAAAAAAAAAAAAADY="
+    ],
+    "cmd_hex": [
+      "3305040400000000000000000000000000000036"
+    ]
+  },
+  {
+    "name": "Enthusiastic",
+    "cmd_b64": [
+      "owABDgwJZP8AAAHcAGQBAgYg/1E=",
+      "owEXAAABAgMEBQYHCAkKCwwNDro=",
+      "owIPEBESExQVFhcYGRobHB0eH64=",
+      "owMg/yQAICEiIyQlJicoKSorLHc=",
+      "owQtLi8wMTIzNDU2Nzg5Ojs8PYo=",
+      "owU+PyD/BABAQUJDREVGR0hJSjc=",
+      "owZLTE1OT1BRUlNUVVZXWFlaW+4=",
+      "owdcXV5fCP8AIGBhYmNkZWZnOEs=",
+      "owj/AAVoaWprbG1ub3BxcnN0dVA=",
+      "owl2d3h5ent8fX5/gIGCg4SFhiw=",
+      "owqHiImKi4yNjo+QkZKTlJWWly4=",
+      "owu4ubq7vL2+vyD/AA+YmZqbnOQ=",
+      "owydnp+goaKjpKWmp6ipqqusrTI=",
+      "o/+ur7CxsrO0tba3AAAAAAAAAF0=",
+      "MwUEkRwAAAAAAAAAAAAAAAAAAL8="
+    ],
+    "cmd_hex": [
+      "a300010e0c0964ff000001dc006401020620ff51",
+      "a3011700000102030405060708090a0b0c0d0eba",
+      "a3020f101112131415161718191a1b1c1d1e1fae",
+      "a30320ff2400202122232425262728292a2b2c77",
+      "a3042d2e2f303132333435363738393a3b3c3d8a",
+      "a3053e3f20ff0400404142434445464748494a37",
+      "a3064b4c4d4e4f505152535455565758595a5bee",
+      "a3075c5d5e5f08ff00206061626364656667384b",
+      "a308ff000568696a6b6c6d6e6f70717273747550",
+      "a309767778797a7b7c7d7e7f808182838485862c",
+      "a30a8788898a8b8c8d8e8f90919293949596972e",
+      "a30bb8b9babbbcbdbebf20ff000f98999a9b9ce4",
+      "a30c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacad32",
+      "a3ffaeafb0b1b2b3b4b5b6b7000000000000005d",
+      "330504911c0000000000000000000000000000bf"
+    ]
+  },
+  {
+    "name": "Warm",
+    "cmd_b64": [
+      "owABEAwJZP9/AAH4AGQBAgVn/1A=",
+      "owEwAAABAgMEBQYHCAkKCwwNDp0=",
+      "owIQERITFBUWFxgZGhscHR4fIIE=",
+      "owMhIiMkJSYnoKGio6SlpqeoqYE=",
+      "owSqq6ytrq+wsbKztLW2t7i5uh0=",
+      "owW7vL2+v8DBwsPExcbHyMnKyx0=",
+      "owbMzc7P0NHS09TV1tfY2drb3Hk=",
+      "owfd3t8B/yIADyj/RgAoKSorLBY=",
+      "owgtLi8wMTIzNDU2Nzg5Ojs8PYY=",
+      "owk+P0BBQkNERUZHSElKS0xNTuQ=",
+      "owpPKP9wAFBRUlNUVVZXWFlaW0E=",
+      "owtcXV5fYGFiY2RlZmdoaWprbMQ=",
+      "owxtbm9wcXJzdHV2dyj/UgB4eUc=",
+      "ow16e3x9fn+AgYKDhIWGh4iJiiQ=",
+      "ow6LjI2Oj5CRkpOUlZaXmJmamyY=",
+      "o/+cnZ6fAAAAAAAAAAAAAAAAAFw=",
+      "MwUEkhwAAAAAAAAAAAAAAAAAALw="
+    ],
+    "cmd_hex": [
+      "a30001100c0964ff7f0001f8006401020567ff50",
+      "a3013000000102030405060708090a0b0c0d0e9d",
+      "a302101112131415161718191a1b1c1d1e1f2081",
+      "a30321222324252627a0a1a2a3a4a5a6a7a8a981",
+      "a304aaabacadaeafb0b1b2b3b4b5b6b7b8b9ba1d",
+      "a305bbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacb1d",
+      "a306cccdcecfd0d1d2d3d4d5d6d7d8d9dadbdc79",
+      "a307dddedf01ff22000f28ff460028292a2b2c16",
+      "a3082d2e2f303132333435363738393a3b3c3d86",
+      "a3093e3f404142434445464748494a4b4c4d4ee4",
+      "a30a4f28ff7000505152535455565758595a5b41",
+      "a30b5c5d5e5f606162636465666768696a6b6cc4",
+      "a30c6d6e6f707172737475767728ff5200787947",
+      "a30d7a7b7c7d7e7f808182838485868788898a24",
+      "a30e8b8c8d8e8f909192939495969798999a9b26",
+      "a3ff9c9d9e9f000000000000000000000000005c",
+      "330504921c0000000000000000000000000000bc"
+    ]
+  },
+  {
+    "name": "Relax",
+    "cmd_b64": [
+      "owABEAwJZP//AAH4AGQBAgUw/4c=",
+      "owHCAAABAgMEBQYHCAkKCwwNDm8=",
+      "owIPEBESExQVFhcYGRobHB0eH64=",
+      "owMgISIjJCUmJygpKissLS4vKIg=",
+      "owTy/wAwMTIzNDU2Nzg5Ojs8Pas=",
+      "owU+P0BBQkNERUZHSElKS0xNTug=",
+      "owZPUFFSU1RVVlcw//8AWFlaW9o=",
+      "owdcXV5fYGFiY2RlZmdoaWprbMg=",
+      "owhtbm9wcXJzdHV2d3h5ent8fcY=",
+      "owl+f4CBgoOEhYaHKP/IAIiJij8=",
+      "owqLjI2Oj5CRkpOUlZaXmJmamyI=",
+      "owucnZ6foKGio6SlpqeoqaqrrAQ=",
+      "owytrq8w/5EAsLGys7S1tre4uVw=",
+      "ow26u7y9vr/AwcLDxMXGx8jJymQ=",
+      "ow7LzM3Oz9DR0tPU1dbX2Nna22Y=",
+      "o//c3d7fAAAAAAAAAAAAAAAAAFw=",
+      "MwUEkxwAAAAAAAAAAAAAAAAAAL0="
+    ],
+    "cmd_hex": [
+      "a30001100c0964ffff0001f8006401020530ff87",
+      "a301c200000102030405060708090a0b0c0d0e6f",
+      "a3020f101112131415161718191a1b1c1d1e1fae",
+      "a303202122232425262728292a2b2c2d2e2f2888",
+      "a304f2ff00303132333435363738393a3b3c3dab",
+      "a3053e3f404142434445464748494a4b4c4d4ee8",
+      "a3064f505152535455565730ffff0058595a5bda",
+      "a3075c5d5e5f606162636465666768696a6b6cc8",
+      "a3086d6e6f707172737475767778797a7b7c7dc6",
+      "a3097e7f808182838485868728ffc80088898a3f",
+      "a30a8b8c8d8e8f909192939495969798999a9b22",
+      "a30b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabac04",
+      "a30cadaeaf30ff9100b0b1b2b3b4b5b6b7b8b95c",
+      "a30dbabbbcbdbebfc0c1c2c3c4c5c6c7c8c9ca64",
+      "a30ecbcccdcecfd0d1d2d3d4d5d6d7d8d9dadb66",
+      "a3ffdcdddedf000000000000000000000000005c",
+      "330504931c0000000000000000000000000000bd"
+    ]
+  },
+  {
+    "name": "Ecological",
+    "cmd_b64": [
+      "owABEAwJZAD/AAH8AGQBAgYvAJ8=",
+      "owH/UwABAgMEBQYHCAkKCwwNDgE=",
+      "owIQERITFBUWFxgZGhscHR4fIIE=",
+      "owMhIiMkJSYnKCkqKywtLi8BAIE=",
+      "owT/aw8oAP8VMDEyMzQ1Njc4Of8=",
+      "owU6Ozw9Pj9AQUJDREVGR0hJSuw=",
+      "owZLTE1OT1BRUlNUVVZXMAD/ACE=",
+      "owdYWVpbXF1eX2BhYmNkZWZnaMw=",
+      "owhpamtsbW5vcHFyc3R1dnd4ecI=",
+      "owl6e3x9fn+AgYKDhIWGhygk/1g=",
+      "owoAiImKi4yNjo+QkZKTlJWWl6k=",
+      "owuYmZqbnJ2en6ChoqOkpaanqAA=",
+      "owypqqusra6vMH3/ALCxsrO0tbQ=",
+      "ow22t7i5uru8vb6/wMHCw8TFxmg=",
+      "ow7HyMnKy8zNzs/Q0dLT1NXW12o=",
+      "o//Y2drb3N3e3wAAAAAAAAAAAFw=",
+      "MwUElBwAAAAAAAAAAAAAAAAAALo="
+    ],
+    "cmd_hex": [
+      "a30001100c096400ff0001fc00640102062f009f",
+      "a301ff53000102030405060708090a0b0c0d0e01",
+      "a302101112131415161718191a1b1c1d1e1f2081",
+      "a3032122232425262728292a2b2c2d2e2f010081",
+      "a304ff6b0f2800ff1530313233343536373839ff",
+      "a3053a3b3c3d3e3f404142434445464748494aec",
+      "a3064b4c4d4e4f50515253545556573000ff0021",
+      "a30758595a5b5c5d5e5f606162636465666768cc",
+      "a308696a6b6c6d6e6f70717273747576777879c2",
+      "a3097a7b7c7d7e7f80818283848586872824ff58",
+      "a30a0088898a8b8c8d8e8f9091929394959697a9",
+      "a30b98999a9b9c9d9e9fa0a1a2a3a4a5a6a7a800",
+      "a30ca9aaabacadaeaf307dff00b0b1b2b3b4b5b4",
+      "a30db6b7b8b9babbbcbdbebfc0c1c2c3c4c5c668",
+      "a30ec7c8c9cacbcccdcecfd0d1d2d3d4d5d6d76a",
+      "a3ffd8d9dadbdcdddedf0000000000000000005c",
+      "330504941c0000000000000000000000000000ba"
+    ]
+  },
+  {
+    "name": "Healing",
+    "cmd_b64": [
+      "owABDwwJAQAA/wH0AGQBAgQwKdk=",
+      "owEA/wABAgMEBQYHCAkKCwwNDlI=",
+      "owIPEBESExQVFhfIycrLzM3Oz64=",
+      "owPQ0dLT1NXW19jZ2tvc3d7fHLw=",
+      "owQXAP8YGRobHB0qKywtLi9AQU4=",
+      "owVCQ0RFRkdISUpLTE1OT1QAAPM=",
+      "owb/Hh8gISIjJCUmJygpMDEyM1o=",
+      "owc0NTY3ODk6Ozw9Pj+QkZKTlDA=",
+      "owiVlpeYmZqbnJ2en6ChoqOkpT4=",
+      "owmmp6ipqqusra6vsLGys7S1thw=",
+      "owq3uLm6u7y9vr/AwcLDxMXGxx4=",
+      "owtAAFP/UFFSU1RVVldYWVpbXBg=",
+      "owxdXl9gYWJjZGVmZ2hpamtsbfI=",
+      "ow1ub3BxcnN0dXZ3eHl6e3x9ftA=",
+      "o/9/gIGCg4SFhoeIiYqLjI2OjyM=",
+      "MwUElRwAAAAAAAAAAAAAAAAAALs="
+    ],
+    "cmd_hex": [
+      "a300010f0c09010000ff01f400640102043029d9",
+      "a30100ff000102030405060708090a0b0c0d0e52",
+      "a3020f1011121314151617c8c9cacbcccdcecfae",
+      "a303d0d1d2d3d4d5d6d7d8d9dadbdcdddedf1cbc",
+      "a3041700ff18191a1b1c1d2a2b2c2d2e2f40414e",
+      "a30542434445464748494a4b4c4d4e4f540000f3",
+      "a306ff1e1f20212223242526272829303132335a",
+      "a3073435363738393a3b3c3d3e3f909192939430",
+      "a30895969798999a9b9c9d9e9fa0a1a2a3a4a53e",
+      "a309a6a7a8a9aaabacadaeafb0b1b2b3b4b5b61c",
+      "a30ab7b8b9babbbcbdbebfc0c1c2c3c4c5c6c71e",
+      "a30b400053ff505152535455565758595a5b5c18",
+      "a30c5d5e5f606162636465666768696a6b6c6df2",
+      "a30d6e6f707172737475767778797a7b7c7d7ed0",
+      "a3ff7f808182838485868788898a8b8c8d8e8f23",
+      "330504951c0000000000000000000000000000bb"
+    ]
+  },
+  {
+    "name": "Mysterious",
+    "cmd_b64": [
+      "owABDQwJZIsA/wHFAGQBAgQBi5c=",
+      "owEA/xcwdgD/GBkaGxwdHh8gIfI=",
+      "owIiIyQlJicoKSorLC0uL7CxshM=",
+      "owOztLW2t7i5uru8vb6/wMHCwxM=",
+      "owTExcbHULYA/zAxMjM0NTY3OIY=",
+      "owU5Ojs8PT4/QEFCQ0RFRkdISZ8=",
+      "owZKS0xNTk9QUVJTVFVWV4iJii8=",
+      "oweLjI2Oj5CRkpOUlZaXmJmamy8=",
+      "owicnZ6foKGio6SlpqeoqaqrrAc=",
+      "owmtrq8w/wD8WFlaW1xdXl9gYTQ=",
+      "owpiY2RlZmdoaWprbG1ub3Bxcts=",
+      "owtzdHV2d3h5ent8fX5/gIGCg9s=",
+      "o/+EhYaHAAAAAAAAAAAAAAAAAFw=",
+      "MwUElhwAAAAAAAAAAAAAAAAAALg="
+    ],
+    "cmd_hex": [
+      "a300010d0c09648b00ff01c50064010204018b97",
+      "a30100ff17307600ff18191a1b1c1d1e1f2021f2",
+      "a30222232425262728292a2b2c2d2e2fb0b1b213",
+      "a303b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c313",
+      "a304c4c5c6c750b600ff30313233343536373886",
+      "a305393a3b3c3d3e3f404142434445464748499f",
+      "a3064a4b4c4d4e4f505152535455565788898a2f",
+      "a3078b8c8d8e8f909192939495969798999a9b2f",
+      "a3089c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabac07",
+      "a309adaeaf30ff00fc58595a5b5c5d5e5f606134",
+      "a30a62636465666768696a6b6c6d6e6f707172db",
+      "a30b737475767778797a7b7c7d7e7f80818283db",
+      "a3ff84858687000000000000000000000000005c",
+      "330504961c0000000000000000000000000000b8"
+    ]
+  },
+  {
+    "name": "Sunrise",
+    "cmd_b64": [
+      "owABDgwJZIsA/wHgAAAEAgko/4A=",
+      "owEkAAABAgMEBQYHCAkKCwwNDok=",
+      "owIPEBESExQVFhcYGRobHB0eH64=",
+      "owMgISIjJCUmJwj/PAAoKSorLEc=",
+      "owQtLi8P/1kAMDEyMzQ1Njc4OSM=",
+      "owU6Ozw9PgH/ZAA/CP9uAEBBQuc=",
+      "owZDREVGRyj/fwBISUpLTE1OT04=",
+      "owdQUVJTVFVWV1hZWltcXV5fYMQ=",
+      "owhhYmNkZWZnaGlqa2xtbm8IYKM=",
+      "owkA/5iZmpucnZ6fCGUA/6ChomQ=",
+      "owqjpKWmpzgAAP+oqaqrrK2ur80=",
+      "owuwsbKztLW2t7i5uru8vb6/wGg=",
+      "owzBwsPExcbHyMnKy8zNzs/Q0W4=",
+      "o//S09TV1tfY2drb3N3e3wAAAF0=",
+      "MwUEmBwAAAAAAAAAAAAAAAAAALY="
+    ],
+    "cmd_hex": [
+      "a300010e0c09648b00ff01e0000004020928ff80",
+      "a3012400000102030405060708090a0b0c0d0e89",
+      "a3020f101112131415161718191a1b1c1d1e1fae",
+      "a303202122232425262708ff3c0028292a2b2c47",
+      "a3042d2e2f0fff59003031323334353637383923",
+      "a3053a3b3c3d3e01ff64003f08ff6e00404142e7",
+      "a306434445464728ff7f0048494a4b4c4d4e4f4e",
+      "a307505152535455565758595a5b5c5d5e5f60c4",
+      "a3086162636465666768696a6b6c6d6e6f0860a3",
+      "a30900ff98999a9b9c9d9e9f086500ffa0a1a264",
+      "a30aa3a4a5a6a7380000ffa8a9aaabacadaeafcd",
+      "a30bb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc068",
+      "a30cc1c2c3c4c5c6c7c8c9cacbcccdcecfd0d16e",
+      "a3ffd2d3d4d5d6d7d8d9dadbdcdddedf0000005d",
+      "330504981c0000000000000000000000000000b6"
+    ]
+  },
+  {
+    "name": "Sunset",
+    "cmd_b64": [
+      "owABEQwJAf9/AAEQAQAEAgso//0=",
+      "owEUAAABAgMEBQYHCAkKCwwNDrk=",
+      "owIPEBESExQVFhcYGRobHB0eH64=",
+      "owMgISIjJCUmJwj/HQAoKSorLGY=",
+      "owQtLi8Q/ygAMDEyMzQ1Njc4OU0=",
+      "owU6Ozw9Pj8I/zIAQEFCQ0RFRiU=",
+      "owZHIP9GAEhJSktMTU5PUFFSU3s=",
+      "owdUVVZXWFlaW1xdXl9gYWJjZMA=",
+      "owhlZmcQ/1oAaGlqa2xtbm9wcXs=",
+      "owlyc3R1dncI/2QAeHl6e3x9fkc=",
+      "owp/CP9uAICBgoOEhYaHIP+BABE=",
+      "owuIiYqLjI2Oj5CRkpOUlZaXmDA=",
+      "owyZmpucnZ6foKGio6Slpqcg/+g=",
+      "ow2xAKipqqusra6vsLGys7S1tqg=",
+      "ow63uLm6u7y9vr/AwcLDxMXGxxo=",
+      "ow8Y//QAyMnKy8zNzs/Q0dLT1Gs=",
+      "o//V1tfY2drb3N3e3wAAAAAAAIg=",
+      "MwUEmRwAAAAAAAAAAAAAAAAAALc="
+    ],
+    "cmd_hex": [
+      "a30001110c0901ff7f000110010004020b28fffd",
+      "a3011400000102030405060708090a0b0c0d0eb9",
+      "a3020f101112131415161718191a1b1c1d1e1fae",
+      "a303202122232425262708ff1d0028292a2b2c66",
+      "a3042d2e2f10ff2800303132333435363738394d",
+      "a3053a3b3c3d3e3f08ff32004041424344454625",
+      "a3064720ff460048494a4b4c4d4e4f505152537b",
+      "a3075455565758595a5b5c5d5e5f6061626364c0",
+      "a30865666710ff5a0068696a6b6c6d6e6f70717b",
+      "a30972737475767708ff640078797a7b7c7d7e47",
+      "a30a7f08ff6e00808182838485868720ff810011",
+      "a30b88898a8b8c8d8e8f90919293949596979830",
+      "a30c999a9b9c9d9e9fa0a1a2a3a4a5a6a720ffe8",
+      "a30db100a8a9aaabacadaeafb0b1b2b3b4b5b6a8",
+      "a30eb7b8b9babbbcbdbebfc0c1c2c3c4c5c6c71a",
+      "a30f18fff400c8c9cacbcccdcecfd0d1d2d3d46b",
+      "a3ffd5d6d7d8d9dadbdcdddedf00000000000088",
+      "330504991c0000000000000000000000000000b7"
+    ]
+  },
+  {
+    "name": "Sunset Glow",
+    "cmd_b64": [
+      "owABDQwJMP8AHQOQAAAEAgUm/zE=",
+      "owEeAGhvcHd4eX5/gIGChoeIiT8=",
+      "owKKi4yNjo+QkZKTlJWWl5mamzg=",
+      "owOcnZ6foaIQ/38AaWprbG1uckY=",
+      "owRzdHV6e3x9g4QM/zYAcXaFrzo=",
+      "owWwsbKztLW2tw7/PQCYoKOkpfA=",
+      "owamp6ipqqusra4o/wCAuLm6u1w=",
+      "owe8vb6/wMHCw8TFxsfIycrLzGg=",
+      "owjNzs/Q0dLT1NXW19jZ2tvc3WY=",
+      "owne3w4AWgIAAQb//wATFBscI9k=",
+      "owokLgBaAwABJv87AA4PExQVFhw=",
+      "owsXGhscHR4iIyQlJicsOTpAQY4=",
+      "o/9CQ0VISUpLTE1OUlNUVVYAAAE=",
+      "MwUEmhwAAAAAAAAAAAAAAAAAALQ="
+    ],
+    "cmd_hex": [
+      "a300010d0c0930ff001d0390000004020526ff31",
+      "a3011e00686f707778797e7f808182868788893f",
+      "a3028a8b8c8d8e8f9091929394959697999a9b38",
+      "a3039c9d9e9fa1a210ff7f00696a6b6c6d6e7246",
+      "a3047374757a7b7c7d83840cff3600717685af3a",
+      "a305b0b1b2b3b4b5b6b70eff3d0098a0a3a4a5f0",
+      "a306a6a7a8a9aaabacadae28ff0080b8b9babb5c",
+      "a307bcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcc68",
+      "a308cdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdd66",
+      "a309dedf0e005a02000106ffff0013141b1c23d9",
+      "a30a242e005a03000126ff3b000e0f131415161c",
+      "a30b171a1b1c1d1e2223242526272c393a40418e",
+      "a3ff42434548494a4b4c4d4e5253545556000001",
+      "3305049a1c0000000000000000000000000000b4"
+    ]
+  },
+  {
+    "name": "Rainbow",
+    "cmd_b64": [
+      "MwUEAwAAAAAAAAAAAAAAAAAAADE="
+    ],
+    "cmd_hex": [
+      "3305040300000000000000000000000000000031"
+    ]
+  },
+  {
+    "name": "Snow flake",
+    "cmd_b64": [
+      "owABBQwJHCl7/wISAFgIAgEK/6U=",
+      "owH//xIaNlh1faLP0dcvAFcEAtk=",
+      "owIBJ1x0/7i5uru8vb7AwcLDxCs=",
+      "owPFxsfIycrLzM3Oz9DR0tPU1WU=",
+      "o//W19jZ2tvc3d7fAAAAAAAAAF0=",
+      "MwUEmxwAAAAAAAAAAAAAAAAAALU="
+    ],
+    "cmd_hex": [
+      "a30001050c091c297bff021200580802010affa5",
+      "a301ffff121a3658757da2cfd1d72f00570402d9",
+      "a30201275c74ffb8b9babbbcbdbec0c1c2c3c42b",
+      "a303c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d565",
+      "a3ffd6d7d8d9dadbdcdddedf000000000000005d",
+      "3305049b1c0000000000000000000000000000b5"
+    ]
+  },
+  {
+    "name": "Forest",
+    "cmd_b64": [
+      "owABDwwJZAD/AAMRADIFAgEJ/+M=",
+      "owFtAIKEi5ObnJ2jpXgAWQMBBWs=",
+      "owIMAJYUPmVoaW99jZKVl5qxHE0=",
+      "owMLwgtGTU5VXV5fZmducXJ2d0M=",
+      "owR5en5/gYaJjpCRlpmepgEArjw=",
+      "owUAVi4A/wCYoKGlp6ipq6ytrr8=",
+      "owavsLO0tri6u7/AwcPEx8jJygc=",
+      "owfMzs/Q0dLT1NXW19jZ2tvc3Wg=",
+      "owjeCQCMALW5vb7CxcbN32QAWhI=",
+      "owkDAQFc//8AAQIDBAcICQoLDvg=",
+      "owoPEBESFRYXGBkcHR4fICEkJaA=",
+      "owsmJyssLS4zNDU6OzxBQkNESO4=",
+      "owxJSktOT1BRUlVWV1hZXF1eX+A=",
+      "ow1gY2RlZmdqa2xtbnJzdHV5esA=",
+      "o/97fIGCg4iJipCRkpiZoAAAAGI=",
+      "MwUEnBwAAAAAAAAAAAAAAAAAALI="
+    ],
+    "cmd_hex": [
+      "a300010f0c096400ff000311003205020109ffe3",
+      "a3016d0082848b939b9c9da3a57800590301056b",
+      "a3020c0096143e6568696f7d8d9295979ab11c4d",
+      "a3030bc20b464d4e555d5e5f66676e7172767743",
+      "a304797a7e7f8186898e909196999ea60100ae3c",
+      "a30500562e00ff0098a0a1a5a7a8a9abacadaebf",
+      "a306afb0b3b4b6b8babbbfc0c1c3c4c7c8c9ca07",
+      "a307cccecfd0d1d2d3d4d5d6d7d8d9dadbdcdd68",
+      "a308de09008c00b5b9bdbec2c5c6cddf64005a12",
+      "a3090301015cffff00010203040708090a0b0ef8",
+      "a30a0f10111215161718191c1d1e1f20212425a0",
+      "a30b26272b2c2d2e3334353a3b3c4142434448ee",
+      "a30c494a4b4e4f50515255565758595c5d5e5fe0",
+      "a30d6063646566676a6b6c6d6e72737475797ac0",
+      "a3ff7b7c81828388898a9091929899a000000062",
+      "3305049c1c0000000000000000000000000000b2"
+    ]
+  },
+  {
+    "name": "Waves",
+    "cmd_b64": [
+      "owABCgwJOP/PAAGWAF8EAgUXAHk=",
+      "owH//1RbXF1iZGVmaWprbG5vcNw=",
+      "owJxdHV3eIuSkxEAwP9yc3Z5eg4=",
+      "owN7fH1+f4CBhYaHjo8WADL/ggY=",
+      "owSDhImKjI2QkZSVlpeYmZqbnD8=",
+      "owWdnp+gAQCT/4g/AAD/oaKjpLs=",
+      "owalpqeoqaqrrK2ur7CxsrO0tQA=",
+      "owe2t7i5uru8vb6/wMHCw8TFxmI=",
+      "owjHyMnKy8zNzs/Q0dLT1NXW12w=",
+      "o//Y2drb3N3e3wAAAAAAAAAAAFw=",
+      "MwUEnRwAAAAAAAAAAAAAAAAAALM="
+    ],
+    "cmd_hex": [
+      "a300010a0c0938ffcf000196005f040205170079",
+      "a301ffff545b5c5d62646566696a6b6c6e6f70dc",
+      "a30271747577788b92931100c0ff727376797a0e",
+      "a3037b7c7d7e7f80818586878e8f160032ff8206",
+      "a3048384898a8c8d90919495969798999a9b9c3f",
+      "a3059d9e9fa0010093ff883f0000ffa1a2a3a4bb",
+      "a306a5a6a7a8a9aaabacadaeafb0b1b2b3b4b500",
+      "a307b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c662",
+      "a308c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d76c",
+      "a3ffd8d9dadbdcdddedf0000000000000000005c",
+      "3305049d1c0000000000000000000000000000b3"
+    ]
+  },
+  {
+    "name": "Fire",
+    "cmd_b64": [
+      "MwUEBQAAAAAAAAAAAAAAAAAAADc="
+    ],
+    "cmd_hex": [
+      "3305040500000000000000000000000000000037"
+    ]
+  },
+  {
+    "name": "Falling Petals",
+    "cmd_b64": [
+      "owABBwwJZACWFAFgAFcIAgUT/5M=",
+      "owEAbgABAgMEBQgLDA0QExQVGNU=",
+      "owIZGhscAf8AXAkZ/wAAChESRKU=",
+      "owNFRktMTU5PUlNWV1pbXl9iY+k=",
+      "owRkZWZnBv//AFRVXF2qqxX/fzU=",
+      "owUAmZqbnJ2goaKjpKWoqaytsI4=",
+      "o/+xsrO0tQAAAAAAAAAAAAAAAO0=",
+      "MwUEnhwAAAAAAAAAAAAAAAAAALA="
+    ],
+    "cmd_hex": [
+      "a30001070c09640096140160005708020513ff93",
+      "a301006e000102030405080b0c0d1013141518d5",
+      "a302191a1b1c01ff005c0919ff00000a111244a5",
+      "a30345464b4c4d4e4f525356575a5b5e5f6263e9",
+      "a3046465666706ffff0054555c5daaab15ff7f35",
+      "a30500999a9b9c9da0a1a2a3a4a5a8a9acadb08e",
+      "a3ffb1b2b3b4b5000000000000000000000000ed",
+      "3305049e1c0000000000000000000000000000b0"
+    ]
+  },
+  {
+    "name": "Feather",
+    "cmd_b64": [
+      "owABBAwJIwD//wIcAFIIAgEU/yw=",
+      "owH//w4WHR4kJSssSVFSWltcvBQ=",
+      "owLEy9LZ2hsAUAcCARP///8RGdQ=",
+      "o/8iKyxPV15fZWZrbG3AydLT1NU=",
+      "MwUEnxwAAAAAAAAAAAAAAAAAALE="
+    ],
+    "cmd_hex": [
+      "a30001040c092300ffff021c005208020114ff2c",
+      "a301ffff0e161d1e24252b2c4951525a5b5cbc14",
+      "a302c4cbd2d9da1b005007020113ffffff1119d4",
+      "a3ff222b2c4f575e5f65666b6c6dc0c9d2d3d4d5",
+      "3305049f1c0000000000000000000000000000b1"
+    ]
+  },
+  {
+    "name": "Firefly",
+    "cmd_b64": [
+      "owABAwwJAVYA/wILAF0GAgED/6E=",
+      "owH/ABRBqwsAWwUCAQP//wAsiFI=",
+      "o//fAAAAAAAAAAAAAAAAAAAAAIM=",
+      "MwUEoBwAAAAAAAAAAAAAAAAAAI4="
+    ],
+    "cmd_hex": [
+      "a30001030c09015600ff020b005d06020103ffa1",
+      "a301ff001441ab0b005b05020103ffff002c8852",
+      "a3ffdf0000000000000000000000000000000083",
+      "330504a01c00000000000000000000000000008e"
+    ]
+  },
+  {
+    "name": "Ocean",
+    "cmd_b64": [
+      "owABCQwJVQAA/wMYAFEGAQEQAFg=",
+      "owH/AAsOFBUcHSQlKy5oanF5gNY=",
+      "owKCTgBYAwIDFP9/ACQrLC0yM6w=",
+      "owM0NTY3Ojs8PT4/Q0RFTAn//6Y=",
+      "owQAdn1+f4apsLGyIQD/AKKjqkQ=",
+      "owWrs7S5ury9vr/AwcfIycvMzQQ=",
+      "owbOz9DR0tPU1dbY2drbFABCBiM=",
+      "owcAAgaLAP8NFXV91t4C/wAAMQA=",
+      "o/+xAAAAAAAAAAAAAAAAAAAAAO0=",
+      "MwUEohwAAAAAAAAAAAAAAAAAAIw="
+    ],
+    "cmd_hex": [
+      "a30001090c09550000ff03180051060101100058",
+      "a301ff000b0e14151c1d24252b2e686a717980d6",
+      "a302824e005803020314ff7f00242b2c2d3233ac",
+      "a303343536373a3b3c3d3e3f4344454c09ffffa6",
+      "a30400767d7e7f86a9b0b1b22100ff00a2a3aa44",
+      "a305abb3b4b9babcbdbebfc0c1c7c8c9cbcccd04",
+      "a306cecfd0d1d2d3d4d5d6d8d9dadb1400420623",
+      "a3070002068b00ff0d15757dd6de02ff00003100",
+      "a3ffb100000000000000000000000000000000ed",
+      "330504a21c00000000000000000000000000008c"
+    ]
+  },
+  {
+    "name": "Moonlight",
+    "cmd_b64": [
+      "owABCwwJZAAA/wKQAF0BAgJY/14=",
+      "owH/AAABAgMEBQYHCAkKCwwNDlI=",
+      "owIPEBESExQVFhcYGRobHB0eH64=",
+      "owMgISIjJCUmJygpKissLS4vMJA=",
+      "owQxMjM0NTY3ODk6Ozw9Pj9AQZY=",
+      "owVCQ0RFRkdISUpLTE1OT1BRUvQ=",
+      "owZTVFVWVyz/5DtYWVpbXF1eX/o=",
+      "owdgYWJjZGVmZ2lqa2xtbnJzdNY=",
+      "owh1ysvMzdHS09TV1tjZ2tvc3dg=",
+      "owne3w8AWgYBAQf///8SPkZxjpU=",
+      "o/+y1gAAAAAAAAAAAAAAAAAAADg=",
+      "MwUEoxwAAAAAAAAAAAAAAAAAAI0="
+    ],
+    "cmd_hex": [
+      "a300010b0c09640000ff0290005d01020258ff5e",
+      "a301ff00000102030405060708090a0b0c0d0e52",
+      "a3020f101112131415161718191a1b1c1d1e1fae",
+      "a303202122232425262728292a2b2c2d2e2f3090",
+      "a3043132333435363738393a3b3c3d3e3f404196",
+      "a30542434445464748494a4b4c4d4e4f505152f4",
+      "a30653545556572cffe43b58595a5b5c5d5e5ffa",
+      "a3076061626364656667696a6b6c6d6e727374d6",
+      "a30875cacbcccdd1d2d3d4d5d6d8d9dadbdcddd8",
+      "a309dedf0f005a06010107ffffff123e46718e95",
+      "a3ffb2d600000000000000000000000000000038",
+      "330504a31c00000000000000000000000000008d"
+    ]
+  },
+  {
+    "name": "Water Drop",
+    "cmd_b64": [
+      "MwUEBgAAAAAAAAAAAAAAAAAAADQ="
+    ],
+    "cmd_hex": [
+      "3305040600000000000000000000000000000034"
+    ]
+  },
+  {
+    "name": "Waterfall",
+    "cmd_b64": [
+      "owABBgwJPgD/AAFXAGQCAgQTAEU=",
+      "owHV/wIFCQoNXmVmbXV5gcLK0OQ=",
+      "owLS1treIwCY/xIVGiotMjU6Pf8=",
+      "owM+Rk5WWmJjaXGGiY6PkJefp7I=",
+      "owSoqa+xtrm+xs4IAMP/HSUuQmE=",
+      "o/9KUpigBRzq/yFbfqG1AAAAAGA=",
+      "MwUEpBwAAAAAAAAAAAAAAAAAAIo="
+    ],
+    "cmd_hex": [
+      "a30001060c093e00ff0001570064020204130045",
+      "a301d5ff0205090a0d5e65666d757981c2cad0e4",
+      "a302d2d6dade230098ff12151a2a2d32353a3dff",
+      "a3033e464e565a6263697186898e8f90979fa7b2",
+      "a304a8a9afb1b6b9bec6ce0800c3ff1d252e4261",
+      "a3ff4a5298a0051ceaff215b7ea1b50000000060",
+      "330504a41c00000000000000000000000000008a"
+    ]
+  },
+  {
+    "name": "Water Lily",
+    "cmd_b64": [
+      "owABBgwJKgCK/wJJAFkEAgQSAPw=",
+      "owH/AHWdoaWttLW5u7zBw8jL03E=",
+      "owLX2d0V/wCqe3+DhIWGh4yNjjo=",
+      "owOVoKKoqaqxwMbHzwH/O4N9DRU=",
+      "owQAjADJytDR0tTV1tjb3N7fDvw=",
+      "o/8AVQYBAQb//wAJFyxQXoMAALY=",
+      "MwUExBwAAAAAAAAAAAAAAAAAAOo="
+    ],
+    "cmd_hex": [
+      "a30001060c092a008aff024900590402041200fc",
+      "a301ff00759da1a5adb4b5b9bbbcc1c3c8cbd371",
+      "a302d7d9dd15ff00aa7b7f83848586878c8d8e3a",
+      "a30395a0a2a8a9aab1c0c6c7cf01ff3b837d0d15",
+      "a304008c00c9cad0d1d2d4d5d6d8dbdcdedf0efc",
+      "a3ff005506010106ffff0009172c505e830000b6",
+      "330504c41c0000000000000000000000000000ea"
+    ]
+  },
+  {
+    "name": "Earth",
+    "cmd_b64": [
+      "owABCgwJQQAA/wGZAFwDAgOCAFc=",
+      "owH/ABESGhsfIiMkJygpKi0uL0U=",
+      "owIwMTIzNDU2Nzg5Ojw9P0BBQuc=",
+      "owNDREVGR0hKS0xNTlFSU1RVVuI=",
+      "owRbXF1eYmNkZWhpamtscHFyc88=",
+      "owV0dnh5en6AgYaHiImNjo+QkS0=",
+      "owaVlpeYmZqbnJ2en6ChoqOkpTA=",
+      "owenqKqrrK2ur7CxsrO0tba3uBI=",
+      "owi5u7y9vr/BwsbIyc7PBv//AGo=",
+      "o/8rPkmmqccB/38ALAAAAAAAAGU=",
+      "MwUEpRwAAAAAAAAAAAAAAAAAAIs="
+    ],
+    "cmd_hex": [
+      "a300010a0c09410000ff0199005c030203820057",
+      "a301ff0011121a1b1f2223242728292a2d2e2f45",
+      "a302303132333435363738393a3c3d3f404142e7",
+      "a3034344454647484a4b4c4d4e515253545556e2",
+      "a3045b5c5d5e6263646568696a6b6c70717273cf",
+      "a305747678797a7e8081868788898d8e8f90912d",
+      "a30695969798999a9b9c9d9e9fa0a1a2a3a4a530",
+      "a307a7a8aaabacadaeafb0b1b2b3b4b5b6b7b812",
+      "a308b9bbbcbdbebfc1c2c6c8c9cecf06ffff006a",
+      "a3ff2b3e49a6a9c701ff7f002c00000000000065",
+      "330504a51c00000000000000000000000000008b"
+    ]
+  },
+  {
+    "name": "Fish tank",
+    "cmd_b64": [
+      "owABBwwJKAAA/wJIADIDAgFAAE8=",
+      "owH/AAABAgMEBQYHCAkKCwwNDlI=",
+      "owIPEBESExQVFhcYGRobHB0eH64=",
+      "owPAwcLDxMXGx8jJysvMzc7P0HA=",
+      "owTR0tPU1dbX2Nna29zd3t8cAGs=",
+      "owVaAwIDBf8AAD0+eb2+BP//AHk=",
+      "o/9ZWpWWA50A/26oqQAAAAAAAFI=",
+      "MwUEphwAAAAAAAAAAAAAAAAAAIg="
+    ],
+    "cmd_hex": [
+      "a30001070c09280000ff0248003203020140004f",
+      "a301ff00000102030405060708090a0b0c0d0e52",
+      "a3020f101112131415161718191a1b1c1d1e1fae",
+      "a303c0c1c2c3c4c5c6c7c8c9cacbcccdcecfd070",
+      "a304d1d2d3d4d5d6d7d8d9dadbdcdddedf1c006b",
+      "a3055a03020305ff00003d3e79bdbe04ffff0079",
+      "a3ff595a9596039d00ff6ea8a900000000000052",
+      "330504a61c000000000000000000000000000088"
+    ]
+  },
+  {
+    "name": "Kitchen Aromas",
+    "cmd_b64": [
+      "owABBgwJCkoA/wFLAF8BAAI2/sA=",
+      "owH/8QQLDA0OERITGSwtLjQ1Nr0=",
+      "owI6O0FCSElVVl5fZmdpcHF1ki4=",
+      "owOaoKKpqrGytrm6vsHCxcbJyjA=",
+      "owTN0NHV2An///9sbW5zdHt8fYI=",
+      "o/9+AAAAAAAAAAAAAAAAAAAAACI=",
+      "MwUEpxwAAAAAAAAAAAAAAAAAAIk="
+    ],
+    "cmd_hex": [
+      "a30001060c090a4a00ff014b005f01000236fec0",
+      "a301fff1040b0c0d0e111213192c2d2e343536bd",
+      "a3023a3b4142484955565e5f666769707175922e",
+      "a3039aa0a2a9aab1b2b6b9babec1c2c5c6c9ca30",
+      "a304cdd0d1d5d809ffffff6c6d6e73747b7c7d82",
+      "a3ff7e0000000000000000000000000000000022",
+      "330504a71c000000000000000000000000000089"
+    ]
+  },
+  {
+    "name": "Dancing",
+    "cmd_b64": [
+      "owABBwwJFeth3AI3AFwHAgEv/14=",
+      "owEAAAcNDg8UFRscIiMpKjE4QOQ=",
+      "owJIUFFZWmJjZGxtbnZ3f4ePlwA=",
+      "owOepaattLW7vMLDycrR2NkzAHc=",
+      "owRcCAIBKwAA/wABAgoLDBQVHTY=",
+      "owUlJi42Nz9GTU5VXGNqcXh5gAA=",
+      "o/+BiJCYmaGqsrO7vMTFzc7W38I=",
+      "MwUEqBwAAAAAAAAAAAAAAAAAAIY="
+    ],
+    "cmd_hex": [
+      "a30001070c0915eb61dc0237005c0702012fff5e",
+      "a3010000070d0e0f14151b1c2223292a313840e4",
+      "a302485051595a6263646c6d6e76777f878f9700",
+      "a3039ea5a6adb4b5bbbcc2c3c9cad1d8d9330077",
+      "a3045c0802012b0000ff0001020a0b0c14151d36",
+      "a30525262e36373f464d4e555c636a7178798000",
+      "a3ff8188909899a1aab2b3bbbcc4c5cdced6dfc2",
+      "330504a81c000000000000000000000000000086"
+    ]
+  },
+  {
+    "name": "Goldfish",
+    "cmd_b64": [
+      "owABCQwJIUEA/wJJAFYEAgFBAGo=",
+      "owH/AJCRmJman6ChoqOlpqeoqv4=",
+      "owKrrK2ur7CxsrS1tri5uru8vgw=",
+      "owO/wMHCw8TFxsfIycrLzM3Ozx8=",
+      "owTQ0dLT1NXW19jZ2tvc3d7fO5w=",
+      "owUAWAMCAxj/fwAsLTIzNDU3OWs=",
+      "owY6PT4/QUJFRkdKS0xNT1RVBK4=",
+      "owf/AAA7PENED/+3AJuio6SlqS4=",
+      "o/+qq6ytsrO0tbsAAAAAAAAAAOc=",
+      "MwUEqRwAAAAAAAAAAAAAAAAAAIc="
+    ],
+    "cmd_hex": [
+      "a30001090c09214100ff0249005604020141006a",
+      "a301ff00909198999a9fa0a1a2a3a5a6a7a8aafe",
+      "a302abacadaeafb0b1b2b4b5b6b8b9babbbcbe0c",
+      "a303bfc0c1c2c3c4c5c6c7c8c9cacbcccdcecf1f",
+      "a304d0d1d2d3d4d5d6d7d8d9dadbdcdddedf3b9c",
+      "a305005803020318ff7f002c2d3233343537396b",
+      "a3063a3d3e3f41424546474a4b4c4d4f545504ae",
+      "a307ff00003b3c43440fffb7009ba2a3a4a5a92e",
+      "a3ffaaabacadb2b3b4b5bb0000000000000000e7",
+      "330504a91c000000000000000000000000000087"
+    ]
+  },
+  {
+    "name": "Field",
+    "cmd_b64": [
+      "owABCAwJJQB1wgM1AFkEAgEtAHg=",
+      "owH/AKepqq6vsLO0tba3uLm6u/s=",
+      "owK8vb/AwcPExcbHyMrLzc/Q0Rc=",
+      "owPS09TV1tfY2drb3N3fJwBLAxA=",
+      "owQAAhf/fwB1dnx9fn+Ag4WGh7Y=",
+      "owWIi4yNjo+UnKSlpqcE/wAAlsA=",
+      "owaXnp8ZAFsDAgER////ERITGJc=",
+      "o/8aGxw9REVGWFlaYGJjAAAAAAE=",
+      "MwUEqhwAAAAAAAAAAAAAAAAAAIQ="
+    ],
+    "cmd_hex": [
+      "a30001080c09250075c2033500590402012d0078",
+      "a301ff00a7a9aaaeafb0b3b4b5b6b7b8b9babbfb",
+      "a302bcbdbfc0c1c3c4c5c6c7c8cacbcdcfd0d117",
+      "a303d2d3d4d5d6d7d8d9dadbdcdddf27004b0310",
+      "a304000217ff7f0075767c7d7e7f8083858687b6",
+      "a305888b8c8d8e8f949ca4a5a6a704ff000096c0",
+      "a306979e9f19005b03020111ffffff1112131897",
+      "a3ff1a1b1c3d44454658595a6062630000000001",
+      "330504aa1c000000000000000000000000000084"
+    ]
+  },
+  {
+    "name": "Strawberry",
+    "cmd_b64": [
+      "owABBwwJJ/8AAAJYAF0EAgFQACg=",
+      "owH/AAABAgMEBQYHCAkKCwwNDlI=",
+      "owIPEBESExQVFhcYGRobHB0eH64=",
+      "owMgISIjJCYnKSorLi8xMjY3OZc=",
+      "owQ6P0G4v8DBxsfIycrNzs/Q0eI=",
+      "owXS09TV1tfY2drb3N3e3w0AWvA=",
+      "o/8EAAEF////RGCLucYAAAAAAHM=",
+      "MwUEqxwAAAAAAAAAAAAAAAAAAIU="
+    ],
+    "cmd_hex": [
+      "a30001070c0927ff00000258005d040201500028",
+      "a301ff00000102030405060708090a0b0c0d0e52",
+      "a3020f101112131415161718191a1b1c1d1e1fae",
+      "a30320212223242627292a2b2e2f313236373997",
+      "a3043a3f41b8bfc0c1c6c7c8c9cacdcecfd0d1e2",
+      "a305d2d3d4d5d6d7d8d9dadbdcdddedf0d005af0",
+      "a3ff04000105ffffff44608bb9c6000000000073",
+      "330504ab1c000000000000000000000000000085"
+    ]
+  },
+  {
+    "name": "Geometry",
+    "cmd_b64": [
+      "owABCwwJHIsA/wGsAF8EAgUe/9Q=",
+      "owF/AAABAgMEBQYHCAkKCwwTG9k=",
+      "owIjJCssLS4vMDEyMzQ1NjcIiw4=",
+      "owMA/w0ODxQcKCkqMAD/ABAREqw=",
+      "owQVFhcYGRodHh8gISIlJidjZLQ=",
+      "owVrbHJzdHV6e3x9sLG2t7i5uho=",
+      "owa+v8DBwsbHyMnOzyT/AABLTLo=",
+      "owdSU1RaXF1hYmVmaW5wcXZ4ftw=",
+      "owh/gIGCg4SFhoeIiYqLjI2Oj9Q=",
+      "owkaAAD/n6ChoqanqKqrrK20tds=",
+      "o/+8xMXLzdHS1dbY2d7fAAAAAOc=",
+      "MwUErBwAAAAAAAAAAAAAAAAAAII="
+    ],
+    "cmd_hex": [
+      "a300010b0c091c8b00ff01ac005f0402051effd4",
+      "a3017f00000102030405060708090a0b0c131bd9",
+      "a30223242b2c2d2e2f3031323334353637088b0e",
+      "a30300ff0d0e0f141c28292a3000ff00101112ac",
+      "a30415161718191a1d1e1f2021222526276364b4",
+      "a3056b6c727374757a7b7c7db0b1b6b7b8b9ba1a",
+      "a306bebfc0c1c2c6c7c8c9cecf24ff00004b4cba",
+      "a3075253545a5c5d61626566696e707176787edc",
+      "a3087f808182838485868788898a8b8c8d8e8fd4",
+      "a3091a0000ff9fa0a1a2a6a7a8aaabacadb4b5db",
+      "a3ffbcc4c5cbcdd1d2d5d6d8d9dedf00000000e7",
+      "330504ac1c000000000000000000000000000082"
+    ]
+  },
+  {
+    "name": "Mountain Stream",
+    "cmd_b64": [
+      "owABCAwJCQD//wNJAEoEAgID/14=",
+      "owH/AHJzpzoA/wB6e4KDiouRkjw=",
+      "owKTlJmam5yhoqOkqaytr7GysxE=",
+      "owO0tba3uLm6u7y9v8DCw8XGxxs=",
+      "owTIycvMzc7P0NHT1NbY2dvfFKw=",
+      "owUAWAYAAQz///8RExotLzZAQiQ=",
+      "owZJdXd+DgBRBAACAf8AABYB/98=",
+      "o/9/AB4AAAAAAAAAAAAAAAAAAD0=",
+      "MwUErRwAAAAAAAAAAAAAAAAAAIM="
+    ],
+    "cmd_hex": [
+      "a30001080c090900ffff0349004a04020203ff5e",
+      "a301ff007273a73a00ff007a7b82838a8b91923c",
+      "a3029394999a9b9ca1a2a3a4a9acadafb1b2b311",
+      "a303b4b5b6b7b8b9babbbcbdbfc0c2c3c5c6c71b",
+      "a304c8c9cbcccdcecfd0d1d3d4d6d8d9dbdf14ac",
+      "a30500580600010cffffff11131a2d2f36404224",
+      "a3064975777e0e005104000201ff00001601ffdf",
+      "a3ff7f001e00000000000000000000000000003d",
+      "330504ad1c000000000000000000000000000083"
+    ]
+  },
+  {
+    "name": "Smoke Rings",
+    "cmd_b64": [
+      "owABCAwJMAAA/wI4AF8GAgIU/+g=",
+      "owEAAAkKCwwNDhARFxgfICcoLrU=",
+      "owIxMjM0NRiLAP+am5ydnp+hov4=",
+      "owOnqKmvsLe4ub6/wcLDxMXGOpM=",
+      "owQAUAYCAhkAAP8TFBUWGRobHRY=",
+      "owUeICEnKC8wNzg5PD0+QUJDRKQ=",
+      "owYVAP8AkZKTlJWWmJmen6CnqOc=",
+      "o/+vsLGys7S1tgAAAAAAAAAAAEQ=",
+      "MwUErhwAAAAAAAAAAAAAAAAAAIA="
+    ],
+    "cmd_hex": [
+      "a30001080c09300000ff0238005f06020214ffe8",
+      "a3010000090a0b0c0d0e101117181f2027282eb5",
+      "a3023132333435188b00ff9a9b9c9d9e9fa1a2fe",
+      "a303a7a8a9afb0b7b8b9bebfc1c2c3c4c5c63a93",
+      "a3040050060202190000ff13141516191a1b1d16",
+      "a3051e202127282f303738393c3d3e41424344a4",
+      "a3061500ff0091929394959698999e9fa0a7a8e7",
+      "a3ffafb0b1b2b3b4b5b600000000000000000044",
+      "330504ae1c000000000000000000000000000080"
+    ]
+  },
+  {
+    "name": "Cherry Blossom Festival",
+    "cmd_b64": [
+      "owABBQwJZPSXjgE7AFgIAgIW/6g=",
+      "owFcWwABAggQEk1OT1deX6GjqR0=",
+      "owKqq9XX3d7fGdo0TQkKERMUVYQ=",
+      "owNWXF1lkJGYmZqbor6/xcbNzjA=",
+      "o//P1gAAAAAAAAAAAAAAAAAAAEU=",
+      "MwUEoRwAAAAAAAAAAAAAAAAAAI8="
+    ],
+    "cmd_hex": [
+      "a30001050c0964f4978e013b005808020216ffa8",
+      "a3015c5b0001020810124d4e4f575e5fa1a3a91d",
+      "a302aaabd5d7dddedf19da344d090a1113145584",
+      "a303565c5d65909198999a9ba2bebfc5c6cdce30",
+      "a3ffcfd600000000000000000000000000000045",
+      "330504a11c00000000000000000000000000008f"
+    ]
+  },
+  {
+    "name": "Halloween",
+    "cmd_b64": [
+      "owABBgwJAgAA/wI2AFAFAgEu/+8=",
+      "owFZABwiIyQlJikqLC4vMTc5Ouo=",
+      "owI+P0JDREVGeoGCg4iKjJCUmQ8=",
+      "owOam77ExcbHzM7U3N3e3xQAWoc=",
+      "owQFAgEM/wAAFRceUVNajY+Ww0E=",
+      "o//FzAAAAAAAAAAAAAAAAAAAAFU=",
+      "MwUErxwAAAAAAAAAAAAAAAAAAIE="
+    ],
+    "cmd_hex": [
+      "a30001060c09020000ff023600500502012effef",
+      "a30159001c2223242526292a2c2e2f3137393aea",
+      "a3023e3f42434445467a818283888a8c9094990f",
+      "a3039a9bbec4c5c6c7ccced4dcdddedf14005a87",
+      "a3040502010cff000015171e51535a8d8f96c341",
+      "a3ffc5cc00000000000000000000000000000055",
+      "330504af1c000000000000000000000000000081"
+    ]
+  },
+  {
+    "name": "Christmas",
+    "cmd_b64": [
+      "owABCgwJIP8AAAN3AF4EAgMk/4Y=",
+      "owH/AERVXWJsbXN0enuChYmNlOM=",
+      "owKam6Klqa2wtba3ur3DxMrO0XI=",
+      "owPY2drfNAD/AExUW1xjZGt1fBU=",
+      "owR9hIaKi4ySk52eoaSmq6yusu8=",
+      "owWztLm7v8DBwsXGx8jJzM3P0AQ=",
+      "owbT1NXW19vc3d4P//elZYOOlS0=",
+      "oweWnKOqr7G4vL7L0hAAWwACAVI=",
+      "owgI//8ADxI1SG6LptEMAFEGAgg=",
+      "o/8BBP//AAcxdbkAAAAAAAAAAKM=",
+      "MwUEsBwAAAAAAAAAAAAAAAAAAJ4="
+    ],
+    "cmd_hex": [
+      "a300010a0c0920ff00000377005e04020324ff86",
+      "a301ff0044555d626c6d73747a7b8285898d94e3",
+      "a3029a9ba2a5a9adb0b5b6b7babdc3c4caced172",
+      "a303d8d9dadf3400ff004c545b5c63646b757c15",
+      "a3047d84868a8b8c92939d9ea1a4a6abacaeb2ef",
+      "a305b3b4b9bbbfc0c1c2c5c6c7c8c9cccdcfd004",
+      "a306d3d4d5d6d7dbdcddde0ffff7a565838e952d",
+      "a307969ca3aaafb1b8bcbecbd210005b00020152",
+      "a30808ffff000f1235486e8ba6d10c0051060208",
+      "a3ff0104ffff00073175b90000000000000000a3",
+      "330504b01c00000000000000000000000000009e"
+    ]
+  },
+  {
+    "name": "Valentine's Day",
+    "cmd_b64": [
+      "owABEQwJZP8AWQLGAFoEAgQ4/y8=",
+      "owEAAAABAgMEBQYHCAkKCwwNDq0=",
+      "owIPEBESExQVFhcYGRobHB0eH64=",
+      "owMgISIjJCUmJygpKissLS4vMJA=",
+      "owQxMjM0NTY3Cv90eTo7Q0RMTWg=",
+      "owVVVl5fOPEA/3BxcnN0dXZ3eOo=",
+      "owZ5ent8fX5/gIGCg4SFhoeIidw=",
+      "oweKi4yNjo+QkZKTlJWWl5iZmj4=",
+      "owibnJ2en6ChoqOkpaanOB0A/+o=",
+      "owmoqaqrrK2ur7CxsrO0tba3uBI=",
+      "owq5uru8vb6/wMHCw8TFxsfIyRA=",
+      "owvKy8zNzs/Q0dLT1NXW19jZ2nI=",
+      "owzb3N3e3z4AWgMCATb/AAAKC9g=",
+      "ow0MDRESFRgZHR4gJigtLjU9RNo=",
+      "ow5LTFJTWFlaYHp7fH1+goaJiuk=",
+      "ow+Oj5GSl5maoqOrs7S8vcXGx1I=",
+      "o//PAAAAAAAAAAAAAAAAAAAAAJM=",
+      "MwUEsRwAAAAAAAAAAAAAAAAAAJ8="
+    ],
+    "cmd_hex": [
+      "a30001110c0964ff005902c6005a04020438ff2f",
+      "a3010000000102030405060708090a0b0c0d0ead",
+      "a3020f101112131415161718191a1b1c1d1e1fae",
+      "a303202122232425262728292a2b2c2d2e2f3090",
+      "a304313233343536370aff74793a3b43444c4d68",
+      "a30555565e5f38f100ff707172737475767778ea",
+      "a306797a7b7c7d7e7f80818283848586878889dc",
+      "a3078a8b8c8d8e8f909192939495969798999a3e",
+      "a3089b9c9d9e9fa0a1a2a3a4a5a6a7381d00ffea",
+      "a309a8a9aaabacadaeafb0b1b2b3b4b5b6b7b812",
+      "a30ab9babbbcbdbebfc0c1c2c3c4c5c6c7c8c910",
+      "a30bcacbcccdcecfd0d1d2d3d4d5d6d7d8d9da72",
+      "a30cdbdcdddedf3e005a03020136ff00000a0bd8",
+      "a30d0c0d11121518191d1e2026282d2e353d44da",
+      "a30e4b4c525358595a607a7b7c7d7e8286898ae9",
+      "a30f8e8f919297999aa2a3abb3b4bcbdc5c6c752",
+      "a3ffcf0000000000000000000000000000000093",
+      "330504b11c00000000000000000000000000009f"
+    ]
+  },
+  {
+    "name": "Easter",
+    "cmd_b64": [
+      "owABCQwJUQD/AAGMAGAEAgYQAP0=",
+      "owH//wIDCQoLDBESExQZGhscIoU=",
+      "owIjFP//ACUmLC0uLzQ1Njc8PZQ=",
+      "owM+P0RFRkdNThQAAP9ISVBRUhs=",
+      "owRXWFlaX2BhYmdoaWpvcHEU/x4=",
+      "owVCUXN0ent8fYKDhIWKi4yNkiA=",
+      "owaTlJWbnBT/fwCen6ClpqeoraQ=",
+      "oweur7C1tre4vb6/xscQiwD/uno=",
+      "o/+7wcLDxMnKy8zR0tPU2tsAAOI=",
+      "MwUEshwAAAAAAAAAAAAAAAAAAJw="
+    ],
+    "cmd_hex": [
+      "a30001090c095100ff00018c00600402061000fd",
+      "a301ffff0203090a0b0c11121314191a1b1c2285",
+      "a3022314ffff0025262c2d2e2f343536373c3d94",
+      "a3033e3f444546474d4e140000ff48495051521b",
+      "a3045758595a5f6061626768696a6f707114ff1e",
+      "a305425173747a7b7c7d828384858a8b8c8d9220",
+      "a3069394959b9c14ff7f009e9fa0a5a6a7a8ada4",
+      "a307aeafb0b5b6b7b8bdbebfc6c7108b00ffba7a",
+      "a3ffbbc1c2c3c4c9cacbccd1d2d3d4dadb0000e2",
+      "330504b21c00000000000000000000000000009c"
+    ]
+  },
+  {
+    "name": "Father's Day",
+    "cmd_b64": [
+      "owABDQwJZAAA/wHMAAAGAgYQAO4=",
+      "owEQ/zAxMjM0NTY3ODk6Ozw9PnI=",
+      "owI/IABM/0BBQkNERUZHSElKSw0=",
+      "owNMTU5PUFFSU1RVVldYWVpbXPw=",
+      "owRdXl8QAPX/YGFiY2RlZmdoaeA=",
+      "owVqa2xtbm8uAP9tcHFyc3R1dmw=",
+      "owZ3eHl6e3x9gIGCg4SFhoeIidI=",
+      "oweKi4yNjo+QkZKTlJWWl5iZmj4=",
+      "owibnJ2enwIA/4F+f0AA/wCgofM=",
+      "owmio6SlpqeoqaqrrK2ur7Cxshg=",
+      "owqztLW2t7i5uru8vb6/wMHCwxo=",
+      "owvExcbHyMnKy8zNzs/Q0dLT1Hw=",
+      "o//V1tfY2drb3N3e3wAAAAAAAIg=",
+      "MwUEsxwAAAAAAAAAAAAAAAAAAJ0="
+    ],
+    "cmd_hex": [
+      "a300010d0c09640000ff01cc00000602061000ee",
+      "a30110ff303132333435363738393a3b3c3d3e72",
+      "a3023f20004cff404142434445464748494a4b0d",
+      "a3034c4d4e4f505152535455565758595a5b5cfc",
+      "a3045d5e5f1000f5ff60616263646566676869e0",
+      "a3056a6b6c6d6e6f2e00ff6d707172737475766c",
+      "a3067778797a7b7c7d80818283848586878889d2",
+      "a3078a8b8c8d8e8f909192939495969798999a3e",
+      "a3089b9c9d9e9f0200ff817e7f4000ff00a0a1f3",
+      "a309a2a3a4a5a6a7a8a9aaabacadaeafb0b1b218",
+      "a30ab3b4b5b6b7b8b9babbbcbdbebfc0c1c2c31a",
+      "a30bc4c5c6c7c8c9cacbcccdcecfd0d1d2d3d47c",
+      "a3ffd5d6d7d8d9dadbdcdddedf00000000000088",
+      "330504b31c00000000000000000000000000009d"
+    ]
+  },
+  {
+    "name": "Mother's Day",
+    "cmd_b64": [
+      "owABEAwJAf8AAAEEAQAGAggg/54=",
+      "owEAowABAgMEBQYHCAkKCwwNDg4=",
+      "owIPEBESExQVFhcYGRobHB0eH64=",
+      "owMQ/wBkICEiIyQlJicoKSorLAc=",
+      "owQtLi8Q/wArMDEyMzQ1Njc4OU4=",
+      "owU6Ozw9PlgB/wA7PzH/ABlAQew=",
+      "owZCQ0RFRkdISUpLTE1OT1BRUvc=",
+      "owdTVFVWV1laW1xdXl9gYWJjZMs=",
+      "owhlZmdoaWprbG1ub3BxLv8VAAo=",
+      "owlyc3R1dnd4eXp7fH1+f4CBgig=",
+      "owqDhIWGh4iJiouMjY6PkJGSkyo=",
+      "owuUlZaXmJmam5ydnp8Q/ysAoMw=",
+      "owyhoqOkpaanqKmqq6ytrq8w/8A=",
+      "ow1aALCxsrO0tba3uLm6u7y9vks=",
+      "ow6/wMHCw8TFxsfIycrLzM3OzxI=",
+      "o//Q0dLT1NXW19jZ2tvc3d7fAFw=",
+      "MwUEtBwAAAAAAAAAAAAAAAAAAJo="
+    ],
+    "cmd_hex": [
+      "a30001100c0901ff00000104010006020820ff9e",
+      "a30100a3000102030405060708090a0b0c0d0e0e",
+      "a3020f101112131415161718191a1b1c1d1e1fae",
+      "a30310ff0064202122232425262728292a2b2c07",
+      "a3042d2e2f10ff002b303132333435363738394e",
+      "a3053a3b3c3d3e5801ff003b3f31ff00194041ec",
+      "a30642434445464748494a4b4c4d4e4f505152f7",
+      "a3075354555657595a5b5c5d5e5f6061626364cb",
+      "a30865666768696a6b6c6d6e6f70712eff15000a",
+      "a30972737475767778797a7b7c7d7e7f80818228",
+      "a30a838485868788898a8b8c8d8e8f909192932a",
+      "a30b9495969798999a9b9c9d9e9f10ff2b00a0cc",
+      "a30ca1a2a3a4a5a6a7a8a9aaabacadaeaf30ffc0",
+      "a30d5a00b0b1b2b3b4b5b6b7b8b9babbbcbdbe4b",
+      "a30ebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecf12",
+      "a3ffd0d1d2d3d4d5d6d7d8d9dadbdcdddedf005c",
+      "330504b41c00000000000000000000000000009a"
+    ]
+  },
+  {
+    "name": "Cheerful",
+    "cmd_b64": [
+      "owABEAwJZP///wEEAV4DAggc/5w=",
+      "owEAAAAIEBggKDA4QEhQWGBocNo=",
+      "owJ4gIiQmKCosLjAyNDYHP9/AEU=",
+      "owMBCREZISkxOUFJUVlhaXF5gSE=",
+      "owSJkZmhqbG5wcnR2Rz//wACCjI=",
+      "owUSGiIqMjpCSlJaYmpyeoKKkjQ=",
+      "owaaoqqyusLK0tocAP8AAwsTG9w=",
+      "owcjKzM7Q0tTW2Nrc3uDi5Obowc=",
+      "owirs7vDy9PbHAD/xwQMFBwkLCQ=",
+      "owk0PERMVFxkbHR8hIyUnKSstB4=",
+      "owq8xMzU3BwAAP8FDRUdJS01PfY=",
+      "owtFTVVdZW11fYWNlZ2lrbW9xW0=",
+      "owzN1d0cXAD/Bg4WHiYuNj5GTt0=",
+      "ow1WXmZudn6Gjpaepq62vsbO1ng=",
+      "ow7eHPsA/wcPFx8nLzc/R09XX2s=",
+      "o/9nb3d/h4+Xn6evt7/Hz9ffAFw=",
+      "MwUEtRwAAAAAAAAAAAAAAAAAAJs="
+    ],
+    "cmd_hex": [
+      "a30001100c0964ffffff0104015e0302081cff9c",
+      "a3010000000810182028303840485058606870da",
+      "a3027880889098a0a8b0b8c0c8d0d81cff7f0045",
+      "a303010911192129313941495159616971798121",
+      "a304899199a1a9b1b9c1c9d1d91cffff00020a32",
+      "a305121a222a323a424a525a626a727a828a9234",
+      "a3069aa2aab2bac2cad2da1c00ff00030b131bdc",
+      "a307232b333b434b535b636b737b838b939ba307",
+      "a308abb3bbc3cbd3db1c00ffc7040c141c242c24",
+      "a309343c444c545c646c747c848c949ca4acb41e",
+      "a30abcc4ccd4dc1c0000ff050d151d252d353df6",
+      "a30b454d555d656d757d858d959da5adb5bdc56d",
+      "a30ccdd5dd1c5c00ff060e161e262e363e464edd",
+      "a30d565e666e767e868e969ea6aeb6bec6ced678",
+      "a30ede1cfb00ff070f171f272f373f474f575f6b",
+      "a3ff676f777f878f979fa7afb7bfc7cfd7df005c",
+      "330504b51c00000000000000000000000000009b"
+    ]
+  },
+  {
+    "name": "Gradient",
+    "cmd_b64": [
+      "MwUEBwAAAAAAAAAAAAAAAAAAADU="
+    ],
+    "cmd_hex": [
+      "3305040700000000000000000000000000000035"
+    ]
+  },
+  {
+    "name": "Daze",
+    "cmd_b64": [
+      "owABDwwJZAD/AAJ4AF8CAgFwAGc=",
+      "owEA/wABAgMEBQYHCAkKCwwNDlI=",
+      "owIPEBESExQVFhcYGRobHB0eH64=",
+      "owMgISIjJCUmJygpKissLS4vMJA=",
+      "owQxMjM0NTY3ODk6Ozw9Pj9AQZY=",
+      "owVCQ0RFRkdISUpLTE1OT1BRUvQ=",
+      "owZTVFVWV1hZWltcXV5fYGFiY/Y=",
+      "owdkZWZnaGlqa2xtbm94AF8BAoA=",
+      "owgBcP8AAHBxcnN0dXZ3eHl6eyU=",
+      "owl8fX5/gIGCg4SFhoeIiYqLjCY=",
+      "owqNjo+QkZKTlJWWl5iZmpucnSQ=",
+      "owuen6ChoqOkpaanqKmqq6ytrgY=",
+      "owyvsLGys7S1tre4ubq7vL2+vwA=",
+      "ow3AwcLDxMXGx8jJysvMzc7P0H4=",
+      "o//R0tPU1dbX2Nna29zd3t8AAIw=",
+      "MwUEthwAAAAAAAAAAAAAAAAAAJg="
+    ],
+    "cmd_hex": [
+      "a300010f0c096400ff000278005f020201700067",
+      "a30100ff000102030405060708090a0b0c0d0e52",
+      "a3020f101112131415161718191a1b1c1d1e1fae",
+      "a303202122232425262728292a2b2c2d2e2f3090",
+      "a3043132333435363738393a3b3c3d3e3f404196",
+      "a30542434445464748494a4b4c4d4e4f505152f4",
+      "a306535455565758595a5b5c5d5e5f60616263f6",
+      "a3076465666768696a6b6c6d6e6f78005f010280",
+      "a3080170ff0000707172737475767778797a7b25",
+      "a3097c7d7e7f808182838485868788898a8b8c26",
+      "a30a8d8e8f909192939495969798999a9b9c9d24",
+      "a30b9e9fa0a1a2a3a4a5a6a7a8a9aaabacadae06",
+      "a30cafb0b1b2b3b4b5b6b7b8b9babbbcbdbebf00",
+      "a30dc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd07e",
+      "a3ffd1d2d3d4d5d6d7d8d9dadbdcdddedf00008c",
+      "330504b61c000000000000000000000000000098"
+    ]
+  },
+  {
+    "name": "Tension",
+    "cmd_b64": [
+      "owABBQwJBQAA/wFAAF0EAgIX/6g=",
+      "owEAAAQLDA0TFRobHSIlJikqLro=",
+      "owIwMTY3OD9ARx3/AQBIT2xzdC4=",
+      "owN1e32Cg4WKjY6RkpaZnqGmp+w=",
+      "o/+oqa+wt7i/AAAAAAAAAAAAAPI=",
+      "MwUEtxwAAAAAAAAAAAAAAAAAAJk="
+    ],
+    "cmd_hex": [
+      "a30001050c09050000ff0140005d04020217ffa8",
+      "a3010000040b0c0d13151a1b1d222526292a2eba",
+      "a30230313637383f40471dff0100484f6c73742e",
+      "a303757b7d8283858a8d8e919296999ea1a6a7ec",
+      "a3ffa8a9afb0b7b8bf00000000000000000000f2",
+      "330504b71c000000000000000000000000000099"
+    ]
+  },
+  {
+    "name": "Sweet",
+    "cmd_b64": [
+      "owABDwwJZIsA/wHkAAAEAgYQ/7I=",
+      "owEAzRgZGhscHR4fwMHCw8TFxqg=",
+      "owLHIP8A7CAhIiMkJSYnKCkqK1U=",
+      "owMsLS4vsLGys7S1tre4ubq7vBw=",
+      "owS9vr84/wBQMDEyMzQ1Njc4OY0=",
+      "owU6Ozw9Pj9AQUJDREVGR0hJSuw=",
+      "owZLTE1OT5iZmpucnZ6foKGio+4=",
+      "owekpaanqKmqq6ytrq8h/wAiUAg=",
+      "owhRUlNUVVZXWFlaW1xdXl93iAQ=",
+      "owmJiouMjY6PkJGSk5SVlpcn//o=",
+      "owoAAGBhYmNkZWZnaGlqa2xtbsY=",
+      "owtvcHFyc3R1dnh5ent8fX5/gDA=",
+      "owyBgoOEhYaHGIsA/8jJysvMzUI=",
+      "ow3Oz9DR0tPU1dbX2Nna29zd3nA=",
+      "o//fAAAAAAAAAAAAAAAAAAAAAIM=",
+      "MwUEuBwAAAAAAAAAAAAAAAAAAJY="
+    ],
+    "cmd_hex": [
+      "a300010f0c09648b00ff01e4000004020610ffb2",
+      "a30100cd18191a1b1c1d1e1fc0c1c2c3c4c5c6a8",
+      "a302c720ff00ec202122232425262728292a2b55",
+      "a3032c2d2e2fb0b1b2b3b4b5b6b7b8b9babbbc1c",
+      "a304bdbebf38ff0050303132333435363738398d",
+      "a3053a3b3c3d3e3f404142434445464748494aec",
+      "a3064b4c4d4e4f98999a9b9c9d9e9fa0a1a2a3ee",
+      "a307a4a5a6a7a8a9aaabacadaeaf21ff00225008",
+      "a3085152535455565758595a5b5c5d5e5f778804",
+      "a309898a8b8c8d8e8f909192939495969727fffa",
+      "a30a0000606162636465666768696a6b6c6d6ec6",
+      "a30b6f7071727374757678797a7b7c7d7e7f8030",
+      "a30c81828384858687188b00ffc8c9cacbcccd42",
+      "a30dcecfd0d1d2d3d4d5d6d7d8d9dadbdcddde70",
+      "a3ffdf0000000000000000000000000000000083",
+      "330504b81c000000000000000000000000000096"
+    ]
+  },
+  {
+    "name": "Meditation",
+    "cmd_b64": [
+      "MwUECAAAAAAAAAAAAAAAAAAAADo="
+    ],
+    "cmd_hex": [
+      "330504080000000000000000000000000000003a"
+    ]
+  },
+  {
+    "name": "Heartbeat",
+    "cmd_b64": [
+      "owABCQwJLwAA/wI+AD0AAgE2/7U=",
+      "owEAAEhJTk9QUVJVVldYWVpbXPk=",
+      "owJdXl9gYWJjZGVmZ2hpamtsbfw=",
+      "owNub3BxcnN0dXZ3eXp7fH1+giQ=",
+      "owSDhIWLjEAAZAQCATj/AFwAAZs=",
+      "owUCAwQFBgcICQoLDA0ODxESE7c=",
+      "owYUFRYaGxwdIyS7vMLDxMXJyrE=",
+      "owfLzM3O0NHS09TV1tfY2drb3Hw=",
+      "o//d3t8AAAAAAAAAAAAAAAAAAIA=",
+      "MwUEuRwAAAAAAAAAAAAAAAAAAJc="
+    ],
+    "cmd_hex": [
+      "a30001090c092f0000ff023e003d00020136ffb5",
+      "a301000048494e4f50515255565758595a5b5cf9",
+      "a3025d5e5f606162636465666768696a6b6c6dfc",
+      "a3036e6f7071727374757677797a7b7c7d7e8224",
+      "a3048384858b8c40006404020138ff005c00019b",
+      "a30502030405060708090a0b0c0d0e0f111213b7",
+      "a3061415161a1b1c1d2324bbbcc2c3c4c5c9cab1",
+      "a307cbcccdced0d1d2d3d4d5d6d7d8d9dadbdc7c",
+      "a3ffdddedf000000000000000000000000000080",
+      "330504b91c000000000000000000000000000097"
+    ]
+  },
+  {
+    "name": "Childishness",
+    "cmd_b64": [
+      "owABCwwJYP//AAMpAFoGAgEh/2c=",
+      "owEAACIjJCUpLS4wMTY4PkBFRvo=",
+      "owJISU1RUlNUgYKDiImLkJOYmeE=",
+      "owOaOgBbBgIBMgAA/yUmLC0uL5A=",
+      "owQzNDc7P0NHS09TVFVWV4qLjE0=",
+      "owWNjpGSl5mfoKeor7C3uL/AxjE=",
+      "owbHyM7R0tXW2tvcPwBcBgIBN+g=",
+      "owcA/wAZGhscICEjJCUoLTA1OEQ=",
+      "owg8PUBBQ0RJSktzdHV2ent9fuI=",
+      "owl/gYKHiY+QkZeYn6CnqKmusd8=",
+      "o/+ytLW2uru8AAAAAAAAAAAAAOQ=",
+      "MwUEwxwAAAAAAAAAAAAAAAAAAO0="
+    ],
+    "cmd_hex": [
+      "a300010b0c0960ffff000329005a06020121ff67",
+      "a301000022232425292d2e303136383e404546fa",
+      "a30248494d5152535481828388898b90939899e1",
+      "a3039a3a005b060201320000ff25262c2d2e2f90",
+      "a3043334373b3f43474b4f53545556578a8b8c4d",
+      "a3058d8e919297999fa0a7a8afb0b7b8bfc0c631",
+      "a306c7c8ced1d2d5d6dadbdc3f005c06020137e8",
+      "a30700ff00191a1b1c2021232425282d30353844",
+      "a3083c3d40414344494a4b737475767a7b7d7ee2",
+      "a3097f818287898f909197989fa0a7a8a9aeb1df",
+      "a3ffb2b4b5b6babbbc00000000000000000000e4",
+      "330504c31c0000000000000000000000000000ed"
+    ]
+  },
+  {
+    "name": "Dot Eater",
+    "cmd_b64": [
+      "owABBgwJMABB/wIwAFkDAgEo/5M=",
+      "owEAAB0eJicuLzU2YmNkamtsbcc=",
+      "owJzdHV8fYSFi4yNkpOUlZqbnMQ=",
+      "owPAwcnK0dLY2SIAVQQAAwX/f1U=",
+      "owQAGBseyMwFAP8AICMm0NQI/5I=",
+      "o///AHl6fn+BgoaHAAAAAAAAAKM=",
+      "MwUEuhwAAAAAAAAAAAAAAAAAAJQ="
+    ],
+    "cmd_hex": [
+      "a30001060c09300041ff0230005903020128ff93",
+      "a30100001d1e26272e2f35366263646a6b6c6dc7",
+      "a3027374757c7d84858b8c8d929394959a9b9cc4",
+      "a303c0c1c9cad1d2d8d922005504000305ff7f55",
+      "a30400181b1ec8cc0500ff00202326d0d408ff92",
+      "a3ffff00797a7e7f8182868700000000000000a3",
+      "330504ba1c000000000000000000000000000094"
+    ]
+  },
+  {
+    "name": "Rope Skipping",
+    "cmd_b64": [
+      "owABBwwJDQAA/wIzAF4HAgMN/8k=",
+      "owEAAAcPFx8nLzc/R09XX2cIAM0=",
+      "owL/AGhpamtsbW5vDgAA/3d/hyA=",
+      "owOPl5+nr7e/x8/X3zMAXgYCA00=",
+      "owQO/wAABw8XHycvNz9HT1dfZzE=",
+      "owVvCP//AHBxcnN0dXZ3DYsA/7g=",
+      "o/9/h4+Xn6evt7/Hz9ffAAAAACM=",
+      "MwUEuxwAAAAAAAAAAAAAAAAAAJU="
+    ],
+    "cmd_hex": [
+      "a30001070c090d0000ff0233005e0702030dffc9",
+      "a3010000070f171f272f373f474f575f670800cd",
+      "a302ff0068696a6b6c6d6e6f0e0000ff777f8720",
+      "a3038f979fa7afb7bfc7cfd7df33005e0602034d",
+      "a3040eff0000070f171f272f373f474f575f6731",
+      "a3056f08ffff0070717273747576770d8b00ffb8",
+      "a3ff7f878f979fa7afb7bfc7cfd7df0000000023",
+      "330504bb1c000000000000000000000000000095"
+    ]
+  },
+  {
+    "name": "Marshmallow",
+    "cmd_b64": [
+      "owABEgwJZP9KRwKbAF4GAgQki0s=",
+      "owEA/woLERITFBgZGhscHSAhIno=",
+      "owIjJCUpKissLS4yMzQ1Njs8PYg=",
+      "owM+REVGAv87gyZMOf+fPFJTWMo=",
+      "owRZWltcXV5fYGFiY2RlZmdoaf4=",
+      "owVqa2xtbm9wcXJzdHV2d3h5etw=",
+      "owZ7fH1+f4CBgoOEhYaHiImKi94=",
+      "oweMjZAocsoApaanqqusra6vsrI=",
+      "owiztLW2t7m6u7y9vr/AwcLDxGQ=",
+      "ownFxsjJysvMzdDR0tPYiQBeBaI=",
+      "owoCAykHygAKCxESExQVGRobHFg=",
+      "owsdHiEiIyQlJicpKissLS4vMpE=",
+      "owwzNDU2Nzs8PT4/RUZHK//QAOc=",
+      "ow1dXl9jZGVmZ2prbG1ub3Fyc+A=",
+      "ow50dXZ3eHl6e3x9fn+AgYKDhCk=",
+      "ow+FiImKi4yRkpMlH4zQuLm6u1M=",
+      "oxC8vcDBwsPExcbIycrLzM3Oz3U=",
+      "o//Q0dLT1NXW19jZ2tvc3d7fAFw=",
+      "MwUEvRwAAAAAAAAAAAAAAAAAAJM="
+    ],
+    "cmd_hex": [
+      "a30001120c0964ff4a47029b005e060204248b4b",
+      "a30100ff0a0b1112131418191a1b1c1d2021227a",
+      "a302232425292a2b2c2d2e32333435363b3c3d88",
+      "a3033e44454602ff3b83264c39ff9f3c525358ca",
+      "a304595a5b5c5d5e5f60616263646566676869fe",
+      "a3056a6b6c6d6e6f707172737475767778797adc",
+      "a3067b7c7d7e7f808182838485868788898a8bde",
+      "a3078c8d902872ca00a5a6a7aaabacadaeafb2b2",
+      "a308b3b4b5b6b7b9babbbcbdbebfc0c1c2c3c464",
+      "a309c5c6c8c9cacbcccdd0d1d2d3d889005e05a2",
+      "a30a02032907ca000a0b1112131415191a1b1c58",
+      "a30b1d1e21222324252627292a2b2c2d2e2f3291",
+      "a30c33343536373b3c3d3e3f4546472bffd000e7",
+      "a30d5d5e5f63646566676a6b6c6d6e6f717273e0",
+      "a30e7475767778797a7b7c7d7e7f808182838429",
+      "a30f8588898a8b8c919293251f8cd0b8b9babb53",
+      "a310bcbdc0c1c2c3c4c5c6c8c9cacbcccdcecf75",
+      "a3ffd0d1d2d3d4d5d6d7d8d9dadbdcdddedf005c",
+      "330504bd1c000000000000000000000000000093"
+    ]
+  },
+  {
+    "name": "Contorted",
+    "cmd_b64": [
+      "owABDwwJTgAA/wH0AF8GAgQxAII=",
+      "owEA/wABAgMEBQYHCAkKCwwNDlI=",
+      "owIPEBESExQVFhcZGhscHR4fIpQ=",
+      "owMjJCUmJyssLS4vNDU2Nz4/R+4=",
+      "owQ//wAAGCAhKCkqMDEyMzg5Om4=",
+      "owU7PD1AQUJDREVGSElKS0xNTpQ=",
+      "owZPUFFSU1RVVldZWltcXV5fYtA=",
+      "owdjZGVmZ2tsbW5vdXZ3fn+HRBo=",
+      "owj/fwBYYGFoaWpwcXJzdHh5ehY=",
+      "owl7fH2AgYKDhIWGiImKi4yNjtg=",
+      "owqPkJGSk5SVlpeZmpucnZ6fohw=",
+      "owujpKWmp6usra6vtLW2t72+vxw=",
+      "owzGx88sAP8AmKChqKmqsLGys4A=",
+      "ow24ubq7vMDBwsPExcjJysvMzRI=",
+      "o//O0NHS09TV1tfY2drb3N3e35I=",
+      "MwUEvhwAAAAAAAAAAAAAAAAAAJA="
+    ],
+    "cmd_hex": [
+      "a300010f0c094e0000ff01f4005f060204310082",
+      "a30100ff000102030405060708090a0b0c0d0e52",
+      "a3020f1011121314151617191a1b1c1d1e1f2294",
+      "a30323242526272b2c2d2e2f343536373e3f47ee",
+      "a3043fff000018202128292a3031323338393a6e",
+      "a3053b3c3d4041424344454648494a4b4c4d4e94",
+      "a3064f5051525354555657595a5b5c5d5e5f62d0",
+      "a30763646566676b6c6d6e6f7576777e7f87441a",
+      "a308ff7f0058606168696a707172737478797a16",
+      "a3097b7c7d8081828384858688898a8b8c8d8ed8",
+      "a30a8f9091929394959697999a9b9c9d9e9fa21c",
+      "a30ba3a4a5a6a7abacadaeafb4b5b6b7bdbebf1c",
+      "a30cc6c7cf2c00ff0098a0a1a8a9aab0b1b2b380",
+      "a30db8b9babbbcc0c1c2c3c4c5c8c9cacbcccd12",
+      "a3ffced0d1d2d3d4d5d6d7d8d9dadbdcdddedf92",
+      "330504be1c000000000000000000000000000090"
+    ]
+  },
+  {
+    "name": "Aircraft Battle",
+    "cmd_b64": [
+      "owABCAwJAf///wMWAGQCAAEO/9I=",
+      "owEAAAMOESwxN01Ra4aRo7fCPx0=",
+      "owIAXwQCAhsA//8AAQIDBAUGB+E=",
+      "owMJCgsMDQ4PERITFBUWGhscHa8=",
+      "owQjJBj/fwC8w8TFysvMzc7R0os=",
+      "owXT1NXW19jZ2tvc3d7fFwBkAQc=",
+      "owYAAQ8AAP8oMzdKaW2Ll5mdqoQ=",
+      "o/++yMvWAAAAAAAAAAAAAAAAADc=",
+      "MwUEvxwAAAAAAAAAAAAAAAAAAJE="
+    ],
+    "cmd_hex": [
+      "a30001080c0901ffffff031600640200010effd2",
+      "a3010000030e112c31374d516b8691a3b7c23f1d",
+      "a302005f0402021b00ffff0001020304050607e1",
+      "a303090a0b0c0d0e0f1112131415161a1b1c1daf",
+      "a304232418ff7f00bcc3c4c5cacbcccdced1d28b",
+      "a305d3d4d5d6d7d8d9dadbdcdddedf1700640107",
+      "a30600010f0000ff2833374a696d8b97999daa84",
+      "a3ffbec8cbd60000000000000000000000000037",
+      "330504bf1c000000000000000000000000000091"
+    ]
+  },
+  {
+    "name": "Climbing Bamboo",
+    "cmd_b64": [
+      "owABCgwJFwBb/wJ4AFEEAgFwAEI=",
+      "owH/AAABBAUICQwNEBEUFRgZHEA=",
+      "owIdICEkJSgpLC0wMTQ1ODk8Pbw=",
+      "owNAQURFSElMTVBRVFVYWVxdYMA=",
+      "owRhZGVoaWxtcHF0dXh5fH2AgcY=",
+      "owWEhYiJjI2QkZSVmJmcnaChpAI=",
+      "owalqKmsrbCxtLW4uby9wMHExQA=",
+      "owfIyczN0NHU1djZ3N0YAE8GAPU=",
+      "owgBEP/vWRESGRpNTlVWgIGIifM=",
+      "o/++v8bHAAAAAAAAAAAAAAAAAFw=",
+      "MwUEwBwAAAAAAAAAAAAAAAAAAO4="
+    ],
+    "cmd_hex": [
+      "a300010a0c0917005bff02780051040201700042",
+      "a301ff000001040508090c0d1011141518191c40",
+      "a3021d2021242528292c2d3031343538393c3dbc",
+      "a3034041444548494c4d5051545558595c5d60c0",
+      "a30461646568696c6d7071747578797c7d8081c6",
+      "a305848588898c8d9091949598999c9da0a1a402",
+      "a306a5a8a9acadb0b1b4b5b8b9bcbdc0c1c4c500",
+      "a307c8c9cccdd0d1d4d5d8d9dcdd18004f0600f5",
+      "a3080110ffef591112191a4d4e555680818889f3",
+      "a3ffbebfc6c7000000000000000000000000005c",
+      "330504c01c0000000000000000000000000000ee"
+    ]
+  },
+  {
+    "name": "Airship",
+    "cmd_b64": [
+      "owABBgwJCAAA/wIrAF0GAgYDi6g=",
+      "owEA/yIpKwL/AAAqMgMA//+Mk4Q=",
+      "owKVAgAA/5ScAwD/AM7V1wL/f3M=",
+      "owMA1t4eAF4FAgQD/wAAMTg6AiY=",
+      "owQAAP85QQMA/wCOlZcC/38AlkQ=",
+      "o/+eAAAAAAAAAAAAAAAAAAAAAMI=",
+      "MwUEwRwAAAAAAAAAAAAAAAAAAO8="
+    ],
+    "cmd_hex": [
+      "a30001060c09080000ff022b005d060206038ba8",
+      "a30100ff22292b02ff00002a320300ffff8c9384",
+      "a30295020000ff949c0300ff00ced5d702ff7f73",
+      "a30300d6de1e005e05020403ff000031383a0226",
+      "a3040000ff39410300ff008e959702ff7f009644",
+      "a3ff9e00000000000000000000000000000000c2",
+      "330504c11c0000000000000000000000000000ef"
+    ]
+  },
+  {
+    "name": "Candy Crush",
+    "cmd_b64": [
+      "MwUECQAAAAAAAAAAAAAAAAAAADs="
+    ],
+    "cmd_hex": [
+      "330504090000000000000000000000000000003b"
+    ]
+  },
+  {
+    "name": "Greedy Snake",
+    "cmd_b64": [
+      "MwUECgAAAAAAAAAAAAAAAAAAADg="
+    ],
+    "cmd_hex": [
+      "3305040a00000000000000000000000000000038"
+    ]
+  },
+  {
+    "name": "Flow",
+    "cmd_b64": [
+      "MwUECwAAAAAAAAAAAAAAAAAAADk="
+    ],
+    "cmd_hex": [
+      "3305040b00000000000000000000000000000039"
+    ]
+  },
+  {
+    "name": "Fantasy",
+    "cmd_b64": [
+      "owABBwwJZP8AAAFkAGAEAgMs/+g=",
+      "owH/AEJDREVJSktMTU5QUVJVVgo=",
+      "owJXWFleX2BneH+AgYaHiImKjfA=",
+      "owOOj5GSk5SVlpqbnJ0cAAD/UxY=",
+      "owRUWltcXWFiZWZoaW5vcHF2d/M=",
+      "owV5en1+goOEhYuMDP9/AGNkakA=",
+      "o/9rbG1yc3R1e3wAAAAAAAAAADE=",
+      "MwUEwhwAAAAAAAAAAAAAAAAAAOw="
+    ],
+    "cmd_hex": [
+      "a30001070c0964ff0000016400600402032cffe8",
+      "a301ff0042434445494a4b4c4d4e50515255560a",
+      "a3025758595e5f6067787f8081868788898a8df0",
+      "a3038e8f9192939495969a9b9c9d1c0000ff5316",
+      "a304545a5b5c5d6162656668696e6f70717677f3",
+      "a305797a7d7e828384858b8c0cff7f0063646a40",
+      "a3ff6b6c6d727374757b7c000000000000000031",
+      "330504c21c0000000000000000000000000000ec"
+    ]
+  }
+]
