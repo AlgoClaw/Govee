@@ -6,6 +6,7 @@
 		"hex_prefix_remove": "",
 		"hex_prefix_add": "",
 		"hex_suffix_add": "",
+		"hex_multi_prefix": "a3",
 		"on_command": false
 	},
 	{
@@ -15,6 +16,7 @@
 		"hex_prefix_remove": "",
 		"hex_prefix_add": "",
 		"hex_suffix_add": "02",
+		"hex_multi_prefix": "a3",
 		"on_command": false
 	},
 	{
@@ -33,6 +35,7 @@
 		"hex_prefix_remove": "",
 		"hex_prefix_add": "02",
 		"hex_suffix_add": "",
+		"hex_multi_prefix": "a3",
 		"on_command": false
 	},
 	{
@@ -42,6 +45,7 @@
 		"hex_prefix_remove": "1200000000",
 		"hex_prefix_add": "04",
 		"hex_suffix_add": "1d",
+		"hex_multi_prefix": "a3",
 		"on_command": false
 	},
 	{
@@ -51,6 +55,7 @@
 		"hex_prefix_remove": "41",
 		"hex_prefix_add": "585a",
 		"hex_suffix_add": "",
+		"hex_multi_prefix": "a3",
 		"on_command": false
 	},
 	{
@@ -60,6 +65,7 @@
 		"hex_prefix_remove": "21",
 		"hex_prefix_add": "02560b",
 		"hex_suffix_add": "",
+		"hex_multi_prefix": "a3",
 		"on_command": false
 	},
 	{
@@ -69,6 +75,7 @@
 		"hex_prefix_remove": "TBD",
 		"hex_prefix_add": "TBD",
 		"hex_suffix_add": "TBD",
+		"hex_multi_prefix": "a3",
 		"on_command": true
 	}
 ]
