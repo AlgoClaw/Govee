@@ -17,7 +17,7 @@
 		"hex_prefix_add": "",
 		"hex_suffix_add": "02",
 		"hex_multi_prefix": "a3",
-		"on_command": false
+		"on_command": true
 	},
 	{
 		"models": [
