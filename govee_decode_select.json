@@ -84,7 +84,9 @@
 		"hex_prefix_remove_2": "1200000000",
 		"hex_prefix_add_2": "0427",
 		"hex_multi_prefix": "a3",
-		"on_command": false
+		"on_command": false,
+		"normal_command_suffix_1": "0047",
+		"normal_command_suffix_2": "0247"
 	},
 	{
 		"models": [
