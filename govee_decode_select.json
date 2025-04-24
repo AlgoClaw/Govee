@@ -99,5 +99,16 @@
 		"hex_prefix_add_2": "",
 		"hex_multi_prefix": "a3",
 		"on_command": true
+	},
+	{
+		"models": [
+			"H70C4"
+			],
+		"hex_prefix_remove_1": "",
+		"hex_prefix_add_1": "",
+		"hex_prefix_remove_2": "",
+		"hex_prefix_add_2": "",
+		"hex_multi_prefix": "a4",
+		"on_command": false
 	}
 ]
