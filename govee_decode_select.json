@@ -52,8 +52,10 @@
 		"models": [
 			"H6022"
 			],
-		"hex_prefix_remove": "41",
-		"hex_prefix_add": "585a",
+		"hex_prefix_remove_1": "41",
+		"hex_prefix_add_1": "585a",
+		"hex_prefix_remove_2": "00",
+		"hex_prefix_add_2": "04",
 		"hex_suffix_add": "",
 		"hex_multi_prefix": "a3",
 		"on_command": false
