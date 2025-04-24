@@ -1,7 +1,8 @@
 [
 	{
 		"models": [
-			"null"
+			"null",
+			"H610A"
 		],
 		"hex_prefix_remove_1": "",
 		"hex_prefix_add_1": "",
