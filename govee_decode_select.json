@@ -58,36 +58,53 @@
 		"models": [
 			"H6022"
 			],
-		"hex_prefix_remove_1": "41",
-		"hex_prefix_add_1": "585a",
-		"hex_prefix_remove_2": "00",
-		"hex_prefix_add_2": "04",
 		"hex_multi_prefix": "a3",
-		"on_command": false
+		"on_command": false,
+		"type": [
+			{
+				"hex_prefix_remove": "41",
+				"hex_prefix_add": "585a",
+				"normal_command_suffix": ""
+			},
+			{
+				"hex_prefix_remove": "00",
+				"hex_prefix_add": "04",
+				"normal_command_suffix": ""
+			}
+		]
 	},
 	{
 		"models": [
 			"H6092"
 			],
-		"hex_prefix_remove_1": "21",
-		"hex_prefix_add_1": "02560b",
-		"hex_prefix_remove_2": "",
-		"hex_prefix_add_2": "",
 		"hex_multi_prefix": "a3",
-		"on_command": false
+		"on_command": false,
+		"type": [
+			{
+				"hex_prefix_remove": "21",
+				"hex_prefix_add": "02560b",
+				"normal_command_suffix": ""
+			}
+		]
 	},
 	{
 		"models": [
 			"H6065"
 			],
-		"hex_prefix_remove_1": "12000c000f",
-		"hex_prefix_add_1": "04",
-		"hex_prefix_remove_2": "1200000000",
-		"hex_prefix_add_2": "04",
 		"hex_multi_prefix": "a3",
 		"on_command": false,
-		"normal_command_suffix_1": "0047",
-		"normal_command_suffix_2": "0247"
+		"type": [
+			{
+				"hex_prefix_remove": "12000c000f",
+				"hex_prefix_add": "04",
+				"normal_command_suffix": "0247"
+			},
+			{
+				"hex_prefix_remove": "1200000000",
+				"hex_prefix_add": "04",
+				"normal_command_suffix": "0047"
+			}
+		]
 	},
 	{
 		"models": [
