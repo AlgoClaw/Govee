@@ -83,7 +83,7 @@
 		"hex_prefix_remove_1": "12000c000f",
 		"hex_prefix_add_1": "04",
 		"hex_prefix_remove_2": "1200000000",
-		"hex_prefix_add_2": "0427",
+		"hex_prefix_add_2": "04",
 		"hex_multi_prefix": "a3",
 		"on_command": false,
 		"normal_command_suffix_1": "0047",
