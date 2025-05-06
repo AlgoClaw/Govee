@@ -4,21 +4,14 @@
 			"null",
 			"H610A"
 		],
-		"hex_prefix_remove_1": "",
-		"hex_prefix_add_1": "",
-		"hex_prefix_remove_2": "",
-		"hex_prefix_add_2": "",
 		"hex_multi_prefix": "a3",
-		"on_command": false
+		"on_command": false,
+		"type": []
 	},
 	{
 		"models": [
 			"H6079"
 		],
-		"hex_prefix_remove_1": "",
-		"hex_prefix_add_1": "",
-		"hex_prefix_remove_2": "",
-		"hex_prefix_add_2": "",
 		"hex_multi_prefix": "a3",
 		"on_command": true
 	},
@@ -36,23 +29,28 @@
 			"H70C2",
 			"H805A"
 			],
-		"hex_prefix_remove_1": "",
-		"hex_prefix_add_1": "02",
-		"hex_prefix_remove_2": "",
-		"hex_prefix_add_2": "",
 		"hex_multi_prefix": "a3",
-		"on_command": false
+		"on_command": false,
+		"type": []
 	},
 	{
 		"models": [
 			"H6066"
 			],
-		"hex_prefix_remove_1": "1200000000",
-		"hex_prefix_add_1": "04",
-		"hex_prefix_remove_2": "1d",
-		"hex_prefix_add_2": "",
 		"hex_multi_prefix": "a3",
-		"on_command": false
+		"on_command": false,
+		"type": [
+			{
+				"hex_prefix_remove": "1200000000",
+				"hex_prefix_add": "04",
+				"normal_command_suffix": ""
+			},
+			{
+				"hex_prefix_remove": "1d",
+				"hex_prefix_add": "",
+				"normal_command_suffix": ""
+			}
+		]
 	},
 	{
 		"models": [
@@ -110,22 +108,16 @@
 		"models": [
 			"H6127"
 			],
-		"hex_prefix_remove_1": "TBD",
-		"hex_prefix_add_1": "TBD",
-		"hex_prefix_remove_2": "TBD",
-		"hex_prefix_add_2": "",
 		"hex_multi_prefix": "a3",
-		"on_command": true
+		"on_command": true,
+		"type": []
 	},
 	{
 		"models": [
 			"H70C4"
 			],
-		"hex_prefix_remove_1": "",
-		"hex_prefix_add_1": "",
-		"hex_prefix_remove_2": "",
-		"hex_prefix_add_2": "",
 		"hex_multi_prefix": "a4",
-		"on_command": false
+		"on_command": false,
+		"type": []
 	}
 ]
