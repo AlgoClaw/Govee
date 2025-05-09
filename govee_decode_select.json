@@ -31,7 +31,14 @@
 			],
 		"hex_multi_prefix": "a3",
 		"on_command": false,
-		"type": []
+		"type": [
+					{
+				"type_entry": 0,
+				"hex_prefix_remove": "",
+				"hex_prefix_add": "02",
+				"normal_command_suffix": ""
+			}
+		]
 	},
 	{
 		"models": [
