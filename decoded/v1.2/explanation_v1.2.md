@@ -32,5 +32,10 @@ curl "https://raw.githubusercontent.com/AlgoClaw/Govee/refs/heads/main/decoded/v
 ### 3. Convert 
 Convert "scenceParam" (.data.categories[].scenes[].lightEffects[].scenceParam) from base64 to base16 (hexadecimal)
 ***
-### 4. Match "type" of Model (from model_specific_parameters.json) to each scene
-If "type" data is present 
+### 4. Match "type" of Model
+If "type" data is present in model_specific_parameters.json, match the "type" for each scene using "hex_prefix_remove".
+
+As an example, for model H6065, a "scenceParam" (converted to base16) may start with "12000c000f", "1200000000", or somehting else.
+If the "scenceParam" for a specific scene starts with "12000c000f", that scene matches "type_entry": 0.
+If the "scenceParam" for a specific scene starts with "1200000000", that scene matches "type_entry": 1.
+If the "scenceParam" for a specific scene starts with something other tha nthe specified "hex_prefix_remove", that scene does not matche any "type_entry".
