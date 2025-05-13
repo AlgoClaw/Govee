@@ -7,7 +7,7 @@ Model specific paramters may not be correct in "model_specific_parameters.json" 
 ***
 ## Generic Structure for Scene Commands:
 ```
-[              ON COMMAND              ]    <----- "On" command. Works for all models. Always included in scene command for H6127.
+[              ON COMMAND              ]    <----- "On" command. Works on all models. Included in scene cmds for H6127.
 a30001[NN][hxpreadd][hex(scenceParam)]CH    <----- First "multi-line" command
 a301[        hex(scenceParam)        ]CH
 a302[        hex(scenceParam)        ]CH
