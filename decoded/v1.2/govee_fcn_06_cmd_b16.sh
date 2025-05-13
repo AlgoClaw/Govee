@@ -190,10 +190,28 @@ JSON_output=$(jq --args '
 echo "${JSON_output}" | jq . > "${tempfile_06_050}"
 
 ###############################################################
-# Pad lines of "cmd_b16" with "0" to length
+# Add "on" command to "cmd_b16"
 # tempfile_06_060
-tempfile_06_060="${JSONDIR}/06_060_b16_multi_padded.json"
+tempfile_06_060="${JSONDIR}/06_060_on_command.json"
 rm -f "${tempfile_06_060}"
+
+on_command=$(jq '.[0].modparams.on_command' "${tempfile_06_050}") #this is a bad
+
+if [ $on_command == true ]; then
+
+	jq '(.[].cmd_b16) |= (["330101"] + .)' "${tempfile_06_050}" > "${tempfile_06_060}"
+
+else
+
+	cat "${tempfile_06_050}" > "${tempfile_06_060}"
+
+fi
+
+###############################################################
+# Pad lines of "cmd_b16" with "0" to length
+# tempfile_06_070
+tempfile_06_070="${JSONDIR}/06_070_b16_multi_padded.json"
+rm -f "${tempfile_06_070}"
 
 unset length
 length=38
@@ -213,25 +231,7 @@ map(
       )
     )
   end
-)' "${tempfile_06_050}" > "${tempfile_06_060}"
-
-###############################################################
-# Add "on" command to "cmd_b16"
-# tempfile_06_070
-tempfile_06_070="${JSONDIR}/06_070_on_command.json"
-rm -f "${tempfile_06_070}"
-
-on_command=$(jq '.[0].modparams.on_command' "${tempfile_06_060}") #this is a bad
-
-if [ $on_command == true ]; then
-
-	jq '(.[].cmd_b16) |= (["33010100000000000000000000000000000000"] + .)' "${tempfile_06_060}" > "${tempfile_06_070}"
-
-else
-
-	cat "${tempfile_06_060}" > "${tempfile_06_070}"
-
-fi
+)' "${tempfile_06_060}" > "${tempfile_06_070}"
 
 ###############################################################
 # Checksum
@@ -294,7 +294,7 @@ echo "$JSON_to_merge" > "${tempfile_06_080}"
 
 cat "${tempfile_06_010}" "${tempfile_06_080}" | jq -n '[inputs] | transpose | map(add)' > "${OUTPUT_JSON}"
 
-#exit
+# exit
 
 # CLEANUP
 rm -f "${tempfile_06_010}"
