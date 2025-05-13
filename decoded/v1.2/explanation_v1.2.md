@@ -7,7 +7,7 @@ Model specific paramters may not be correct in "model_specific_parameters.json" 
 ***
 ## Generic Structure for Scene Commands:
 ```
-[              ON COMMAND              ]    <----- "On" command. Works on all models. Included in scene cmds for H6127.
+[              ON COMMAND              ]    <----- "On" command. Works on all models. Included in scene cmds for H6079.
 a30001[NN][hxpreadd][hex(scenceParam)]CH    <----- First "multi-line" command
 a301[        hex(scenceParam)        ]CH
 a302[        hex(scenceParam)        ]CH
@@ -133,6 +133,7 @@ a30001030427150f0300010500080012__
 a30189001289001289ffd831ffd83100__
 a3021289001289001289______________
 ```
+***
 ### 13. Calculate and add "standard" command
 This is the command that updates the scene in the Govee app, but is not required for multi-line comamnds.
 
@@ -154,3 +155,45 @@ If a "normal_command_suffix" is available in the assocaited scene type, that is 
 
 For "Star", the "normal_command_suffix" is `0047`
 
+##### 13.4 Append them together
+`330504 + 530b + 0047` --> `330504530b0047`
+
+##### 13.5 Add to Multi-Line Command
+```
+a30001030427150f0300010500080012__
+a30189001289001289ffd831ffd83100__
+a3021289001289001289______________
+330504530b0047____________________
+```
+***
+### 14. If "on_command" = true (only for H6079?), add the "on command"
+Example **if** this were the H6079 (**do not do this** for the H6065)
+```
+330101____________________________
+a30001030427150f0300010500080012__
+a30189001289001289ffd831ffd83100__
+a3021289001289001289______________
+330504530b0047____________________
+```
+***
+### 15. Pad each line with zeros, except for the last 2 characters (1 byte)
+```
+a30001030427150f0300010500080012__
+a30189001289001289ffd831ffd83100__
+a3021289001289001289000000000000__
+330504530b0047000000000000000000__
+```
+### 16. Calculate the checksum for each line 
+```
+a30001030427150f03000105000800121e
+a30189001289001289ffd831ffd83100b0
+a3021289001289001289000000000000c7
+330504530b00470000000000000000002d
+```
+### 17. Convert each line from base16 to base64
+```
+owABAwQnFQ8DAAEFAAgAEokAEh4=
+owGJABKJ/9gx/9gxABKJABKJALA=
+o/8SiQAAAAAAAAAAAAAAAAAAAMc=
+MwUEUwsARwAAAAAAAAAAAAAAAC0=
+```
