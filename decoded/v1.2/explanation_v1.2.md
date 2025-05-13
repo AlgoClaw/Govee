@@ -17,7 +17,7 @@ a3ff[hex(scenceParam)][ zero padding ]CH    <----- Last "multi-line" command
                                                    This command is *optional* (and can be set to the incorrect scene).
 ```
 ***
-## Example Walkthrough
+## Example Walkthrough (using model H6065 and scene "Star")
 ### 0. Prerequesites
 Know the model number/identifier of the model (e.g., H61A8, H7039, H610A).
 ***
@@ -26,8 +26,10 @@ Know the model number/identifier of the model (e.g., H61A8, H7039, H610A).
 ***
 ### 2. Get Model-Specific JSON from Govee's Public API
 Example using H6065:
-
-`curl "https://app2.govee.com/appsku/v1/light-effect-libraries?sku=H61A8" -H 'AppVersion: 9999999' -s > H61A8_raw.json`
+```bash
+MODEL="H6065"
+curl "https://app2.govee.com/appsku/v1/light-effect-libraries?sku=${MODEL}" -H 'AppVersion: 9999999' -s > ${MODEL}_raw.json
+```
 ***
 ### 3. Convert "scenceParam" from base64 to base16
 From the JSON downloaded from Govee, convert "scenceParam" (.data.categories[].scenes[].lightEffects[].scenceParam) from base64 to base16 (hexadecimal).
@@ -45,13 +47,23 @@ If "type" data is present in "model_specific_parameters.json", match the "type" 
 
 For the model H6065, a "scenceParam" (converted to base16) may start with "12000c000f", "1200000000", or somehting else.
 
-* If the "scenceParam" for a specific scene starts with "12000c000f", that scene matches "type_entry": 0.
+* If the "scenceParam" starts with "12000c000f", that scene matches "type_entry": 0.
   
-* If the "scenceParam" for a specific scene starts with "1200000000", that scene matches "type_entry": 1.
+* If the "scenceParam" starts with "1200000000", that scene matches "type_entry": 1.
   
-* If the "scenceParam" for a specific scene starts with something other tha nthe specified "hex_prefix_remove", that scene does not matche any "type_entry".
+* If the "scenceParam" scene starts with something other than the specified "hex_prefix_remove", that scene does not match any "type_entry" and may be remain as is.
+  
+* Other models (like most string lights) have an empty "hex_prefix_remove" value. In isntances, all sccenes match the provided type.
 
-For the "Star", the base16 conversion begins with "1200000000" and therefroe matches the second entry ("type_entry": 1).
+For "Star", the base16 conversion begins with "1200000000" and therefroe matches the second entry ("type_entry": 1).
+```
+{
+  "type_entry": 1,
+  "hex_prefix_remove": "1200000000",
+  "hex_prefix_add": "04",
+  "normal_command_suffix": "0047"
+}
+```
 ***
 ### 5. Associate the scene with the "type" data
 For example, in the v1.2 code, this is accomplished by copying the type entry (with the matching "hex_prefix_remove") to the scene entry.
@@ -66,4 +78,34 @@ For scene "Star" of the H6065, "hex_prefix_remove" is `1200000000`
 120000000027150f030001050008001289001289001289ffd831ffd831001289001289001289 <---- before removal
           27150f030001050008001289001289001289ffd831ffd831001289001289001289 <---- after removal
 ```
+***
+### 7. Add "hex_prefix_add" to the converted base16 data.
+For scene "Star" of the H6065, "hex_prefix_add" is `04`
+```
+  27150f030001050008001289001289001289ffd831ffd831001289001289001289 <---- before adding
+0427150f030001050008001289001289001289ffd831ffd831001289001289001289 <---- after adding
+```
+***
+### 8. Count the number of lines for the multi-line command
+Get length of base16 data (after removing "hex_prefix_remove" and adding "hex_prefix_add")
+
+`len(0427150f030001050008001289001289001289ffd831ffd831001289001289001289) = 68`
+
+Add 4 (2 hex bytes) to account for first line "01" and "line count" bytes
+
+`68 + 4 = 72`
+
+Divide by 34, which is the length of standard line minus the first 4 characters (ax xx) and last 2 characters (checksum).
+
+`72 / 34 = 2.117...`
+
+Round up (ceiling)
+
+`ceil(2.117...) = 3`
+
+Convert to base16 (hexadecimal)
+
+10 = 0a
+11 = 0b
+...
 
