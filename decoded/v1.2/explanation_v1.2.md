@@ -1,7 +1,7 @@
 ## Initial Notes:
 The bash/shell scripts in this directory (https://github.com/AlgoClaw/Govee/tree/main/decoded/v1.2) programatically perform the steps described below.
 
-Simply modify the "govee_00_multi.sh" (https://github.com/AlgoClaw/Govee/blob/main/decoded/v1.2/govee_00_multi.sh) script, as needed, and execute to generate the desired output JSONs.
+Modify the "govee_00_multi.sh" (https://github.com/AlgoClaw/Govee/blob/main/decoded/v1.2/govee_00_multi.sh) script, as needed, and execute to generate the desired output JSONs.
 
 Model specific paramters may not be correct in "model_specific_parameters.json" (https://github.com/AlgoClaw/Govee/blob/main/decoded/v1.2/model_specific_parameters.json). However, these parameters should be easy to update/add/correct with minimal samples of emperical examples.
 ***
@@ -13,7 +13,7 @@ a301[        hex(scenceParam)        ]CH
 a302[        hex(scenceParam)        ]CH
 ...
 a3ff[hex(scenceParam)][ zero padding ]CH    <----- Last "multi-line" command
-330504[BS][??????][   zero padding   ]CH    <----- Command to change scene in the Govee app.
+330504[BS][??????][   zero padding   ]CH    <----- "Standard" command to change scene in the Govee app.
                                                    This command is *optional* (and can be set to the incorrect scene).
 ```
 ***
@@ -75,15 +75,15 @@ In the provded code, "params_b16" is copied to "params_b16_mod" (largely for deb
 ### 6. Remove "hex_prefix_remove" from the coverted base16 data.
 For scene "Star" of the H6065, "hex_prefix_remove" is `1200000000`
 ```
-120000000027150f030001050008001289001289001289ffd831ffd831001289001289001289 <---- before removal
-          27150f030001050008001289001289001289ffd831ffd831001289001289001289 <---- after removal
+120000000027150f030001050008001289001289001289ffd831ffd831001289001289001289 <---- before
+          27150f030001050008001289001289001289ffd831ffd831001289001289001289 <---- after
 ```
 ***
 ### 7. Add "hex_prefix_add" to the converted base16 data.
 For scene "Star" of the H6065, "hex_prefix_add" is `04`
 ```
-  27150f030001050008001289001289001289ffd831ffd831001289001289001289 <---- before adding
-0427150f030001050008001289001289001289ffd831ffd831001289001289001289 <---- after adding
+  27150f030001050008001289001289001289ffd831ffd831001289001289001289 <---- before
+0427150f030001050008001289001289001289ffd831ffd831001289001289001289 <---- after
 ```
 ***
 ### 8. Count the number of lines for the multi-line command
@@ -103,9 +103,54 @@ Round up (ceiling)
 
 `ceil(2.117...) = 3`
 
-Convert to base16 (hexadecimal)
+Convert to base16 (hexadecimal) and pad to 2 characters
 
-10 = 0a
-11 = 0b
-...
+`num_lines = b16(3) = 03`
+***
+###  9. Add "01" and base16 of "num lines" (03) value to beggining of base16 value
+```
+    0427150f030001050008001289001289001289ffd831ffd831001289001289001289 <---- before
+01030427150f030001050008001289001289001289ffd831ffd831001289001289001289 <---- after
+```
+***
+### 10. Break base16 value into 34 character arrays
+Underscore provides as placeholders
+```
+____01030427150f0300010500080012__
+____89001289001289ffd831ffd83100__
+____1289001289001289______________
+```
+### 11. Add "line count" (indexed) in 2 character base16 to each lines
+```
+__0001030427150f0300010500080012__
+__0189001289001289ffd831ffd83100__
+__021289001289001289______________
+```
+### 12. Add "hex_multi_prefix" ("a3") to the beginning of each base16 value (this always "a3" except for H70C4??)
+This value is provided in "model_specific_parameters.json"
+```
+a30001030427150f0300010500080012__
+a30189001289001289ffd831ffd83100__
+a3021289001289001289______________
+```
+### 13. Calculate and add "standard" command
+This is the command that updates the scene in the Govee app, but is not required for multi-line comamnds.
+
+This can be set to a "standard command" for a different scene, which will update the app to (incorrectly) indicate that different scene has been selected.
+
+#### 13.1 Initial bytes
+For setting a scene, the standard command starts with `330504`
+
+#### 13.2 Convert "code" and swap the bytes
+Convert the "code" for the scene from base10 to base16.
+
+For "Star", the code (in base10) is `2899`. Converted to base16 this is `0b53`
+
+Swap the bytes of base16 of the scene code `0b53` --> `530b`
+
+#### 13.3 Append "normal_command_suffix" (see Step 4)
+
+If a "normal_command_suffix" is available in the assocaited scene type, that is appended.
+
+For "Star", the "normal_command_suffix" is `0047`
 
