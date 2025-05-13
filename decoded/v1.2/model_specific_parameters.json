@@ -13,15 +13,7 @@
 			"H6079"
 		],
 		"hex_multi_prefix": "a3",
-		"on_command": true,
-		"type": [
-			{
-				"type_entry": 0,
-				"hex_prefix_remove": "",
-				"hex_prefix_add": "",
-				"normal_command_suffix": "0002"
-			}
-		]
+		"on_command": true
 	},
 	{
 		"models": [
@@ -40,7 +32,7 @@
 		"hex_multi_prefix": "a3",
 		"on_command": false,
 		"type": [
-			{
+					{
 				"type_entry": 0,
 				"hex_prefix_remove": "",
 				"hex_prefix_add": "02",
@@ -71,27 +63,6 @@
 	},
 	{
 		"models": [
-			"H6061"
-			],
-		"hex_multi_prefix": "a3",
-		"on_command": false,
-		"type": [
-			{
-				"type_entry": 0,
-				"hex_prefix_remove": "120000003f",
-				"hex_prefix_add": "04",
-				"normal_command_suffix": "022d"
-			},
-			{
-				"type_entry": 1,
-				"hex_prefix_remove": "1200000000",
-				"hex_prefix_add": "04",
-				"normal_command_suffix": "002d"
-			}
-		]
-	},
-	{
-		"models": [
 			"H6022"
 			],
 		"hex_multi_prefix": "a3",
@@ -116,12 +87,12 @@
 			"H6092"
 			],
 		"hex_multi_prefix": "a3",
-		"on_command": false,
+		"on_command": true,
 		"type": [
 			{
 				"type_entry": 0,
 				"hex_prefix_remove": "21",
-				"hex_prefix_add": "02560b",
+				"hex_prefix_add": "560b",
 				"normal_command_suffix": ""
 			}
 		]
@@ -146,6 +117,14 @@
 				"normal_command_suffix": "0047"
 			}
 		]
+	},
+	{
+		"models": [
+			"H6127"
+			],
+		"hex_multi_prefix": "a3",
+		"on_command": true,
+		"type": []
 	},
 	{
 		"models": [

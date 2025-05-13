@@ -110,8 +110,6 @@ rm -f "${tempfile_06_040}"
 
 jq 'map(.modparams.hex_multi_prefix as $prefix | if .cmd_b16 != [""] then .cmd_b16 |= map($prefix + .) end)' "${tempfile_06_030}" > "${tempfile_06_040}"
 
-
-
 ###############################################################
 # Calculate and add standard command
 # tempfile_06_050
@@ -294,7 +292,7 @@ echo "$JSON_to_merge" > "${tempfile_06_080}"
 
 cat "${tempfile_06_010}" "${tempfile_06_080}" | jq -n '[inputs] | transpose | map(add)' > "${OUTPUT_JSON}"
 
-# exit
+exit
 
 # CLEANUP
 rm -f "${tempfile_06_010}"

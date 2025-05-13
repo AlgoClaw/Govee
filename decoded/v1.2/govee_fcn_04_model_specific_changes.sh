@@ -74,10 +74,10 @@ tempfile_04_050="${JSONDIR}/04_050_b16_prefix.json"
 rm -f "${tempfile_04_050}"
 
 jq 'map(
-	#if .type.hex_prefix_remove != "" then
+	if .params_b16_mod != "" then
 		(.type.hex_prefix_remove | length ) as $len |
 			.params_b16_mod = .type.hex_prefix_add + .params_b16_mod[$len:]
-	#end
+	end
 )' "${tempfile_04_040}" > "${tempfile_04_050}"
 
 ###############################################################
