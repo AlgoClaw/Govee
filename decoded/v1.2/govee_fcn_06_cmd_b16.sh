@@ -292,7 +292,7 @@ echo "$JSON_to_merge" > "${tempfile_06_080}"
 
 cat "${tempfile_06_010}" "${tempfile_06_080}" | jq -n '[inputs] | transpose | map(add)' > "${OUTPUT_JSON}"
 
-exit
+#exit
 
 # CLEANUP
 rm -f "${tempfile_06_010}"

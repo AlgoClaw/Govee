@@ -62,7 +62,7 @@ JSON_input=$(cat "${tempfile_05_020}")
 
 jq --args 'to_entries | map(.value.num_lines_b16 = $ARGS.positional[.key] | .value)' <<< "$JSON_input" -- "${num_lines_b16_array[@]}" > "${OUTPUT_JSON}"
 
-exit
+#exit
 
 # CLEANUP
 rm -f "${tempfile_05_010}"
