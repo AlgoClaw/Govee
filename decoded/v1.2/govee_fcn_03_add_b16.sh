@@ -36,9 +36,9 @@ tempfile_03_041="${JSONDIR}/03_041_NBSP_removed.json"
 rm -f "${tempfile_03_041}"
 
 #
-jq '[.data.categories[].scenes[] | {name: .sceneName, data: .lightEffects[] | {subname: .scenceName, code: .sceneCode, params_b64: .scenceParam}}]' "${tempfile_03_010}" > "${tempfile_03_020}"
-jq '[.[] | {name: .name, subname: .data.subname, code: .data.code, params_b64: .data.params_b64}]' "${tempfile_03_020}" > "${tempfile_03_030}"
-jq '[.[] | {name: (.name + "-" + .subname), code: .code, params_b64: .params_b64}]' "${tempfile_03_030}" > "${tempfile_03_040}"
+jq '[.data.categories[].scenes[] | {name: .sceneName, data: .lightEffects[] | {subname: .scenceName, code: .sceneCode, params_b64: .scenceParam, scenetyperaw: .sceneType}}]' "${tempfile_03_010}" > "${tempfile_03_020}"
+jq '[.[] | {name: .name, subname: .data.subname, code: .data.code, params_b64: .data.params_b64, scenetyperaw: .data.scenetyperaw}]' "${tempfile_03_020}" > "${tempfile_03_030}"
+jq '[.[] | {name: (.name + "-" + .subname), code: .code, params_b64: .params_b64, scenetyperaw: .scenetyperaw}]' "${tempfile_03_030}" > "${tempfile_03_040}"
 jq 'walk(if type == "string" then gsub(" "; " ") else . end)' "${tempfile_03_040}" > "${tempfile_03_041}"
 
 ###############################################################

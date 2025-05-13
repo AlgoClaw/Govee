@@ -15,8 +15,8 @@ JSONDIR=$(dirname "${OUTPUT_JSON}")
 tempfile_05_010="${JSONDIR}/05_010_num_lines_b10_added.json"
 rm -f "${tempfile_05_010}"
 
-# Add 4 to account for first multiline missing "01" and "line count"
-# Divide by 34, which is the length of standard line minus the first 4 characters (ax xx) and last byte (checkssum).
+# Add 4 (2 hex bytes) to account for first line "01" and "line count" bytes
+# Divide by 34, which is the length of standard line minus the first 4 characters (ax xx) and last 2 characters (checksum).
 # Round up (ceiling)
 
 jq 'map(if .params_b16_mod != "" then (.num_lines_b10 = ((((.params_b16_mod | length) + 4) / 34) | ceil)) else .num_lines_b10 = 0 end)' "${OUTPUT_JSON}" > "${tempfile_05_010}"
@@ -62,7 +62,7 @@ JSON_input=$(cat "${tempfile_05_020}")
 
 jq --args 'to_entries | map(.value.num_lines_b16 = $ARGS.positional[.key] | .value)' <<< "$JSON_input" -- "${num_lines_b16_array[@]}" > "${OUTPUT_JSON}"
 
-#exit
+exit
 
 # CLEANUP
 rm -f "${tempfile_05_010}"
