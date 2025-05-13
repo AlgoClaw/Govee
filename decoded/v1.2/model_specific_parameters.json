@@ -71,6 +71,27 @@
 	},
 	{
 		"models": [
+			"H6061"
+			],
+		"hex_multi_prefix": "a3",
+		"on_command": false,
+		"type": [
+			{
+				"type_entry": 0,
+				"hex_prefix_remove": "120000003f",
+				"hex_prefix_add": "04",
+				"normal_command_suffix": "022d"
+			},
+			{
+				"type_entry": 1,
+				"hex_prefix_remove": "1200000000",
+				"hex_prefix_add": "04",
+				"normal_command_suffix": "002d"
+			}
+		]
+	},
+	{
+		"models": [
 			"H6022"
 			],
 		"hex_multi_prefix": "a3",
