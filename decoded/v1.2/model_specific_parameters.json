@@ -13,7 +13,8 @@
 			"H6079"
 		],
 		"hex_multi_prefix": "a3",
-		"on_command": true
+		"on_command": true,
+		"type": []
 	},
 	{
 		"models": [
@@ -118,14 +119,7 @@
 			}
 		]
 	},
-	{
-		"models": [
-			"H6127"
-			],
-		"hex_multi_prefix": "a3",
-		"on_command": true,
-		"type": []
-	},
+
 	{
 		"models": [
 			"H70C4"
