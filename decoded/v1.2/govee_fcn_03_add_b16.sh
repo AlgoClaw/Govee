@@ -27,19 +27,43 @@ cp "${RAWFILE}" "${tempfile_03_010}"
 tempfile_03_020="${JSONDIR}/03_020_filtered_scenes.json"
 rm -f "${tempfile_03_020}"
 # tempfile_03_030
-tempfile_03_030="${JSONDIR}/03_030_filtered_scenes.json"
+tempfile_03_030="${JSONDIR}/03_030_NBSP_removed.json"
 rm -f "${tempfile_03_030}"
-# tempfile_03_040
-tempfile_03_040="${JSONDIR}/03_040_filtered_scenes.json"
-rm -f "${tempfile_03_040}"
-tempfile_03_041="${JSONDIR}/03_041_NBSP_removed.json"
-rm -f "${tempfile_03_041}"
 
-#
-jq '[.data.categories[].scenes[] | {name: .sceneName, data: .lightEffects[] | {subname: .scenceName, code: .sceneCode, params_b64: .scenceParam, scenetyperaw_b10: .sceneType}}]' "${tempfile_03_010}" > "${tempfile_03_020}"
-jq '[.[] | {name: .name, subname: .data.subname, code: .data.code, params_b64: .data.params_b64, scenetyperaw_b10: .data.scenetyperaw_b10}]' "${tempfile_03_020}" > "${tempfile_03_030}"
-jq '[.[] | {name: (.name + "-" + .subname), code: .code, params_b64: .params_b64, scenetyperaw_b10: .scenetyperaw_b10}]' "${tempfile_03_030}" > "${tempfile_03_040}"
-jq 'walk(if type == "string" then gsub(" "; " ") else . end)' "${tempfile_03_040}" > "${tempfile_03_041}"
+jq '
+  [
+    .data.categories[].scenes[] as $scene |
+    $scene.lightEffects[] as $effect |
+    {
+      name: ($scene.sceneName + "-" + $effect.scenceName),
+	  sceneId_b10: $scene.sceneId,
+	  sceneId_b16: "",
+	  scenceParamId_b10: $effect.scenceParamId,
+	  scenceParamId_b16: "",
+	  sceneType_b10: $effect.sceneType,
+	  sceneType_b16: "",
+      sceneCode_b10: $effect.sceneCode,
+	  sceneCode_b16: "",
+	  sceneCode_b16_swapped: "",
+      params_b64: $effect.scenceParam
+    }
+  ]
+' "${tempfile_03_010}" > "${tempfile_03_020}"
+
+# Replace "NBSP" whitespaces with standard spaces 
+jq 'walk(if type == "string" then gsub(" "; " ") else . end)' "${tempfile_03_020}" > "${tempfile_03_030}"
+
+###############################################################
+# Add b16 conversions
+# tempfile_03_040
+tempfile_03_040="${JSONDIR}/03_040_b16_conversions.json"
+rm -f "${tempfile_03_040}"
+
+"${SCRIPTDIR}/fcn_b10_2_b16_array.sh" "${tempfile_03_030}" "sceneId_b10" "sceneId_b16" "${tempfile_03_040}"
+"${SCRIPTDIR}/fcn_b10_2_b16_array.sh" "${tempfile_03_040}" "scenceParamId_b10" "scenceParamId_b16" "${tempfile_03_030}"
+"${SCRIPTDIR}/fcn_b10_2_b16_array.sh" "${tempfile_03_030}" "sceneType_b10" "sceneType_b16" "${tempfile_03_040}"
+"${SCRIPTDIR}/fcn_b10_2_b16_array.sh" "${tempfile_03_040}" "sceneCode_b10" "sceneCode_b16" "${tempfile_03_030}"
+jq 'map(.sceneCode_b16_swapped = .sceneCode_b16[2:4] + .sceneCode_b16[0:2])' "${tempfile_03_030}" > "${tempfile_03_040}"
 
 ###############################################################
 # Remove dangling "-" from "name"
@@ -47,7 +71,7 @@ jq 'walk(if type == "string" then gsub(" "; " ") else . end)' "${tempfile_03_04
 tempfile_03_050="${JSONDIR}/03_050_merged_names.json"
 rm -f "${tempfile_03_050}"
 
-namefix1=$(cat "${tempfile_03_041}")
+namefix1=$(cat "${tempfile_03_040}")
 namefix2=${namefix1//'-",'/'",'}
 echo "${namefix2}" > "${tempfile_03_050}"
 
