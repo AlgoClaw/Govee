@@ -85,6 +85,7 @@ For scene "Star" of the H6065, "hex_prefix_add" is `04`
   27150f030001050008001289001289001289ffd831ffd831001289001289001289 <---- before
 0427150f030001050008001289001289001289ffd831ffd831001289001289001289 <---- after
 ```
+NOTE: "hex_prefix_add" matches "sceneType" from the Govee API *most* of the time. For example, if "sceneType" is "2" or "4, "hex_prefix_add" is "02" or "04, respectively. However, if "sceneType" is "5", "hex_prefix_add" tends to be longer and inconsistent.
 ***
 ### 8. Count the number of lines for the multi-line command
 Get length of base16 data (after removing "hex_prefix_remove" and adding "hex_prefix_add")
@@ -114,7 +115,7 @@ Convert to base16 (hexadecimal) and pad to 2 characters
 ```
 ***
 ### 10. Break base16 value into 34 character arrays
-Underscore provides as placeholders
+Underscores provided as placeholders
 ```
 ____01030427150f0300010500080012__
 ____89001289001289ffd831ffd83100__
