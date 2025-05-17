@@ -31,36 +31,8 @@ jq 'map(.num_lines_b16 = "")' "${tempfile_05_010}" > "${tempfile_05_020}"
 
 ###############################################################
 # Create bash array of "num_lines_b10_array" values
-JSONwnums=$(cat "${tempfile_05_020}")
 
-unset num_lines_b10_array
-mapfile -t num_lines_b10_array < <(jq -r '.[] | .num_lines_b10 ' <<< "${JSONwnums}")
-
-###############################################################
-# Create bash array of "num_lines_b16_array" values
-unset num_elements
-num_elements=$((${#num_lines_b10_array[@]}-1))
-
-unset num_lines_b16_array
-
-for i in $(seq 0 ${num_elements}); do
-
-	unset dec_val
-	unset hex_val
-	
-	dec_val=$(echo ${num_lines_b10_array[($i)]})
-    hex_val=$("${SCRIPTDIR}/fcn_b10_2_b16.sh" ${dec_val} 1)
-	
-	num_lines_b16_array[($i)]=$hex_val
-done
-
-###############################################################
-# Add "num_lines_b16_array" to "num_lines_b16" in JSON
-
-unset JSON_input
-JSON_input=$(cat "${tempfile_05_020}")
-
-jq --args 'to_entries | map(.value.num_lines_b16 = $ARGS.positional[.key] | .value)' <<< "$JSON_input" -- "${num_lines_b16_array[@]}" > "${OUTPUT_JSON}"
+"${SCRIPTDIR}/fcn_b10_2_b16_array.sh" "${tempfile_05_020}" "num_lines_b10" "num_lines_b16" "${OUTPUT_JSON}"
 
 #exit
 

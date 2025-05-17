@@ -116,16 +116,16 @@ jq 'map(.modparams.hex_multi_prefix as $prefix | if .cmd_b16 != [""] then .cmd_b
 tempfile_06_050="${JSONDIR}/06_050_b16_multi_standard.json"
 rm -f "${tempfile_06_050}"
 
-# create "code_only" bash array
+# create "hex_swap" bash array
 
-mapfile -t code_only < <(jq -r '.[].code' "${tempfile_06_040}")
+mapfile -t hex_swap < <(jq -r '.[].sceneCode_b16_swapped' "${tempfile_06_040}")
 mapfile -t norm_suffix < <(jq -r '.[].type.normal_command_suffix' "${tempfile_06_040}")
 
-#echo "${code_only[@]}"
+#echo "${hex_swap[@]}"
 #echo "${norm_suffix[@]}"
 
 unset num_elements
-num_elements=$((${#code_only[@]}-1))
+num_elements=$((${#hex_swap[@]}-1))
 
 code_cmd_prefix="330504"
 
@@ -133,16 +133,7 @@ unset hex_code_byte_swap
 
 for i in $(seq 0 ${num_elements}); do
 
-	unset dec_val
-	unset hex_val
-	
-	dec_val=$(echo ${code_only[i]})
-	#echo $dec_val
-    hex_val=$("${SCRIPTDIR}/fcn_b10_2_b16.sh" ${dec_val} 2)
-	#echo $hex_val
-	
-	#swap the bytes
-	hex_code_byte_swap=$(echo ${hex_val:2:2}${hex_val:0:2})
+	hex_code_byte_swap=$(echo ${hex_swap[i]})
 	
 	unset suffix
 	
