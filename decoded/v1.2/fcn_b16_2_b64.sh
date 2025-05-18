@@ -1,5 +1,9 @@
 #!/bin/bash
 
+if [ "${1}" == "" ]; then
+    exit
+fi
+
 b16="${1}"
 
 if [ ${b16} == "" ]; then
