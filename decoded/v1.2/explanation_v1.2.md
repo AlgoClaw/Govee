@@ -3,7 +3,7 @@ The bash/shell scripts in this directory (https://github.com/AlgoClaw/Govee/tree
 
 Modify the "govee_00_multi.sh" (https://github.com/AlgoClaw/Govee/blob/main/decoded/v1.2/govee_00_multi.sh) script, as needed, and execute to generate the desired output JSONs.
 
-Model specific paramters may not be correct in "model_specific_parameters.json" (https://github.com/AlgoClaw/Govee/blob/main/decoded/v1.2/model_specific_parameters.json). However, these parameters should be easy to update/add/correct with minimal samples of emperical examples.
+Model specific parameters may not be correct in "model_specific_parameters.json" (https://github.com/AlgoClaw/Govee/blob/main/decoded/v1.2/model_specific_parameters.json). However, these parameters should be easy to update/add/correct with a few emperical examples.
 ***
 ## Generic Structure for Scene Commands:
 ```
@@ -34,26 +34,30 @@ curl "https://app2.govee.com/appsku/v1/light-effect-libraries?sku=${MODEL}" -H '
 ### 3. Convert "scenceParam" from base64 to base16
 From the JSON downloaded from Govee, convert "scenceParam" (.data.categories[].scenes[].lightEffects[].scenceParam) from base64 to base16 (hexadecimal).
 
-The H6065 JSON fron Govee provides the "scenceParam" (for "Star") as:
+The H6065 JSON fron Govee provides the "scenceParam" (for "Star") in base10 as:
 
-`EgAAAAAnFQ8DAAEFAAgAEokAEokAEon/2DH/2DEAEokAEokAEok=`
+```
+EgAAAAAnFQ8DAAEFAAgAEokAEokAEon/2DH/2DEAEokAEokAEok=
+```
 
-Converted to base16, this is:
+Convert to base16:
 
-`120000000027150f030001050008001289001289001289ffd831ffd831001289001289001289`
+```
+120000000027150f030001050008001289001289001289ffd831ffd831001289001289001289
+```
 ***
 ### 4. Match "type" to each scene
 If "type" data is present in "model_specific_parameters.json", match the "type" for each scene **using "hex_prefix_remove"**.
 
-For the model H6065, a "scenceParam" (converted to base16) may start with "12000c000f", "1200000000", or somehting else.
+For the model H6065, a "scenceParam" (converted to base16) may start with "12000c000f", "1200000000", or something else.
 
 * If the "scenceParam" starts with "12000c000f", that scene matches "type_entry": 0.
   
 * If the "scenceParam" starts with "1200000000", that scene matches "type_entry": 1.
   
-* If the "scenceParam" scene starts with something other than the specified "hex_prefix_remove", that scene does not match any "type_entry" and may be remain as is.
+* If the "scenceParam" scene starts with something other than the specified in any "hex_prefix_remove", that scene does not match any "type_entry" and may remain unmodified.
   
-* Other models (like most string lights) have an empty "hex_prefix_remove" value. In isntances, all sccenes match the provided type.
+* Other models (like most string lights) have an empty "hex_prefix_remove" value. In those instances, all scenes match the provided type.
 
 For "Star", the base16 conversion begins with "1200000000" and therefroe matches the second entry ("type_entry": 1).
 ```
@@ -68,9 +72,9 @@ For "Star", the base16 conversion begins with "1200000000" and therefroe matches
 ### 5. Associate the scene with the "type" data
 For example, in the v1.2 code, this is accomplished by copying the type entry (with the matching "hex_prefix_remove") to the scene entry.
 
-You will need "hex_prefix_add" and "normal_command_suffix" (from the same type entry) later.
+Later on, "hex_prefix_add" and "normal_command_suffix" (from the same type entry) are needed to finish generating the command.
 
-In the provded code, "params_b16" is copied to "params_b16_mod" (largely for debugging).
+In the provided code, "params_b16" is copied to "params_b16_mod" (largely for debugging).
 ***
 ### 6. Remove "hex_prefix_remove" from the coverted base16 data.
 For scene "Star" of the H6065, "hex_prefix_remove" is `1200000000`
@@ -96,11 +100,11 @@ Add 4 (2 hex bytes) to account for first line "01" and "line count" bytes
 
 `68 + 4 = 72`
 
-Divide by 34, which is the length of standard line minus the first 4 characters (ax xx) and last 2 characters (checksum).
+Divide by 34, which is the length of standard line (40 characters) minus the first 4 characters (ax xx) and last 2 characters (checksum).
 
 `72 / 34 = 2.117...`
 
-Round up (ceiling)
+Round up to nearest integer (ceiling)
 
 `ceil(2.117...) = 3`
 
