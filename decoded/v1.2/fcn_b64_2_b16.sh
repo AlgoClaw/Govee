@@ -1,9 +1,5 @@
 #!/bin/bash
 
-if [ "${1}" == "" ]; then
-    exit
-fi
-
 b64="${1}"
 
 if [ ${b64} == "" ]; then
