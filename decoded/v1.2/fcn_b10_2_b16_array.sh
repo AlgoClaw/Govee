@@ -37,7 +37,7 @@ for i in $(seq 0 ${num_elements}); do
 	unset hex_val
 	
 	dec_val=$(echo ${b10_array[($i)]})
-    hex_val=$("${SCRIPTDIR}/fcn_b10_2_b16.sh" ${dec_val})
+	hex_val=$("${SCRIPTDIR}/fcn_b10_2_b16.sh" ${dec_val})
 	
 	b16_array[($i)]=$hex_val
 	
