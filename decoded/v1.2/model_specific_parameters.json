@@ -28,7 +28,8 @@
 			"H7039",
 			"H7075",
 			"H70C2",
-			"H805A"
+			"H805A",
+			"H61F2"
 			],
 		"hex_multi_prefix": "a3",
 		"on_command": false,
