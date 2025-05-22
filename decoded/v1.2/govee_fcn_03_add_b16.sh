@@ -63,7 +63,7 @@ rm -f "${tempfile_03_040}"
 "${SCRIPTDIR}/fcn_b10_2_b16_array.sh" "${tempfile_03_040}" "scenceParamId_b10" "scenceParamId_b16" "${tempfile_03_030}"
 "${SCRIPTDIR}/fcn_b10_2_b16_array.sh" "${tempfile_03_030}" "sceneType_b10" "sceneType_b16" "${tempfile_03_040}"
 "${SCRIPTDIR}/fcn_b10_2_b16_array.sh" "${tempfile_03_040}" "sceneCode_b10" "sceneCode_b16" "${tempfile_03_030}"
-jq 'map(.sceneCode_b16_swapped = .sceneCode_b16[2:4] + .sceneCode_b16[0:2])' "${tempfile_03_030}" > "${tempfile_03_040}"
+jq 'map(.sceneCode_b16_swapped = (.sceneCode_b16 | if type == "string" then (. as $str | [range(0; ($str | length / 2 | floor)) as $i | ($str | split("")[ ($i*2) : ($i*2 + 2) ] | join("")) ] | reverse | join("")) else .sceneCode_b16 end))' "${tempfile_03_030}" > "${tempfile_03_040}"
 
 ###############################################################
 # Remove dangling "-" from "name"
