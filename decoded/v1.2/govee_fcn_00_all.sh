@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# /path/to/govee_00_all.sh "H61A8"
+# /path/to/govee_fcn_00_all.sh "H61A8"
 
 if [ "${1}" == "" ]; then
     exit
