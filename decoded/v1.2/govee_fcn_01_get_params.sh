@@ -24,8 +24,7 @@ unset model_params
 
 model_params=$(cat "${FILE}" | jq '.[] | select(.models | index("'${MODEL}'")) | del(.models) | .')
 
-###############################################################
-# defaults to "null" if absent
+# if absent, default to "null"
 
 if [ -z "${model_params}" ]; then
 	model_params=$($0 "null")
