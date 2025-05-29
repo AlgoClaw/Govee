@@ -156,17 +156,31 @@ This can be set to a "standard command" for a different scene, which will update
 #### 13.1 Initial bytes
 For setting a scene, the standard command starts with `330504`
 
-#### 13.2 Convert "code" and swap the bytes
-Convert the "code" for the scene from base10 to base16.
+#### 13.2 Convert "code" and reverse the bytes
+13.2.1. Convert the "code" for the scene from base10 to base16.
+13.2.2. Break the base16 code into bytes (2 character) segments.
+13.2.3. Reverse those bytes.
+13.2.4. Combine the reversed bytes.
 
-For "Star", the code (in base10) is `2899`. Converted to base16 this is `0b53`
+Example 1 (trivial example, if "code" (base10) = `165`)
+- Converted to base16 (`a5`)
+- Break into single byte (2 character) segments (`a5`)
+- Reverse (`a5`)
+- Combine (`a5`)
 
-Swap the bytes of base16 of the scene code `0b53` --> `530b`
+Example 2 (for "Star" of H6065, the code (in base10) is `2899`)
+- Converted to base16 (`0b53`)
+- Break into single byte (2 character) segments (`0b` and `53`)
+- Reverse (`53` and `0b`)
+- Combine (`530b`)
 
-(This is now performed earlier in the scripts and added to the model data as "sceneCode_b16_swapped")
+Example 3 (if "code" (base10) = `10875518`)
+- Converted to base16 (`a5f27e`)
+- Break into single byte (2 character) segments (`a5`, `f2`, and `7e`)
+- Reverse (`7e`, `f2`, and `a5`)
+- Combine (`7ea5f2`)
 
-If the base16 conversion is a single byte (e.g., "a5"), no swap is required.
-If the base16 conversion is three bytes (e.g., "a5f27e"), the base16 code must be broken into single byte increments (e.g., "a5", "f2", and "7e") then reversed (e.g., "7e", "a5", and "f2"), then combined (e.g., "7ea5f2"). This applies to any nubmer of bytes (split, reverse, and combine).
+This applies to any "code" (covert, break, reverse, and combine).
 
 #### 13.3 Append "normal_command_suffix" (see Step 4)
 
