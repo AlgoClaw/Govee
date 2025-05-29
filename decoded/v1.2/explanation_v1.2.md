@@ -165,10 +165,10 @@ For setting a scene, the standard command starts with `330504`
 
 #### 13.2 Convert "code" and reverse the bytes
 "code" = value at `.data.categories[].scenes[].lightEffects[].sceneCode`
-13.2.1. Convert the "code" for the scene from base10 to base16 
-13.2.2. Break the base16 code into bytes (2 character) segments.
-13.2.3. Reverse those bytes.
-13.2.4. Combine the reversed bytes.
+- 13.2.1. Convert the "code" for the scene from base10 to base16 
+- 13.2.2. Break the base16 code into bytes (2 character) segments.
+- 13.2.3. Reverse those bytes.
+- 13.2.4. Combine the reversed bytes.
 
 Example 1 (trivial example, if "code" (base10) = `165`)
 - Converted to base16 (`a5`)
