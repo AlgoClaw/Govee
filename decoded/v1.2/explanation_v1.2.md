@@ -3,19 +3,19 @@ The bash/shell scripts in [this directory](https://github.com/AlgoClaw/Govee/tre
 
 Modify the [govee_00_multi.sh script](https://github.com/AlgoClaw/Govee/blob/main/decoded/v1.2/govee_00_multi.sh) to include the desired models you desire and execute to generate output JSONs.
 
-**There are likely mistakes in [model_specific_parameters.json](https://github.com/AlgoClaw/Govee/blob/main/decoded/v1.2/model_specific_parameters.json). Please let me if you have any changes to make. For troubleshooting, debugging, decoding, these parameters should be easy to correct with a few emperical examples.***
+**There are likely mistakes in [model_specific_parameters.json](https://github.com/AlgoClaw/Govee/blob/main/decoded/v1.2/model_specific_parameters.json). Please let me if you have any changes to make. For troubleshooting, debugging, decoding, these parameters should be easy to correct with a few empirical examples.***
 
 ## Generic Structure for Scene Commands:
 ```
-[              ON COMMAND              ]    <----- "On" command. Works on all models. Included in scene cmds for H6079.
-a30001[NN][hxpreadd][hex(scenceParam)]CH    <----- First "multi-line" command
-a301[        hex(scenceParam)        ]CH
-a302[        hex(scenceParam)        ]CH
+[                      ON COMMAND                      ]    <----- "On" command. Works on all models. Included in scene cmds for H6079.
+a30001[num_lines][hex_prefix_add][scenceParam_hex_mod][Checksum]    <----- First "multi-line" command
+a301[              scenceParam_hex_mod               ][Checksum]
+a302[              scenceParam_hex_mod               ][Checksum]
 ...
-a3ff[hex(scenceParam)][ zero padding ]CH    <----- Last "multi-line" command
-330504[BS][??????][   zero padding   ]CH    <----- "Standard" command changes the selected scene in the Govee app.
-                                                   This command is *optional* (and can be set to the incorrect scene).
-                                                   I think Govee refers to this as the "modeCmd".
+a3ff[    scenceParam_hex_mod    ][    zero padding   ][Checksum]    <----- Last "multi-line" command
+330504[code_byte_swap][normal_command_suffix][      zero padding    ][Checksum]    <----- "Standard" command changes the selected scene in the Govee app.
+                                                                           This command is *optional* (and can be set to the incorrect scene).
+                                                                           I think Govee refers to this as the "modeCmd".
 ```
 ***
 ## Example Walkthrough (using model H6065 and scene "Star")
@@ -37,7 +37,7 @@ curl "https://app2.govee.com/appsku/v1/light-effect-libraries?sku=${MODEL}" -H '
 ### 3. Convert "scenceParam" from base64 to base16
 From the JSON downloaded from Govee, convert "scenceParam" (.data.categories[].scenes[].lightEffects[].scenceParam) from base64 to base16 (hexadecimal).
 
-The H6065 JSON fron Govee provides the "scenceParam" (for "Star") in base10 as:
+The H6065 JSON fron Govee provides the "scenceParam" (for "Star") in base64 as:
 
 ```
 EgAAAAAnFQ8DAAEFAAgAEokAEokAEon/2DH/2DEAEokAEokAEok=
@@ -58,7 +58,7 @@ For the model H6065, a "scenceParam" (converted to base16) may start with "12000
   
 * If the "scenceParam" starts with "1200000000", that scene matches "type_entry": 1.
   
-* If the "scenceParam" scene starts with something other than the specified in any "hex_prefix_remove", that scene does not match any "type_entry" and may remain unmodified.
+* If the "scenceParam" scene starts with something other than the specified in any "hex_prefix_remove", that scene does not match any "type_entry" and therefore does not have an associated "hex_prefix_add" or "normal_command_suffix" to add later on.
   
 * Other models (like most string lights) have an empty "hex_prefix_remove" value. In those instances, all scenes match the provided type.
 
@@ -95,12 +95,13 @@ For scene "Star" of the H6065, "hex_prefix_add" is `04`
 NOTE: "hex_prefix_add" matches "sceneType" from the Govee API *most* of the time. For example, if "sceneType" is "2" or "4, "hex_prefix_add" is "02" or "04, respectively. However, if "sceneType" is "5", "hex_prefix_add" tends to be longer and inconsistent.
 ***
 ### 8. Count the number of lines for the multi-line command
-Get length of base16 data (after removing "hex_prefix_remove" and adding "hex_prefix_add")
+Get length of base16 data (from step 7, after removing "hex_prefix_remove" and adding "hex_prefix_add")
 ```
 len(0427150f030001050008001289001289001289ffd831ffd831001289001289001289) = 68
 ```
 
-Add 4 (2 hex bytes) to account for first line "01" and "line count" bytes
+Later, the data from step 7 will be prepended with `01` (2 hex chars, for multi-packet start) and `num_lines` (2 hex chars, the value being calculated here).
+So, the total length of data to be segmented is len(data_from_step7) + 4
 ```
 68 + 4 = 72
 ```
@@ -127,13 +128,19 @@ num_lines = b16(3) = 03
 ```
 ***
 ### 10. Break base16 value into 34 character arrays
+
+The data from Step 9 (length 72 in this example) is broken into chunks.
+Each chunk will form the payload of a command line.
+Each command line has a structure like `a3xx[34-char-payload]CH`
+
 Underscores provided as placeholders
 ```
 ____01030427150f0300010500080012890012__
 ____89001289ffd831ffd83100128900128900__
 ____1289________________________________
 ```
-### 11. Add "line count" (indexed) in 2 character base16 to each lines. First line starts with "00", last line starts with "ff".
+### 11. Add line index in base16 to each line.
+First line starts with "00", last line starts with "ff".
 ```
 __0001030427150f0300010500080012890012__
 __0189001289ffd831ffd83100128900128900__
@@ -157,7 +164,8 @@ This can be set to a "standard command" for a different scene, which will update
 For setting a scene, the standard command starts with `330504`
 
 #### 13.2 Convert "code" and reverse the bytes
-13.2.1. Convert the "code" for the scene from base10 to base16.
+"code" = value at .data.categories[].scenes[].lightEffects[].sceneCode
+13.2.1. Convert the "code" for the scene from base10 to base16 
 13.2.2. Break the base16 code into bytes (2 character) segments.
 13.2.3. Reverse those bytes.
 13.2.4. Combine the reversed bytes.
@@ -214,13 +222,16 @@ a3ff1289________________________________
 ```
 ***
 ### 15. Pad each line with zeros, except for the last 2 characters (1 byte)
+Pad the data portion of each line with trailing zeros so that the total length of prefix + index + data_payload_with_padding is 38 characters (or 19 bytes).
+The final 2 characters (1 byte) will be the checksum.
 ```
 a30001030427150f0300010500080012890012__
 a30189001289ffd831ffd83100128900128900__
 a3ff1289000000000000000000000000000000__
 330504530b0047000000000000000000000000__
 ```
-### 16. Calculate the checksum for each line 
+### 16. Calculate the checksum for each line (8-bit XOR sum)
+See https://github.com/AlgoClaw/Govee/blob/main/decoded/v1.2/fcn_b16_checksum.sh
 ```
 a30001030427150f03000105000800128900121e
 a30189001289ffd831ffd83100128900128900b0
