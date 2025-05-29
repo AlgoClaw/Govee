@@ -178,7 +178,7 @@ Example 3 (if "code" (base10) = `10875518`)
 - Converted to base16 (`a5f27e`)
 - Break into single byte (2 character) segments (`a5`, `f2`, and `7e`)
 - Reverse (`7e`, `f2`, and `a5`)
-- Combine (`7ea5f2`)
+- Combine (`7ef2a5`)
 
 This applies to any "code" (covert, break, reverse, and combine).
 
