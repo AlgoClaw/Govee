@@ -7,7 +7,7 @@ Modify the [govee_00_multi.sh script](https://github.com/AlgoClaw/Govee/blob/mai
 
 ## Generic Structure for Scene Commands:
 ```
-[                      ON COMMAND                      ]    <----- "On" command. Works on all models. Included in scene cmds for H6079.
+[                          ON COMMAND                          ]    <----- "On" command. Works on all models. Included in scene cmds for H6079.
 a30001[num_lines][hex_prefix_add][scenceParam_hex_mod][Checksum]    <----- First "multi-line" command
 a301[              scenceParam_hex_mod               ][Checksum]
 a302[              scenceParam_hex_mod               ][Checksum]
