@@ -165,6 +165,9 @@ Swap the bytes of base16 of the scene code `0b53` --> `530b`
 
 (This is now performed earlier in the scripts and added to the model data as "sceneCode_b16_swapped")
 
+If the base16 conversion is a single byte (e.g., "a5"), no swap is required.
+If the base16 conversion is three bytes (e.g., "a5f27e"), the base16 code must be broken into single byte increments (e.g., "a5", "f2", and "7e") then reversed (e.g., "7e", "a5", and "f2"), then combined (e.g., "7ea5f2"). This applies to any nubmer of bytes (split, reverse, and combine).
+
 #### 13.3 Append "normal_command_suffix" (see Step 4)
 
 If a "normal_command_suffix" is available in the assocaited scene type, that is appended.
