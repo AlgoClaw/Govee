@@ -7,15 +7,15 @@ Modify the [govee_00_multi.sh script](https://github.com/AlgoClaw/Govee/blob/mai
 
 ## Generic Structure for Scene Commands:
 ```
-[                          ON COMMAND                          ]    <----- "On" command. Works on all models. Included in scene cmds for H6079.
-a30001[num_lines][hex_prefix_add][scenceParam_hex_mod][Checksum]    <----- First "multi-line" command
-a301[              scenceParam_hex_mod               ][Checksum]
-a302[              scenceParam_hex_mod               ][Checksum]
+[                             ON COMMAND                            ]    <----- "On" command. Works on all models. Included in scene cmds for H6079.
+a30001[num_lines][hex_prefix_add][   scenceParam_hex_mod  ][Checksum]    <----- First "multi-line" command
+a301[                 scenceParam_hex_mod                 ][Checksum]
+a302[                 scenceParam_hex_mod                 ][Checksum]
 ...
-a3ff[    scenceParam_hex_mod    ][    zero padding   ][Checksum]    <----- Last "multi-line" command
-330504[code_byte_swap][normal_command_suffix][      zero padding    ][Checksum]    <----- "Standard" command changes the selected scene in the Govee app.
-                                                                           This command is *optional* (and can be set to the incorrect scene).
-                                                                           I think Govee refers to this as the "modeCmd".
+a3ff[     scenceParam_hex_mod     ][     zero padding     ][Checksum]    <----- Last "multi-line" command
+330504[code_byte_swap][normal_command_suffix][zero padding][Checksum]    <----- "Standard" command changes the selected scene in the Govee app.
+                                                                                 This command is *optional* (and can be set to the incorrect scene).
+                                                                                 I think Govee refers to this as the "modeCmd".
 ```
 ***
 ## Example Walkthrough (using model H6065 and scene "Star")
