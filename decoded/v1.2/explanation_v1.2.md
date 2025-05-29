@@ -35,7 +35,7 @@ curl "https://app2.govee.com/appsku/v1/light-effect-libraries?sku=${MODEL}" -H '
 ```
 ***
 ### 3. Convert "scenceParam" from base64 to base16
-From the JSON downloaded from Govee, convert "scenceParam" (.data.categories[].scenes[].lightEffects[].scenceParam) from base64 to base16 (hexadecimal).
+From the JSON downloaded from Govee, convert "scenceParam" (`.data.categories[].scenes[].lightEffects[].scenceParam`) from base64 to base16 (hexadecimal).
 
 The H6065 JSON fron Govee provides the "scenceParam" (for "Star") in base64 as:
 
@@ -164,7 +164,7 @@ This can be set to a "standard command" for a different scene, which will update
 For setting a scene, the standard command starts with `330504`
 
 #### 13.2 Convert "code" and reverse the bytes
-"code" = value at .data.categories[].scenes[].lightEffects[].sceneCode
+"code" = value at `.data.categories[].scenes[].lightEffects[].sceneCode`
 13.2.1. Convert the "code" for the scene from base10 to base16 
 13.2.2. Break the base16 code into bytes (2 character) segments.
 13.2.3. Reverse those bytes.
