@@ -1,6 +1,14 @@
-## Initial Notes:
-The bash/shell scripts in [this directory](https://github.com/AlgoClaw/Govee/tree/main/decoded/v1.2) programatically perform the steps described below.
+## Implementaions
+### [v1.2](https://github.com/AlgoClaw/Govee/blob/main/decoded/v1.2/explanation):
+- Bash/shell - [this directory](https://github.com/AlgoClaw/Govee/tree/main/decoded/v1.2)
+- Python  - https://github.com/justabaka/govee-lan-scene-command-generator
+- Rust - https://github.com/AlgoClaw/govee2mqtt/blob/main/src/ble.rs (AI generated update from wez's original repository version)
 
+### [v1.1](https://github.com/AlgoClaw/Govee/blob/main/decoded/v1.1/explanation):
+- C# - https://github.com/egold555/Govee-Reverse-Engineering/issues/11#issuecomment-2567683440
+- Rust - https://github.com/wez/govee2mqtt/blob/main/src/ble.rs
+
+## Initial Notes:
 Modify the [govee_00_multi.sh script](https://github.com/AlgoClaw/Govee/blob/main/decoded/v1.2/govee_00_multi.sh) to include the desired models you desire and execute to generate output JSONs.
 
 **There are likely mistakes in [model_specific_parameters.json](https://github.com/AlgoClaw/Govee/blob/main/decoded/v1.2/model_specific_parameters.json).**
@@ -15,7 +23,7 @@ a302[                   scenceParam                               ][Checksum]
 ...
 a3ff[        scenceParam        ][          zero padding          ][Checksum] <-- Last "multi-line" command
 330504[code_byte_swap][normal_command_suffix][    zero padding    ][Checksum] <-- "Standard" command changes the selected scene in the Govee app.
-                                                                                This command is *optional* (and can be set to the incorrect scene).
+                                                                                This command is optional (and can be set to the incorrect scene), unless "scenceParam" is empty.
                                                                                 I think Govee refers to this as the "modeCmd".
 ```
 ***
@@ -39,7 +47,9 @@ curl "https://app2.govee.com/appsku/v1/light-effect-libraries?sku=${MODEL}" -H '
 From the JSON downloaded from Govee, convert "scenceParam" (`.data.categories[].scenes[].lightEffects[].scenceParam`) from base64 to base16 (hexadecimal).
 "scenceParam" is stored as "params_b16" in the bash/shell scripts for this method.
 
-_**If scenceParam is empty ("") or nonexistent, there are no "multi-lines" (any line starting with "a3" or "a4"). Accordingly, skip to step 13 -- the "normal command" is the only command required to change the scene**_
+_**If scenceParam is empty ("") or nonexistent, THERE ARE NO "multi-lines" (any line starting with "a3" or "a4").**_
+
+_**Accordingly, skip to step 13 -- the "normal command" is the only command required to change the scene**_
 
 The H6065 JSON fron Govee provides the "scenceParam" (for "Star") in base64 as:
 
