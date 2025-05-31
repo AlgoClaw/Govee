@@ -23,12 +23,12 @@ a3ff[        scenceParam        ][          zero padding          ][Checksum] <-
 ### 0. Prerequesites
 Know the model number/identifier of the model (e.g., H61A8, H7039, H610A).
 ***
-### 1. Get Generic JSON of Model-Specific Parameters
+### 1. Get JSON with Parameters Specific for Each Model (SKU)
 ```bash
 curl "https://raw.githubusercontent.com/AlgoClaw/Govee/refs/heads/main/decoded/v1.2/model_specific_parameters.json" -o model_specific_parameters.json
 ```
 ***
-### 2. Get Model-Specific JSON from Govee's Public API
+### 2. Get Model's "light-effect-libraries" JSON from Govee's Public API
 Example using H6065:
 ```bash
 MODEL="H6065"
