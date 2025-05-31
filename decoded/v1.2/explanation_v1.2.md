@@ -39,6 +39,8 @@ curl "https://app2.govee.com/appsku/v1/light-effect-libraries?sku=${MODEL}" -H '
 From the JSON downloaded from Govee, convert "scenceParam" (`.data.categories[].scenes[].lightEffects[].scenceParam`) from base64 to base16 (hexadecimal).
 "scenceParam" is stored as "params_b16" in the bash/shell scripts for this method.
 
+_**If scenceParam is empty ("") or nonexistent, there are no "multi-lines" (any line starting with "a3" or "a4"). Accordingly, skip to step 13 -- the "normal command" is the only command required to change the scene**_
+
 The H6065 JSON fron Govee provides the "scenceParam" (for "Star") in base64 as:
 
 ```
