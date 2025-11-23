@@ -9,7 +9,7 @@
 - Rust - https://github.com/wez/govee2mqtt/blob/main/src/ble.rs
 
 ## Initial Notes:
-Modify the [govee_00_multi.sh script](https://github.com/AlgoClaw/Govee/blob/main/decoded/v1.2/govee_00_multi.sh) to include the desired models you desire and execute to generate output JSONs.
+Modify the [govee_00_multi.sh script](https://github.com/AlgoClaw/Govee/blob/main/decoded/v1.2/govee_00_multi.sh) to include your desired models and execute the script to generate output JSONs.
 
 **There are likely mistakes in [model_specific_parameters.json](https://github.com/AlgoClaw/Govee/blob/main/decoded/v1.2/model_specific_parameters.json).**
 **Please let me know if you have any changes to make. For troubleshooting, debugging, decoding, these parameters should be easy to correct with a few empirical examples.**
