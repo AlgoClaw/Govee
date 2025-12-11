@@ -141,11 +141,11 @@ num_lines = b16(3) = 03
 01030427150f030001050008001289001289001289ffd831ffd831001289001289001289 <---- after
 ```
 ***
-### 10. Break base16 value into 34 character arrays
+### 10. Split base16 value into 34 character arrays
 
-The data from Step 9 (length 72 in this example) is broken into chunks.
+The data from Step 9 (length 72 in this example) is split into chunks.
 Each chunk will form the payload of a command line.
-Each command line has a structure like `a3xx[34-char-payload]CH`
+Each command line has a structure following this pattern `a3xx[34-char-payload]CH`
 
 Underscores provided as placeholders
 ```
@@ -176,7 +176,7 @@ a3ff1289________________________________
 ### 13. Calculate and add "standard" command ("modeCmd")
 The "standard" command updates the scene in the Govee app.
 
-Interestingly, the "standard" command is *not* required to actually change the scene *for multi-line commands*. That is, the lights will change, but the selection in the app will not.
+Interestingly, the "standard" command is *not* required to actually change the scene *for multi-line commands*. That is, if the "standard" command is *not* included, the lights will correctly change, but the selection in the app will not.
 
 Further, the "standard" command can be set for a *different* scene, which will update the app to (incorrectly) indicate that the different scene has been selected.
 
@@ -186,29 +186,29 @@ For setting a scene, the standard command starts with `330504`
 #### 13.2 Convert "code" and reverse the bytes
 "code" = value at `.data.categories[].scenes[].lightEffects[].sceneCode`
 13.2.1. Convert the "code" for the scene from base10 to base16 
-13.2.2. Break the base16 code into bytes (2 character) segments.
+13.2.2. Split the base16 code into bytes (2 character) segments.
 13.2.3. Reverse those bytes.
 13.2.4. Combine the reversed bytes.
 
 Example 1 (trivial example, if "code" (base10) = `165`)
 - Converted to base16 (`a5`)
-- Break into single byte (2 character) segments (`a5`)
+- Split into single byte (2 character) segments (`a5`)
 - Reverse (`a5`)
 - Combine (`a5`)
 
 Example 2 (for "Star" of H6065, the code (in base10) is `2899`)
 - Converted to base16 (`0b53`)
-- Break into single byte (2 character) segments (`0b` and `53`)
+- Split into single byte (2 character) segments (`0b` and `53`)
 - Reverse (`53` and `0b`)
 - Combine (`530b`)
 
 Example 3 (if "code" (base10) = `10875518`)
 - Converted to base16 (`a5f27e`)
-- Break into single byte (2 character) segments (`a5`, `f2`, and `7e`)
+- Split into single byte (2 character) segments (`a5`, `f2`, and `7e`)
 - Reverse (`7e`, `f2`, and `a5`)
 - Combine (`7ef2a5`)
 
-This process applies to any "code" (convert --> break --> reverse --> combine).
+This process applies to any "code" (convert --> split --> reverse --> combine).
 
 #### 13.3 Append "normal_command_suffix" (see Step 4)
 
