@@ -24,11 +24,11 @@ a302[                   scenceParam                               ][Checksum]
 a3ff[        scenceParam        ][          zero padding          ][Checksum] <-- Last "multi-line" command
 330504[code_byte_swap][normal_command_suffix][    zero padding    ][Checksum] <-- "Standard" command changes the selected scene in the Govee app.
                                                                                 This command is optional (and can be set to the incorrect scene), unless "scenceParam" is empty.
-                                                                                I think Govee refers to this as the "modeCmd".
+                                                                                I think Govee refers to this command as the "modeCmd".
 ```
 ***
 ## Example Walkthrough (using model H6065 and scene "Star")
-### 0. Prerequesites
+### 0. Prerequisites
 Know the model number/identifier of the model (e.g., H61A8, H7039, H610A).
 ***
 ### 1. Get JSON with Parameters Specific for Each Model (SKU)
@@ -51,7 +51,7 @@ _**If scenceParam is empty ("") or nonexistent, THERE ARE NO "multi-lines" (any 
 
 _**Accordingly, skip to step 13 -- the "normal command" is the only command required to change the scene**_
 
-The H6065 JSON fron Govee provides the "scenceParam" (for "Star") in base64 as:
+The H6065 JSON from Govee provides the "scenceParam" (for "Star") in base64 as:
 
 ```
 EgAAAAAnFQ8DAAEFAAgAEokAEokAEon/2DH/2DEAEokAEokAEok=
@@ -72,11 +72,11 @@ For the model H6065, a "scenceParam" (converted to base16) may start with "12000
   
 * If the "scenceParam" starts with "1200000000", that scene matches "type_entry": 1.
   
-* If the "scenceParam" scene starts with something other than the specified in any "hex_prefix_remove", that scene does not match any "type_entry". Therefore, that scene does not have an associated "hex_prefix_add" or "normal_command_suffix" to add later on. The method explained herein still works with these scenes.
+* If the "scenceParam" scene starts with something other than any "hex_prefix_remove", that scene does not match any "type_entry". Therefore, that scene does not have an associated "hex_prefix_add" or "normal_command_suffix" to append.
   
 * Other models (like most string lights) have an empty "hex_prefix_remove" value. In those instances, all scenes match the provided type.
 
-For "Star", the base16 conversion begins with "1200000000" and therefroe matches the second entry ("type_entry": 1).
+For "Star", the base16 conversion begins with "1200000000" and therefore matches the second entry ("type_entry": 1).
 ```
 {
   "type_entry": 1,
@@ -87,13 +87,13 @@ For "Star", the base16 conversion begins with "1200000000" and therefroe matches
 ```
 ***
 ### 5. Associate the scene with the "type" data
-For example, in the v1.2 code, this is accomplished by copying the type entry (with the matching "hex_prefix_remove") to the scene entry.
+For example, in the v1.2 code, this association is accomplished by copying the type entry (with the matching "hex_prefix_remove") to the scene entry.
 
 Later on, "hex_prefix_add" and "normal_command_suffix" (from the same type entry) are needed to finish generating the command.
 
 In the provided code, "params_b16" is copied to "params_b16_mod" (largely for debugging).
 ***
-### 6. Remove "hex_prefix_remove" from the coverted base16 data.
+### 6. Remove "hex_prefix_remove" from the converted base16 data.
 For scene "Star" of the H6065, "hex_prefix_remove" is `1200000000`
 ```
 120000000027150f030001050008001289001289001289ffd831ffd831001289001289001289 <---- before
@@ -106,7 +106,7 @@ For scene "Star" of the H6065, "hex_prefix_add" is `04`
   27150f030001050008001289001289001289ffd831ffd831001289001289001289 <---- before
 0427150f030001050008001289001289001289ffd831ffd831001289001289001289 <---- after
 ```
-NOTE: "hex_prefix_add" matches "sceneType" from the Govee API *most* of the time. For example, if "sceneType" is "2" or "4, "hex_prefix_add" is "02" or "04, respectively. However, if "sceneType" is "5", "hex_prefix_add" tends to be longer and inconsistent.
+NOTE: "hex_prefix_add" matches "sceneType" from the Govee API *most* of the time. For example, if "sceneType" is "2" or "4", "hex_prefix_add" is "02" or "04", respectively. However, if "sceneType" is "5", "hex_prefix_add" tends to be longer and inconsistent.
 ***
 ### 8. Count the number of lines for the multi-line command
 Get length of base16 data (from step 7, after removing "hex_prefix_remove" and adding "hex_prefix_add")
@@ -135,7 +135,7 @@ Convert to base16 (hexadecimal) and pad to 2 characters
 num_lines = b16(3) = 03
 ```
 ***
-###  9. Add "01" and base16 of "num lines" (03) value to the beggining of base16 value
+###  9. Add "01" and base16 of "num lines" (03) value to the beginning of base16 value
 ```
     0427150f030001050008001289001289001289ffd831ffd831001289001289001289 <---- before
 01030427150f030001050008001289001289001289ffd831ffd831001289001289001289 <---- after
@@ -165,8 +165,8 @@ __0189001289ffd831ffd83100128900128900__
 __ff1289________________________________
 ```
 ### 12. Add "hex_multi_prefix" ("a3") to the beginning of each line
-(this always "a3" except for H70C4??)
 This value is provided in "model_specific_parameters.json"
+(always "a3"? except for H70C4?)
 ```
 a30001030427150f0300010500080012890012__
 a30189001289ffd831ffd83100128900128900__
@@ -174,9 +174,11 @@ a3ff1289________________________________
 ```
 ***
 ### 13. Calculate and add "standard" command ("modeCmd")
-This is the command that updates the scene in the Govee app, but is not required for multi-line commands.
+The "standard" command updates the scene in the Govee app.
 
-This can be set to a "standard command" for a different scene, which will update the app to (incorrectly) indicate that different scene has been selected.
+Interestingly, the "standard" command is *not* required to actually change the scene *for multi-line commands*. That is, the lights will change, but the selection in the app will not.
+
+Further, the "standard" command can be set for a *different* scene, which will update the app to (incorrectly) indicate that the different scene has been selected.
 
 #### 13.1 Initial bytes
 For setting a scene, the standard command starts with `330504`
@@ -206,7 +208,7 @@ Example 3 (if "code" (base10) = `10875518`)
 - Reverse (`7e`, `f2`, and `a5`)
 - Combine (`7ef2a5`)
 
-This applies to any "code" (covert, break, reverse, and combine).
+This process applies to any "code" (convert --> break --> reverse --> combine).
 
 #### 13.3 Append "normal_command_suffix" (see Step 4)
 
@@ -216,7 +218,7 @@ For "Star", the "normal_command_suffix" is `0047`
 
 ##### 13.4 Append them together
 ```
-330504 + 530b + 0047` --> `330504530b0047
+330504 + 530b + 0047 --> 330504530b0047
 ```
 
 ##### 13.5 Add to Multi-Line Command
