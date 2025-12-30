@@ -1,4 +1,4 @@
-## Implementaions
+## Implementations
 ### [v1.2](https://github.com/AlgoClaw/Govee/blob/main/decoded/v1.2/explanation):
 - Bash/shell - [this directory](https://github.com/AlgoClaw/Govee/tree/main/decoded/v1.2)
 - Python  - https://github.com/justabaka/govee-lan-scene-command-generator
