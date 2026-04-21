@@ -128,5 +128,19 @@
 		"hex_multi_prefix": "a4",
 		"on_command": false,
 		"type": []
+	},
+	{
+		"models": [
+			"H6052"
+			],
+		"hex_multi_prefix": "a3",
+		"on_command": false,
+		"type": [
+			{
+				"type_entry": 0,
+				"hex_prefix_remove": "0111",
+				"hex_prefix_add": "07"
+			}
+		]
 	}
 ]
