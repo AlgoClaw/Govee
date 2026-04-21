@@ -138,7 +138,8 @@
 			{
 				"type_entry": 0,
 				"hex_prefix_remove": "0111",
-				"hex_prefix_add": "07"
+				"hex_prefix_add": "07",
+				"normal_command_suffix": ""
 			}
 		]
 	}
