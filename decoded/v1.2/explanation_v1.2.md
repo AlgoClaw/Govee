@@ -184,10 +184,14 @@ Further, the "standard" command can be set for a *different* scene, which will u
 For setting a scene, the standard command starts with `330504`
 
 #### 13.2 Convert "code" and reverse the bytes
-"code" = value at `.data.categories[].scenes[].lightEffects[].sceneCode`
-13.2.1. Convert the "code" for the scene from base10 to base16 
+  "code" = value at `.data.categories[].scenes[].lightEffects[].sceneCode`
+
+13.2.1. Convert the "code" for the scene from base10 to base16.
+
 13.2.2. Split the base16 code into bytes (2 character) segments.
+
 13.2.3. Reverse those bytes.
+
 13.2.4. Combine the reversed bytes.
 
 Example 1 (trivial example, if "code" (base10) = `165`)
@@ -216,7 +220,7 @@ If a "normal_command_suffix" is available in the associated scene type, that is 
 
 For "Star", the "normal_command_suffix" is `0047`
 
-##### 13.4 Append them together
+##### 13.4 Append the (1) "standard command", (2) reversed "code", and (3) "normal_command_suffix"
 ```
 330504 + 530b + 0047 --> 330504530b0047
 ```
