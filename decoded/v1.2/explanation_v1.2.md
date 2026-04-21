@@ -106,7 +106,7 @@ For scene "Star" of the H6065, "hex_prefix_add" is `04`
   27150f030001050008001289001289001289ffd831ffd831001289001289001289 <---- before
 0427150f030001050008001289001289001289ffd831ffd831001289001289001289 <---- after
 ```
-NOTE: In some *some* instances, "hex_prefix_add" matches "sceneType" from the Govee API. For example, if "sceneType" is "2" or "4", "hex_prefix_add" is "02" or "04", respectively. However, if "sceneType" is "5", "hex_prefix_add" tends to be longer and inconsistent. Relying on "sceneType" is too inconsistent. Deference should be given to [model_specific_parameters.json](https://github.com/AlgoClaw/Govee/blob/main/decoded/v1.2/model_specific_parameters.json).
+NOTE: In some *some* instances, "hex_prefix_add" matches "sceneType" from the Govee API. For example, if "sceneType" is "2" or "4", "hex_prefix_add" is "02" or "04", respectively. However, if "sceneType" is "5", "hex_prefix_add" tends to be longer and inconsistent. Relying on "sceneType" is too inconsistent. Deference should be given to "hex_prefix_add" in [model_specific_parameters.json](https://github.com/AlgoClaw/Govee/blob/main/decoded/v1.2/model_specific_parameters.json).
 ***
 ### 8. Count the number of lines for the multi-line command
 Get length of base16 data (from step 7, after removing "hex_prefix_remove" and adding "hex_prefix_add")
