@@ -224,10 +224,11 @@ that section should become white immediately and provide a clearer record-to-
 visual-region mapping.
 
 Observed result: the opening red changed to white. The original opening had
-red, blue, and an in-between color; the test opened with only white and blue.
-This confirms that record 1 palette 1 is a real initial-color source. It also
-indicates that the red is an endpoint of the opening blend, but does not yet
-prove which record owns which physical string section.
+red, blue, and pink; the test opened with white and blue, without a clearly
+separate third color. This confirms that record 1 palette 1 is a real
+initial-color source. Because the physical string crosses over itself, visual
+reports do **not** establish a reliable left-to-right order or a direct mapping
+from a record to one physical string section.
 
 The next direct-palette test is `AAA - Test - Cha-Cha-A - Record 0 Blue to
 Cyan`. It changes record 0 palette 1, offsets `18-20`, from `00 00 FF` (blue)
@@ -235,20 +236,20 @@ to `00 FF FF` (cyan). Since the red and blue components were already `00` and
 `FF`, respectively, its only non-identical byte is offset `19`, `00 -> FF`.
 All other parameter values and the mode packet are retained from Cha-Cha-A.
 
-Observed result: the opening was red, white, and cyan, with white between red
-and cyan. This is strongly consistent with component-wise RGB interpolation:
-the midpoint of red (`FF 00 00`) and cyan (`00 FF FF`) is neutral gray, which
-the device presents as white. The original red/blue pair can therefore produce
-the observed pink/magenta midpoint. This is evidence that record 0 palette 1
-and record 1 palette 1 are paired endpoints of an opening gradient; it is not
-yet proof of their full record-to-region mapping.
+Observed result: the opening contained red, white, and cyan. The physical order
+of those colors is unknown because the string crosses over itself. The result
+is consistent with component-wise RGB interpolation: red (`FF 00 00`) mixed
+with cyan (`00 FF FF`) can produce neutral gray, which the device presents as
+white. It is evidence that record 0 palette 1 and record 1 palette 1 may be
+paired inputs to a transition/gradient, but it does not prove a spatial midpoint
+or a full record-to-region mapping.
 
 `AAA - Test - Cha-Cha-A - Record 1 Red to Yellow` is the next confirmation
 test. It changes record 1 palette 1 from `FF 00 00` to `FF FF 00` (yellow).
 Only parameter offset `49` changes, `00 -> FF`; the red and blue components,
-all other parameter bytes, and the mode packet are original. If the same
-paired-gradient interpretation is right, the opening should show yellow,
-white/gray, and blue.
+all other parameter bytes, and the mode packet are original. It opened with
+yellow, white, and blue. That observation is consistent with the same color
+mixing hypothesis, but—again—does not establish their physical order.
 
 ## 4. Static parsing algorithm
 
