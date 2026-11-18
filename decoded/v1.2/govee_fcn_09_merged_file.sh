@@ -79,26 +79,37 @@ jq -n --slurpfile master "${MASTER_JSON}" --slurpfile generated "${GENERATED_JSO
       )
     end;
 
+  # Add a scene unless that command already exists. When it does, retain the
+  # first entry and add the incoming name as an alias. This also collapses
+  # duplicate v1/v2 entries when a first run uses generated output as master.
+  def add_or_alias($scene):
+    ($scene | command_key) as $scene_command
+    | [to_entries[] | select((.value | command_key) == $scene_command) | .key] as $matches
+    | if ($matches | length) > 0 then
+        $matches[0] as $index
+        | .[$index].name |= append_alias($scene.name)
+      else
+        . + [$scene]
+      end;
+
+  # New commands retain their name when available, or receive the first free
+  # numerical suffix without changing an existing master name.
+  def merge_generated_scene($scene):
+    ($scene | command_key) as $scene_command
+    | [to_entries[] | select((.value | command_key) == $scene_command) | .key] as $matches
+    | if ($matches | length) > 0 then
+        $matches[0] as $index
+        | .[$index].name |= append_alias($scene.name)
+      else
+        ([ .[].name ]) as $used_names
+        | next_available_name($scene.name; $used_names) as $new_name
+        | . + [($scene | .name = $new_name)]
+      end;
+
   ($master[0]) as $master_scenes
   | ($generated[0]) as $generated_scenes
-  | reduce $generated_scenes[] as $scene (
-      $master_scenes;
-      ($scene | command_key) as $scene_command
-      | [ .[] | select((command_key) == $scene_command) ] as $same_command
-      | if ($same_command | length) > 0 then
-          map(
-            if (command_key) == $scene_command then
-              .name |= append_alias($scene.name)
-            else
-              .
-            end
-          )
-        else
-          ([ .[].name ]) as $used_names
-          | next_available_name($scene.name; $used_names) as $new_name
-          | . + [($scene | .name = $new_name)]
-        end
-    )
+  | reduce $master_scenes[] as $scene ([]; add_or_alias($scene))
+  | reduce $generated_scenes[] as $scene (. ; merge_generated_scene($scene))
 ' > "${TEMP_OUTPUT}"
 
 mv "${TEMP_OUTPUT}" "${MERGED_JSON}"

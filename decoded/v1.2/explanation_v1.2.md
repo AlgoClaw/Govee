@@ -29,6 +29,14 @@ The merger never removes a master scene. If a fresh scene has the same complete
 example, `Foo (Bar)`). If it has a different command but collides on name, it is
 added using the first available suffix, such as `Foo-2` or `Foo-3`.
 
+Before decoding, the pipeline downloads both of Govee's public scene catalogs
+and saves them as `JSONs/<MODEL>_raw_v1.json` and
+`JSONs/<MODEL>_raw_v2.json`. It combines them into the historical
+`JSONs/<MODEL>_raw.json` input, then removes an exact duplicate effect returned
+by both endpoints while preserving v1-first order. Different names or command
+payloads are intentionally retained for the command-based merger to alias or
+suffix under the rules above.
+
 ## Generic Structure for Scene Commands:
 ```
 [                              ON COMMAND                                   ] <-- "On" command. Works on all models. Included in scene cmds for H6079.
@@ -51,12 +59,17 @@ Know the model number/identifier of the model (e.g., H61A8, H7039, H610A).
 curl "https://raw.githubusercontent.com/AlgoClaw/Govee/refs/heads/main/decoded/v1.2/model_specific_parameters.json" -o model_specific_parameters.json
 ```
 ***
-### 2. Get Model's "light-effect-libraries" JSON from Govee's Public API
+### 2. Get both of the model's scene catalogs from Govee's Public API
 Example using H6065:
 ```bash
 MODEL="H6065"
-curl "https://app2.govee.com/appsku/v1/light-effect-libraries?sku=${MODEL}" -H 'AppVersion: 9999999' -s > ${MODEL}_raw.json
+curl "https://app2.govee.com/appsku/v1/light-effect-libraries?sku=${MODEL}" -H 'AppVersion: 9999999' -s > ${MODEL}_raw_v1.json
+curl "https://app2.govee.com/appsku/v2/scences?sku=${MODEL}" -H 'AppVersion: 9999999' -s > ${MODEL}_raw_v2.json
 ```
+
+The v2 path is spelled `scences` by Govee. The Bash pipeline downloads both
+sources on each run, combines their categories, and removes exact duplicate
+effects before generating commands.
 ***
 ### 3. Convert "scenceParam" from base64 to base16
 From the JSON downloaded from Govee, convert "scenceParam" (`.data.categories[].scenes[].lightEffects[].scenceParam`) from base64 to base16 (hexadecimal).
