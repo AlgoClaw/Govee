@@ -235,6 +235,21 @@ to `00 FF FF` (cyan). Since the red and blue components were already `00` and
 `FF`, respectively, its only non-identical byte is offset `19`, `00 -> FF`.
 All other parameter values and the mode packet are retained from Cha-Cha-A.
 
+Observed result: the opening was red, white, and cyan, with white between red
+and cyan. This is strongly consistent with component-wise RGB interpolation:
+the midpoint of red (`FF 00 00`) and cyan (`00 FF FF`) is neutral gray, which
+the device presents as white. The original red/blue pair can therefore produce
+the observed pink/magenta midpoint. This is evidence that record 0 palette 1
+and record 1 palette 1 are paired endpoints of an opening gradient; it is not
+yet proof of their full record-to-region mapping.
+
+`AAA - Test - Cha-Cha-A - Record 1 Red to Yellow` is the next confirmation
+test. It changes record 1 palette 1 from `FF 00 00` to `FF FF 00` (yellow).
+Only parameter offset `49` changes, `00 -> FF`; the red and blue components,
+all other parameter bytes, and the mode packet are original. If the same
+paired-gradient interpretation is right, the opening should show yellow,
+white/gray, and blue.
+
 ## 4. Static parsing algorithm
 
 The following pseudocode is the complete `rgbic-r1` decoder. It should be
