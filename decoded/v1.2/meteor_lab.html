@@ -475,7 +475,7 @@
       });
       const result = await response.json().catch(() => ({}));
       if (!response.ok) throw new Error(result.error || `HTTP ${response.status}`);
-      setSendStatus(`Sent one ${result.bytes}-byte ptReal UDP datagram to ${result.ip}:${result.port}.`, 'ok');
+      setSendStatus(`Sent one ${result.bytes}-byte ptReal UDP datagram to ${result.ip}:${result.port}. UDP provides no device acknowledgment.`, 'ok');
     } catch (error) {
       setSendStatus(`Not sent: ${error.message}. Confirm the scene-lab server is running, then reload this page.`, 'error');
     } finally {

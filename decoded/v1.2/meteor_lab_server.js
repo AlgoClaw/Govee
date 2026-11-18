@@ -88,7 +88,10 @@ function readJson(request) {
 }
 
 function sendUdp(ip, udpPort, command) {
-  const payload = Buffer.from(JSON.stringify({ msg: { data: { command } }, cmd: 'ptReal' }), 'utf8');
+  // Govee LAN API requests are an envelope whose `cmd` and `data` both live
+  // under `msg`: {"msg":{"cmd":"ptReal","data":{"command":[…]}}}.
+  // `cmd` at the outer level is valid JSON but is ignored by the device.
+  const payload = Buffer.from(JSON.stringify({ msg: { cmd: 'ptReal', data: { command } } }), 'utf8');
   const socket = dgram.createSocket(net.isIP(ip) === 6 ? 'udp6' : 'udp4');
   return new Promise((resolve, reject) => {
     socket.send(payload, udpPort, ip, error => {
