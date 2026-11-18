@@ -219,7 +219,7 @@
     ]
   },
   {
-    "name": "Spring Wind",
+    "name": "Spring Wind",
     "cmd_b64": [
       "MwEBAAAAAAAAAAAAAAAAAAAAADM=",
       "owABCAoDLgAAAAYCAcwzA8wUFLg=",
@@ -940,6 +940,22 @@
     ]
   },
   {
+    "name": "Pumpkin Spice",
+    "cmd_b64": [
+      "MwEBAAAAAAAAAAAAAAAAAAAAADM=",
+      "owABCQoEHgAAAAEAATIyAgAUFLk=",
+      "owGDABQBryAAAACAAACAAAEBALs=",
+      "owL/JQAAAAMCAf/OA78UFAOhFEA=",
+      "owMD/0sAux4AuSQAFQD7AACAAUA=",
+      "owQAAgAB/x4AAAADAAF/fwAAFFM=",
+      "owUUAwAUAYw0AAAAgAAAgAABARw=",
+      "owYB/yRVAAACAgH/zgO/FBQDzGk=",
+      "owcUA/9LAMgFANEkABUA+gAAgFA=",
+      "o/8BAQEA/wAAAAAAAAAAAAAAAKI=",
+      "MwUEqIQAAAAAAAAAAAAAAAAAAB4="
+    ]
+  },
+  {
     "name": "Dreamlike",
     "cmd_b64": [
       "MwEBAAAAAAAAAAAAAAAAAAAAADM=",
@@ -1462,7 +1478,7 @@
     ]
   },
   {
-    "name": "Milky Way",
+    "name": "Milky Way",
     "cmd_b64": [
       "MwEBAAAAAAAAAAAAAAAAAAAAADM=",
       "owABEAoGLgAAAAEAATMzAgABAZI=",

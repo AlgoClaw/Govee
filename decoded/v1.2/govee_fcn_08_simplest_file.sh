@@ -11,8 +11,9 @@ SCRIPTDIR=$(dirname $(readlink -f $0))
 JSONDIR=$(dirname "${OUTPUT_JSON}")
 
 
-# final_output
-final_output="${JSONDIR}/${MODEL}_final.json"
+# The optional third argument lets the full pipeline keep the historical
+# _final.json intact while writing a fresh API result to _final_current.json.
+final_output="${3:-${JSONDIR}/${MODEL}_final_current.json}"
 rm -f "${final_output}"
 
 jq '[.[] | {name: .name, cmd_b64: .cmd_b64}]' "${OUTPUT_JSON}" > "${final_output}"

@@ -60,5 +60,28 @@ bash ${SCRIPTDIR}/govee_fcn_07_cmd_b64.sh "${OUTPUT_FILE_PATH}"
 
 ################
 # 08
-# Create Final File
-bash ${SCRIPTDIR}/govee_fcn_08_simplest_file.sh "${MODEL}" "${OUTPUT_FILE_PATH}"
+# Create the replaceable current scene file. Do not overwrite the existing
+# _final.json file: it is the seed for the durable merged scene library.
+JSONDIR=$(dirname "${OUTPUT_FILE_PATH}")
+GENERATED_FILE="${JSONDIR}/${MODEL}_final_current.json"
+MERGED_FILE="${JSONDIR}/${MODEL}_final_merged.json"
+LEGACY_FINAL_FILE="${JSONDIR}/${MODEL}_final.json"
+
+bash ${SCRIPTDIR}/govee_fcn_08_simplest_file.sh "${MODEL}" "${OUTPUT_FILE_PATH}" "${GENERATED_FILE}"
+
+################
+# 09
+# Merge the current API output into the durable scene library. Once a merged
+# file exists it becomes the master on later runs; otherwise retain the
+# existing legacy _final.json as the initial master.
+if [ -f "${MERGED_FILE}" ]; then
+	MASTER_FILE="${MERGED_FILE}"
+elif [ -f "${LEGACY_FINAL_FILE}" ]; then
+	MASTER_FILE="${LEGACY_FINAL_FILE}"
+else
+	# First-ever run: merging the fresh output with itself simply creates the
+	# durable merged file without requiring a legacy _final.json.
+	MASTER_FILE="${GENERATED_FILE}"
+fi
+
+bash ${SCRIPTDIR}/govee_fcn_09_merged_file.sh "${MASTER_FILE}" "${GENERATED_FILE}" "${MERGED_FILE}"

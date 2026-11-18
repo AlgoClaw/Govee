@@ -2905,5 +2905,118 @@
       "o/+AAAAAAAAAAAAAAAAAAAAAANw=",
       "MwUEtjkAAAAAAAAAAAAAAAAAAL0="
     ]
+  },
+  {
+    "name": "Dracarys",
+    "cmd_b64": [
+      "owABBwIEHSQAAAECAeuUA4AUFGQ=",
+      "owEC4woC/zkH/0sHFwD3EwD5ADM=",
+      "owIaIgAAAQIB5IUDgBQUAoAUAe4=",
+      "owP/RwcXAPIAAIAAHQAAAAECAWU=",
+      "owSxWALaCgoA9BQC/0AH/0ocAGU=",
+      "owUAgAAAgAAaJgAAAQIB54ADgHw=",
+      "o/8UFAKAFAH/FwcXAfcAAIAAAEU=",
+      "MwUENj8AAAAAAAAAAAAAAAAAADs="
+    ]
+  },
+  {
+    "name": "Green Reign",
+    "cmd_b64": [
+      "owABAwIBIwAAAAUCAbMzAcsUFM0=",
+      "owEDABQEFKoyHpYy8/+L/+YREho=",
+      "o/8A/gAAgAAAAAAAAAAAAAAAACI=",
+      "MwUENz8AAAAAAAAAAAAAAAAAADo="
+    ]
+  },
+  {
+    "name": "Fire & Blood",
+    "cmd_b64": [
+      "owABAwIBIAAAAAMCAcxNAcsUFMk=",
+      "owEDABQD/zYV/yYU/6RaEAD+AEg=",
+      "o/8AgAAAAAAAAAAAAAAAAAAAANw=",
+      "MwUEOD8AAAAAAAAAAAAAAAAAADU="
+    ]
+  },
+  {
+    "name": "Mother's Hug",
+    "cmd_b64": [
+      "owABBAIBLwAAAAwCAv9QAcgUCv4=",
+      "owH/IgPIFAoDvAoG/2gY/0Yr//s=",
+      "owKBVP+Div9zNP9aEwAA+AAAgPQ=",
+      "o/8AAAAAAAAAAAAAAAAAAAAAAFw=",
+      "MwUEND8AAAAAAAAAAAAAAAAAADk="
+    ]
+  },
+  {
+    "name": "AAA - Test - Red",
+    "cmd_b64": [
+      "owABAwIBICABAAoCAf8KAgAAAF0=",
+      "owECAAAD/wAAAP//////AAD6EEk=",
+      "o/8B/gAAAAAAAAAAAAAAAAAAAKM=",
+      "MwUEzQAAAAAAAAAAAAAAAAAAAP8="
+    ]
+  },
+  {
+    "name": "AAA - Test - Green",
+    "cmd_b64": [
+      "owABAwIBICABAAoCAf8KAgAAAF0=",
+      "owECAAADAP8AAP//////AAD6EEk=",
+      "o/8B/gAAAAAAAAAAAAAAAAAAAKM=",
+      "MwUEzQAAAAAAAAAAAAAAAAAAAP8="
+    ]
+  },
+  {
+    "name": "AAA - Test - Blue",
+    "cmd_b64": [
+      "owABAwIBICABAAoCAf8KAgAAAF0=",
+      "owECAAADAAD/AP//////AAD6EEk=",
+      "o/8B/gAAAAAAAAAAAAAAAAAAAKM=",
+      "MwUEzQAAAAAAAAAAAAAAAAAAAP8="
+    ]
+  },
+  {
+    "name": "AAA - Test - Red White Blue",
+    "cmd_b64": [
+      "owABAwIBICABAAoCAf8KAgAAAF0=",
+      "owECAAAD/wAA////AAD/AAD6ELY=",
+      "o/8B/gAAAAAAAAAAAAAAAAAAAKM=",
+      "MwUEzQAAAAAAAAAAAAAAAAAAAP8="
+    ]
+  },
+  {
+    "name": "AAA - Test - RWB - Speed 29+32 FF",
+    "cmd_b64": [
+      "owABAwIBICABAAoCAf8KAgAAAF0=",
+      "owECAAAD/wAA////AAD/AAD/ELM=",
+      "o/8B/wAAAAAAAAAAAAAAAAAAAKI=",
+      "MwUEzQAAAAAAAAAAAAAAAAAAAP8="
+    ]
+  },
+  {
+    "name": "AAA - Test - RWB - Speed 29 FF",
+    "cmd_b64": [
+      "owABAwIBICABAAoCAf8KAgAAAF0=",
+      "owECAAAD/wAA////AAD/AAD/ELM=",
+      "o/8B/gAAAAAAAAAAAAAAAAAAAKM=",
+      "MwUEzQAAAAAAAAAAAAAAAAAAAP8="
+    ]
+  },
+  {
+    "name": "AAA - Test - RWB - Speed 32 FF",
+    "cmd_b64": [
+      "owABAwIBICABAAoCAf8KAgAAAF0=",
+      "owECAAAD/wAA////AAD/AAD6ELY=",
+      "o/8B/wAAAAAAAAAAAAAAAAAAAKI=",
+      "MwUEzQAAAAAAAAAAAAAAAAAAAP8="
+    ]
+  },
+  {
+    "name": "AAA - Test - RWB - Speed 32 00",
+    "cmd_b64": [
+      "owABAwIBICABAAoCAf8KAgAAAF0=",
+      "owECAAAD/wAA////AAD/AAD6ELY=",
+      "o/8BAAAAAAAAAAAAAAAAAAAAAF0=",
+      "MwUEzQAAAAAAAAAAAAAAAAAAAP8="
+    ]
   }
 ]

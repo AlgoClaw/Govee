@@ -14,6 +14,21 @@ Modify the [govee_00_multi.sh script](https://github.com/AlgoClaw/Govee/blob/mai
 **There are likely mistakes in [model_specific_parameters.json](https://github.com/AlgoClaw/Govee/blob/main/decoded/v1.2/model_specific_parameters.json).**
 **Please let me know if you have any changes to make. For troubleshooting, debugging, decoding, these parameters should be easy to correct with a few empirical examples.**
 
+### Preserving scenes removed from Govee's API
+
+The full pipeline keeps a durable scene library in
+`JSONs/<MODEL>_final_merged.json`. On its first run it uses the existing
+`JSONs/<MODEL>_final.json` as the master (or the fresh result itself when no
+legacy file exists); on later runs it uses the prior `_final_merged.json` as
+the master. The fresh, replaceable API result is written separately to
+`JSONs/<MODEL>_final_current.json` and is merged by
+`govee_fcn_09_merged_file.sh`.
+
+The merger never removes a master scene. If a fresh scene has the same complete
+`cmd_b64` sequence, its name becomes an alias appended to the master name (for
+example, `Foo (Bar)`). If it has a different command but collides on name, it is
+added using the first available suffix, such as `Foo-2` or `Foo-3`.
+
 ## Generic Structure for Scene Commands:
 ```
 [                              ON COMMAND                                   ] <-- "On" command. Works on all models. Included in scene cmds for H6079.

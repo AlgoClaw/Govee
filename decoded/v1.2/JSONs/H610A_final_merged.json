@@ -197,7 +197,7 @@
     ]
   },
   {
-    "name": "Sunny",
+    "name": "Sunny (Sunny-A)",
     "cmd_b64": [
       "owABBgoCKgAAAAUAAf//AAAUFII=",
       "owEDABQFt/r+AP//sv/8AP//rR8=",
@@ -710,6 +710,109 @@
       "owgC9BQUAvIUBP//AAD/AAD//0I=",
       "o///WHsVAPIAAIABAQIAAf8AABs=",
       "MwUEhgkAAAAAAAAAAAAAAAAAAL0="
+    ]
+  },
+  {
+    "name": "Sunny-B",
+    "cmd_b64": [
+      "owABBAoBOgAAAAMCA/92AMkUFNU=",
+      "owH/ewLJFBT/dgPJFBQDjxQG/88=",
+      "owL/AP9/AAD//wdz/wfJ/////5s=",
+      "o/8AAIAAAIAAAQIAAf8AAAAAAKE=",
+      "MwUEaIIAAAAAAAAAAAAAAAAAANg="
+    ]
+  },
+  {
+    "name": "Rainbow B",
+    "cmd_b64": [
+      "owABAwoBLgAAAAQAAf//AIAUFAE=",
+      "owED+RQG/wAA/38A//8AAP8AB80=",
+      "o/9T/4sA/wQA/wAA2AAAAgAB/1s=",
+      "MwUEHz8AAAAAAAAAAAAAAAAAABI="
+    ]
+  },
+  {
+    "name": "Cloudy",
+    "cmd_b64": [
+      "owABBQoCIgAAAAIAAeqqAWQyMqs=",
+      "owEDNjIC3Nzcfdf+AAAAAAAAAC8=",
+      "owIBAgAB/x8AAgoCAgH/qgG0Mpg=",
+      "owMyAAAyAcDk/wAAAAAAAAABAnk=",
+      "o/8AAf8AAAAAAAAAAAAAAAAAAKI=",
+      "MwUEYoIAAAAAAAAAAAAAAAAAANI="
+    ]
+  },
+  {
+    "name": "Cloudy Day",
+    "cmd_b64": [
+      "owABAwoBKAAAAAMAAf//AQAUFIE=",
+      "owEDfxQE////t//7//a1//O2AIQ=",
+      "o/8AgBAAqAABAgAB/wAAAAAAAJk=",
+      "MwUEY4IAAAAAAAAAAAAAAAAAANM="
+    ]
+  },
+  {
+    "name": "Rain",
+    "cmd_b64": [
+      "owABCgoEKAACBwQCAbwAA9IFBeE=",
+      "owEBABQEAAD/AAAA////AAAAALM=",
+      "owIAgAAAgAAAAgAB/ygAAgUDAnM=",
+      "owMBngADzQICAaUUBC58/gAAAOk=",
+      "owT///8AAAAAAIAAAIAAAAIAAVs=",
+      "owX/JQACBQICAdQAA9UIBgEAFGM=",
+      "owYDGi3+RG7+////AACAAACAAEQ=",
+      "owcAAgAB/yIAAAABAAGhoQAAFG4=",
+      "owgUAIAUAkgI/xcE/gAAgAAAgHs=",
+      "o/8AAAIAAf8AAAAAAAAAAAAAAKA=",
+      "MwUEZIIAAAAAAAAAAAAAAAAAANQ="
+    ]
+  },
+  {
+    "name": "Thick Fog",
+    "cmd_b64": [
+      "owABBAoBOgAAAAMCA/9zAMYUFN8=",
+      "owH/aALGFBT/XwDRFBQDuBQGCCE=",
+      "owL+ma3+/gj+3gdA/wds//z/nfE=",
+      "o/8AAIABAPIAAQIAAf8AAAAAANI=",
+      "MwUEZYIAAAAAAAAAAAAAAAAAANU="
+    ]
+  },
+  {
+    "name": "Windy Day",
+    "cmd_b64": [
+      "owABBwoDIgAAAAECAf+jAwAUFNM=",
+      "owEAgBQC/7En/5sjEAD8AADvABk=",
+      "owIBAgAB/x9zAAABAgH/uwMAFGE=",
+      "owMUAAAUAf+cDwEA+xAA+wEBAt4=",
+      "owQAAf8fYAAAAQIB/64DgBQUAPY=",
+      "owUAFAH/wB8RAPoAAO8AAQIAAZU=",
+      "o///AAAAAAAAAAAAAAAAAAAAAKM=",
+      "MwUEZoIAAAAAAAAAAAAAAAAAANY="
+    ]
+  },
+  {
+    "name": "Snowing",
+    "cmd_b64": [
+      "owABCgoFHwAAAAEAAdJYAGsUFFk=",
+      "owEAWRQBB1H/AACAAACAAAECAEQ=",
+      "owIB/x8AAgYDAgHmAAPOFB4AgOU=",
+      "owMUAf///wAAgAAAgAABAgAB/7c=",
+      "owQfAAIIBAIBwAADyRQUAIAUASo=",
+      "owV+k/4AAIAAAIAAAAIBAP8fAFY=",
+      "owYCBAICAcYAA8YUFACAFAH//zQ=",
+      "owf/AgD3AACAAAECAAH/HwACBMo=",
+      "owgBAgGXAAPJFBQAgBQBncD/AMM=",
+      "o/8AgAAAgAABAgAB/wAAAAAAAKE=",
+      "MwUEZ4IAAAAAAAAAAAAAAAAAANc="
+    ]
+  },
+  {
+    "name": "White Light",
+    "cmd_b64": [
+      "owABAwoBHwAAAAEAAf//AAAUFLU=",
+      "owEAABQB////AACAAACAAAACAEo=",
+      "o/8B/wAAAAAAAAAAAAAAAAAAAKI=",
+      "MwUE9z0AAAAAAAAAAAAAAAAAAPg="
     ]
   }
 ]

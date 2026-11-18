@@ -1683,5 +1683,30 @@
       "o/8AAACAAACAAAAAAAAAAAAAAFw=",
       "MwUEmDkAAAAAAAAAAAAAAAAAAJM="
     ]
+  },
+  {
+    "name": "Mother's Hug",
+    "cmd_b64": [
+      "owABCgIFHVAAAAMCAf8AAscUAs4=",
+      "owEDxxQC/3o6/49IFgD8AgD0AOs=",
+      "owIjAAAABAIBw0cBgBQUAwAUBJM=",
+      "owP/kDD/n0D/qU//pDkAAIAAACQ=",
+      "owSAAB1VAAADAgH/AALHFAIDx4c=",
+      "owUUAv+UNf+MWBQA/AIA9AAdUJY=",
+      "owYDCAMCAaQfAoAUFAOMFAL/iHk=",
+      "owdT/3MwEgD6AgD0AB1VAwgDAhc=",
+      "owgBpR8CgBQUA4wUAv9xSv+SO5k=",
+      "o/8QAPoCAPQAAAAAAAAAAAAAAEA=",
+      "MwUENT8AAAAAAAAAAAAAAAAAADg="
+    ]
+  },
+  {
+    "name": "A&M",
+    "cmd_b64": [
+      "owABAwIBIAADAwAAAf//AIAUFAM=",
+      "owEBABQD////qwQJqwQJEQDtAbY=",
+      "o/8A+gAAAAAAAAAAAAAAAAAAAKY=",
+      "MwUEJIQAAAAAAAAAAAAAAAAAAJI="
+    ]
   }
 ]

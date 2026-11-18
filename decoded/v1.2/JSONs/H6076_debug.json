@@ -1,0 +1,4810 @@
+[
+  {
+    "name": "Movie",
+    "sceneId_b10": 1242,
+    "sceneId_b16": "04da",
+    "scenceParamId_b10": 1317,
+    "scenceParamId_b16": "0525",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2143,
+    "sceneCode_b16": "085f",
+    "sceneCode_b16_swapped": "5f08",
+    "params_b64": "AiAAAAABAAH//wCAFBQA4RQDAAD/BpL+iwD/AACAAACAACAAAgoBAAEkJACAFBQAgBQD/wb+/38A//8AEAD4AACAAA==",
+    "params_b16": "0220000000010001ffff0080141400e114030000ff0692fe8b00ff000080000080002000020a01000124240080141400801403ff06feff7f00ffff001000f800008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0105020220000000010001ffff0080141400e114030000ff0692fe8b00ff000080000080002000020a01000124240080141400801403ff06feff7f00ffff001000f800008000",
+    "num_lines_b10": 5,
+    "num_lines_b16": "05",
+    "cmd_b16": [
+      "a3000105020220000000010001ffff0080141407",
+      "a30100e114030000ff0692fe8b00ff0000800035",
+      "a3020080002000020a0100012424008014140089",
+      "a303801403ff06feff7f00ffff001000f8000058",
+      "a3ff8000000000000000000000000000000000dc",
+      "3305045f08000000000000000000000000000065"
+    ],
+    "cmd_b64": [
+      "owABBQICIAAAAAEAAf//AIAUFAc=",
+      "owEA4RQDAAD/BpL+iwD/AACAADU=",
+      "owIAgAAgAAIKAQABJCQAgBQUAIk=",
+      "owOAFAP/Bv7/fwD//wAQAPgAAFg=",
+      "o/+AAAAAAAAAAAAAAAAAAAAAANw=",
+      "MwUEXwgAAAAAAAAAAAAAAAAAAGU="
+    ]
+  },
+  {
+    "name": "Tunnel",
+    "sceneId_b10": 1243,
+    "sceneId_b16": "04db",
+    "scenceParamId_b10": 1318,
+    "scenceParamId_b16": "0526",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2144,
+    "sceneCode_b16": "0860",
+    "sceneCode_b16_swapped": "6008",
+    "params_b64": "AikAAAABAAH/AAH/ZH0A/AMG/wAAAP8AAAD//38A//8AiwD/AAAAAAAAAikAAAAIAAH//wP/FBQCADIG/3D//38A//8AAP//AKD/AP8AEgD8AAAAAA==",
+    "params_b16": "0229000000010001ff0001ff647d00fc0306ff000000ff000000ffff7f00ffff008b00ff0000000000000229000000080001ffff03ff141402003206ff70ffff7f00ffff0000ffff00a0ff00ff001200fc00000000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0106020229000000010001ff0001ff647d00fc0306ff000000ff000000ffff7f00ffff008b00ff0000000000000229000000080001ffff03ff141402003206ff70ffff7f00ffff0000ffff00a0ff00ff001200fc00000000",
+    "num_lines_b10": 6,
+    "num_lines_b16": "06",
+    "cmd_b16": [
+      "a3000106020229000000010001ff0001ff647d95",
+      "a30100fc0306ff000000ff000000ffff7f00ffdb",
+      "a302ff008b00ff00000000000002290000000809",
+      "a3030001ffff03ff141402003206ff70ffff7f9b",
+      "a30400ffff0000ffff00a0ff00ff001200fc00e9",
+      "a3ff00000000000000000000000000000000005c",
+      "330504600800000000000000000000000000005a"
+    ],
+    "cmd_b64": [
+      "owABBgICKQAAAAEAAf8AAf9kfZU=",
+      "owEA/AMG/wAAAP8AAAD//38A/9s=",
+      "owL/AIsA/wAAAAAAAAIpAAAACAk=",
+      "owMAAf//A/8UFAIAMgb/cP//f5s=",
+      "owQA//8AAP//AKD/AP8AEgD8AOk=",
+      "o/8AAAAAAAAAAAAAAAAAAAAAAFw=",
+      "MwUEYAgAAAAAAAAAAAAAAAAAAFo="
+    ]
+  },
+  {
+    "name": "Night Light",
+    "sceneId_b10": 1245,
+    "sceneId_b16": "04dd",
+    "scenceParamId_b10": 1320,
+    "scenceParamId_b16": "0528",
+    "sceneType_b10": 0,
+    "sceneType_b16": "00",
+    "sceneCode_b10": 2,
+    "sceneCode_b16": "02",
+    "sceneCode_b16_swapped": "02",
+    "params_b64": "",
+    "params_b16": "",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "",
+    "num_lines_b10": 0,
+    "num_lines_b16": "00",
+    "cmd_b16": [
+      "3305040200000000000000000000000000000030"
+    ],
+    "cmd_b64": [
+      "MwUEAgAAAAAAAAAAAAAAAAAAADA="
+    ]
+  },
+  {
+    "name": "The Piano",
+    "sceneId_b10": 1246,
+    "sceneId_b16": "04de",
+    "scenceParamId_b10": 1321,
+    "scenceParamId_b16": "0529",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2145,
+    "sceneCode_b16": "0861",
+    "sceneCode_b16_swapped": "6108",
+    "params_b64": "AykAAAABAAH//wCAFBQA2hQGAAD//wAA/38A//8AAP//iwD/AACAAACAACAAAgMCAgH/MwD1FBQAgAUDAP//iwD///8ABgD4AACAARoAAgMCAgH/MwD1FBQAgAUB////BgD4AACAAQ==",
+    "params_b16": "0329000000010001ffff0080141400da14060000ffff0000ff7f00ffff0000ffff8b00ff0000800000800020000203020201ff3300f514140080050300ffff8b00ffffff000600f8000080011a000203020201ff3300f5141400800501ffffff0600f800008001",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0107020329000000010001ffff0080141400da14060000ffff0000ff7f00ffff0000ffff8b00ff0000800000800020000203020201ff3300f514140080050300ffff8b00ffffff000600f8000080011a000203020201ff3300f5141400800501ffffff0600f800008001",
+    "num_lines_b10": 7,
+    "num_lines_b16": "07",
+    "cmd_b16": [
+      "a3000107020329000000010001ffff008014140d",
+      "a30100da14060000ffff0000ff7f00ffff0000ea",
+      "a302ffff8b00ff000080000080002000020302f6",
+      "a3030201ff3300f514140080050300ffff8b0097",
+      "a304ffffff000600f8000080011a00020302023c",
+      "a30501ff3300f5141400800501ffffff0600f81b",
+      "a3ff0000800100000000000000000000000000dd",
+      "330504610800000000000000000000000000005b"
+    ],
+    "cmd_b64": [
+      "owABBwIDKQAAAAEAAf//AIAUFA0=",
+      "owEA2hQGAAD//wAA/38A//8AAOo=",
+      "owL//4sA/wAAgAAAgAAgAAIDAvY=",
+      "owMCAf8zAPUUFACABQMA//+LAJc=",
+      "owT///8ABgD4AACAARoAAgMCAjw=",
+      "owUB/zMA9RQUAIAFAf///wYA+Bs=",
+      "o/8AAIABAAAAAAAAAAAAAAAAAN0=",
+      "MwUEYQgAAAAAAAAAAAAAAAAAAFs="
+    ]
+  },
+  {
+    "name": "Fireworks",
+    "sceneId_b10": 1247,
+    "sceneId_b16": "04df",
+    "scenceParamId_b10": 1322,
+    "scenceParamId_b16": "052a",
+    "sceneType_b10": 0,
+    "sceneType_b16": "00",
+    "sceneCode_b10": 41,
+    "sceneCode_b16": "29",
+    "sceneCode_b16_swapped": "29",
+    "params_b64": "",
+    "params_b16": "",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "",
+    "num_lines_b10": 0,
+    "num_lines_b16": "00",
+    "cmd_b16": [
+      "330504290000000000000000000000000000001b"
+    ],
+    "cmd_b64": [
+      "MwUEKQAAAAAAAAAAAAAAAAAAABs="
+    ]
+  },
+  {
+    "name": "Work",
+    "sceneId_b10": 2696,
+    "sceneId_b16": "0a88",
+    "scenceParamId_b10": 2804,
+    "scenceParamId_b16": "0af4",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2460,
+    "sceneCode_b16": "099c",
+    "sceneCode_b16_swapped": "9c09",
+    "params_b64": "AR0AAAABAgH//wAAAAAA9JYC////j///AAAAAAAAAA==",
+    "params_b16": "011d000000010201ffff0000000000f49602ffffff8fffff00000000000000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010202011d000000010201ffff0000000000f49602ffffff8fffff00000000000000",
+    "num_lines_b10": 2,
+    "num_lines_b16": "02",
+    "cmd_b16": [
+      "a300010202011d000000010201ffff00000000bc",
+      "a3ff00f49602ffffff8fffff000000000000004c",
+      "3305049c090000000000000000000000000000a7"
+    ],
+    "cmd_b64": [
+      "owABAgIBHQAAAAECAf//AAAAALw=",
+      "o/8A9JYC////j///AAAAAAAAAEw=",
+      "MwUEnAkAAAAAAAAAAAAAAAAAAKc="
+    ]
+  },
+  {
+    "name": "Study",
+    "sceneId_b10": 2697,
+    "sceneId_b16": "0a89",
+    "scenceParamId_b10": 2805,
+    "scenceParamId_b16": "0af5",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2461,
+    "sceneCode_b16": "099d",
+    "sceneCode_b16_swapped": "9d09",
+    "params_b64": "ARoAAAABAAH//wEAMjICADIB/7oaAAAAAAAAAA==",
+    "params_b16": "011a000000010001ffff0100323202003201ffba1a00000000000000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010202011a000000010001ffff0100323202003201ffba1a00000000000000",
+    "num_lines_b10": 2,
+    "num_lines_b16": "02",
+    "cmd_b16": [
+      "a300010202011a000000010001ffff01003232b8",
+      "a3ff02003201ffba1a0000000000000000000032",
+      "3305049d090000000000000000000000000000a6"
+    ],
+    "cmd_b64": [
+      "owABAgIBGgAAAAEAAf//AQAyMrg=",
+      "o/8CADIB/7oaAAAAAAAAAAAAADI=",
+      "MwUEnQkAAAAAAAAAAAAAAAAAAKY="
+    ]
+  },
+  {
+    "name": "Technology",
+    "sceneId_b10": 2698,
+    "sceneId_b16": "0a8a",
+    "scenceParamId_b10": 2806,
+    "scenceParamId_b16": "0af6",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2462,
+    "sceneCode_b16": "099e",
+    "sceneCode_b16_swapped": "9e09",
+    "params_b64": "AxoAAQADAAH//wAAFBQAABQBiwD/AgD5EgD5ACAAAAADAAH/AACAFBQDxhQDAAD/iwD/AP//EQD5AQD5ABoAAQAEAAH/AACAFBQAgBQBAP//AAD5EAD5AQ==",
+    "params_b16": "031a000100030001ffff00001414000014018b00ff0200f91200f90020000000030001ff000080141403c614030000ff8b00ff00ffff1100f90100f9001a000100040001ff00008014140080140100ffff0000f91000f901",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010602031a000100030001ffff00001414000014018b00ff0200f91200f90020000000030001ff000080141403c614030000ff8b00ff00ffff1100f90100f9001a000100040001ff00008014140080140100ffff0000f91000f901",
+    "num_lines_b10": 6,
+    "num_lines_b16": "06",
+    "cmd_b16": [
+      "a300010602031a000100030001ffff00001414bc",
+      "a301000014018b00ff0200f91200f900200000f3",
+      "a30200030001ff000080141403c614030000fff1",
+      "a3038b00ff00ffff1100f90100f9001a000100df",
+      "a304040001ff00008014140080140100ffff0048",
+      "a3ff00f91000f90100000000000000000000004d",
+      "3305049e090000000000000000000000000000a5"
+    ],
+    "cmd_b64": [
+      "owABBgIDGgABAAMAAf//AAAUFLw=",
+      "owEAABQBiwD/AgD5EgD5ACAAAPM=",
+      "owIAAwAB/wAAgBQUA8YUAwAA//E=",
+      "owOLAP8A//8RAPkBAPkAGgABAN8=",
+      "owQEAAH/AACAFBQAgBQBAP//AEg=",
+      "o/8A+RAA+QEAAAAAAAAAAAAAAE0=",
+      "MwUEngkAAAAAAAAAAAAAAAAAAKU="
+    ]
+  },
+  {
+    "name": "Candy",
+    "sceneId_b10": 2699,
+    "sceneId_b16": "0a8b",
+    "scenceParamId_b10": 2807,
+    "scenceParamId_b16": "0af7",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2463,
+    "sceneCode_b16": "099f",
+    "sceneCode_b16_swapped": "9f09",
+    "params_b64": "AikAAAAOAAF/fwAAFBQC+hQG/zBF/38A//8AAP8AAP//B4P/AACAAAD7ACkAAAAOAgHl5QDwFBQCmBQG/zBF/38A//8AAP8AAP//B4P/FgD3AAD7AA==",
+    "params_b16": "02290000000e00017f7f0000141402fa1406ff3045ff7f00ffff0000ff0000ffff0783ff0000800000fb00290000000e0201e5e500f0141402981406ff3045ff7f00ffff0000ff0000ffff0783ff1600f70000fb00",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "01060202290000000e00017f7f0000141402fa1406ff3045ff7f00ffff0000ff0000ffff0783ff0000800000fb00290000000e0201e5e500f0141402981406ff3045ff7f00ffff0000ff0000ffff0783ff1600f70000fb00",
+    "num_lines_b10": 6,
+    "num_lines_b16": "06",
+    "cmd_b16": [
+      "a30001060202290000000e00017f7f0000141482",
+      "a30102fa1406ff3045ff7f00ffff0000ff0000bd",
+      "a302ffff0783ff0000800000fb00290000000e86",
+      "a3030201e5e500f0141402981406ff3045ff7fd1",
+      "a30400ffff0000ff0000ffff0783ff1600f700c2",
+      "a3ff00fb000000000000000000000000000000a7",
+      "3305049f090000000000000000000000000000a4"
+    ],
+    "cmd_b64": [
+      "owABBgICKQAAAA4AAX9/AAAUFII=",
+      "owEC+hQG/zBF/38A//8AAP8AAL0=",
+      "owL//weD/wAAgAAA+wApAAAADoY=",
+      "owMCAeXlAPAUFAKYFAb/MEX/f9E=",
+      "owQA//8AAP8AAP//B4P/FgD3AMI=",
+      "o/8A+wAAAAAAAAAAAAAAAAAAAKc=",
+      "MwUEnwkAAAAAAAAAAAAAAAAAAKQ="
+    ]
+  },
+  {
+    "name": "Game",
+    "sceneId_b10": 2700,
+    "sceneId_b16": "0a8c",
+    "scenceParamId_b10": 2808,
+    "scenceParamId_b16": "0af8",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2464,
+    "sceneCode_b16": "09a0",
+    "sceneCode_b16_swapped": "a009",
+    "params_b64": "AiYAAAAFAAH//wAAAAAC/DIFiwD/AAD//xP//38A/wAAEwH5AAAAACYAAAADAAH//wAAAAAC/DIFiwD/AAD/AAAA////AP//EwH6AAAAAA==",
+    "params_b16": "0226000000050001ffff0000000002fc32058b00ff0000ffff13ffff7f00ff00001301f90000000026000000030001ffff0000000002fc32058b00ff0000ff000000ffffff00ffff1301fa00000000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0105020226000000050001ffff0000000002fc32058b00ff0000ffff13ffff7f00ff00001301f90000000026000000030001ffff0000000002fc32058b00ff0000ff000000ffffff00ffff1301fa00000000",
+    "num_lines_b10": 5,
+    "num_lines_b16": "05",
+    "cmd_b16": [
+      "a3000105020226000000050001ffff0000000085",
+      "a30102fc32058b00ff0000ffff13ffff7f00ff8c",
+      "a30200001301f90000000026000000030001ff91",
+      "a303ff0000000002fc32058b00ff0000ff00001d",
+      "a3ff00ffffff00ffff1301fa000000000000004b",
+      "330504a00900000000000000000000000000009b"
+    ],
+    "cmd_b64": [
+      "owABBQICJgAAAAUAAf//AAAAAIU=",
+      "owEC/DIFiwD/AAD//xP//38A/4w=",
+      "owIAABMB+QAAAAAmAAAAAwAB/5E=",
+      "owP/AAAAAAL8MgWLAP8AAP8AAB0=",
+      "o/8A////AP//EwH6AAAAAAAAAEs=",
+      "MwUEoAkAAAAAAAAAAAAAAAAAAJs="
+    ]
+  },
+  {
+    "name": "White Light",
+    "sceneId_b10": 17289,
+    "sceneId_b16": "004389",
+    "scenceParamId_b10": 27444,
+    "scenceParamId_b16": "006b34",
+    "sceneType_b10": 0,
+    "sceneType_b16": "00",
+    "sceneCode_b10": 99,
+    "sceneCode_b16": "63",
+    "sceneCode_b16_swapped": "63",
+    "params_b64": "",
+    "params_b16": "",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "",
+    "num_lines_b10": 0,
+    "num_lines_b16": "00",
+    "cmd_b16": [
+      "3305046300000000000000000000000000000051"
+    ],
+    "cmd_b64": [
+      "MwUEYwAAAAAAAAAAAAAAAAAAAFE="
+    ]
+  },
+  {
+    "name": "Leisure",
+    "sceneId_b10": 17290,
+    "sceneId_b16": "00438a",
+    "scenceParamId_b10": 27445,
+    "scenceParamId_b16": "006b35",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 13506,
+    "sceneCode_b16": "0034c2",
+    "sceneCode_b16_swapped": "c23400",
+    "params_b64": "AiAAAAABAgH/MgAAAAAA9TID/wAA/2wA/38AAwCAAAAAAB2gAAAFAgH/MgD/FBQA8DIC/1AA/1hiAwCAEQD3AA==",
+    "params_b16": "0220000000010201ff320000000000f53203ff0000ff6c00ff7f00030080000000001da00000050201ff3200ff141400f03202ff5000ff58620300801100f700",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0104020220000000010201ff320000000000f53203ff0000ff6c00ff7f00030080000000001da00000050201ff3200ff141400f03202ff5000ff58620300801100f700",
+    "num_lines_b10": 4,
+    "num_lines_b16": "04",
+    "cmd_b16": [
+      "a3000104020220000000010201ff320000000049",
+      "a30100f53203ff0000ff6c00ff7f000300800009",
+      "a3020000001da00000050201ff3200ff14140028",
+      "a3fff03202ff5000ff58620300801100f7000093",
+      "330504c2340000000000000000000000000000c4"
+    ],
+    "cmd_b64": [
+      "owABBAICIAAAAAECAf8yAAAAAEk=",
+      "owEA9TID/wAA/2wA/38AAwCAAAk=",
+      "owIAAAAdoAAABQIB/zIA/xQUACg=",
+      "o//wMgL/UAD/WGIDAIARAPcAAJM=",
+      "MwUEwjQAAAAAAAAAAAAAAAAAAMQ="
+    ]
+  },
+  {
+    "name": "Meditation",
+    "sceneId_b10": 17291,
+    "sceneId_b16": "00438b",
+    "scenceParamId_b10": 27446,
+    "scenceParamId_b16": "006b36",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 13507,
+    "sceneCode_b16": "0034c3",
+    "sceneCode_b16_swapped": "c33400",
+    "params_b64": "AikAAAAGAgH/kAPMFBQDgBQGAAD/AACWAAAyAAAKAAAyAACWAwCAAACAACkAAAAGAgHMQwO8FBQDgBQGiwD/UAC0CgAyAwAKCgAyUAC0AQCAAACAAA==",
+    "params_b16": "0229000000060201ff9003cc1414038014060000ff00009600003200000a0000320000960300800000800029000000060201cc4303bc1414038014068b00ff5000b40a003203000a0a00325000b401008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0106020229000000060201ff9003cc1414038014060000ff00009600003200000a0000320000960300800000800029000000060201cc4303bc1414038014068b00ff5000b40a003203000a0a00325000b401008000008000",
+    "num_lines_b10": 6,
+    "num_lines_b16": "06",
+    "cmd_b16": [
+      "a3000106020229000000060201ff9003cc141428",
+      "a301038014060000ff00009600003200000a0062",
+      "a302003200009603008000008000290000000629",
+      "a3030201cc4303bc1414038014068b00ff500026",
+      "a304b40a003203000a0a00325000b4010080007f",
+      "a3ff0080000000000000000000000000000000dc",
+      "330504c3340000000000000000000000000000c5"
+    ],
+    "cmd_b64": [
+      "owABBgICKQAAAAYCAf+QA8wUFCg=",
+      "owEDgBQGAAD/AACWAAAyAAAKAGI=",
+      "owIAMgAAlgMAgAAAgAApAAAABik=",
+      "owMCAcxDA7wUFAOAFAaLAP9QACY=",
+      "owS0CgAyAwAKCgAyUAC0AQCAAH8=",
+      "o/8AgAAAAAAAAAAAAAAAAAAAANw=",
+      "MwUEwzQAAAAAAAAAAAAAAAAAAMU="
+    ]
+  },
+  {
+    "name": "Dance Party",
+    "sceneId_b10": 17292,
+    "sceneId_b16": "00438c",
+    "scenceParamId_b10": 27447,
+    "scenceParamId_b16": "006b37",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 13508,
+    "sceneCode_b16": "0034c4",
+    "sceneCode_b16_swapped": "c43400",
+    "params_b64": "AiMAAgUFAAH/PwHRAgICgAoE/wAAAAD//wAAiwD/AACAAACAASkAAAABAgHCwgO8MjIDgAEG/wAAB/X/AAD///8AiwD//38ABACAAACAAA==",
+    "params_b16": "0223000205050001ff3f01d1020202800a04ff00000000ffff00008b00ff0000800000800129000000010201c2c203bc323203800106ff000007f5ff0000ffffff008b00ffff7f0004008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0105020223000205050001ff3f01d1020202800a04ff00000000ffff00008b00ff0000800000800129000000010201c2c203bc323203800106ff000007f5ff0000ffffff008b00ffff7f0004008000008000",
+    "num_lines_b10": 5,
+    "num_lines_b16": "05",
+    "cmd_b16": [
+      "a3000105020223000205050001ff3f01d1020297",
+      "a30102800a04ff00000000ffff00008b00ff00a5",
+      "a30200800000800129000000010201c2c203bc34",
+      "a303323203800106ff000007f5ff0000ffffff29",
+      "a3ff008b00ffff7f0004008000008000000000ac",
+      "330504c4340000000000000000000000000000c2"
+    ],
+    "cmd_b64": [
+      "owABBQICIwACBQUAAf8/AdECApc=",
+      "owECgAoE/wAAAAD//wAAiwD/AKU=",
+      "owIAgAAAgAEpAAAAAQIBwsIDvDQ=",
+      "owMyMgOAAQb/AAAH9f8AAP///yk=",
+      "o/8AiwD//38ABACAAACAAAAAAKw=",
+      "MwUExDQAAAAAAAAAAAAAAAAAAMI="
+    ]
+  },
+  {
+    "name": "Afternoon Tea",
+    "sceneId_b10": 26278,
+    "sceneId_b16": "0066a6",
+    "scenceParamId_b10": 36951,
+    "scenceParamId_b16": "009057",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 15376,
+    "sceneCode_b16": "003c10",
+    "sceneCode_b16_swapped": "103c00",
+    "params_b64": "ASMAAAAEAAH/AACAFBQDARQE5GOO+6qw/st9/fnMAACAAACAAA==",
+    "params_b16": "0123000000040001ff000080141403011404e4638efbaab0fecb7dfdf9cc00008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0103020123000000040001ff000080141403011404e4638efbaab0fecb7dfdf9cc00008000008000",
+    "num_lines_b10": 3,
+    "num_lines_b16": "03",
+    "cmd_b16": [
+      "a3000103020123000000040001ff0000801414fb",
+      "a30103011404e4638efbaab0fecb7dfdf9cc00d8",
+      "a3ff00800000800000000000000000000000005c",
+      "330504103c00000000000000000000000000001e"
+    ],
+    "cmd_b64": [
+      "owABAwIBIwAAAAQAAf8AAIAUFPs=",
+      "owEDARQE5GOO+6qw/st9/fnMANg=",
+      "o/8AgAAAgAAAAAAAAAAAAAAAAFw=",
+      "MwUEEDwAAAAAAAAAAAAAAAAAAB4="
+    ]
+  },
+  {
+    "name": "Sleep",
+    "sceneId_b10": 26279,
+    "sceneId_b16": "0066a7",
+    "scenceParamId_b10": 36952,
+    "scenceParamId_b16": "009058",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 15377,
+    "sceneCode_b16": "003c11",
+    "sceneCode_b16_swapped": "113c00",
+    "params_b64": "ARoAAAABAAHliwHDFAoAgBQB/6FIAACAAACAAQ==",
+    "params_b16": "011a000000010001e58b01c3140a00801401ffa14800008000008001",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010202011a000000010001e58b01c3140a00801401ffa14800008000008001",
+    "num_lines_b10": 2,
+    "num_lines_b16": "02",
+    "cmd_b16": [
+      "a300010202011a000000010001e58b01c3140a0b",
+      "a3ff00801401ffa14800008000008001000000de",
+      "330504113c00000000000000000000000000001f"
+    ],
+    "cmd_b64": [
+      "owABAgIBGgAAAAEAAeWLAcMUCgs=",
+      "o/8AgBQB/6FIAACAAACAAQAAAN4=",
+      "MwUEETwAAAAAAAAAAAAAAAAAAB8="
+    ]
+  },
+  {
+    "name": "Naps",
+    "sceneId_b10": 26280,
+    "sceneId_b16": "0066a8",
+    "scenceParamId_b10": 36953,
+    "scenceParamId_b16": "009059",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 15378,
+    "sceneCode_b16": "003c12",
+    "sceneCode_b16_swapped": "123c00",
+    "params_b64": "ASYAAAABAAHAwACAFBQAyBQF+f9/xP9wmf6iof/JV//FEACAAACWBQ==",
+    "params_b16": "0126000000010001c0c00080141400c81405f9ff7fc4ff7099fea2a1ffc957ffc510008000009605",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0103020126000000010001c0c00080141400c81405f9ff7fc4ff7099fea2a1ffc957ffc510008000009605",
+    "num_lines_b10": 3,
+    "num_lines_b16": "03",
+    "cmd_b16": [
+      "a3000103020126000000010001c0c00080141404",
+      "a30100c81405f9ff7fc4ff7099fea2a1ffc9574c",
+      "a3ffffc510008000009605000000000000000065",
+      "330504123c00000000000000000000000000001c"
+    ],
+    "cmd_b64": [
+      "owABAwIBJgAAAAEAAcDAAIAUFAQ=",
+      "owEAyBQF+f9/xP9wmf6iof/JV0w=",
+      "o///xRAAgAAAlgUAAAAAAAAAAGU=",
+      "MwUEEjwAAAAAAAAAAAAAAAAAABw="
+    ]
+  },
+  {
+    "name": "Dine Together",
+    "sceneId_b10": 26281,
+    "sceneId_b16": "0066a9",
+    "scenceParamId_b10": 36954,
+    "scenceParamId_b16": "00905a",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 15379,
+    "sceneCode_b16": "003c13",
+    "sceneCode_b16_swapped": "133c00",
+    "params_b64": "ASAAAAADAAH//wCAFBSCARQD/2Qy/8h4//DSAACAAACAAA==",
+    "params_b16": "0120000000030001ffff0080141482011403ff6432ffc878fff0d200008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0103020120000000030001ffff0080141482011403ff6432ffc878fff0d200008000008000",
+    "num_lines_b10": 3,
+    "num_lines_b16": "03",
+    "cmd_b16": [
+      "a3000103020120000000030001ffff0080141400",
+      "a30182011403ff6432ffc878fff0d2000080008d",
+      "a3ff0080000000000000000000000000000000dc",
+      "330504133c00000000000000000000000000001d"
+    ],
+    "cmd_b64": [
+      "owABAwIBIAAAAAMAAf//AIAUFAA=",
+      "owGCARQD/2Qy/8h4//DSAACAAI0=",
+      "o/8AgAAAAAAAAAAAAAAAAAAAANw=",
+      "MwUEEzwAAAAAAAAAAAAAAAAAAB0="
+    ]
+  },
+  {
+    "name": "Yoga",
+    "sceneId_b10": 26282,
+    "sceneId_b16": "0066aa",
+    "scenceParamId_b10": 36955,
+    "scenceParamId_b16": "00905b",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 15380,
+    "sceneCode_b16": "003c14",
+    "sceneCode_b16_swapped": "143c00",
+    "params_b64": "ASMAAAACAAH/jAPDFBQDrRQEwP/Xb/+RNv5pOf/ZAACAAACAAA==",
+    "params_b16": "0123000000020001ff8c03c3141403ad1404c0ffd76fff9136fe6939ffd900008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0103020123000000020001ff8c03c3141403ad1404c0ffd76fff9136fe6939ffd900008000008000",
+    "num_lines_b10": 3,
+    "num_lines_b16": "03",
+    "cmd_b16": [
+      "a3000103020123000000020001ff8c03c3141431",
+      "a30103ad1404c0ffd76fff9136fe6939ffd9004b",
+      "a3ff00800000800000000000000000000000005c",
+      "330504143c00000000000000000000000000001a"
+    ],
+    "cmd_b64": [
+      "owABAwIBIwAAAAIAAf+MA8MUFDE=",
+      "owEDrRQEwP/Xb/+RNv5pOf/ZAEs=",
+      "o/8AgAAAgAAAAAAAAAAAAAAAAFw=",
+      "MwUEFDwAAAAAAAAAAAAAAAAAABo="
+    ]
+  },
+  {
+    "name": "Electro Dance",
+    "sceneId_b10": 1248,
+    "sceneId_b16": "04e0",
+    "scenceParamId_b10": 1323,
+    "scenceParamId_b16": "052b",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2146,
+    "sceneCode_b16": "0862",
+    "sceneCode_b16_swapped": "6208",
+    "params_b64": "AykAAgoBAAH//wCAFBQB/wYG/wAAAP8AAAD///8AAP//iwD/FgD/AAD6AikAAAABAAH//wD8BQUA/gEG/wAA/38A//8AAP8AAP//AAD/AACAAACAASkAAgoBAAH//wCAFBQB/wUG////AAAA////////AAAA////FgD/AAD6Ag==",
+    "params_b16": "032900020a010001ffff0080141401ff0606ff000000ff000000ffffff0000ffff8b00ff1600ff0000fa0229000000010001ffff00fc050500fe0106ff0000ff7f00ffff0000ff0000ffff0000ff000080000080012900020a010001ffff0080141401ff0506ffffff000000ffffffffffff000000ffffff1600ff0000fa02",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010802032900020a010001ffff0080141401ff0606ff000000ff000000ffffff0000ffff8b00ff1600ff0000fa0229000000010001ffff00fc050500fe0106ff0000ff7f00ffff0000ff0000ffff0000ff000080000080012900020a010001ffff0080141401ff0506ffffff000000ffffffffffff000000ffffff1600ff0000fa02",
+    "num_lines_b10": 8,
+    "num_lines_b16": "08",
+    "cmd_b16": [
+      "a300010802032900020a010001ffff008014140a",
+      "a30101ff0606ff000000ff000000ffffff0000a3",
+      "a302ffff8b00ff1600ff0000fa022900000001ec",
+      "a3030001ffff00fc050500fe0106ff0000ff7fdb",
+      "a30400ffff0000ff0000ffff0000ff0000800027",
+      "a3050080012900020a010001ffff008014140187",
+      "a306ff0506ffffff000000ffffffffffff0000a6",
+      "a3ff00ffffff1600ff0000fa02000000000000b2",
+      "3305046208000000000000000000000000000058"
+    ],
+    "cmd_b64": [
+      "owABCAIDKQACCgEAAf//AIAUFAo=",
+      "owEB/wYG/wAAAP8AAAD///8AAKM=",
+      "owL//4sA/xYA/wAA+gIpAAAAAew=",
+      "owMAAf//APwFBQD+AQb/AAD/f9s=",
+      "owQA//8AAP8AAP//AAD/AACAACc=",
+      "owUAgAEpAAIKAQAB//8AgBQUAYc=",
+      "owb/BQb///8AAAD///////8AAKY=",
+      "o/8A////FgD/AAD6AgAAAAAAALI=",
+      "MwUEYggAAAAAAAAAAAAAAAAAAFg="
+    ]
+  },
+  {
+    "name": "Accumulation",
+    "sceneId_b10": 1249,
+    "sceneId_b16": "04e1",
+    "scenceParamId_b10": 1324,
+    "scenceParamId_b16": "052c",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2147,
+    "sceneCode_b16": "0863",
+    "sceneCode_b16_swapped": "6308",
+    "params_b64": "AiAAAAABAAH//wAAAAAAyDID/wAAAP8AAAD/FADfAAAABCAAAQABAAH//wAAAAAAyDID/wAAAP8AAAD/EgD/AAAAAQ==",
+    "params_b16": "0220000000010001ffff0000000000c83203ff000000ff000000ff1400df0000000420000100010001ffff0000000000c83203ff000000ff000000ff1200ff00000001",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0105020220000000010001ffff0000000000c83203ff000000ff000000ff1400df0000000420000100010001ffff0000000000c83203ff000000ff000000ff1200ff00000001",
+    "num_lines_b10": 5,
+    "num_lines_b16": "05",
+    "cmd_b16": [
+      "a3000105020220000000010001ffff0000000087",
+      "a30100c83203ff000000ff000000ff1400df006f",
+      "a30200000420000100010001ffff000000000084",
+      "a303c83203ff000000ff000000ff1200ff00004b",
+      "a3ff00010000000000000000000000000000005d",
+      "3305046308000000000000000000000000000059"
+    ],
+    "cmd_b64": [
+      "owABBQICIAAAAAEAAf//AAAAAIc=",
+      "owEAyDID/wAAAP8AAAD/FADfAG8=",
+      "owIAAAQgAAEAAQAB//8AAAAAAIQ=",
+      "owPIMgP/AAAA/wAAAP8SAP8AAEs=",
+      "o/8AAQAAAAAAAAAAAAAAAAAAAF0=",
+      "MwUEYwgAAAAAAAAAAAAAAAAAAFk="
+    ]
+  },
+  {
+    "name": "Release",
+    "sceneId_b10": 1250,
+    "sceneId_b16": "04e2",
+    "scenceParamId_b10": 1325,
+    "scenceParamId_b16": "052d",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2148,
+    "sceneCode_b16": "0864",
+    "sceneCode_b16_swapped": "6408",
+    "params_b64": "AylQAAAFAAH//wCAFBQC6BQG/wAA//8AAP8AAP//AAD/iwD/FgD9AACAASlVAAAFAAH//wCAFBQC6BQG/wAA//8AAP8AAP//AAD/iwD/FAD9AACAASkAAAABAAH//wCAFBQA+RQG/wAA/38A//8AAP8AAP//HoH+AACAAACAAA==",
+    "params_b16": "0329500000050001ffff0080141402e81406ff0000ffff0000ff0000ffff0000ff8b00ff1600fd0000800129550000050001ffff0080141402e81406ff0000ffff0000ff0000ffff0000ff8b00ff1400fd0000800129000000010001ffff0080141400f91406ff0000ff7f00ffff0000ff0000ffff1e81fe00008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0108020329500000050001ffff0080141402e81406ff0000ffff0000ff0000ffff0000ff8b00ff1600fd0000800129550000050001ffff0080141402e81406ff0000ffff0000ff0000ffff0000ff8b00ff1400fd0000800129000000010001ffff0080141400f91406ff0000ff7f00ffff0000ff0000ffff1e81fe00008000008000",
+    "num_lines_b10": 8,
+    "num_lines_b16": "08",
+    "cmd_b16": [
+      "a3000108020329500000050001ffff0080141456",
+      "a30102e81406ff0000ffff0000ff0000ffff005a",
+      "a30200ff8b00ff1600fd00008001295500000539",
+      "a3030001ffff0080141402e81406ff0000ffff26",
+      "a3040000ff0000ffff0000ff8b00ff1400fd003a",
+      "a30500800129000000010001ffff00801414008e",
+      "a306f91406ff0000ff7f00ffff0000ff0000ff31",
+      "a3ffff1e81fe00008000008000000000000000c2",
+      "330504640800000000000000000000000000005e"
+    ],
+    "cmd_b64": [
+      "owABCAIDKVAAAAUAAf//AIAUFFY=",
+      "owEC6BQG/wAA//8AAP8AAP//AFo=",
+      "owIA/4sA/xYA/QAAgAEpVQAABTk=",
+      "owMAAf//AIAUFALoFAb/AAD//yY=",
+      "owQAAP8AAP//AAD/iwD/FAD9ADo=",
+      "owUAgAEpAAAAAQAB//8AgBQUAI4=",
+      "owb5FAb/AAD/fwD//wAA/wAA/zE=",
+      "o///HoH+AACAAACAAAAAAAAAAMI=",
+      "MwUEZAgAAAAAAAAAAAAAAAAAAF4="
+    ]
+  },
+  {
+    "name": "Fight",
+    "sceneId_b10": 1251,
+    "sceneId_b16": "04e3",
+    "scenceParamId_b10": 1326,
+    "scenceParamId_b16": "052e",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2149,
+    "sceneCode_b16": "0865",
+    "sceneCode_b16_swapped": "6508",
+    "params_b64": "Ah1QAQADAAH/gACAFBQA/QEC/wAAAAD/EQDvAACAAB1VAQADAAH/fwCAFBQA+wECAP//iwD/EwDvAACAAA==",
+    "params_b16": "021d500100030001ff800080141400fd0102ff00000000ff1100ef000080001d550100030001ff7f0080141400fb010200ffff8b00ff1300ef00008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010402021d500100030001ff800080141400fd0102ff00000000ff1100ef000080001d550100030001ff7f0080141400fb010200ffff8b00ff1300ef00008000",
+    "num_lines_b10": 4,
+    "num_lines_b16": "04",
+    "cmd_b16": [
+      "a300010402021d500100030001ff800080141417",
+      "a30100fd0102ff00000000ff1100ef0000800022",
+      "a3021d550100030001ff7f0080141400fb010212",
+      "a3ff00ffff8b00ff1300ef000080000000000054",
+      "330504650800000000000000000000000000005f"
+    ],
+    "cmd_b64": [
+      "owABBAICHVABAAMAAf+AAIAUFBc=",
+      "owEA/QEC/wAAAAD/EQDvAACAACI=",
+      "owIdVQEAAwAB/38AgBQUAPsBAhI=",
+      "o/8A//+LAP8TAO8AAIAAAAAAAFQ=",
+      "MwUEZQgAAAAAAAAAAAAAAAAAAF8="
+    ]
+  },
+  {
+    "name": "Swing",
+    "sceneId_b10": 1252,
+    "sceneId_b16": "04e4",
+    "scenceParamId_b10": 1327,
+    "scenceParamId_b16": "052f",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2150,
+    "sceneCode_b16": "0866",
+    "sceneCode_b16_swapped": "6608",
+    "params_b64": "BCAwAAABAgH//wKAFBQA+hQD/wAA/38A//8AFwD7AACAACMjAAABAgH//wKAFBQA+hQEAP8AAP//AAD/iwD/FwD7AACAACA3AAABAgH//wKAFBQA+hQD/wAA/38A//8AFQD6AACAACMlAAABAgH//wKAFBQA+hQEAP8AAP//AAD/iwD/FQD6AACAAA==",
+    "params_b16": "0420300000010201ffff0280141400fa1403ff0000ff7f00ffff001700fb0000800023230000010201ffff0280141400fa140400ff0000ffff0000ff8b00ff1700fb0000800020370000010201ffff0280141400fa1403ff0000ff7f00ffff001500fa0000800023250000010201ffff0280141400fa140400ff0000ffff0000ff8b00ff1500fa00008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0109020420300000010201ffff0280141400fa1403ff0000ff7f00ffff001700fb0000800023230000010201ffff0280141400fa140400ff0000ffff0000ff8b00ff1700fb0000800020370000010201ffff0280141400fa1403ff0000ff7f00ffff001500fa0000800023250000010201ffff0280141400fa140400ff0000ffff0000ff8b00ff1500fa00008000",
+    "num_lines_b10": 9,
+    "num_lines_b16": "09",
+    "cmd_b16": [
+      "a3000109020420300000010201ffff028014143d",
+      "a30100fa1403ff0000ff7f00ffff001700fb00dc",
+      "a30200800023230000010201ffff0280141400a1",
+      "a303fa140400ff0000ffff0000ff8b00ff170029",
+      "a304fb0000800020370000010201ffff0280145f",
+      "a3051400fa1403ff0000ff7f00ffff001500facf",
+      "a3060000800023250000010201ffff02801414a3",
+      "a30700fa140400ff0000ffff0000ff8b00ff152f",
+      "a3ff00fa00008000000000000000000000000026",
+      "330504660800000000000000000000000000005c"
+    ],
+    "cmd_b64": [
+      "owABCQIEIDAAAAECAf//AoAUFD0=",
+      "owEA+hQD/wAA/38A//8AFwD7ANw=",
+      "owIAgAAjIwAAAQIB//8CgBQUAKE=",
+      "owP6FAQA/wAA//8AAP+LAP8XACk=",
+      "owT7AACAACA3AAABAgH//wKAFF8=",
+      "owUUAPoUA/8AAP9/AP//ABUA+s8=",
+      "owYAAIAAIyUAAAECAf//AoAUFKM=",
+      "owcA+hQEAP8AAP//AAD/iwD/FS8=",
+      "o/8A+gAAgAAAAAAAAAAAAAAAACY=",
+      "MwUEZggAAAAAAAAAAAAAAAAAAFw="
+    ]
+  },
+  {
+    "name": "Stacking",
+    "sceneId_b10": 1253,
+    "sceneId_b16": "04e5",
+    "scenceParamId_b10": 1328,
+    "scenceParamId_b16": "0530",
+    "sceneType_b10": 0,
+    "sceneType_b16": "00",
+    "sceneCode_b10": 36,
+    "sceneCode_b16": "24",
+    "sceneCode_b16_swapped": "24",
+    "params_b64": "",
+    "params_b16": "",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "",
+    "num_lines_b10": 0,
+    "num_lines_b16": "00",
+    "cmd_b16": [
+      "3305042400000000000000000000000000000016"
+    ],
+    "cmd_b64": [
+      "MwUEJAAAAAAAAAAAAAAAAAAAABY="
+    ]
+  },
+  {
+    "name": "Bouncing Ball",
+    "sceneId_b10": 1254,
+    "sceneId_b16": "04e6",
+    "scenceParamId_b10": 1329,
+    "scenceParamId_b16": "0531",
+    "sceneType_b10": 0,
+    "sceneType_b16": "00",
+    "sceneCode_b10": 38,
+    "sceneCode_b16": "26",
+    "sceneCode_b16_swapped": "26",
+    "params_b64": "",
+    "params_b16": "",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "",
+    "num_lines_b10": 0,
+    "num_lines_b16": "00",
+    "cmd_b16": [
+      "3305042600000000000000000000000000000014"
+    ],
+    "cmd_b64": [
+      "MwUEJgAAAAAAAAAAAAAAAAAAABQ="
+    ]
+  },
+  {
+    "name": "Bubble",
+    "sceneId_b10": 1255,
+    "sceneId_b16": "04e7",
+    "scenceParamId_b10": 1330,
+    "scenceParamId_b16": "0532",
+    "sceneType_b10": 0,
+    "sceneType_b16": "00",
+    "sceneCode_b10": 40,
+    "sceneCode_b16": "28",
+    "sceneCode_b16_swapped": "28",
+    "params_b64": "",
+    "params_b16": "",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "",
+    "num_lines_b10": 0,
+    "num_lines_b16": "00",
+    "cmd_b16": [
+      "330504280000000000000000000000000000001a"
+    ],
+    "cmd_b64": [
+      "MwUEKAAAAAAAAAAAAAAAAAAAABo="
+    ]
+  },
+  {
+    "name": "Blossom",
+    "sceneId_b10": 2708,
+    "sceneId_b16": "0a94",
+    "scenceParamId_b10": 2816,
+    "scenceParamId_b16": "0b00",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2472,
+    "sceneCode_b16": "09a8",
+    "sceneCode_b16_swapped": "a809",
+    "params_b64": "BCkwAAABAAH//wCAFBQB8hQG/wAA/38AcP6aB3H/9Rf///8AFgD3AACAACkjAAABAAH//wCAFBQB8hQG/wAA/38AcP6aByz//hH+//8AFAD3AACAACklAAABAAH//wCAFBQB8hQG/wAA/38AcP6aB1z//wf3//8AFgD3AACAACk3AAABAAH//wCAFBQB8hQG/wAA/38AcP6aB1n/8wf///8AFAD3AACAAA==",
+    "params_b16": "0429300000010001ffff0080141401f21406ff0000ff7f0070fe9a0771fff517ffffff001600f70000800029230000010001ffff0080141401f21406ff0000ff7f0070fe9a072cfffe11feffff001400f70000800029250000010001ffff0080141401f21406ff0000ff7f0070fe9a075cffff07f7ffff001600f70000800029370000010001ffff0080141401f21406ff0000ff7f0070fe9a0759fff307ffffff001400f700008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010b020429300000010001ffff0080141401f21406ff0000ff7f0070fe9a0771fff517ffffff001600f70000800029230000010001ffff0080141401f21406ff0000ff7f0070fe9a072cfffe11feffff001400f70000800029250000010001ffff0080141401f21406ff0000ff7f0070fe9a075cffff07f7ffff001600f70000800029370000010001ffff0080141401f21406ff0000ff7f0070fe9a0759fff307ffffff001400f700008000",
+    "num_lines_b10": 11,
+    "num_lines_b16": "0b",
+    "cmd_b16": [
+      "a300010b020429300000010001ffff0080141436",
+      "a30101f21406ff0000ff7f0070fe9a0771fff554",
+      "a30217ffffff001600f700008000292300000123",
+      "a3030001ffff0080141401f21406ff0000ff7fbf",
+      "a3040070fe9a072cfffe11feffff001400f70095",
+      "a30500800029250000010001ffff0080141401ab",
+      "a306f21406ff0000ff7f0070fe9a075cffff0772",
+      "a307f7ffff001600f7000080002937000001002d",
+      "a30801ffff0080141401f21406ff0000ff7f00b4",
+      "a30970fe9a0759fff307ffffff001400f70000f7",
+      "a3ff8000000000000000000000000000000000dc",
+      "330504a809000000000000000000000000000093"
+    ],
+    "cmd_b64": [
+      "owABCwIEKTAAAAEAAf//AIAUFDY=",
+      "owEB8hQG/wAA/38AcP6aB3H/9VQ=",
+      "owIX////ABYA9wAAgAApIwAAASM=",
+      "owMAAf//AIAUFAHyFAb/AAD/f78=",
+      "owQAcP6aByz//hH+//8AFAD3AJU=",
+      "owUAgAApJQAAAQAB//8AgBQUAas=",
+      "owbyFAb/AAD/fwBw/poHXP//B3I=",
+      "owf3//8AFgD3AACAACk3AAABAC0=",
+      "owgB//8AgBQUAfIUBv8AAP9/ALQ=",
+      "owlw/poHWf/zB////wAUAPcAAPc=",
+      "o/+AAAAAAAAAAAAAAAAAAAAAANw=",
+      "MwUEqAkAAAAAAAAAAAAAAAAAAJM="
+    ]
+  },
+  {
+    "name": "Pixie",
+    "sceneId_b10": 26283,
+    "sceneId_b16": "0066ab",
+    "scenceParamId_b10": 36956,
+    "scenceParamId_b16": "00905c",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 15381,
+    "sceneCode_b16": "003c15",
+    "sceneCode_b16_swapped": "153c00",
+    "params_b64": "AiAAAAABAAF+fgABFBQA8hQDHf4hAMgUALQeAACAAACAACAAAgQCAAH/AAPSFBQB8hQD/////+CV+pT/AACAAACAAA==",
+    "params_b16": "02200000000100017e7e0001141400f214031dfe2100c81400b41e0000800000800020000204020001ff0003d2141401f21403ffffffffe095fa94ff00008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "01050202200000000100017e7e0001141400f214031dfe2100c81400b41e0000800000800020000204020001ff0003d2141401f21403ffffffffe095fa94ff00008000008000",
+    "num_lines_b10": 5,
+    "num_lines_b16": "05",
+    "cmd_b16": [
+      "a30001050202200000000100017e7e0001141486",
+      "a30100f214031dfe2100c81400b41e0000800073",
+      "a30200800020000204020001ff0003d21414012b",
+      "a303f21403ffffffffe095fa94ff000080000021",
+      "a3ff8000000000000000000000000000000000dc",
+      "330504153c00000000000000000000000000001b"
+    ],
+    "cmd_b64": [
+      "owABBQICIAAAAAEAAX5+AAEUFIY=",
+      "owEA8hQDHf4hAMgUALQeAACAAHM=",
+      "owIAgAAgAAIEAgAB/wAD0hQUASs=",
+      "owPyFAP/////4JX6lP8AAIAAACE=",
+      "o/+AAAAAAAAAAAAAAAAAAAAAANw=",
+      "MwUEFTwAAAAAAAAAAAAAAAAAABs="
+    ]
+  },
+  {
+    "name": "Rainbow-A",
+    "sceneId_b10": 1256,
+    "sceneId_b16": "04e8",
+    "scenceParamId_b10": 1331,
+    "scenceParamId_b16": "0533",
+    "sceneType_b10": 0,
+    "sceneType_b16": "00",
+    "sceneCode_b10": 22,
+    "sceneCode_b16": "16",
+    "sceneCode_b16_swapped": "16",
+    "params_b64": "",
+    "params_b16": "",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "",
+    "num_lines_b10": 0,
+    "num_lines_b16": "00",
+    "cmd_b16": [
+      "3305041600000000000000000000000000000024"
+    ],
+    "cmd_b64": [
+      "MwUEFgAAAAAAAAAAAAAAAAAAACQ="
+    ]
+  },
+  {
+    "name": "Rainbow-B",
+    "sceneId_b10": 1256,
+    "sceneId_b16": "04e8",
+    "scenceParamId_b10": 11228,
+    "scenceParamId_b16": "002bdc",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 10188,
+    "sceneCode_b16": "0027cc",
+    "sceneCode_b16_swapped": "cc2700",
+    "params_b64": "ASkAAAAHAgH/gQD5FBQD+RQG/wAA/38A//8AAP8AAP//AAD/EADyAACAAA==",
+    "params_b16": "0129000000070201ff8100f9141403f91406ff0000ff7f00ffff0000ff0000ffff0000ff1000f200008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0103020129000000070201ff8100f9141403f91406ff0000ff7f00ffff0000ff0000ffff0000ff1000f200008000",
+    "num_lines_b10": 3,
+    "num_lines_b16": "03",
+    "cmd_b16": [
+      "a3000103020129000000070201ff8100f9141408",
+      "a30103f91406ff0000ff7f00ffff0000ff0000ca",
+      "a3ffffff0000ff1000f2000080000000000000c1",
+      "330504cc270000000000000000000000000000d9"
+    ],
+    "cmd_b64": [
+      "owABAwIBKQAAAAcCAf+BAPkUFAg=",
+      "owED+RQG/wAA/38A//8AAP8AAMo=",
+      "o////wAA/xAA8gAAgAAAAAAAAME=",
+      "MwUEzCcAAAAAAAAAAAAAAAAAANk="
+    ]
+  },
+  {
+    "name": "Meteor",
+    "sceneId_b10": 1257,
+    "sceneId_b16": "04e9",
+    "scenceParamId_b10": 1332,
+    "scenceParamId_b16": "0534",
+    "sceneType_b10": 0,
+    "sceneType_b16": "00",
+    "sceneCode_b10": 50,
+    "sceneCode_b16": "32",
+    "sceneCode_b16_swapped": "32",
+    "params_b64": "",
+    "params_b16": "",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "",
+    "num_lines_b10": 0,
+    "num_lines_b16": "00",
+    "cmd_b16": [
+      "3305043200000000000000000000000000000000"
+    ],
+    "cmd_b64": [
+      "MwUEMgAAAAAAAAAAAAAAAAAAAAA="
+    ]
+  },
+  {
+    "name": "Fire",
+    "sceneId_b10": 1258,
+    "sceneId_b16": "04ea",
+    "scenceParamId_b10": 1333,
+    "scenceParamId_b16": "0535",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2151,
+    "sceneCode_b16": "0867",
+    "sceneCode_b16_swapped": "6708",
+    "params_b64": "BBpDAAABAgFMAAOAFBQD4woB/zkHFwD9EwD9AB0AAAABAgH/DQL/CgoA9BQC/wAA/0AHAACAAACAABpGAAABAgF+AAOAFBQDgBQB/xcHFwH9AACAABpDAAABAgF+AAOAFBQDgBQB/xcHFwH9AACAAA==",
+    "params_b16": "041a4300000102014c000380141403e30a01ff39071700fd1300fd001d000000010201ff0d02ff0a0a00f41402ff0000ff4007000080000080001a4600000102017e000380141403801401ff17071701fd000080001a4300000102017e000380141403801401ff17071701fd00008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010702041a4300000102014c000380141403e30a01ff39071700fd1300fd001d000000010201ff0d02ff0a0a00f41402ff0000ff4007000080000080001a4600000102017e000380141403801401ff17071701fd000080001a4300000102017e000380141403801401ff17071701fd00008000",
+    "num_lines_b10": 7,
+    "num_lines_b16": "07",
+    "cmd_b16": [
+      "a300010702041a4300000102014c000380141437",
+      "a30103e30a01ff39071700fd1300fd001d000091",
+      "a30200010201ff0d02ff0a0a00f41402ff0000b1",
+      "a303ff4007000080000080001a46000001020146",
+      "a3047e000380141403801401ff17071701fd00c8",
+      "a3050080001a4300000102017e00038014140383",
+      "a3ff801401ff17071701fd00008000000000004d",
+      "330504670800000000000000000000000000005d"
+    ],
+    "cmd_b64": [
+      "owABBwIEGkMAAAECAUwAA4AUFDc=",
+      "owED4woB/zkHFwD9EwD9AB0AAJE=",
+      "owIAAQIB/w0C/woKAPQUAv8AALE=",
+      "owP/QAcAAIAAAIAAGkYAAAECAUY=",
+      "owR+AAOAFBQDgBQB/xcHFwH9AMg=",
+      "owUAgAAaQwAAAQIBfgADgBQUA4M=",
+      "o/+AFAH/FwcXAf0AAIAAAAAAAE0=",
+      "MwUEZwgAAAAAAAAAAAAAAAAAAF0="
+    ]
+  },
+  {
+    "name": "Sunrise",
+    "sceneId_b10": 1259,
+    "sceneId_b16": "04eb",
+    "scenceParamId_b10": 1334,
+    "scenceParamId_b16": "0536",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2152,
+    "sceneCode_b16": "0868",
+    "sceneCode_b16_swapped": "6808",
+    "params_b64": "AxoVAAABAAH//wAAAAAA/zIB//8AAAAAAAAAAylVAAAFAAH//wAAAACC+xQG/38A/wAA/wAA/38A//8A//8AAAAAAAAAAh0AAAACAAH//wAA//8DADICAAD/B7T/AAAAAAAAAQ==",
+    "params_b16": "031a150000010001ffff0000000000ff3201ffff000000000000000329550000050001ffff0000000082fb1406ff7f00ff0000ff0000ff7f00ffff00ffff00000000000000021d000000020001ffff0000ffff030032020000ff07b4ff00000000000001",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010702031a150000010001ffff0000000000ff3201ffff000000000000000329550000050001ffff0000000082fb1406ff7f00ff0000ff0000ff7f00ffff00ffff00000000000000021d000000020001ffff0000ffff030032020000ff07b4ff00000000000001",
+    "num_lines_b10": 7,
+    "num_lines_b16": "07",
+    "cmd_b16": [
+      "a300010702031a150000010001ffff00000000ab",
+      "a30100ff3201ffff000000000000000329550011",
+      "a30200050001ffff0000000082fb1406ff7f004e",
+      "a303ff0000ff0000ff7f00ffff00ffff00000020",
+      "a30400000000021d000000020001ffff0000ff44",
+      "a305ff030032020000ff07b4ff000000000000d9",
+      "a3ff01000000000000000000000000000000005d",
+      "3305046808000000000000000000000000000052"
+    ],
+    "cmd_b64": [
+      "owABBwIDGhUAAAEAAf//AAAAAKs=",
+      "owEA/zIB//8AAAAAAAAAAylVABE=",
+      "owIABQAB//8AAAAAgvsUBv9/AE4=",
+      "owP/AAD/AAD/fwD//wD//wAAACA=",
+      "owQAAAAAAh0AAAACAAH//wAA/0Q=",
+      "owX/AwAyAgAA/we0/wAAAAAAANk=",
+      "o/8BAAAAAAAAAAAAAAAAAAAAAF0=",
+      "MwUEaAgAAAAAAAAAAAAAAAAAAFI="
+    ]
+  },
+  {
+    "name": "Sunset",
+    "sceneId_b10": 1260,
+    "sceneId_b16": "04ec",
+    "scenceParamId_b10": 1335,
+    "scenceParamId_b16": "0537",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2153,
+    "sceneCode_b16": "0869",
+    "sceneCode_b16_swapped": "6908",
+    "params_b64": "AyBgAAAFAAH//wAAAAADADID/38A/38A/38AAAAAAAAAARoAAAABAAH//wAAAAACyDIB/wAAAAAAAAAAACYAAAABAgP//wLIAAD/AABkCgoAAAHICgoA/zIB/38AAAAAAAAAAA==",
+    "params_b16": "0320600000050001ffff0000000003003203ff7f00ff7f00ff7f00000000000000011a000000010001ffff0000000002c83201ff00000000000000000026000000010203ffff02c80000ff0000640a0a000001c80a0a00ff3201ff7f0000000000000000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0107020320600000050001ffff0000000003003203ff7f00ff7f00ff7f00000000000000011a000000010001ffff0000000002c83201ff00000000000000000026000000010203ffff02c80000ff0000640a0a000001c80a0a00ff3201ff7f0000000000000000",
+    "num_lines_b10": 7,
+    "num_lines_b16": "07",
+    "cmd_b16": [
+      "a3000107020320600000050001ffff00000000e0",
+      "a30103003203ff7f00ff7f00ff7f000000000010",
+      "a3020000011a000000010001ffff0000000002b8",
+      "a303c83201ff0000000000000000002600000082",
+      "a304010203ffff02c80000ff0000640a0a0000f6",
+      "a30501c80a0a00ff3201ff7f0000000000000023",
+      "a3ff00000000000000000000000000000000005c",
+      "3305046908000000000000000000000000000053"
+    ],
+    "cmd_b64": [
+      "owABBwIDIGAAAAUAAf//AAAAAOA=",
+      "owEDADID/38A/38A/38AAAAAABA=",
+      "owIAAAEaAAAAAQAB//8AAAAAArg=",
+      "owPIMgH/AAAAAAAAAAAAJgAAAII=",
+      "owQBAgP//wLIAAD/AABkCgoAAPY=",
+      "owUByAoKAP8yAf9/AAAAAAAAACM=",
+      "o/8AAAAAAAAAAAAAAAAAAAAAAFw=",
+      "MwUEaQgAAAAAAAAAAAAAAAAAAFM="
+    ]
+  },
+  {
+    "name": "Ripple",
+    "sceneId_b10": 1261,
+    "sceneId_b16": "04ed",
+    "scenceParamId_b10": 1336,
+    "scenceParamId_b16": "0538",
+    "sceneType_b10": 0,
+    "sceneType_b16": "00",
+    "sceneCode_b10": 35,
+    "sceneCode_b16": "23",
+    "sceneCode_b16_swapped": "23",
+    "params_b64": "",
+    "params_b16": "",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "",
+    "num_lines_b10": 0,
+    "num_lines_b16": "00",
+    "cmd_b16": [
+      "3305042300000000000000000000000000000011"
+    ],
+    "cmd_b64": [
+      "MwUEIwAAAAAAAAAAAAAAAAAAABE="
+    ]
+  },
+  {
+    "name": "Wave",
+    "sceneId_b10": 1262,
+    "sceneId_b16": "04ee",
+    "scenceParamId_b10": 1337,
+    "scenceParamId_b16": "0539",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2154,
+    "sceneCode_b16": "086a",
+    "sceneCode_b16_swapped": "6a08",
+    "params_b64": "BSBAAAABAgH/AACADx4D/BQDAP//Bm7+3vz/FAD1AACAACBDAAABAgH/AACADx4D/BQDAP//Bm7+t/r+FAD2AACAACBGAAABAgH/AACADx4D/BQDAP//Bm7+p///FAD2AACAACAAAQACAgH/AAOADx4D/BQDAP//Bm7+mf75FAD7AACAAB0AAAABAAEyGQOzFBQAgBQCAAD/B7T/AACAAACAAA==",
+    "params_b16": "0520400000010201ff0000800f1e03fc140300ffff066efedefcff1400f50000800020430000010201ff0000800f1e03fc140300ffff066efeb7fafe1400f60000800020460000010201ff0000800f1e03fc140300ffff066efea7ffff1400f60000800020000100020201ff0003800f1e03fc140300ffff066efe99fef91400fb000080001d000000010001321903b31414008014020000ff07b4ff00008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010a020520400000010201ff0000800f1e03fc140300ffff066efedefcff1400f50000800020430000010201ff0000800f1e03fc140300ffff066efeb7fafe1400f60000800020460000010201ff0000800f1e03fc140300ffff066efea7ffff1400f60000800020000100020201ff0003800f1e03fc140300ffff066efe99fef91400fb000080001d000000010001321903b31414008014020000ff07b4ff00008000008000",
+    "num_lines_b10": 10,
+    "num_lines_b16": "0a",
+    "cmd_b16": [
+      "a300010a020520400000010201ff0000800f1ea3",
+      "a30103fc140300ffff066efedefcff1400f500e0",
+      "a30200800020430000010201ff0000800f1e032d",
+      "a303fc140300ffff066efeb7fafe1400f600008c",
+      "a304800020460000010201ff0000800f1e03fcd2",
+      "a305140300ffff066efea7ffff1400f6000080e2",
+      "a3060020000100020201ff0003800f1e03fc1403",
+      "a3070300ffff066efe99fef91400fb00008000c0",
+      "a3081d000000010001321903b3141400801402bb",
+      "a3ff0000ff07b4ff0000800000800000000000ef",
+      "3305046a08000000000000000000000000000050"
+    ],
+    "cmd_b64": [
+      "owABCgIFIEAAAAECAf8AAIAPHqM=",
+      "owED/BQDAP//Bm7+3vz/FAD1AOA=",
+      "owIAgAAgQwAAAQIB/wAAgA8eAy0=",
+      "owP8FAMA//8Gbv63+v4UAPYAAIw=",
+      "owSAACBGAAABAgH/AACADx4D/NI=",
+      "owUUAwD//wZu/qf//xQA9gAAgOI=",
+      "owYAIAABAAICAf8AA4APHgP8FAM=",
+      "owcDAP//Bm7+mf75FAD7AACAAMA=",
+      "owgdAAAAAQABMhkDsxQUAIAUArs=",
+      "o/8AAP8HtP8AAIAAAIAAAAAAAO8=",
+      "MwUEaggAAAAAAAAAAAAAAAAAAFA="
+    ]
+  },
+  {
+    "name": "Cherry blossoms",
+    "sceneId_b10": 1263,
+    "sceneId_b16": "04ef",
+    "scenceParamId_b10": 1338,
+    "scenceParamId_b16": "053a",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2155,
+    "sceneCode_b16": "086b",
+    "sceneCode_b16_swapped": "6b08",
+    "params_b64": "Ah0AAAABAAFwcACAFBQA5hQC/zft/wb+AACAAACAAB0AAgUBAAE9GgCAFBQBgBQC/2r39Iv+AACAEgD8AA==",
+    "params_b16": "021d00000001000170700080141400e61402ff37edff06fe000080000080001d0002050100013d1a0080141401801402ff6af7f48bfe0000801200fc00",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010402021d00000001000170700080141400e61402ff37edff06fe000080000080001d0002050100013d1a0080141401801402ff6af7f48bfe0000801200fc00",
+    "num_lines_b10": 4,
+    "num_lines_b16": "04",
+    "cmd_b16": [
+      "a300010402021d0000000100017070008014143b",
+      "a30100e61402ff37edff06fe0000800000800070",
+      "a3021d0002050100013d1a00801414018014028b",
+      "a3ffff6af7f48bfe0000801200fc0000000000d1",
+      "3305046b08000000000000000000000000000051"
+    ],
+    "cmd_b64": [
+      "owABBAICHQAAAAEAAXBwAIAUFDs=",
+      "owEA5hQC/zft/wb+AACAAACAAHA=",
+      "owIdAAIFAQABPRoAgBQUAYAUAos=",
+      "o///avf0i/4AAIASAPwAAAAAANE=",
+      "MwUEawgAAAAAAAAAAAAAAAAAAFE="
+    ]
+  },
+  {
+    "name": "Forest",
+    "sceneId_b10": 1264,
+    "sceneId_b16": "04f0",
+    "scenceParamId_b10": 1339,
+    "scenceParamId_b16": "053b",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2156,
+    "sceneCode_b16": "086c",
+    "sceneCode_b16_swapped": "6c08",
+    "params_b64": "AxoAAAABAAH/AACAFBQAgBQBAP8AAACAAACAAB0AAAABAgH/AACAFBQA22QC//8AAP8AAACAAACAAB0AAAABAgH/AAKAFBQA22QCAP8A//8AAACAAACAAA==",
+    "params_b16": "031a000000010001ff00008014140080140100ff00000080000080001d000000010201ff000080141400db6402ffff0000ff00000080000080001d000000010201ff000280141400db640200ff00ffff0000008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010602031a000000010001ff00008014140080140100ff00000080000080001d000000010201ff000080141400db6402ffff0000ff00000080000080001d000000010201ff000280141400db640200ff00ffff0000008000008000",
+    "num_lines_b10": 6,
+    "num_lines_b16": "06",
+    "cmd_b16": [
+      "a300010602031a000000010001ff0000801414c0",
+      "a3010080140100ff00000080000080001d0000d5",
+      "a30200010201ff000080141400db6402ffff0061",
+      "a30300ff00000080000080001d00000001020140",
+      "a304ff000280141400db640200ff00ffff000098",
+      "a3ff00800000800000000000000000000000005c",
+      "3305046c08000000000000000000000000000056"
+    ],
+    "cmd_b64": [
+      "owABBgIDGgAAAAEAAf8AAIAUFMA=",
+      "owEAgBQBAP8AAACAAACAAB0AANU=",
+      "owIAAQIB/wAAgBQUANtkAv//AGE=",
+      "owMA/wAAAIAAAIAAHQAAAAECAUA=",
+      "owT/AAKAFBQA22QCAP8A//8AAJg=",
+      "o/8AgAAAgAAAAAAAAAAAAAAAAFw=",
+      "MwUEbAgAAAAAAAAAAAAAAAAAAFY="
+    ]
+  },
+  {
+    "name": "Karst Cave-A",
+    "sceneId_b10": 2687,
+    "sceneId_b16": "0a7f",
+    "scenceParamId_b10": 2795,
+    "scenceParamId_b16": "0aeb",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2451,
+    "sceneCode_b16": "0993",
+    "sceneCode_b16_swapped": "9309",
+    "params_b64": "AikAAAABAAH/mAOjCgoC8hQGvQD/AAD//wAA/38AAP8AAP//AAH6AAAAAB0AAgUBAgH/AAPRFBQAgBQC////////AACAAACAAA==",
+    "params_b16": "0229000000010001ff9803a30a0a02f21406bd00ff0000ffff0000ff7f0000ff0000ffff0001fa000000001d000205010201ff0003d1141400801402ffffffffffff00008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0105020229000000010001ff9803a30a0a02f21406bd00ff0000ffff0000ff7f0000ff0000ffff0001fa000000001d000205010201ff0003d1141400801402ffffffffffff00008000008000",
+    "num_lines_b10": 5,
+    "num_lines_b16": "05",
+    "cmd_b16": [
+      "a3000105020229000000010001ff9803a30a0a49",
+      "a30102f21406bd00ff0000ffff0000ff7f000082",
+      "a302ff0000ffff0001fa000000001d00020501be",
+      "a3030201ff0003d1141400801402ffffffffffe7",
+      "a3ffff00008000008000000000000000000000a3",
+      "33050493090000000000000000000000000000a8"
+    ],
+    "cmd_b64": [
+      "owABBQICKQAAAAEAAf+YA6MKCkk=",
+      "owEC8hQGvQD/AAD//wAA/38AAII=",
+      "owL/AAD//wAB+gAAAAAdAAIFAb4=",
+      "owMCAf8AA9EUFACAFAL//////+c=",
+      "o///AACAAACAAAAAAAAAAAAAAKM=",
+      "MwUEkwkAAAAAAAAAAAAAAAAAAKg="
+    ]
+  },
+  {
+    "name": "Karst Cave-B",
+    "sceneId_b10": 2687,
+    "sceneId_b16": "0a7f",
+    "scenceParamId_b10": 27439,
+    "scenceParamId_b16": "006b2f",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 13501,
+    "sceneCode_b16": "0034bd",
+    "sceneCode_b16_swapped": "bd3400",
+    "params_b64": "AikAAAACAAH/mAOaCgoCyBQGvQD/AAD//wAA/38AAP8AAP//AAH6AAAAAB0AAgMBAAH/AAPJFBQAgBQCPWn/nzf/AACAAACAAA==",
+    "params_b16": "0229000000020001ff98039a0a0a02c81406bd00ff0000ffff0000ff7f0000ff0000ffff0001fa000000001d000203010001ff0003c91414008014023d69ff9f37ff00008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0105020229000000020001ff98039a0a0a02c81406bd00ff0000ffff0000ff7f0000ff0000ffff0001fa000000001d000203010001ff0003c91414008014023d69ff9f37ff00008000008000",
+    "num_lines_b10": 5,
+    "num_lines_b16": "05",
+    "cmd_b16": [
+      "a3000105020229000000020001ff98039a0a0a73",
+      "a30102c81406bd00ff0000ffff0000ff7f0000b8",
+      "a302ff0000ffff0001fa000000001d00020301b8",
+      "a3030001ff0003c91414008014023d69ff9f3701",
+      "a3ffff00008000008000000000000000000000a3",
+      "330504bd340000000000000000000000000000bb"
+    ],
+    "cmd_b64": [
+      "owABBQICKQAAAAIAAf+YA5oKCnM=",
+      "owECyBQGvQD/AAD//wAA/38AALg=",
+      "owL/AAD//wAB+gAAAAAdAAIDAbg=",
+      "owMAAf8AA8kUFACAFAI9af+fNwE=",
+      "o///AACAAACAAAAAAAAAAAAAAKM=",
+      "MwUEvTQAAAAAAAAAAAAAAAAAALs="
+    ]
+  },
+  {
+    "name": "Glacier",
+    "sceneId_b10": 2688,
+    "sceneId_b16": "0a80",
+    "scenceParamId_b10": 2796,
+    "scenceParamId_b16": "0aec",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2452,
+    "sceneCode_b16": "0994",
+    "sceneCode_b16_swapped": "9409",
+    "params_b64": "Ax0AAAABAAH/zAPMFBQA2BQCAAD/B4P/AACAAACAAB00AAABAgH/DAOyFBQBxgoCB4P/AP//BAD2EgDiAB0wAAABAgH/DAO7FBQBxgoCB4P/AP//BAD2EgDiAA==",
+    "params_b16": "031d000000010001ffcc03cc141400d814020000ff0783ff000080000080001d340000010201ff0c03b2141401c60a020783ff00ffff0400f61200e2001d300000010201ff0c03bb141401c60a020783ff00ffff0400f61200e200",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010602031d000000010001ffcc03cc141400d814020000ff0783ff000080000080001d340000010201ff0c03b2141401c60a020783ff00ffff0400f61200e2001d300000010201ff0c03bb141401c60a020783ff00ffff0400f61200e200",
+    "num_lines_b10": 6,
+    "num_lines_b16": "06",
+    "cmd_b16": [
+      "a300010602031d000000010001ffcc03cc141444",
+      "a30100d814020000ff0783ff00008000008000e8",
+      "a3021d340000010201ff0c03b2141401c60a0207",
+      "a3030783ff00ffff0400f61200e2001d300000f4",
+      "a304010201ff0c03bb141401c60a020783ff005a",
+      "a3ffffff0400f61200e20000000000000000005e",
+      "33050494090000000000000000000000000000af"
+    ],
+    "cmd_b64": [
+      "owABBgIDHQAAAAEAAf/MA8wUFEQ=",
+      "owEA2BQCAAD/B4P/AACAAACAAOg=",
+      "owIdNAAAAQIB/wwDshQUAcYKAgc=",
+      "owMHg/8A//8EAPYSAOIAHTAAAPQ=",
+      "owQBAgH/DAO7FBQBxgoCB4P/AFo=",
+      "o////wQA9hIA4gAAAAAAAAAAAF4=",
+      "MwUElAkAAAAAAAAAAAAAAAAAAK8="
+    ]
+  },
+  {
+    "name": "Lake",
+    "sceneId_b10": 2689,
+    "sceneId_b16": "0a81",
+    "scenceParamId_b10": 2797,
+    "scenceParamId_b16": "0aed",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2453,
+    "sceneCode_b16": "0995",
+    "sceneCode_b16_swapped": "9509",
+    "params_b64": "BSAwAAABAgL/fwPRFBT/ggHSFBQA9R4BB/9UBQD9AACAACAxAAABAgLYTgHMFBTZTgPMFBQA9h4BSf6UEgHtAACAACBDAAABAgLYTwPRFBTWTwHRFBQA9h4BL/96EQHtAACAACA2AAABAgLZTwHMFBTYTwPMFBQA9h4BFP6jEAHtAACAACA3AAABAgL/gAHSFBT/gAPRFBQA9h4BB/9eBwD9AACAAA==",
+    "params_b16": "0520300000010202ff7f03d11414ff8201d2141400f51e0107ff540500fd0000800020310000010202d84e01cc1414d94e03cc141400f61e0149fe941201ed0000800020430000010202d84f03d11414d64f01d1141400f61e012fff7a1101ed0000800020360000010202d94f01cc1414d84f03cc141400f61e0114fea31001ed0000800020370000010202ff8001d21414ff8003d1141400f61e0107ff5e0700fd00008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010a020520300000010202ff7f03d11414ff8201d2141400f51e0107ff540500fd0000800020310000010202d84e01cc1414d94e03cc141400f61e0149fe941201ed0000800020430000010202d84f03d11414d64f01d1141400f61e012fff7a1101ed0000800020360000010202d94f01cc1414d84f03cc141400f61e0114fea31001ed0000800020370000010202ff8001d21414ff8003d1141400f61e0107ff5e0700fd00008000",
+    "num_lines_b10": 10,
+    "num_lines_b16": "0a",
+    "cmd_b16": [
+      "a300010a020520300000010202ff7f03d11414ec",
+      "a301ff8201d2141400f51e0107ff540500fd00b2",
+      "a30200800020310000010202d84e01cc1414d9b3",
+      "a3034e03cc141400f61e0149fe941201ed000015",
+      "a304800020430000010202d84f03d11414d64f99",
+      "a30501d1141400f61e012fff7a1101ed00008048",
+      "a3060020360000010202d94f01cc1414d84f037d",
+      "a307cc141400f61e0114fea31001ed00008000b4",
+      "a30820370000010202ff8001d21414ff8003d1bc",
+      "a3ff141400f61e0107ff5e0700fd000080000069",
+      "33050495090000000000000000000000000000ae"
+    ],
+    "cmd_b64": [
+      "owABCgIFIDAAAAECAv9/A9EUFOw=",
+      "owH/ggHSFBQA9R4BB/9UBQD9ALI=",
+      "owIAgAAgMQAAAQIC2E4BzBQU2bM=",
+      "owNOA8wUFAD2HgFJ/pQSAe0AABU=",
+      "owSAACBDAAABAgLYTwPRFBTWT5k=",
+      "owUB0RQUAPYeAS//ehEB7QAAgEg=",
+      "owYAIDYAAAECAtlPAcwUFNhPA30=",
+      "owfMFBQA9h4BFP6jEAHtAACAALQ=",
+      "owggNwAAAQIC/4AB0hQU/4AD0bw=",
+      "o/8UFAD2HgEH/14HAP0AAIAAAGk=",
+      "MwUElQkAAAAAAAAAAAAAAAAAAK4="
+    ]
+  },
+  {
+    "name": "Journey of Flowers",
+    "sceneId_b10": 2690,
+    "sceneId_b16": "0a82",
+    "scenceParamId_b10": 2798,
+    "scenceParamId_b16": "0aee",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2454,
+    "sceneCode_b16": "0996",
+    "sceneCode_b16_swapped": "9609",
+    "params_b64": "BRoAAAABAgH/fwPqFBQBzRQB/38AEgD5AACAACAhAAABAgL/TAPvFBT/AACAFBQB9BQB/wAAEAD5AACAABojAAABAgH/TAP/FBQA8xQBAP8AEAD5AACAABolAAABAgH/TAP/FBQA8xQBAP//EAD5AACAABonAAABAgH/SwP/FBQA5hQB/xf/EAD5AACAAA==",
+    "params_b16": "051a000000010201ff7f03ea141401cd1401ff7f001200f90000800020210000010202ff4c03ef1414ff000080141401f41401ff00001000f9000080001a230000010201ff4c03ff141400f3140100ff001000f9000080001a250000010201ff4c03ff141400f3140100ffff1000f9000080001a270000010201ff4b03ff141400e61401ff17ff1000f900008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010902051a000000010201ff7f03ea141401cd1401ff7f001200f90000800020210000010202ff4c03ef1414ff000080141401f41401ff00001000f9000080001a230000010201ff4c03ff141400f3140100ff001000f9000080001a250000010201ff4c03ff141400f3140100ffff1000f9000080001a270000010201ff4b03ff141400e61401ff17ff1000f900008000",
+    "num_lines_b10": 9,
+    "num_lines_b16": "09",
+    "cmd_b16": [
+      "a300010902051a000000010201ff7f03ea1414dd",
+      "a30101cd1401ff7f001200f90000800020210091",
+      "a30200010202ff4c03ef1414ff00008014140181",
+      "a303f41401ff00001000f9000080001a230000ee",
+      "a304010201ff4c03ff141400f3140100ff0010e3",
+      "a30500f9000080001a250000010201ff4c03ffad",
+      "a306141400f3140100ffff1000f9000080001a30",
+      "a307270000010201ff4b03ff141400e61401ffc5",
+      "a3ff17ff1000f9000080000000000000000000dd",
+      "33050496090000000000000000000000000000ad"
+    ],
+    "cmd_b64": [
+      "owABCQIFGgAAAAECAf9/A+oUFN0=",
+      "owEBzRQB/38AEgD5AACAACAhAJE=",
+      "owIAAQIC/0wD7xQU/wAAgBQUAYE=",
+      "owP0FAH/AAAQAPkAAIAAGiMAAO4=",
+      "owQBAgH/TAP/FBQA8xQBAP8AEOM=",
+      "owUA+QAAgAAaJQAAAQIB/0wD/60=",
+      "owYUFADzFAEA//8QAPkAAIAAGjA=",
+      "owcnAAABAgH/SwP/FBQA5hQB/8U=",
+      "o/8X/xAA+QAAgAAAAAAAAAAAAN0=",
+      "MwUElgkAAAAAAAAAAAAAAAAAAK0="
+    ]
+  },
+  {
+    "name": "Downpour",
+    "sceneId_b10": 2691,
+    "sceneId_b16": "0a83",
+    "scenceParamId_b10": 2799,
+    "scenceParamId_b16": "0aef",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2455,
+    "sceneCode_b16": "0997",
+    "sceneCode_b16_swapped": "9709",
+    "params_b64": "AxoAAAABAAEvAAB2FBQAfxQBdV3+AAB/AAB/AB0AAgoFAAH/zAP8BQUB/xQCAAD/Uwf/AAD6AAD/ASBzAQAGAgH/FwM/XP8A/woDAAAA//y5AAAAAAH/AAD/AA==",
+    "params_b16": "031a0000000100012f0000761414007f1401755dfe00007f00007f001d00020a050001ffcc03fc050501ff14020000ff5307ff0000fa0000ff0120730100060201ff17033f5cff00ff0a03000000fffcb90000000001ff0000ff00",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010602031a0000000100012f0000761414007f1401755dfe00007f00007f001d00020a050001ffcc03fc050501ff14020000ff5307ff0000fa0000ff0120730100060201ff17033f5cff00ff0a03000000fffcb90000000001ff0000ff00",
+    "num_lines_b10": 6,
+    "num_lines_b16": "06",
+    "cmd_b16": [
+      "a300010602031a0000000100012f0000761414e6",
+      "a301007f1401755dfe00007f00007f001d000201",
+      "a3020a050001ffcc03fc050501ff14020000ff74",
+      "a3035307ff0000fa0000ff012073010006020158",
+      "a304ff17033f5cff00ff0a03000000fffcb9009c",
+      "a3ff00000001ff0000ff0000000000000000005d",
+      "33050497090000000000000000000000000000ac"
+    ],
+    "cmd_b64": [
+      "owABBgIDGgAAAAEAAS8AAHYUFOY=",
+      "owEAfxQBdV3+AAB/AAB/AB0AAgE=",
+      "owIKBQAB/8wD/AUFAf8UAgAA/3Q=",
+      "owNTB/8AAPoAAP8BIHMBAAYCAVg=",
+      "owT/FwM/XP8A/woDAAAA//y5AJw=",
+      "o/8AAAAB/wAA/wAAAAAAAAAAAF0=",
+      "MwUElwkAAAAAAAAAAAAAAAAAAKw="
+    ]
+  },
+  {
+    "name": "Rustling leaves",
+    "sceneId_b10": 2692,
+    "sceneId_b16": "0a84",
+    "scenceParamId_b10": 2800,
+    "scenceParamId_b16": "0af0",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2456,
+    "sceneCode_b16": "0998",
+    "sceneCode_b16_swapped": "9809",
+    "params_b64": "AhoAAAABAAH//wEAAAAA3DIBAP8AAAAAAAAAABoAAggEAgH/KAHXIBQBADIB//8AEgDTAAAAAA==",
+    "params_b16": "021a000000010001ffff0100000000dc320100ff00000000000000001a000208040201ff2801d7201401003201ffff001200d300000000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010402021a000000010001ffff0100000000dc320100ff00000000000000001a000208040201ff2801d7201401003201ffff001200d300000000",
+    "num_lines_b10": 4,
+    "num_lines_b16": "04",
+    "cmd_b16": [
+      "a300010402021a000000010001ffff01000000bd",
+      "a30100dc320100ff00000000000000001a0002aa",
+      "a30208040201ff2801d7201401003201ffff00a9",
+      "a3ff1200d300000000000000000000000000009d",
+      "33050498090000000000000000000000000000a3"
+    ],
+    "cmd_b64": [
+      "owABBAICGgAAAAEAAf//AQAAAL0=",
+      "owEA3DIBAP8AAAAAAAAAABoAAqo=",
+      "owIIBAIB/ygB1yAUAQAyAf//AKk=",
+      "o/8SANMAAAAAAAAAAAAAAAAAAJ0=",
+      "MwUEmAkAAAAAAAAAAAAAAAAAAKM="
+    ]
+  },
+  {
+    "name": "Morning",
+    "sceneId_b10": 2693,
+    "sceneId_b16": "0a85",
+    "scenceParamId_b10": 2801,
+    "scenceParamId_b16": "0af1",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2457,
+    "sceneCode_b16": "0999",
+    "sceneCode_b16_swapped": "9909",
+    "params_b64": "ASMAAAACAAHlMwJkMjIApjIEBiT+FJH+GtH+svn+EAAhAAAAAQ==",
+    "params_b16": "0123000000020001e5330264323200a632040624fe1491fe1ad1feb2f9fe10002100000001",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0103020123000000020001e5330264323200a632040624fe1491fe1ad1feb2f9fe10002100000001",
+    "num_lines_b10": 3,
+    "num_lines_b16": "03",
+    "cmd_b16": [
+      "a3000103020123000000020001e5330264323232",
+      "a30100a632040624fe1491fe1ad1feb2f9fe1005",
+      "a3ff00210000000100000000000000000000007c",
+      "33050499090000000000000000000000000000a2"
+    ],
+    "cmd_b64": [
+      "owABAwIBIwAAAAIAAeUzAmQyMjI=",
+      "owEApjIEBiT+FJH+GtH+svn+EAU=",
+      "o/8AIQAAAAEAAAAAAAAAAAAAAHw=",
+      "MwUEmQkAAAAAAAAAAAAAAAAAAKI="
+    ]
+  },
+  {
+    "name": "Night",
+    "sceneId_b10": 2694,
+    "sceneId_b16": "0a86",
+    "scenceParamId_b10": 2802,
+    "scenceParamId_b16": "0af2",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2458,
+    "sceneCode_b16": "099a",
+    "sceneCode_b16_swapped": "9a09",
+    "params_b64": "Ah0AAAAFAAGWBQGWMjIC3DICAAD/nADIAAAAAAAAACAAAAADAgGWBQHXMjICADIDiwD/AAAAAAD/AAAAAAAAAA==",
+    "params_b16": "021d00000005000196050196323202dc32020000ff9c00c80000000000000020000000030201960501d73232020032038b00ff0000000000ff00000000000000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010402021d00000005000196050196323202dc32020000ff9c00c80000000000000020000000030201960501d73232020032038b00ff0000000000ff00000000000000",
+    "num_lines_b10": 4,
+    "num_lines_b16": "04",
+    "cmd_b16": [
+      "a300010402021d000000050001960501963232bb",
+      "a30102dc32020000ff9c00c800000000000000e7",
+      "a30220000000030201960501d7323202003203f7",
+      "a3ff8b00ff0000000000ff0000000000000000d7",
+      "3305049a090000000000000000000000000000a1"
+    ],
+    "cmd_b64": [
+      "owABBAICHQAAAAUAAZYFAZYyMrs=",
+      "owEC3DICAAD/nADIAAAAAAAAAOc=",
+      "owIgAAAAAwIBlgUB1zIyAgAyA/c=",
+      "o/+LAP8AAAAAAP8AAAAAAAAAANc=",
+      "MwUEmgkAAAAAAAAAAAAAAAAAAKE="
+    ]
+  },
+  {
+    "name": "Volcano",
+    "sceneId_b10": 2695,
+    "sceneId_b16": "0a87",
+    "scenceParamId_b10": 2803,
+    "scenceParamId_b16": "0af3",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2459,
+    "sceneCode_b16": "099b",
+    "sceneCode_b16_swapped": "9b09",
+    "params_b64": "AyYAAQAGAgH/AAD/FBQB/w8F/wAAAAAA/ysGAAAA/1EHEgD3AADUAB2RAQAEAAH/GgD/FBQB0w8C/wAA/xEHEgD5AADUAB0AAAABAgHZGgDgGRkA0w8C/zoH/wAAEgD5AADUAA==",
+    "params_b16": "0326000100060201ff0000ff141401ff0f05ff0000000000ff2b06000000ff51071200f70000d4001d910100040001ff1a00ff141401d30f02ff0000ff11071200f90000d4001d000000010201d91a00e0191900d30f02ff3a07ff00001200f90000d400",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0107020326000100060201ff0000ff141401ff0f05ff0000000000ff2b06000000ff51071200f70000d4001d910100040001ff1a00ff141401d30f02ff0000ff11071200f90000d4001d000000010201d91a00e0191900d30f02ff3a07ff00001200f90000d400",
+    "num_lines_b10": 7,
+    "num_lines_b16": "07",
+    "cmd_b16": [
+      "a3000107020326000100060201ff0000ff141486",
+      "a30101ff0f05ff0000000000ff2b06000000ff84",
+      "a30251071200f70000d4001d910100040001ffb1",
+      "a3031a00ff141401d30f02ff0000ff110712009e",
+      "a304f90000d4001d000000010201d91a00e019af",
+      "a3051900d30f02ff3a07ff00001200f90000d463",
+      "a3ff00000000000000000000000000000000005c",
+      "3305049b090000000000000000000000000000a0"
+    ],
+    "cmd_b64": [
+      "owABBwIDJgABAAYCAf8AAP8UFIY=",
+      "owEB/w8F/wAAAAAA/ysGAAAA/4Q=",
+      "owJRBxIA9wAA1AAdkQEABAAB/7E=",
+      "owMaAP8UFAHTDwL/AAD/EQcSAJ4=",
+      "owT5AADUAB0AAAABAgHZGgDgGa8=",
+      "owUZANMPAv86B/8AABIA+QAA1GM=",
+      "o/8AAAAAAAAAAAAAAAAAAAAAAFw=",
+      "MwUEmwkAAAAAAAAAAAAAAAAAAKA="
+    ]
+  },
+  {
+    "name": "Desert B",
+    "sceneId_b10": 10093,
+    "sceneId_b16": "00276d",
+    "scenceParamId_b10": 16963,
+    "scenceParamId_b16": "004243",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 11057,
+    "sceneCode_b16": "002b31",
+    "sceneCode_b16_swapped": "312b00",
+    "params_b64": "AyYAAAAFAgHLMwPJFBQDABQF/x4H/zcH/1oH/zcH/x4HAACAAACAABpQAwECAAH/AACAFBQAgBQB/zIHFgD5AACAABpVAwECAAH/AACAFBQAgBQB/zEHFAD5AACAAA==",
+    "params_b16": "0326000000050201cb3303c9141403001405ff1e07ff3707ff5a07ff3707ff1e07000080000080001a500301020001ff000080141400801401ff32071600f9000080001a550301020001ff000080141400801401ff31071400f900008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0106020326000000050201cb3303c9141403001405ff1e07ff3707ff5a07ff3707ff1e07000080000080001a500301020001ff000080141400801401ff32071600f9000080001a550301020001ff000080141400801401ff31071400f900008000",
+    "num_lines_b10": 6,
+    "num_lines_b16": "06",
+    "cmd_b16": [
+      "a3000106020326000000050201cb3303c91414b7",
+      "a30103001405ff1e07ff3707ff5a07ff3707ff0b",
+      "a3021e07000080000080001a500301020001ff0c",
+      "a303000080141400801401ff32071600f9000090",
+      "a30480001a550301020001ff0000801414008096",
+      "a3ff1401ff31071400f9000080000000000000ed",
+      "330504312b000000000000000000000000000028"
+    ],
+    "cmd_b64": [
+      "owABBgIDJgAAAAUCAcszA8kUFLc=",
+      "owEDABQF/x4H/zcH/1oH/zcH/ws=",
+      "owIeBwAAgAAAgAAaUAMBAgAB/ww=",
+      "owMAAIAUFACAFAH/MgcWAPkAAJA=",
+      "owSAABpVAwECAAH/AACAFBQAgJY=",
+      "o/8UAf8xBxQA+QAAgAAAAAAAAO0=",
+      "MwUEMSsAAAAAAAAAAAAAAAAAACg="
+    ]
+  },
+  {
+    "name": "Sand Grains",
+    "sceneId_b10": 10094,
+    "sceneId_b16": "00276e",
+    "scenceParamId_b10": 16964,
+    "scenceParamId_b16": "004244",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 11058,
+    "sceneCode_b16": "002b32",
+    "sceneCode_b16_swapped": "322b00",
+    "params_b64": "Ah0AAwQEAAGgoAAAFBQDABQC/4Mw/4UjAACAEAH3ARoAAAABAAH/jAH5FBQDAAcB/2MaAACAAACAAA==",
+    "params_b16": "021d000304040001a0a00000141403001402ff8330ff85230000801001f7011a000000010001ff8c01f9141403000701ff631a00008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010402021d000304040001a0a00000141403001402ff8330ff85230000801001f7011a000000010001ff8c01f9141403000701ff631a00008000008000",
+    "num_lines_b10": 4,
+    "num_lines_b16": "04",
+    "cmd_b16": [
+      "a300010402021d000304040001a0a000001414b9",
+      "a30103001402ff8330ff85230000801001f701c5",
+      "a3021a000000010001ff8c01f914140300070135",
+      "a3ffff631a0000800000800000000000000000da",
+      "330504322b00000000000000000000000000002b"
+    ],
+    "cmd_b64": [
+      "owABBAICHQADBAQAAaCgAAAUFLk=",
+      "owEDABQC/4Mw/4UjAACAEAH3AcU=",
+      "owIaAAAAAQAB/4wB+RQUAwAHATU=",
+      "o///YxoAAIAAAIAAAAAAAAAAANo=",
+      "MwUEMisAAAAAAAAAAAAAAAAAACs="
+    ]
+  },
+  {
+    "name": "Aurora",
+    "sceneId_b10": 10671,
+    "sceneId_b16": "0029af",
+    "scenceParamId_b10": 17876,
+    "scenceParamId_b16": "0045d4",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 11216,
+    "sceneCode_b16": "002bd0",
+    "sceneCode_b16_swapped": "d02b00",
+    "params_b64": "AiAAAAABAgH/MgEAAAAA+jIDAP8AAP//qv8AAwCAAAAAACMAAAADAgH/GQP6AAAC+gAEf/8A//8AoP//AP//FAHqAAD/AA==",
+    "params_b16": "0220000000010201ff320100000000fa320300ff0000ffffaaff000300800000000023000000030201ff1903fa000002fa00047fff00ffff00a0ffff00ffff1401ea0000ff00",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0105020220000000010201ff320100000000fa320300ff0000ffffaaff000300800000000023000000030201ff1903fa000002fa00047fff00ffff00a0ffff00ffff1401ea0000ff00",
+    "num_lines_b10": 5,
+    "num_lines_b16": "05",
+    "cmd_b16": [
+      "a3000105020220000000010201ff320100000049",
+      "a30100fa320300ff0000ffffaaff000300800040",
+      "a30200000023000000030201ff1903fa0000029f",
+      "a303fa00047fff00ffff00a0ffff00ffff14016b",
+      "a3ffea0000ff0000000000000000000000000049",
+      "330504d02b0000000000000000000000000000c9"
+    ],
+    "cmd_b64": [
+      "owABBQICIAAAAAECAf8yAQAAAEk=",
+      "owEA+jIDAP8AAP//qv8AAwCAAEA=",
+      "owIAAAAjAAAAAwIB/xkD+gAAAp8=",
+      "owP6AAR//wD//wCg//8A//8UAWs=",
+      "o//qAAD/AAAAAAAAAAAAAAAAAEk=",
+      "MwUE0CsAAAAAAAAAAAAAAAAAAMk="
+    ]
+  },
+  {
+    "name": "Mountain Forest",
+    "sceneId_b10": 17281,
+    "sceneId_b16": "004381",
+    "scenceParamId_b10": 27435,
+    "scenceParamId_b16": "006b2b",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 13497,
+    "sceneCode_b16": "0034b9",
+    "sceneCode_b16_swapped": "b93400",
+    "params_b64": "AyAAAAAFAgH/TAOAFBQDgBQD/+1C/7sDdv8HAACAAACAACMwAwECAgH/GQKAFBQBgBQE//72//Ga/0xNZv9sEADvAACAACM3AwECAgH/GQKAFBQBgBQE//72//Ga/2Jee/5/EgDvAACAAA==",
+    "params_b16": "0320000000050201ff4c0380141403801403ffed42ffbb0376ff070000800000800023300301020201ff190280141401801404fffef6fff19aff4c4d66ff6c1000ef0000800023370301020201ff190280141401801404fffef6fff19aff625e7bfe7f1200ef00008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0107020320000000050201ff4c0380141403801403ffed42ffbb0376ff070000800000800023300301020201ff190280141401801404fffef6fff19aff4c4d66ff6c1000ef0000800023370301020201ff190280141401801404fffef6fff19aff625e7bfe7f1200ef00008000",
+    "num_lines_b10": 7,
+    "num_lines_b16": "07",
+    "cmd_b16": [
+      "a3000107020320000000050201ff4c03801414b2",
+      "a30103801403ffed42ffbb0376ff07000080002f",
+      "a30200800023300301020201ff19028014140154",
+      "a303801404fffef6fff19aff4c4d66ff6c100048",
+      "a304ef0000800023370301020201ff19028014af",
+      "a3051401801404fffef6fff19aff625e7bfe7f79",
+      "a3ff1200ef000080000000000000000000000021",
+      "330504b9340000000000000000000000000000bf"
+    ],
+    "cmd_b64": [
+      "owABBwIDIAAAAAUCAf9MA4AUFLI=",
+      "owEDgBQD/+1C/7sDdv8HAACAAC8=",
+      "owIAgAAjMAMBAgIB/xkCgBQUAVQ=",
+      "owOAFAT//vb/8Zr/TE1m/2wQAEg=",
+      "owTvAACAACM3AwECAgH/GQKAFK8=",
+      "owUUAYAUBP/+9v/xmv9iXnv+f3k=",
+      "o/8SAO8AAIAAAAAAAAAAAAAAACE=",
+      "MwUEuTQAAAAAAAAAAAAAAAAAAL8="
+    ]
+  },
+  {
+    "name": "River",
+    "sceneId_b10": 17282,
+    "sceneId_b16": "004382",
+    "scenceParamId_b10": 27436,
+    "scenceParamId_b16": "006b2c",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 13498,
+    "sceneCode_b16": "0034ba",
+    "sceneCode_b16_swapped": "ba3400",
+    "params_b64": "Ax0AAAABAgH6CAKAFBQDgBQCB/5DB/7EFAD8AACAAiAAAgEBAAEyAADJFKoAgBQD/3xL/0FO/+kyEwD0AACAAB0AAAABAgEdBwCAFBQDgBQCHP83B/9eEAD5AACAAQ==",
+    "params_b16": "031d000000010201fa08028014140380140207fe4307fec41400fc0000800220000201010001320000c914aa00801403ff7c4bff414effe9321300f4000080001d0000000102011d0700801414038014021cff3707ff5e1000f900008001",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010602031d000000010201fa08028014140380140207fe4307fec41400fc0000800220000201010001320000c914aa00801403ff7c4bff414effe9321300f4000080001d0000000102011d0700801414038014021cff3707ff5e1000f900008001",
+    "num_lines_b10": 6,
+    "num_lines_b16": "06",
+    "cmd_b16": [
+      "a300010602031d000000010201fa0802801414ca",
+      "a3010380140207fe4307fec41400fc00008002da",
+      "a30220000201010001320000c914aa0080140350",
+      "a303ff7c4bff414effe9321300f4000080001dc6",
+      "a3040000000102011d0700801414038014021cb6",
+      "a3ffff3707ff5e1000f90000800100000000005a",
+      "330504ba340000000000000000000000000000bc"
+    ],
+    "cmd_b64": [
+      "owABBgIDHQAAAAECAfoIAoAUFMo=",
+      "owEDgBQCB/5DB/7EFAD8AACAAto=",
+      "owIgAAIBAQABMgAAyRSqAIAUA1A=",
+      "owP/fEv/QU7/6TITAPQAAIAAHcY=",
+      "owQAAAABAgEdBwCAFBQDgBQCHLY=",
+      "o///Nwf/XhAA+QAAgAEAAAAAAFo=",
+      "MwUEujQAAAAAAAAAAAAAAAAAALw="
+    ]
+  },
+  {
+    "name": "Desert",
+    "sceneId_b10": 17283,
+    "sceneId_b16": "004383",
+    "scenceParamId_b10": 27437,
+    "scenceParamId_b16": "006b2d",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 13499,
+    "sceneCode_b16": "0034bb",
+    "sceneCode_b16_swapped": "bb3400",
+    "params_b64": "AhoAAAABAAH/nAHGFBQAgBQB/38AAACAAACAACkAAAABAAF3dwH/FBQA2B4G/6tCAAAAAAAAAAAAAAAAAAAAFADyAADtAA==",
+    "params_b16": "021a000000010001ff9c01c6141400801401ff7f000000800000800029000000010001777701ff141400d81e06ffab420000000000000000000000000000001400f20000ed00",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010502021a000000010001ff9c01c6141400801401ff7f000000800000800029000000010001777701ff141400d81e06ffab420000000000000000000000000000001400f20000ed00",
+    "num_lines_b10": 5,
+    "num_lines_b16": "05",
+    "cmd_b16": [
+      "a300010502021a000000010001ff9c01c6141419",
+      "a30100801401ff7f00000080000080002900009e",
+      "a30200010001777701ff141400d81e06ffab4289",
+      "a3030000000000000000000000000000001400b4",
+      "a3fff20000ed0000000000000000000000000043",
+      "330504bb340000000000000000000000000000bd"
+    ],
+    "cmd_b64": [
+      "owABBQICGgAAAAEAAf+cAcYUFBk=",
+      "owEAgBQB/38AAACAAACAACkAAJ4=",
+      "owIAAQABd3cB/xQUANgeBv+rQok=",
+      "owMAAAAAAAAAAAAAAAAAAAAUALQ=",
+      "o//yAADtAAAAAAAAAAAAAAAAAEM=",
+      "MwUEuzQAAAAAAAAAAAAAAAAAAL0="
+    ]
+  },
+  {
+    "name": "Deep sea",
+    "sceneId_b10": 17284,
+    "sceneId_b16": "004384",
+    "scenceParamId_b10": 27438,
+    "scenceParamId_b16": "006b2e",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 13500,
+    "sceneCode_b16": "0034bc",
+    "sceneCode_b16_swapped": "bc3400",
+    "params_b64": "AxoAAAABAAHOzgAAFBwA3DIBAB/BAAAAAAAAAB0AAgMCAAHWCAPOZBQBADICAP///38AEAC/AAAAAB0AAgMCAAHEDgPRZCYBADIC/wcI//kVFgClAAAAAA==",
+    "params_b16": "031a000000010001cece0000141c00dc3201001fc1000000000000001d000203020001d60803ce64140100320200ffffff7f001000bf000000001d000203020001c40e03d1642601003202ff0708fff9151600a500000000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010602031a000000010001cece0000141c00dc3201001fc1000000000000001d000203020001d60803ce64140100320200ffffff7f001000bf000000001d000203020001c40e03d1642601003202ff0708fff9151600a500000000",
+    "num_lines_b10": 6,
+    "num_lines_b16": "06",
+    "cmd_b16": [
+      "a300010602031a000000010001cece0000141cb7",
+      "a30100dc3201001fc1000000000000001d00028c",
+      "a30203020001d60803ce64140100320200fffff3",
+      "a303ff7f001000bf000000001d00020302000190",
+      "a304c40e03d1642601003202ff0708fff9151639",
+      "a3ff00a5000000000000000000000000000000f9",
+      "330504bc340000000000000000000000000000ba"
+    ],
+    "cmd_b64": [
+      "owABBgIDGgAAAAEAAc7OAAAUHLc=",
+      "owEA3DIBAB/BAAAAAAAAAB0AAow=",
+      "owIDAgAB1ggDzmQUAQAyAgD///M=",
+      "owP/fwAQAL8AAAAAHQACAwIAAZA=",
+      "owTEDgPRZCYBADIC/wcI//kVFjk=",
+      "o/8ApQAAAAAAAAAAAAAAAAAAAPk=",
+      "MwUEvDQAAAAAAAAAAAAAAAAAALo="
+    ]
+  },
+  {
+    "name": "Flower Field",
+    "sceneId_b10": 17285,
+    "sceneId_b16": "004385",
+    "scenceParamId_b10": 27440,
+    "scenceParamId_b16": "006b30",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 13502,
+    "sceneCode_b16": "0034be",
+    "sceneCode_b16_swapped": "be3400",
+    "params_b64": "BBoAAAABAAFNTQCAFBQAgBQBmQE3AACAAACAACmQAgQCAAH/fQPMFBQB2BQG/1oI/xUM/w2k/yMI/7cH/wX+EADyAACAASmQAgUDAAH/fwPMFBQB5RQG/7cH/3sU/wX+/1oI/w2k/yMIEgDyAACAASYZAAABAAH/hAPMFBQB8hQF/6UGyQb//1oI/wOx/yMIAADyAACAAg==",
+    "params_b16": "041a0000000100014d4d00801414008014019901370000800000800029900204020001ff7d03cc141401d81406ff5a08ff150cff0da4ff2308ffb707ff05fe1000f20000800129900205030001ff7f03cc141401e51406ffb707ff7b14ff05feff5a08ff0da4ff23081200f20000800126190000010001ff8403cc141401f21405ffa506c906ffff5a08ff03b1ff23080000f200008002",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010a02041a0000000100014d4d00801414008014019901370000800000800029900204020001ff7d03cc141401d81406ff5a08ff150cff0da4ff2308ffb707ff05fe1000f20000800129900205030001ff7f03cc141401e51406ffb707ff7b14ff05feff5a08ff0da4ff23081200f20000800126190000010001ff8403cc141401f21405ffa506c906ffff5a08ff03b1ff23080000f200008002",
+    "num_lines_b10": 10,
+    "num_lines_b16": "0a",
+    "cmd_b16": [
+      "a300010a02041a0000000100014d4d0080141434",
+      "a301008014019901370000800000800029900223",
+      "a30204020001ff7d03cc141401d81406ff5a088d",
+      "a303ff150cff0da4ff2308ffb707ff05fe10009f",
+      "a304f20000800129900205030001ff7f03cc1433",
+      "a3051401e51406ffb707ff7b14ff05feff5a0832",
+      "a306ff0da4ff23081200f2000080012619000079",
+      "a307010001ff8403cc141401f21405ffa506c967",
+      "a30806ffff5a08ff03b1ff23080000f200008014",
+      "a3ff02000000000000000000000000000000005e",
+      "330504be340000000000000000000000000000b8"
+    ],
+    "cmd_b64": [
+      "owABCgIEGgAAAAEAAU1NAIAUFDQ=",
+      "owEAgBQBmQE3AACAAACAACmQAiM=",
+      "owIEAgAB/30DzBQUAdgUBv9aCI0=",
+      "owP/FQz/DaT/Iwj/twf/Bf4QAJ8=",
+      "owTyAACAASmQAgUDAAH/fwPMFDM=",
+      "owUUAeUUBv+3B/97FP8F/v9aCDI=",
+      "owb/DaT/IwgSAPIAAIABJhkAAHk=",
+      "owcBAAH/hAPMFBQB8hQF/6UGyWc=",
+      "owgG//9aCP8Dsf8jCAAA8gAAgBQ=",
+      "o/8CAAAAAAAAAAAAAAAAAAAAAF4=",
+      "MwUEvjQAAAAAAAAAAAAAAAAAALg="
+    ]
+  },
+  {
+    "name": "Sky",
+    "sceneId_b10": 17286,
+    "sceneId_b16": "004386",
+    "scenceParamId_b10": 27441,
+    "scenceParamId_b16": "006b31",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 13503,
+    "sceneCode_b16": "0034bf",
+    "sceneCode_b16_swapped": "bf3400",
+    "params_b64": "AykAAAAFAAHMzACAFBQDgBQGPLv/ByP/////////Bh/+SKb+AACAAACAAB2BAQAMAgH/AAPMFBQC2BQC////////EQDyAACAAB2BAgMCAgG4AAPJFGQCzhQC////////EQDWAACAAA==",
+    "params_b16": "0329000000050001cccc00801414038014063cbbff0723ffffffffffffff061ffe48a6fe000080000080001d8101000c0201ff0003cc141402d81402ffffffffffff1100f2000080001d810203020201b80003c9146402ce1402ffffffffffff1100d600008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0107020329000000050001cccc00801414038014063cbbff0723ffffffffffffff061ffe48a6fe000080000080001d8101000c0201ff0003cc141402d81402ffffffffffff1100f2000080001d810203020201b80003c9146402ce1402ffffffffffff1100d600008000",
+    "num_lines_b10": 7,
+    "num_lines_b16": "07",
+    "cmd_b16": [
+      "a3000107020329000000050001cccc0080141409",
+      "a301038014063cbbff0723ffffffffffffff0696",
+      "a3021ffe48a6fe000080000080001d8101000cc1",
+      "a3030201ff0003cc141402d81402ffffffffffa0",
+      "a304ff1100f2000080001d810203020201b8001f",
+      "a30503c9146402ce1402ffffffffffff1100d601",
+      "a3ff0000800000000000000000000000000000dc",
+      "330504bf340000000000000000000000000000b9"
+    ],
+    "cmd_b64": [
+      "owABBwIDKQAAAAUAAczMAIAUFAk=",
+      "owEDgBQGPLv/ByP/////////BpY=",
+      "owIf/kim/gAAgAAAgAAdgQEADME=",
+      "owMCAf8AA8wUFALYFAL//////6A=",
+      "owT/EQDyAACAAB2BAgMCAgG4AB8=",
+      "owUDyRRkAs4UAv///////xEA1gE=",
+      "o/8AAIAAAAAAAAAAAAAAAAAAANw=",
+      "MwUEvzQAAAAAAAAAAAAAAAAAALk="
+    ]
+  },
+  {
+    "name": "Twilight",
+    "sceneId_b10": 17287,
+    "sceneId_b16": "004387",
+    "scenceParamId_b10": 27442,
+    "scenceParamId_b16": "006b32",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 13504,
+    "sceneCode_b16": "0034c0",
+    "sceneCode_b16_swapped": "c03400",
+    "params_b64": "ASkAAAAMAAGxsQCAFBQDyRQG/58L/3MG/0AL/x0J/0MK/38AAACAAACAAA==",
+    "params_b16": "01290000000c0001b1b10080141403c91406ff9f0bff7306ff400bff1d09ff430aff7f0000008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "01030201290000000c0001b1b10080141403c91406ff9f0bff7306ff400bff1d09ff430aff7f0000008000008000",
+    "num_lines_b10": 3,
+    "num_lines_b16": "03",
+    "cmd_b16": [
+      "a30001030201290000000c0001b1b10080141406",
+      "a30103c91406ff9f0bff7306ff400bff1d09ff3b",
+      "a3ff430aff7f0000008000008000000000000095",
+      "330504c0340000000000000000000000000000c6"
+    ],
+    "cmd_b64": [
+      "owABAwIBKQAAAAwAAbGxAIAUFAY=",
+      "owEDyRQG/58L/3MG/0AL/x0J/zs=",
+      "o/9DCv9/AAAAgAAAgAAAAAAAAJU=",
+      "MwUEwDQAAAAAAAAAAAAAAAAAAMY="
+    ]
+  },
+  {
+    "name": "Thunderstorm",
+    "sceneId_b10": 17288,
+    "sceneId_b16": "004388",
+    "scenceParamId_b10": 27443,
+    "scenceParamId_b16": "006b33",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 13505,
+    "sceneCode_b16": "0034c1",
+    "sceneCode_b16_swapped": "c13400",
+    "params_b64": "AiAAAgMDAAH//wDBAgIBgBQDe0X+B53/B+X/AACAAACAAR0AAAADAAHAMQC8FBQBgBQCHTZ9CUmFAACAAACAAA==",
+    "params_b16": "0220000203030001ffff00c10202018014037b45fe079dff07e5ff000080000080011d000000030001c03100bc1414018014021d367d09498500008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0104020220000203030001ffff00c10202018014037b45fe079dff07e5ff000080000080011d000000030001c03100bc1414018014021d367d09498500008000008000",
+    "num_lines_b10": 4,
+    "num_lines_b16": "04",
+    "cmd_b16": [
+      "a3000104020220000203030001ffff00c1020244",
+      "a301018014037b45fe079dff07e5ff000080000c",
+      "a3020080011d000000030001c03100bc14140173",
+      "a3ff8014021d367d094985000080000080000059",
+      "330504c1340000000000000000000000000000c7"
+    ],
+    "cmd_b64": [
+      "owABBAICIAACAwMAAf//AMECAkQ=",
+      "owEBgBQDe0X+B53/B+X/AACAAAw=",
+      "owIAgAEdAAAAAwABwDEAvBQUAXM=",
+      "o/+AFAIdNn0JSYUAAIAAAIAAAFk=",
+      "MwUEwTQAAAAAAAAAAAAAAAAAAMc="
+    ]
+  },
+  {
+    "name": "Warm Sun",
+    "sceneId_b10": 26269,
+    "sceneId_b16": "00669d",
+    "scenceParamId_b10": 36942,
+    "scenceParamId_b16": "00904e",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 15367,
+    "sceneCode_b16": "003c07",
+    "sceneCode_b16_swapped": "073c00",
+    "params_b64": "AyNQAAAEAgHi4gMBFBQDABQEQ2M0kJ8+2cBJ1aRDAACAAACAARpEAAABAAH/4QHIFBQA2hQB/6AzAACAAACABSAoAAACAAHm5gCAFBQDARQDp6yXUqC2OYKsAACAAACAAQ==",
+    "params_b16": "0323500000040201e2e20301141403001404436334909f3ed9c049d5a443000080000080011a440000010001ffe101c8141400da1401ffa0330000800000800520280000020001e6e60080141403011403a7ac9752a0b63982ac00008000008001",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0106020323500000040201e2e20301141403001404436334909f3ed9c049d5a443000080000080011a440000010001ffe101c8141400da1401ffa0330000800000800520280000020001e6e60080141403011403a7ac9752a0b63982ac00008000008001",
+    "num_lines_b10": 6,
+    "num_lines_b16": "06",
+    "cmd_b16": [
+      "a3000106020323500000040201e2e203011414d3",
+      "a30103001404436334909f3ed9c049d5a44300f6",
+      "a3020080000080011a440000010001ffe101c829",
+      "a303141400da1401ffa033000080000080052026",
+      "a304280000020001e6e60080141403011403a7be",
+      "a3ffac9752a0b63982ac00008000008001000035",
+      "330504073c000000000000000000000000000009"
+    ],
+    "cmd_b64": [
+      "owABBgIDI1AAAAQCAeLiAwEUFNM=",
+      "owEDABQEQ2M0kJ8+2cBJ1aRDAPY=",
+      "owIAgAAAgAEaRAAAAQAB/+EByCk=",
+      "owMUFADaFAH/oDMAAIAAAIAFICY=",
+      "owQoAAACAAHm5gCAFBQDARQDp74=",
+      "o/+sl1KgtjmCrAAAgAAAgAEAADU=",
+      "MwUEBzwAAAAAAAAAAAAAAAAAAAk="
+    ]
+  },
+  {
+    "name": "Star",
+    "sceneId_b10": 26270,
+    "sceneId_b16": "00669e",
+    "scenceParamId_b10": 36943,
+    "scenceParamId_b16": "00904f",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 15368,
+    "sceneCode_b16": "003c08",
+    "sceneCode_b16_swapped": "083c00",
+    "params_b64": "AiAAAAADAAF+fgABFBQDARQDBRS+DQ7/Qh3+AACAAACAABpkAgQCAAH/AAPSFBQB8hQB/90gAACAAACAAA==",
+    "params_b16": "02200000000300017e7e00011414030114030514be0d0eff421dfe000080000080001a640204020001ff0003d2141401f21401ffdd2000008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "01040202200000000300017e7e00011414030114030514be0d0eff421dfe000080000080001a640204020001ff0003d2141401f21401ffdd2000008000008000",
+    "num_lines_b10": 4,
+    "num_lines_b16": "04",
+    "cmd_b16": [
+      "a30001040202200000000300017e7e0001141485",
+      "a301030114030514be0d0eff421dfe00008000c5",
+      "a3020080001a640204020001ff0003d214140175",
+      "a3fff21401ffdd200000800000800000000000b9",
+      "330504083c000000000000000000000000000006"
+    ],
+    "cmd_b64": [
+      "owABBAICIAAAAAMAAX5+AAEUFIU=",
+      "owEDARQDBRS+DQ7/Qh3+AACAAMU=",
+      "owIAgAAaZAIEAgAB/wAD0hQUAXU=",
+      "o//yFAH/3SAAAIAAAIAAAAAAALk=",
+      "MwUECDwAAAAAAAAAAAAAAAAAAAY="
+    ]
+  },
+  {
+    "name": "Lakeside",
+    "sceneId_b10": 26271,
+    "sceneId_b16": "00669f",
+    "scenceParamId_b10": 36944,
+    "scenceParamId_b16": "009050",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 15369,
+    "sceneCode_b16": "003c09",
+    "sceneCode_b16_swapped": "093c00",
+    "params_b64": "Ah1gAAAFAgH/iQDYFBQCABQCQUBzQWWKEACqAACABCBVAAADAAH/rgHIFBQCARQDQWWKbJ17ebRzAACAAACAAQ==",
+    "params_b16": "021d600000050201ff8900d814140200140241407341658a1000aa0000800420550000030001ffae01c814140201140341658a6c9d7b79b47300008000008001",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010402021d600000050201ff8900d814140200140241407341658a1000aa0000800420550000030001ffae01c814140201140341658a6c9d7b79b47300008000008001",
+    "num_lines_b10": 4,
+    "num_lines_b16": "04",
+    "cmd_b16": [
+      "a300010402021d600000050201ff8900d8141473",
+      "a3010200140241407341658a1000aa0000800454",
+      "a30220550000030001ffae01c81414020114035a",
+      "a3ff41658a6c9d7b79b4730000800000800100c7",
+      "330504093c000000000000000000000000000007"
+    ],
+    "cmd_b64": [
+      "owABBAICHWAAAAUCAf+JANgUFHM=",
+      "owECABQCQUBzQWWKEACqAACABFQ=",
+      "owIgVQAAAwAB/64ByBQUAgEUA1o=",
+      "o/9BZYpsnXt5tHMAAIAAAIABAMc=",
+      "MwUECTwAAAAAAAAAAAAAAAAAAAc="
+    ]
+  },
+  {
+    "name": "Floating Mist",
+    "sceneId_b10": 26272,
+    "sceneId_b16": "0066a0",
+    "scenceParamId_b10": 36945,
+    "scenceParamId_b16": "009051",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 15370,
+    "sceneCode_b16": "003c0a",
+    "sceneCode_b16_swapped": "0a3c00",
+    "params_b64": "ASkAAAACAgL/cAG4FBT/wAPSFBQD8hQEyObmjLm5RoeRKFBfEACqAACAAA==",
+    "params_b16": "0129000000020202ff7001b81414ffc003d2141403f21404c8e6e68cb9b946879128505f1000aa00008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0103020129000000020202ff7001b81414ffc003d2141403f21404c8e6e68cb9b946879128505f1000aa00008000",
+    "num_lines_b10": 3,
+    "num_lines_b16": "03",
+    "cmd_b16": [
+      "a3000103020129000000020202ff7001b81414bf",
+      "a301ffc003d2141403f21404c8e6e68cb9b946af",
+      "a3ff879128505f1000aa00008000000000000057",
+      "3305040a3c000000000000000000000000000004"
+    ],
+    "cmd_b64": [
+      "owABAwIBKQAAAAICAv9wAbgUFL8=",
+      "owH/wAPSFBQD8hQEyObmjLm5Rq8=",
+      "o/+HkShQXxAAqgAAgAAAAAAAAFc=",
+      "MwUECjwAAAAAAAAAAAAAAAAAAAQ="
+    ]
+  },
+  {
+    "name": "Bouquet",
+    "sceneId_b10": 26273,
+    "sceneId_b16": "0066a1",
+    "scenceParamId_b10": 36946,
+    "scenceParamId_b16": "009052",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 15371,
+    "sceneCode_b16": "003c0b",
+    "sceneCode_b16_swapped": "0b3c00",
+    "params_b64": "BB03AAACAgH/pwHKFBQC3hQC/3px/21UAADXAACAAx01AAACAgH/pgHSFBQC3hQC/8yV/3UyAACAAADXAh0zAAACAgH/pgHSFBQC3hQC/3jA/yx7AADXAACAAR1AAAACAAH//wEBFBQC3hQCk/6NIP5SAACAAACAAQ==",
+    "params_b16": "041d370000020201ffa701ca141402de1402ff7a71ff6d540000d7000080031d350000020201ffa601d2141402de1402ffcc95ff75320000800000d7021d330000020201ffa601d2141402de1402ff78c0ff2c7b0000d7000080011d400000020001ffff0101141402de140293fe8d20fe5200008000008001",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010802041d370000020201ffa701ca141402de1402ff7a71ff6d540000d7000080031d350000020201ffa601d2141402de1402ffcc95ff75320000800000d7021d330000020201ffa601d2141402de1402ff78c0ff2c7b0000d7000080011d400000020001ffff0101141402de140293fe8d20fe5200008000008001",
+    "num_lines_b10": 8,
+    "num_lines_b16": "08",
+    "cmd_b16": [
+      "a300010802041d370000020201ffa701ca141414",
+      "a30102de1402ff7a71ff6d540000d7000080030e",
+      "a3021d350000020201ffa601d2141402de1402c8",
+      "a303ffcc95ff75320000800000d7021d330000c5",
+      "a304020201ffa601d2141402de1402ff78c0ff5e",
+      "a3052c7b0000d7000080011d400000020001ff06",
+      "a306ff0101141402de140293fe8d20fe520000fc",
+      "a3ff80000080010000000000000000000000005d",
+      "3305040b3c000000000000000000000000000005"
+    ],
+    "cmd_b64": [
+      "owABCAIEHTcAAAICAf+nAcoUFBQ=",
+      "owEC3hQC/3px/21UAADXAACAAw4=",
+      "owIdNQAAAgIB/6YB0hQUAt4UAsg=",
+      "owP/zJX/dTIAAIAAANcCHTMAAMU=",
+      "owQCAgH/pgHSFBQC3hQC/3jA/14=",
+      "owUsewAA1wAAgAEdQAAAAgAB/wY=",
+      "owb/AQEUFALeFAKT/o0g/lIAAPw=",
+      "o/+AAACAAQAAAAAAAAAAAAAAAF0=",
+      "MwUECzwAAAAAAAAAAAAAAAAAAAU="
+    ]
+  },
+  {
+    "name": "Lavender",
+    "sceneId_b10": 26274,
+    "sceneId_b16": "0066a2",
+    "scenceParamId_b10": 36947,
+    "scenceParamId_b16": "009053",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 15372,
+    "sceneCode_b16": "003c0c",
+    "sceneCode_b16_swapped": "0c3c00",
+    "params_b64": "AiNgAAACAgL/aAHPFBT/uQO5FBQD1hQCUTByYC+IAACAAACAACNkAAACAgL/hwHPFBT/xQPAFBSD1hQCUTByYC+IAACAAACAAA==",
+    "params_b16": "0223600000020202ff6801cf1414ffb903b9141403d61402513072602f880000800000800023640000020202ff8701cf1414ffc503c0141483d61402513072602f8800008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0105020223600000020202ff6801cf1414ffb903b9141403d61402513072602f880000800000800023640000020202ff8701cf1414ffc503c0141483d61402513072602f8800008000008000",
+    "num_lines_b10": 5,
+    "num_lines_b16": "05",
+    "cmd_b16": [
+      "a3000105020223600000020202ff6801cf1414bf",
+      "a301ffb903b9141403d61402513072602f880049",
+      "a30200800000800023640000020202ff8701cf52",
+      "a3031414ffc503c0141483d61402513072602f46",
+      "a3ff8800008000008000000000000000000000d4",
+      "3305040c3c000000000000000000000000000002"
+    ],
+    "cmd_b64": [
+      "owABBQICI2AAAAICAv9oAc8UFL8=",
+      "owH/uQO5FBQD1hQCUTByYC+IAEk=",
+      "owIAgAAAgAAjZAAAAgIC/4cBz1I=",
+      "owMUFP/FA8AUFIPWFAJRMHJgL0Y=",
+      "o/+IAACAAACAAAAAAAAAAAAAANQ=",
+      "MwUEDDwAAAAAAAAAAAAAAAAAAAI="
+    ]
+  },
+  {
+    "name": "Sunflower",
+    "sceneId_b10": 26275,
+    "sceneId_b16": "0066a3",
+    "scenceParamId_b10": 36948,
+    "scenceParamId_b16": "009054",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 15373,
+    "sceneCode_b16": "003c0d",
+    "sceneCode_b16_swapped": "0d3c00",
+    "params_b64": "ASAAAAADAgH/wQD/FBQD3BQD8M0C6qwv1JMAAACAAACAAQ==",
+    "params_b16": "0120000000030201ffc100ff141403dc1403f0cd02eaac2fd4930000008000008001",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0103020120000000030201ffc100ff141403dc1403f0cd02eaac2fd4930000008000008001",
+    "num_lines_b10": 3,
+    "num_lines_b16": "03",
+    "cmd_b16": [
+      "a3000103020120000000030201ffc100ff141443",
+      "a30103dc1403f0cd02eaac2fd4930000008000fb",
+      "a3ff0080010000000000000000000000000000dd",
+      "3305040d3c000000000000000000000000000003"
+    ],
+    "cmd_b64": [
+      "owABAwIBIAAAAAMCAf/BAP8UFEM=",
+      "owED3BQD8M0C6qwv1JMAAACAAPs=",
+      "o/8AgAEAAAAAAAAAAAAAAAAAAN0=",
+      "MwUEDTwAAAAAAAAAAAAAAAAAAAM="
+    ]
+  },
+  {
+    "name": "Carnations",
+    "sceneId_b10": 26276,
+    "sceneId_b16": "0066a4",
+    "scenceParamId_b10": 36949,
+    "scenceParamId_b16": "009055",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 15374,
+    "sceneCode_b16": "003c0e",
+    "sceneCode_b16_swapped": "0e3c00",
+    "params_b64": "ASkAAAAFAAH/WAHDHg+DlhQGpQIY3i896EhN9lpg/oKM/8DFAACAAACAAA==",
+    "params_b16": "0129000000050001ff5801c31e0f83961406a50218de2f3de8484df65a60fe828cffc0c500008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0103020129000000050001ff5801c31e0f83961406a50218de2f3de8484df65a60fe828cffc0c500008000008000",
+    "num_lines_b10": 3,
+    "num_lines_b16": "03",
+    "cmd_b16": [
+      "a3000103020129000000050001ff5801c31e0ffb",
+      "a30183961406a50218de2f3de8484df65a60fe09",
+      "a3ff828cffc0c5000080000080000000000000a8",
+      "3305040e3c000000000000000000000000000000"
+    ],
+    "cmd_b64": [
+      "owABAwIBKQAAAAUAAf9YAcMeD/s=",
+      "owGDlhQGpQIY3i896EhN9lpg/gk=",
+      "o/+CjP/AxQAAgAAAgAAAAAAAAKg=",
+      "MwUEDjwAAAAAAAAAAAAAAAAAAAA="
+    ]
+  },
+  {
+    "name": "Violets",
+    "sceneId_b10": 26277,
+    "sceneId_b16": "0066a5",
+    "scenceParamId_b10": 36950,
+    "scenceParamId_b16": "009056",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 15375,
+    "sceneCode_b16": "003c0f",
+    "sceneCode_b16_swapped": "0f3c00",
+    "params_b64": "ASYAAAAGAAH/WAHDHg8DghQFSCtrVTl7gWKmrZfF0MTaAACAAACAAA==",
+    "params_b16": "0126000000060001ff5801c31e0f03821405482b6b55397b8162a6ad97c5d0c4da00008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0103020126000000060001ff5801c31e0f03821405482b6b55397b8162a6ad97c5d0c4da00008000008000",
+    "num_lines_b10": 3,
+    "num_lines_b16": "03",
+    "cmd_b16": [
+      "a3000103020126000000060001ff5801c31e0ff7",
+      "a30103821405482b6b55397b8162a6ad97c5d047",
+      "a3ffc4da00008000008000000000000000000042",
+      "3305040f3c000000000000000000000000000001"
+    ],
+    "cmd_b64": [
+      "owABAwIBJgAAAAYAAf9YAcMeD/c=",
+      "owEDghQFSCtrVTl7gWKmrZfF0Ec=",
+      "o//E2gAAgAAAgAAAAAAAAAAAAEI=",
+      "MwUEDzwAAAAAAAAAAAAAAAAAAAE="
+    ]
+  },
+  {
+    "name": "Dreamland",
+    "sceneId_b10": 1265,
+    "sceneId_b16": "04f1",
+    "scenceParamId_b10": 1340,
+    "scenceParamId_b16": "053c",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2157,
+    "sceneCode_b16": "086d",
+    "sceneCode_b16_swapped": "6d08",
+    "params_b64": "BBoAAAABAgGaFAHcFBQA+jIBAP//AwCAAAAAACMAAAADAAGZGQHIFBQD3DIEzQD/uQD/ABH/iwD/EQDyAAD/AB1RAAABAgH/AAOAFBQA7BQCiwD/AAD/EAD5AACAACBUAAABAgH/AAOAFBQA7BQDAAD/B/49B4b/EQD5AACAAA==",
+    "params_b16": "041a0000000102019a1401dc141400fa320100ffff0300800000000023000000030001991901c8141403dc3204cd00ffb900ff0011ff8b00ff1100f20000ff001d510000010201ff000380141400ec14028b00ff0000ff1000f90000800020540000010201ff000380141400ec14030000ff07fe3d0786ff1100f900008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010802041a0000000102019a1401dc141400fa320100ffff0300800000000023000000030001991901c8141403dc3204cd00ffb900ff0011ff8b00ff1100f20000ff001d510000010201ff000380141400ec14028b00ff0000ff1000f90000800020540000010201ff000380141400ec14030000ff07fe3d0786ff1100f900008000",
+    "num_lines_b10": 8,
+    "num_lines_b16": "08",
+    "cmd_b16": [
+      "a300010802041a0000000102019a1401dc1414e7",
+      "a30100fa320100ffff03008000000000230000cb",
+      "a30200030001991901c8141403dc3204cd00ff31",
+      "a303b900ff0011ff8b00ff1100f20000ff001d7d",
+      "a304510000010201ff000380141400ec14028bf9",
+      "a30500ff0000ff1000f9000080002054000001ba",
+      "a3060201ff000380141400ec14030000ff07fe27",
+      "a3ff3d0786ff1100f90000800000000000000077",
+      "3305046d08000000000000000000000000000057"
+    ],
+    "cmd_b64": [
+      "owABCAIEGgAAAAECAZoUAdwUFOc=",
+      "owEA+jIBAP//AwCAAAAAACMAAMs=",
+      "owIAAwABmRkByBQUA9wyBM0A/zE=",
+      "owO5AP8AEf+LAP8RAPIAAP8AHX0=",
+      "owRRAAABAgH/AAOAFBQA7BQCi/k=",
+      "owUA/wAA/xAA+QAAgAAgVAAAAbo=",
+      "owYCAf8AA4AUFADsFAMAAP8H/ic=",
+      "o/89B4b/EQD5AACAAAAAAAAAAHc=",
+      "MwUEbQgAAAAAAAAAAAAAAAAAAFc="
+    ]
+  },
+  {
+    "name": "Cheerful",
+    "sceneId_b10": 1266,
+    "sceneId_b16": "04f2",
+    "scenceParamId_b10": 1341,
+    "scenceParamId_b16": "053d",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2158,
+    "sceneCode_b16": "086e",
+    "sceneCode_b16_swapped": "6e08",
+    "params_b64": "Ax1QAAABAAH//wGAFBQAvxQC/38A/zcHFQD9AACAAR1VAAABAAH//wGAFBQAwBQC/38A/y8HFwD9AACAASAAAAADAAESEgD5FBQCABQD//8A/4Un//8AAgD4AACAAA==",
+    "params_b16": "031d500000010001ffff0180141400bf1402ff7f00ff37071500fd000080011d550000010001ffff0180141400c01402ff7f00ff2f071700fd0000800120000000030001121200f9141402001403ffff00ff8527ffff000200f800008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010602031d500000010001ffff0180141400bf1402ff7f00ff37071500fd000080011d550000010001ffff0180141400c01402ff7f00ff2f071700fd0000800120000000030001121200f9141402001403ffff00ff8527ffff000200f800008000",
+    "num_lines_b10": 6,
+    "num_lines_b16": "06",
+    "cmd_b16": [
+      "a300010602031d500000010001ffff0180141469",
+      "a30100bf1402ff7f00ff37071500fd000080012d",
+      "a3021d550000010001ffff0180141400c01402be",
+      "a303ff7f00ff2f071700fd0000800120000000bc",
+      "a304030001121200f9141402001403ffff00ffb6",
+      "a3ff8527ffff000200f800008000000000000084",
+      "3305046e08000000000000000000000000000054"
+    ],
+    "cmd_b64": [
+      "owABBgIDHVAAAAEAAf//AYAUFGk=",
+      "owEAvxQC/38A/zcHFQD9AACAAS0=",
+      "owIdVQAAAQAB//8BgBQUAMAUAr4=",
+      "owP/fwD/LwcXAP0AAIABIAAAALw=",
+      "owQDAAESEgD5FBQCABQD//8A/7Y=",
+      "o/+FJ///AAIA+AAAgAAAAAAAAIQ=",
+      "MwUEbggAAAAAAAAAAAAAAAAAAFQ="
+    ]
+  },
+  {
+    "name": "Rush",
+    "sceneId_b10": 1267,
+    "sceneId_b16": "04f3",
+    "scenceParamId_b10": 1342,
+    "scenceParamId_b16": "053e",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2159,
+    "sceneCode_b16": "086f",
+    "sceneCode_b16_swapped": "6f08",
+    "params_b64": "AxpAAAACAAH/AACAFBQAgBQBiwD/EgD/EgD/ABpCAQADAAH/AACAFBQAgBQBAAD/EQD/EQD/ARpGAAABAAH/AACAFBQAgBQB+Af+EAD/EAD/AQ==",
+    "params_b16": "031a400000020001ff0000801414008014018b00ff1200ff1200ff001a420100030001ff0000801414008014010000ff1100ff1100ff011a460000010001ff000080141400801401f807fe1000ff1000ff01",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010502031a400000020001ff0000801414008014018b00ff1200ff1200ff001a420100030001ff0000801414008014010000ff1100ff1100ff011a460000010001ff000080141400801401f807fe1000ff1000ff01",
+    "num_lines_b10": 5,
+    "num_lines_b16": "05",
+    "cmd_b16": [
+      "a300010502031a400000020001ff000080141480",
+      "a301008014018b00ff1200ff1200ff001a42011a",
+      "a30200030001ff0000801414008014010000ffb6",
+      "a3031100ff1100ff011a460000010001ff000002",
+      "a3ff80141400801401f807fe1000ff1000ff0149",
+      "3305046f08000000000000000000000000000055"
+    ],
+    "cmd_b64": [
+      "owABBQIDGkAAAAIAAf8AAIAUFIA=",
+      "owEAgBQBiwD/EgD/EgD/ABpCARo=",
+      "owIAAwAB/wAAgBQUAIAUAQAA/7Y=",
+      "owMRAP8RAP8BGkYAAAEAAf8AAAI=",
+      "o/+AFBQAgBQB+Af+EAD/EAD/AUk=",
+      "MwUEbwgAAAAAAAAAAAAAAAAAAFU="
+    ]
+  },
+  {
+    "name": "Heartbeat",
+    "sceneId_b10": 1268,
+    "sceneId_b16": "04f4",
+    "scenceParamId_b10": 1343,
+    "scenceParamId_b16": "053f",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2160,
+    "sceneCode_b16": "0870",
+    "sceneCode_b16_swapped": "7008",
+    "params_b64": "Ah0AAAACAgH/AAEAFBQCABQC/wf7B/P/AACAAACAAB0AAAABAgH/BAOAFBQA/AUC/wAAAAAAAACAAACAAQ==",
+    "params_b16": "021d000000020201ff000100141402001402ff07fb07f3ff000080000080001d000000010201ff040380141400fc0502ff000000000000008000008001",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010402021d000000020201ff000100141402001402ff07fb07f3ff000080000080001d000000010201ff040380141400fc0502ff000000000000008000008001",
+    "num_lines_b10": 4,
+    "num_lines_b16": "04",
+    "cmd_b16": [
+      "a300010402021d000000020201ff000100141444",
+      "a30102001402ff07fb07f3ff00008000008000be",
+      "a3021d000000010201ff040380141400fc05023d",
+      "a3ffff00000000000000800000800100000000a2",
+      "330504700800000000000000000000000000004a"
+    ],
+    "cmd_b64": [
+      "owABBAICHQAAAAICAf8AAQAUFEQ=",
+      "owECABQC/wf7B/P/AACAAACAAL4=",
+      "owIdAAAAAQIB/wQDgBQUAPwFAj0=",
+      "o///AAAAAAAAAIAAAIABAAAAAKI=",
+      "MwUEcAgAAAAAAAAAAAAAAAAAAEo="
+    ]
+  },
+  {
+    "name": "Romantic",
+    "sceneId_b10": 1269,
+    "sceneId_b16": "04f5",
+    "scenceParamId_b10": 1344,
+    "scenceParamId_b16": "0540",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2161,
+    "sceneCode_b16": "0871",
+    "sceneCode_b16_swapped": "7108",
+    "params_b64": "AiAAAAADAgFwDwP3FBQDABQD/38A//8A/3MHEQD4AACAABoAAAABAAH/ZQDBFBQAgBQBsAf/AACAAACAAA==",
+    "params_b16": "0220000000030201700f03f7141403001403ff7f00ffff00ff73071100f8000080001a000000010001ff6500c1141400801401b007ff00008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0104020220000000030201700f03f7141403001403ff7f00ffff00ff73071100f8000080001a000000010001ff6500c1141400801401b007ff00008000008000",
+    "num_lines_b10": 4,
+    "num_lines_b16": "04",
+    "cmd_b16": [
+      "a3000104020220000000030201700f03f714140d",
+      "a30103001403ff7f00ffff00ff73071100f80054",
+      "a3020080001a000000010001ff6500c114140060",
+      "a3ff801401b007ff000080000080000000000081",
+      "330504710800000000000000000000000000004b"
+    ],
+    "cmd_b64": [
+      "owABBAICIAAAAAMCAXAPA/cUFA0=",
+      "owEDABQD/38A//8A/3MHEQD4AFQ=",
+      "owIAgAAaAAAAAQAB/2UAwRQUAGA=",
+      "o/+AFAGwB/8AAIAAAIAAAAAAAIE=",
+      "MwUEcQgAAAAAAAAAAAAAAAAAAEs="
+    ]
+  },
+  {
+    "name": "Sweet",
+    "sceneId_b10": 2701,
+    "sceneId_b16": "0a8d",
+    "scenceParamId_b10": 2809,
+    "scenceParamId_b16": "0af9",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2465,
+    "sceneCode_b16": "09a1",
+    "sceneCode_b16_swapped": "a109",
+    "params_b64": "BRoAAAABAgGNFQMAFBQA7RQB/0pZAACAAACAABoAAQAGAgH/GQMAFBQAABQB/wAAEwDyAACAABoAAQAGAgH/GQMAFBQAABQB/wAAEQDyAACAAB0wAAABAgH/EQAAFBQA7RQC/zRI/wAAAACAAACAAB03AAABAgH/EQIAFBQA7RQC/zJK/wAAAACAAACAAA==",
+    "params_b16": "051a0000000102018d150300141400ed1401ff4a59000080000080001a000100060201ff190300141400001401ff00001300f2000080001a000100060201ff190300141400001401ff00001100f2000080001d300000010201ff110000141400ed1402ff3448ff0000000080000080001d370000010201ff110200141400ed1402ff324aff000000008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010902051a0000000102018d150300141400ed1401ff4a59000080000080001a000100060201ff190300141400001401ff00001300f2000080001a000100060201ff190300141400001401ff00001100f2000080001d300000010201ff110000141400ed1402ff3448ff0000000080000080001d370000010201ff110200141400ed1402ff324aff000000008000008000",
+    "num_lines_b10": 9,
+    "num_lines_b16": "09",
+    "cmd_b16": [
+      "a300010902051a0000000102018d15030014142f",
+      "a30100ed1401ff4a59000080000080001a0001ad",
+      "a30200060201ff190300141400001401ff0000ab",
+      "a3031300f2000080001a000100060201ff19033a",
+      "a30400141400001401ff00001100f2000080002e",
+      "a3051d300000010201ff110000141400ed14029c",
+      "a306ff3448ff0000000080000080001d370000f3",
+      "a307010201ff110200141400ed1402ff324affc9",
+      "a3ff00000000800000800000000000000000005c",
+      "330504a10900000000000000000000000000009a"
+    ],
+    "cmd_b64": [
+      "owABCQIFGgAAAAECAY0VAwAUFC8=",
+      "owEA7RQB/0pZAACAAACAABoAAa0=",
+      "owIABgIB/xkDABQUAAAUAf8AAKs=",
+      "owMTAPIAAIAAGgABAAYCAf8ZAzo=",
+      "owQAFBQAABQB/wAAEQDyAACAAC4=",
+      "owUdMAAAAQIB/xEAABQUAO0UApw=",
+      "owb/NEj/AAAAAIAAAIAAHTcAAPM=",
+      "owcBAgH/EQIAFBQA7RQC/zJK/8k=",
+      "o/8AAAAAgAAAgAAAAAAAAAAAAFw=",
+      "MwUEoQkAAAAAAAAAAAAAAAAAAJo="
+    ]
+  },
+  {
+    "name": "Dreamlike",
+    "sceneId_b10": 2702,
+    "sceneId_b16": "0a8e",
+    "scenceParamId_b10": 2810,
+    "scenceParamId_b16": "0afa",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2466,
+    "sceneCode_b16": "09a2",
+    "sceneCode_b16_swapped": "a209",
+    "params_b64": "ASYAAAAKAgH/sQDqFBQD7QoFAAD/lin+B4P/iwD/AAD/AAD6AACAAA==",
+    "params_b16": "01260000000a0201ffb100ea141403ed0a050000ff9629fe0783ff8b00ff0000ff0000fa00008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "01030201260000000a0201ffb100ea141403ed0a050000ff9629fe0783ff8b00ff0000ff0000fa00008000",
+    "num_lines_b10": 3,
+    "num_lines_b16": "03",
+    "cmd_b16": [
+      "a30001030201260000000a0201ffb100ea141429",
+      "a30103ed0a050000ff9629fe0783ff8b00ff00f2",
+      "a3ff00ff0000fa000080000000000000000000d9",
+      "330504a209000000000000000000000000000099"
+    ],
+    "cmd_b64": [
+      "owABAwIBJgAAAAoCAf+xAOoUFCk=",
+      "owED7QoFAAD/lin+B4P/iwD/API=",
+      "o/8A/wAA+gAAgAAAAAAAAAAAANk=",
+      "MwUEogkAAAAAAAAAAAAAAAAAAJk="
+    ]
+  },
+  {
+    "name": "Light",
+    "sceneId_b10": 2703,
+    "sceneId_b16": "0a8f",
+    "scenceParamId_b10": 2811,
+    "scenceParamId_b16": "0afb",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2467,
+    "sceneCode_b16": "09a3",
+    "sceneCode_b16_swapped": "a309",
+    "params_b64": "AxpQAAABAgH/TAPlFBQAgBQB/0ZpAACAEQD0ABpVAAABAgH/TQPlFBQAgBQBwv92AACAEwD0ACAAAAAFAAG9vQHOHhQC9RQD/4T1/3pxXv67EQH3AACAAQ==",
+    "params_b16": "031a500000010201ff4c03e5141400801401ff46690000801100f4001a550000010201ff4d03e5141400801401c2ff760000801300f40020000000050001bdbd01ce1e1402f51403ff84f5ff7a715efebb1101f700008001",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010602031a500000010201ff4c03e5141400801401ff46690000801100f4001a550000010201ff4d03e5141400801401c2ff760000801300f40020000000050001bdbd01ce1e1402f51403ff84f5ff7a715efebb1101f700008001",
+    "num_lines_b10": 6,
+    "num_lines_b16": "06",
+    "cmd_b16": [
+      "a300010602031a500000010201ff4c03e51414b8",
+      "a30100801401ff46690000801100f4001a5500cd",
+      "a30200010201ff4d03e5141400801401c2ff7629",
+      "a3030000801300f40020000000050001bdbd01e2",
+      "a304ce1e1402f51403ff84f5ff7a715efebb11f3",
+      "a3ff01f70000800100000000000000000000002b",
+      "330504a309000000000000000000000000000098"
+    ],
+    "cmd_b64": [
+      "owABBgIDGlAAAAECAf9MA+UUFLg=",
+      "owEAgBQB/0ZpAACAEQD0ABpVAM0=",
+      "owIAAQIB/00D5RQUAIAUAcL/dik=",
+      "owMAAIATAPQAIAAAAAUAAb29AeI=",
+      "owTOHhQC9RQD/4T1/3pxXv67EfM=",
+      "o/8B9wAAgAEAAAAAAAAAAAAAACs=",
+      "MwUEowkAAAAAAAAAAAAAAAAAAJg="
+    ]
+  },
+  {
+    "name": "Tenderness",
+    "sceneId_b10": 2704,
+    "sceneId_b16": "0a90",
+    "scenceParamId_b10": 2812,
+    "scenceParamId_b16": "0afc",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2468,
+    "sceneCode_b16": "09a4",
+    "sceneCode_b16_swapped": "a409",
+    "params_b64": "AyNQAQAPAgH/CgIAAAACAAAE/wAA/1oA/3gA5QA2EgD6AAAAACMAAQAPAgH/CgIAAAACAAAE/wAA/1oA/3gA8gAcEgD3AAAAABoAAAABAgGWMgAAAAAA+jIB/4H/EwCAAAAAAA==",
+    "params_b16": "03235001000f0201ff0a0200000002000004ff0000ff5a00ff7800e500361200fa00000000230001000f0201ff0a0200000002000004ff0000ff5a00ff7800f2001c1200f7000000001a00000001020196320000000000fa3201ff81ff13008000000000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "01070203235001000f0201ff0a0200000002000004ff0000ff5a00ff7800e500361200fa00000000230001000f0201ff0a0200000002000004ff0000ff5a00ff7800f2001c1200f7000000001a00000001020196320000000000fa3201ff81ff13008000000000",
+    "num_lines_b10": 7,
+    "num_lines_b16": "07",
+    "cmd_b16": [
+      "a30001070203235001000f0201ff0a020000002d",
+      "a30102000004ff0000ff5a00ff7800e5003612b8",
+      "a30200fa00000000230001000f0201ff0a020082",
+      "a303000002000004ff0000ff5a00ff7800f20089",
+      "a3041c1200f7000000001a0000000102019632e2",
+      "a3050000000000fa3201ff81ff1300800000007d",
+      "a3ff00000000000000000000000000000000005c",
+      "330504a40900000000000000000000000000009f"
+    ],
+    "cmd_b64": [
+      "owABBwIDI1ABAA8CAf8KAgAAAC0=",
+      "owECAAAE/wAA/1oA/3gA5QA2Erg=",
+      "owIA+gAAAAAjAAEADwIB/woCAII=",
+      "owMAAAIAAAT/AAD/WgD/eADyAIk=",
+      "owQcEgD3AAAAABoAAAABAgGWMuI=",
+      "owUAAAAAAPoyAf+B/xMAgAAAAH0=",
+      "o/8AAAAAAAAAAAAAAAAAAAAAAFw=",
+      "MwUEpAkAAAAAAAAAAAAAAAAAAJ8="
+    ]
+  },
+  {
+    "name": "Warm",
+    "sceneId_b10": 2705,
+    "sceneId_b16": "0a91",
+    "scenceParamId_b10": 2813,
+    "scenceParamId_b16": "0afd",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2469,
+    "sceneCode_b16": "09a5",
+    "sceneCode_b16_swapped": "a509",
+    "params_b64": "AyBQAQAFAAH//wAAFBQAABQD/1QHAAAA/2oHFQD6AACAACBVAQAFAAH//wAAFBQAABQD/1QHAAAA/2oHFwD6AACAABoAAAABAAGPPgEAFBQAABQB/1QHBwD9AACAAA==",
+    "params_b16": "0320500100050001ffff0000141400001403ff5407000000ff6a071500fa0000800020550100050001ffff0000141400001403ff5407000000ff6a071700fa000080001a0000000100018f3e0100141400001401ff54070700fd00008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0106020320500100050001ffff0000141400001403ff5407000000ff6a071500fa0000800020550100050001ffff0000141400001403ff5407000000ff6a071700fa000080001a0000000100018f3e0100141400001401ff54070700fd00008000",
+    "num_lines_b10": 6,
+    "num_lines_b16": "06",
+    "cmd_b16": [
+      "a3000106020320500100050001ffff00001414d0",
+      "a30100001403ff5407000000ff6a071500fa0064",
+      "a30200800020550100050001ffff000014140051",
+      "a303001403ff5407000000ff6a071700fa000064",
+      "a30480001a0000000100018f3e0100141400008d",
+      "a3ff1401ff54070700fd0000800000000000009f",
+      "330504a50900000000000000000000000000009e"
+    ],
+    "cmd_b64": [
+      "owABBgIDIFABAAUAAf//AAAUFNA=",
+      "owEAABQD/1QHAAAA/2oHFQD6AGQ=",
+      "owIAgAAgVQEABQAB//8AABQUAFE=",
+      "owMAFAP/VAcAAAD/agcXAPoAAGQ=",
+      "owSAABoAAAABAAGPPgEAFBQAAI0=",
+      "o/8UAf9UBwcA/QAAgAAAAAAAAJ8=",
+      "MwUEpQkAAAAAAAAAAAAAAAAAAJ4="
+    ]
+  },
+  {
+    "name": "Profound",
+    "sceneId_b10": 2706,
+    "sceneId_b16": "0a92",
+    "scenceParamId_b10": 2814,
+    "scenceParamId_b16": "0afe",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2470,
+    "sceneCode_b16": "09a6",
+    "sceneCode_b16_swapped": "a609",
+    "params_b64": "AxoAAAABAAGHGQMAFBQAABQBdQf+AACAAACAACAAAAAKAgH/CgIAAAAC8gADAAD/Bk7+B3j/AgH0AAAAACAAAAAKAgH/CgIAAAAC8gADAAD/B0n/B2n/AAH0AAAAAA==",
+    "params_b16": "031a000000010001871903001414000014017507fe00008000008000200000000a0201ff0a0200000002f200030000ff064efe0778ff0201f400000000200000000a0201ff0a0200000002f200030000ff0749ff0769ff0001f400000000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010602031a000000010001871903001414000014017507fe00008000008000200000000a0201ff0a0200000002f200030000ff064efe0778ff0201f400000000200000000a0201ff0a0200000002f200030000ff0749ff0769ff0001f400000000",
+    "num_lines_b10": 6,
+    "num_lines_b16": "06",
+    "cmd_b16": [
+      "a300010602031a00000001000187190300141422",
+      "a301000014017507fe000080000080002000001b",
+      "a302000a0201ff0a0200000002f200030000ff53",
+      "a303064efe0778ff0201f4000000002000000041",
+      "a3040a0201ff0a0200000002f200030000ff0752",
+      "a3ff49ff0769ff0001f40000000000000000008e",
+      "330504a60900000000000000000000000000009d"
+    ],
+    "cmd_b64": [
+      "owABBgIDGgAAAAEAAYcZAwAUFCI=",
+      "owEAABQBdQf+AACAAACAACAAABs=",
+      "owIACgIB/woCAAAAAvIAAwAA/1M=",
+      "owMGTv4HeP8CAfQAAAAAIAAAAEE=",
+      "owQKAgH/CgIAAAAC8gADAAD/B1I=",
+      "o/9J/wdp/wAB9AAAAAAAAAAAAI4=",
+      "MwUEpgkAAAAAAAAAAAAAAAAAAJ0="
+    ]
+  },
+  {
+    "name": "Leisurely",
+    "sceneId_b10": 2707,
+    "sceneId_b16": "0a93",
+    "scenceParamId_b10": 2815,
+    "scenceParamId_b16": "0aff",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2471,
+    "sceneCode_b16": "09a7",
+    "sceneCode_b16_swapped": "a709",
+    "params_b64": "Ah0AAAABAAG4uAAAFBQA7xQCuf8ZGP5LAACAAACAAB0AAwEBAAH/pgMAFBQB7xQCuf8ZL/8IAACAAACAAA==",
+    "params_b16": "021d000000010001b8b80000141400ef1402b9ff1918fe4b000080000080001d000301010001ffa60300141401ef1402b9ff192fff0800008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010402021d000000010001b8b80000141400ef1402b9ff1918fe4b000080000080001d000301010001ffa60300141401ef1402b9ff192fff0800008000008000",
+    "num_lines_b10": 4,
+    "num_lines_b16": "04",
+    "cmd_b16": [
+      "a300010402021d000000010001b8b800001414bb",
+      "a30100ef1402b9ff1918fe4b00008000008000a9",
+      "a3021d000301010001ffa60300141401ef14021c",
+      "a3ffb9ff192fff080000800000800000000000db",
+      "330504a70900000000000000000000000000009c"
+    ],
+    "cmd_b64": [
+      "owABBAICHQAAAAEAAbi4AAAUFLs=",
+      "owEA7xQCuf8ZGP5LAACAAACAAKk=",
+      "owIdAAMBAQAB/6YDABQUAe8UAhw=",
+      "o/+5/xkv/wgAAIAAAIAAAAAAANs=",
+      "MwUEpwkAAAAAAAAAAAAAAAAAAJw="
+    ]
+  },
+  {
+    "name": "Quiet",
+    "sceneId_b10": 17293,
+    "sceneId_b16": "00438d",
+    "scenceParamId_b10": 27448,
+    "scenceParamId_b16": "006b38",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 13509,
+    "sceneCode_b16": "0034c5",
+    "sceneCode_b16_swapped": "c53400",
+    "params_b64": "Ah0AAAACAAH//wDMFBQDgBQCQv+pRqomAACAAACAACBTAAADAgH/MgO8FBQDgBQD/+7R/81Cocn/AACAAACAAA==",
+    "params_b16": "021d000000020001ffff00cc14140380140242ffa946aa260000800000800020530000030201ff3203bc141403801403ffeed1ffcd42a1c9ff00008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010402021d000000020001ffff00cc14140380140242ffa946aa260000800000800020530000030201ff3203bc141403801403ffeed1ffcd42a1c9ff00008000008000",
+    "num_lines_b10": 4,
+    "num_lines_b16": "04",
+    "cmd_b16": [
+      "a300010402021d000000020001ffff00cc141474",
+      "a3010380140242ffa946aa2600008000008000e9",
+      "a30220530000030201ff3203bc14140380140334",
+      "a3ffffeed1ffcd42a1c9ff00008000008000007b",
+      "330504c5340000000000000000000000000000c3"
+    ],
+    "cmd_b64": [
+      "owABBAICHQAAAAIAAf//AMwUFHQ=",
+      "owEDgBQCQv+pRqomAACAAACAAOk=",
+      "owIgUwAAAwIB/zIDvBQUA4AUAzQ=",
+      "o///7tH/zUKhyf8AAIAAAIAAAHs=",
+      "MwUExTQAAAAAAAAAAAAAAAAAAMM="
+    ]
+  },
+  {
+    "name": "Happy",
+    "sceneId_b10": 17294,
+    "sceneId_b16": "00438e",
+    "scenceParamId_b10": 27449,
+    "scenceParamId_b16": "006b39",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 13510,
+    "sceneCode_b16": "0034c6",
+    "sceneCode_b16_swapped": "c63400",
+    "params_b64": "BCkAAAAIAAH10wPMZGQCADIG/wAA/38A//8AAP//AAD/AP8AEgDyAAAAABoTAAABAgH/AAAAFBQA/zIB/+xVAAAAEgDyARoVAAABAgH/AAAAFBQA/zIBP/9/AAAAEADyARoXAAABAgH/AAAAFBQA/zIBOcn+AAAAEwDyAQ==",
+    "params_b16": "0429000000080001f5d303cc646402003206ff0000ff7f00ffff0000ffff0000ff00ff001200f2000000001a130000010201ff000000141400ff3201ffec550000001200f2011a150000010201ff000000141400ff32013fff7f0000001000f2011a170000010201ff000000141400ff320139c9fe0000001300f201",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0108020429000000080001f5d303cc646402003206ff0000ff7f00ffff0000ffff0000ff00ff001200f2000000001a130000010201ff000000141400ff3201ffec550000001200f2011a150000010201ff000000141400ff32013fff7f0000001000f2011a170000010201ff000000141400ff320139c9fe0000001300f201",
+    "num_lines_b10": 8,
+    "num_lines_b16": "08",
+    "cmd_b16": [
+      "a3000108020429000000080001f5d303cc646465",
+      "a30102003206ff0000ff7f00ffff0000ffff00eb",
+      "a30200ff00ff001200f2000000001a1300000149",
+      "a3030201ff000000141400ff3201ffec550000d6",
+      "a304001200f2011a150000010201ff00000014a0",
+      "a3051400ff32013fff7f0000001000f2011a172f",
+      "a3060000010201ff000000141400ff320139c964",
+      "a3fffe0000001300f20100000000000000000042",
+      "330504c6340000000000000000000000000000c0"
+    ],
+    "cmd_b64": [
+      "owABCAIEKQAAAAgAAfXTA8xkZGU=",
+      "owECADIG/wAA/38A//8AAP//AOs=",
+      "owIA/wD/ABIA8gAAAAAaEwAAAUk=",
+      "owMCAf8AAAAUFAD/MgH/7FUAANY=",
+      "owQAEgDyARoVAAABAgH/AAAAFKA=",
+      "owUUAP8yAT//fwAAABAA8gEaFy8=",
+      "owYAAAECAf8AAAAUFAD/MgE5yWQ=",
+      "o//+AAAAEwDyAQAAAAAAAAAAAEI=",
+      "MwUExjQAAAAAAAAAAAAAAAAAAMA="
+    ]
+  },
+  {
+    "name": "Tension",
+    "sceneId_b10": 17295,
+    "sceneId_b16": "00438f",
+    "scenceParamId_b10": 27450,
+    "scenceParamId_b16": "006b3a",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 13511,
+    "sceneCode_b16": "0034c7",
+    "sceneCode_b16_swapped": "c73400",
+    "params_b64": "AiAAAAABAgL/MgHiFBT/MwPiFBQAgBQB/wAAAACAAACAACAAAgoEAAH/AADdFBQBgBQDAAAA/wAAAAAAEADMAACAAQ==",
+    "params_b16": "0220000000010202ff3201e21414ff3303e2141400801401ff0000000080000080002000020a040001ff0000dd141401801403000000ff00000000001000cc00008001",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0105020220000000010202ff3201e21414ff3303e2141400801401ff0000000080000080002000020a040001ff0000dd141401801403000000ff00000000001000cc00008001",
+    "num_lines_b10": 5,
+    "num_lines_b16": "05",
+    "cmd_b16": [
+      "a3000105020220000000010202ff3201e21414a8",
+      "a301ff3303e2141400801401ff00000000800065",
+      "a3020080002000020a040001ff0000dd1414012f",
+      "a303801403000000ff00000000001000cc000014",
+      "a3ff8001000000000000000000000000000000dd",
+      "330504c7340000000000000000000000000000c1"
+    ],
+    "cmd_b64": [
+      "owABBQICIAAAAAECAv8yAeIUFKg=",
+      "owH/MwPiFBQAgBQB/wAAAACAAGU=",
+      "owIAgAAgAAIKBAAB/wAA3RQUAS8=",
+      "owOAFAMAAAD/AAAAAAAQAMwAABQ=",
+      "o/+AAQAAAAAAAAAAAAAAAAAAAN0=",
+      "MwUExzQAAAAAAAAAAAAAAAAAAME="
+    ]
+  },
+  {
+    "name": "Unspoken Love",
+    "sceneId_b10": 17296,
+    "sceneId_b16": "004390",
+    "scenceParamId_b10": 27451,
+    "scenceParamId_b16": "006b3b",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 13512,
+    "sceneCode_b16": "0034c8",
+    "sceneCode_b16_swapped": "c83400",
+    "params_b64": "AiMAAAAFAAH//wCAFBQDgBQE/1OjpEWy1Bhy/wBmAACAAACAACMAAg4IAAH/AAPMFBQDgBQE/z+npEWy1Bhy/wBmAACAAACAAA==",
+    "params_b16": "0223000000050001ffff0080141403801404ff53a3a445b2d41872ff0066000080000080002300020e080001ff0003cc141403801404ff3fa7a445b2d41872ff006600008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0105020223000000050001ffff0080141403801404ff53a3a445b2d41872ff0066000080000080002300020e080001ff0003cc141403801404ff3fa7a445b2d41872ff006600008000008000",
+    "num_lines_b10": 5,
+    "num_lines_b16": "05",
+    "cmd_b16": [
+      "a3000105020223000000050001ffff0080141400",
+      "a30103801404ff53a3a445b2d41872ff0066004a",
+      "a3020080000080002300020e080001ff0003ccb7",
+      "a303141403801404ff3fa7a445b2d41872ff0046",
+      "a3ff66000080000080000000000000000000003a",
+      "330504c8340000000000000000000000000000ce"
+    ],
+    "cmd_b64": [
+      "owABBQICIwAAAAUAAf//AIAUFAA=",
+      "owEDgBQE/1OjpEWy1Bhy/wBmAEo=",
+      "owIAgAAAgAAjAAIOCAAB/wADzLc=",
+      "owMUFAOAFAT/P6ekRbLUGHL/AEY=",
+      "o/9mAACAAACAAAAAAAAAAAAAADo=",
+      "MwUEyDQAAAAAAAAAAAAAAAAAAM4="
+    ]
+  },
+  {
+    "name": "Enthusiastic",
+    "sceneId_b10": 17297,
+    "sceneId_b16": "004391",
+    "scenceParamId_b10": 27452,
+    "scenceParamId_b16": "006b3c",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 13513,
+    "sceneCode_b16": "0034c9",
+    "sceneCode_b16_swapped": "c93400",
+    "params_b64": "BSAAAwMDAAHlhAPJFBQD6hQD/wt6/ygD/wAAEADyAACAACAAAAABAAF0dAPJFBQD6hQD/wt6/ygD/wAAAAD3AACAABowAAABAgH/GQOAFBQAgBQB/wAAEQDyAACAABozAAABAgH/FwOAFBQAgBQB/zQIEQDyAACAABo2AAABAgH/GAOAFBQAgBQB/wt1EQDyAACAAA==",
+    "params_b16": "0520000303030001e58403c9141403ea1403ff0b7aff2803ff00001000f20000800020000000010001747403c9141403ea1403ff0b7aff2803ff00000000f7000080001a300000010201ff190380141400801401ff00001100f2000080001a330000010201ff170380141400801401ff34081100f2000080001a360000010201ff180380141400801401ff0b751100f200008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0109020520000303030001e58403c9141403ea1403ff0b7aff2803ff00001000f20000800020000000010001747403c9141403ea1403ff0b7aff2803ff00000000f7000080001a300000010201ff190380141400801401ff00001100f2000080001a330000010201ff170380141400801401ff34081100f2000080001a360000010201ff180380141400801401ff0b751100f200008000",
+    "num_lines_b10": 9,
+    "num_lines_b16": "09",
+    "cmd_b16": [
+      "a3000109020520000303030001e58403c9141425",
+      "a30103ea1403ff0b7aff2803ff00001000f2001b",
+      "a30200800020000000010001747403c9141403c8",
+      "a303ea1403ff0b7aff2803ff00000000f700000f",
+      "a30480001a300000010201ff19038014140080ea",
+      "a3051401ff00001100f2000080001a3300000107",
+      "a3060201ff170380141400801401ff340811008a",
+      "a307f2000080001a360000010201ff1803801488",
+      "a3ff1400801401ff0b751100f20000800000003f",
+      "330504c9340000000000000000000000000000cf"
+    ],
+    "cmd_b64": [
+      "owABCQIFIAADAwMAAeWEA8kUFCU=",
+      "owED6hQD/wt6/ygD/wAAEADyABs=",
+      "owIAgAAgAAAAAQABdHQDyRQUA8g=",
+      "owPqFAP/C3r/KAP/AAAAAPcAAA8=",
+      "owSAABowAAABAgH/GQOAFBQAgOo=",
+      "owUUAf8AABEA8gAAgAAaMwAAAQc=",
+      "owYCAf8XA4AUFACAFAH/NAgRAIo=",
+      "owfyAACAABo2AAABAgH/GAOAFIg=",
+      "o/8UAIAUAf8LdREA8gAAgAAAAD8=",
+      "MwUEyTQAAAAAAAAAAAAAAAAAAM8="
+    ]
+  },
+  {
+    "name": "Halloween",
+    "sceneId_b10": 2709,
+    "sceneId_b16": "0a95",
+    "scenceParamId_b10": 2817,
+    "scenceParamId_b16": "0b01",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2473,
+    "sceneCode_b16": "09a9",
+    "sceneCode_b16_swapped": "a909",
+    "params_b64": "AiAAAgoEAAH/AAD5FBQD9xQD/38A/z4H/yMHBQD8AACAASAAAAABAgL/DgPyFBT/DwHyFBQAABQB/1IHAACAAACAAQ==",
+    "params_b16": "022000020a040001ff0000f9141403f71403ff7f00ff3e07ff23070500fc0000800120000000010202ff0e03f21414ff0f01f2141400001401ff520700008000008001",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010502022000020a040001ff0000f9141403f71403ff7f00ff3e07ff23070500fc0000800120000000010202ff0e03f21414ff0f01f2141400001401ff520700008000008001",
+    "num_lines_b10": 5,
+    "num_lines_b16": "05",
+    "cmd_b16": [
+      "a300010502022000020a040001ff0000f914148c",
+      "a30103f71403ff7f00ff3e07ff23070500fc0025",
+      "a30200800120000000010202ff0e03f21414fffe",
+      "a3030f01f2141400001401ff5207000080000063",
+      "a3ff8001000000000000000000000000000000dd",
+      "330504a909000000000000000000000000000092"
+    ],
+    "cmd_b64": [
+      "owABBQICIAACCgQAAf8AAPkUFIw=",
+      "owED9xQD/38A/z4H/yMHBQD8ACU=",
+      "owIAgAEgAAAAAQIC/w4D8hQU//4=",
+      "owMPAfIUFAAAFAH/UgcAAIAAAGM=",
+      "o/+AAQAAAAAAAAAAAAAAAAAAAN0=",
+      "MwUEqQkAAAAAAAAAAAAAAAAAAJI="
+    ]
+  },
+  {
+    "name": "Christmas",
+    "sceneId_b10": 2710,
+    "sceneId_b16": "0a96",
+    "scenceParamId_b10": 2818,
+    "scenceParamId_b16": "0b02",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2474,
+    "sceneCode_b16": "09aa",
+    "sceneCode_b16_swapped": "aa09",
+    "params_b64": "AiAAAggDAAH//wH/FBQB/xQD/wAAAP8A//8AAACAAACAACkAAAACAAH//wD/FBQA/AUG//8AAAAA/wAAAAAAAP8AAAAAEQD8AACAAA==",
+    "params_b16": "0220000208030001ffff01ff141401ff1403ff000000ff00ffff000000800000800029000000020001ffff00ff141400fc0506ffff00000000ff000000000000ff000000001100fc00008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0105020220000208030001ffff01ff141401ff1403ff000000ff00ffff000000800000800029000000020001ffff00ff141400fc0506ffff00000000ff000000000000ff000000001100fc00008000",
+    "num_lines_b10": 5,
+    "num_lines_b16": "05",
+    "cmd_b16": [
+      "a3000105020220000208030001ffff01ff141471",
+      "a30101ff1403ff000000ff00ffff0000008000cb",
+      "a30200800029000000020001ffff00ff141400f4",
+      "a303fc0506ffff00000000ff000000000000ff5f",
+      "a3ff000000001100fc0000800000000000000031",
+      "330504aa09000000000000000000000000000091"
+    ],
+    "cmd_b64": [
+      "owABBQICIAACCAMAAf//Af8UFHE=",
+      "owEB/xQD/wAAAP8A//8AAACAAMs=",
+      "owIAgAApAAAAAgAB//8A/xQUAPQ=",
+      "owP8BQb//wAAAAD/AAAAAAAA/18=",
+      "o/8AAAAAEQD8AACAAAAAAAAAADE=",
+      "MwUEqgkAAAAAAAAAAAAAAAAAAJE="
+    ]
+  },
+  {
+    "name": "Mother's Day",
+    "sceneId_b10": 2711,
+    "sceneId_b16": "0a97",
+    "scenceParamId_b10": 2819,
+    "scenceParamId_b16": "0b03",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2475,
+    "sceneCode_b16": "09ab",
+    "sceneCode_b16_swapped": "ab09",
+    "params_b64": "AiAAAAABAAH//wEAAAAA3DID/wsA6QD/zAD/AAAAAAAAACAAAgkFAgH/KAHXIBQAADID/0tj/z8A/wdvAAAAAAAAAA==",
+    "params_b16": "0220000000010001ffff0100000000dc3203ff0b00e900ffcc00ff0000000000000020000209050201ff2801d7201400003203ff4b63ff3f00ff076f00000000000000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0105020220000000010001ffff0100000000dc3203ff0b00e900ffcc00ff0000000000000020000209050201ff2801d7201400003203ff4b63ff3f00ff076f00000000000000",
+    "num_lines_b10": 5,
+    "num_lines_b16": "05",
+    "cmd_b16": [
+      "a3000105020220000000010001ffff0100000086",
+      "a30100dc3203ff0b00e900ffcc00ff000000009e",
+      "a30200000020000209050201ff2801d7201400b9",
+      "a303003203ff4b63ff3f00ff076f000000000011",
+      "a3ff00000000000000000000000000000000005c",
+      "330504ab09000000000000000000000000000090"
+    ],
+    "cmd_b64": [
+      "owABBQICIAAAAAEAAf//AQAAAIY=",
+      "owEA3DID/wsA6QD/zAD/AAAAAJ4=",
+      "owIAAAAgAAIJBQIB/ygB1yAUALk=",
+      "owMAMgP/S2P/PwD/B28AAAAAABE=",
+      "o/8AAAAAAAAAAAAAAAAAAAAAAFw=",
+      "MwUEqwkAAAAAAAAAAAAAAAAAAJA="
+    ]
+  },
+  {
+    "name": "Father's Day",
+    "sceneId_b10": 2712,
+    "sceneId_b16": "0a98",
+    "scenceParamId_b10": 2820,
+    "scenceParamId_b16": "0b04",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2476,
+    "sceneCode_b16": "09ac",
+    "sceneCode_b16_swapped": "ac09",
+    "params_b64": "AiAAAAABAAH//wEAAAAA3DIDAAD/B1b/B5j+AAAAAAAAACAAAgkFAgH/KAHXIBQAADIDAP//HFn+WP/OAAAAAAAAAA==",
+    "params_b16": "0220000000010001ffff0100000000dc32030000ff0756ff0798fe0000000000000020000209050201ff2801d720140000320300ffff1c59fe58ffce00000000000000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0105020220000000010001ffff0100000000dc32030000ff0756ff0798fe0000000000000020000209050201ff2801d720140000320300ffff1c59fe58ffce00000000000000",
+    "num_lines_b10": 5,
+    "num_lines_b16": "05",
+    "cmd_b16": [
+      "a3000105020220000000010001ffff0100000086",
+      "a30100dc32030000ff0756ff0798fe000000007f",
+      "a30200000020000209050201ff2801d7201400b9",
+      "a30300320300ffff1c59fe58ffce000000000043",
+      "a3ff00000000000000000000000000000000005c",
+      "330504ac09000000000000000000000000000097"
+    ],
+    "cmd_b64": [
+      "owABBQICIAAAAAEAAf//AQAAAIY=",
+      "owEA3DIDAAD/B1b/B5j+AAAAAH8=",
+      "owIAAAAgAAIJBQIB/ygB1yAUALk=",
+      "owMAMgMA//8cWf5Y/84AAAAAAEM=",
+      "o/8AAAAAAAAAAAAAAAAAAAAAAFw=",
+      "MwUErAkAAAAAAAAAAAAAAAAAAJc="
+    ]
+  },
+  {
+    "name": "Carnival",
+    "sceneId_b10": 2713,
+    "sceneId_b16": "0a99",
+    "scenceParamId_b10": 2821,
+    "scenceParamId_b16": "0b05",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2477,
+    "sceneCode_b16": "09ad",
+    "sceneCode_b16_swapped": "ad09",
+    "params_b64": "BRogAQACAgH/2AHwAAACADIB/wAAEQD3EQH3ABoiAQACAgH/2AHwAAACADIB//8AEQD3EQH3ABokAQACAgH/2AHwAAACADIBAP8AEQD3EQH3ABomAQACAgH/2QHwAAACADIBAAD/EAD3EQH3ABooAQACAgH/2QHwAAACADIBiwD/EQD3EQH3AA==",
+    "params_b16": "051a200100020201ffd801f0000002003201ff00001100f71101f7001a220100020201ffd801f0000002003201ffff001100f71101f7001a240100020201ffd801f000000200320100ff001100f71101f7001a260100020201ffd901f00000020032010000ff1000f71101f7001a280100020201ffd901f00000020032018b00ff1100f71101f700",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010902051a200100020201ffd801f0000002003201ff00001100f71101f7001a220100020201ffd801f0000002003201ffff001100f71101f7001a240100020201ffd801f000000200320100ff001100f71101f7001a260100020201ffd901f00000020032010000ff1000f71101f7001a280100020201ffd901f00000020032018b00ff1100f71101f700",
+    "num_lines_b10": 9,
+    "num_lines_b16": "09",
+    "cmd_b16": [
+      "a300010902051a200100020201ffd801f0000040",
+      "a30102003201ff00001100f71101f7001a220154",
+      "a30200020201ffd801f0000002003201ffff0047",
+      "a3031100f71101f7001a240100020201ffd801b9",
+      "a304f000000200320100ff001100f71101f70098",
+      "a3051a260100020201ffd901f00000020032017c",
+      "a3060000ff1000f71101f7001a28010002020168",
+      "a307ffd901f00000020032018b00ff1100f711c1",
+      "a3ff01f7000000000000000000000000000000aa",
+      "330504ad09000000000000000000000000000096"
+    ],
+    "cmd_b64": [
+      "owABCQIFGiABAAICAf/YAfAAAEA=",
+      "owECADIB/wAAEQD3EQH3ABoiAVQ=",
+      "owIAAgIB/9gB8AAAAgAyAf//AEc=",
+      "owMRAPcRAfcAGiQBAAICAf/YAbk=",
+      "owTwAAACADIBAP8AEQD3EQH3AJg=",
+      "owUaJgEAAgIB/9kB8AAAAgAyAXw=",
+      "owYAAP8QAPcRAfcAGigBAAICAWg=",
+      "owf/2QHwAAACADIBiwD/EQD3EcE=",
+      "o/8B9wAAAAAAAAAAAAAAAAAAAKo=",
+      "MwUErQkAAAAAAAAAAAAAAAAAAJY="
+    ]
+  },
+  {
+    "name": "Party",
+    "sceneId_b10": 2714,
+    "sceneId_b16": "0a9a",
+    "scenceParamId_b10": 2822,
+    "scenceParamId_b16": "0b06",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2478,
+    "sceneCode_b16": "09ae",
+    "sceneCode_b16_swapped": "ae09",
+    "params_b64": "AzgAAgoEAgH/GQEWAAAC/woL/wAAAP//AAD/////AAD//wAAiwD/AAAA////AP8AiwD/AAD/AAAAACwAAgkFAgH/GQPPMjIC+wEH/wAAAP//AAD/////AAD//wAAiwD/BAD3AAAAACAAAAABAAFiYgAAMjIC/xQD/xP//8sHAAD/EQCAAAAAAA==",
+    "params_b16": "033800020a040201ff190116000002ff0a0bff000000ffff0000ffffffff0000ffff00008b00ff000000ffffff00ff008b00ff0000ff000000002c000209050201ff1903cf323202fb0107ff000000ffff0000ffffffff0000ffff00008b00ff0400f7000000002000000001000162620000323202ff1403ff13ffffcb070000ff11008000000000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010902033800020a040201ff190116000002ff0a0bff000000ffff0000ffffffff0000ffff00008b00ff000000ffffff00ff008b00ff0000ff000000002c000209050201ff1903cf323202fb0107ff000000ffff0000ffffffff0000ffff00008b00ff0400f7000000002000000001000162620000323202ff1403ff13ffffcb070000ff11008000000000",
+    "num_lines_b10": 9,
+    "num_lines_b16": "09",
+    "cmd_b16": [
+      "a300010902033800020a040201ff19011600006c",
+      "a30102ff0a0bff000000ffff0000ffffffff00a1",
+      "a30200ffff00008b00ff000000ffffff00ff00d5",
+      "a3038b00ff0000ff000000002c0002090502010a",
+      "a304ff1903cf323202fb0107ff000000ffff008d",
+      "a30500ffffffff0000ffff00008b00ff0400f721",
+      "a306000000002000000001000162620000323285",
+      "a30702ff1403ff13ffffcb070000ff1100800000",
+      "a3ff00000000000000000000000000000000005c",
+      "330504ae09000000000000000000000000000095"
+    ],
+    "cmd_b64": [
+      "owABCQIDOAACCgQCAf8ZARYAAGw=",
+      "owEC/woL/wAAAP//AAD/////AKE=",
+      "owIA//8AAIsA/wAAAP///wD/ANU=",
+      "owOLAP8AAP8AAAAALAACCQUCAQo=",
+      "owT/GQPPMjIC+wEH/wAAAP//AI0=",
+      "owUA/////wAA//8AAIsA/wQA9yE=",
+      "owYAAAAAIAAAAAEAAWJiAAAyMoU=",
+      "owcC/xQD/xP//8sHAAD/EQCAAAA=",
+      "o/8AAAAAAAAAAAAAAAAAAAAAAFw=",
+      "MwUErgkAAAAAAAAAAAAAAAAAAJU="
+    ]
+  },
+  {
+    "name": "Birthday",
+    "sceneId_b10": 2715,
+    "sceneId_b16": "0a9b",
+    "scenceParamId_b10": 2823,
+    "scenceParamId_b16": "0b07",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2479,
+    "sceneCode_b16": "09af",
+    "sceneCode_b16_swapped": "af09",
+    "params_b64": "AywAAgoEAgL/GQDZAAD/GQDdAAAC+goF/zgA/38AAP8AAP//iwD/AACAAAAAACMAAgoEAAH//wCeAAAB9QAE8QAd/3UA/8AA/0sAAAD/AAH6AykAAAABAAHEdACbFBQA+QoG/w8H/38A//8AAP8AAP//AAD/AACAAACAAQ==",
+    "params_b16": "032c00020a040202ff1900d90000ff1900dd000002fa0a05ff3800ff7f0000ff0000ffff8b00ff000080000000002300020a040001ffff009e000001f50004f1001dff7500ffc000ff4b000000ff0001fa0329000000010001c474009b141400f90a06ff0f07ff7f00ffff0000ff0000ffff0000ff00008000008001",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010802032c00020a040202ff1900d90000ff1900dd000002fa0a05ff3800ff7f0000ff0000ffff8b00ff000080000000002300020a040001ffff009e000001f50004f1001dff7500ffc000ff4b000000ff0001fa0329000000010001c474009b141400f90a06ff0f07ff7f00ffff0000ff0000ffff0000ff00008000008001",
+    "num_lines_b10": 8,
+    "num_lines_b16": "08",
+    "cmd_b16": [
+      "a300010802032c00020a040202ff1900d90000b4",
+      "a301ff1900dd000002fa0a05ff3800ff7f000029",
+      "a302ff0000ffff8b00ff00008000000000230089",
+      "a303020a040001ffff009e000001f50004f10032",
+      "a3041dff7500ffc000ff4b000000ff0001fa03bc",
+      "a30529000000010001c474009b141400f90a0651",
+      "a306ff0f07ff7f00ffff0000ff0000ffff00002d",
+      "a3ffff00008000008001000000000000000000a2",
+      "330504af09000000000000000000000000000094"
+    ],
+    "cmd_b64": [
+      "owABCAIDLAACCgQCAv8ZANkAALQ=",
+      "owH/GQDdAAAC+goF/zgA/38AACk=",
+      "owL/AAD//4sA/wAAgAAAAAAjAIk=",
+      "owMCCgQAAf//AJ4AAAH1AATxADI=",
+      "owQd/3UA/8AA/0sAAAD/AAH6A7w=",
+      "owUpAAAAAQABxHQAmxQUAPkKBlE=",
+      "owb/Dwf/fwD//wAA/wAA//8AAC0=",
+      "o///AACAAACAAQAAAAAAAAAAAKI=",
+      "MwUErwkAAAAAAAAAAAAAAAAAAJQ="
+    ]
+  },
+  {
+    "name": "Valentine's Day",
+    "sceneId_b10": 2716,
+    "sceneId_b16": "0a9c",
+    "scenceParamId_b10": 2824,
+    "scenceParamId_b16": "0b08",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 2480,
+    "sceneCode_b16": "09b0",
+    "sceneCode_b16_swapped": "b009",
+    "params_b64": "AxoAAAABAAFGRgAAFBQAABQB/zlbAACAAACAACYAAAAGAgH/AAMAFBQDABQF/wAA/wee/wdG/y5U/xwHAAH5EAH5AB0AAgQDAgH/MQMAFBQDABQCtgf+/wAAAAH5EAH5AA==",
+    "params_b16": "031a00000001000146460000141400001401ff395b0000800000800026000000060201ff000300141403001405ff0000ff079eff0746ff2e54ff1c070001f91001f9001d000204030201ff310300141403001402b607feff00000001f91001f900",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010602031a00000001000146460000141400001401ff395b0000800000800026000000060201ff000300141403001405ff0000ff079eff0746ff2e54ff1c070001f91001f9001d000204030201ff310300141403001402b607feff00000001f91001f900",
+    "num_lines_b10": 6,
+    "num_lines_b16": "06",
+    "cmd_b16": [
+      "a300010602031a000000010001464600001414bf",
+      "a30100001401ff395b000080000080002600000c",
+      "a30200060201ff000300141403001405ff0000b5",
+      "a303ff079eff0746ff2e54ff1c070001f91001f0",
+      "a304f9001d000204030201ff310300141403008b",
+      "a3ff1402b607feff00000001f91001f9000000ea",
+      "330504b00900000000000000000000000000008b"
+    ],
+    "cmd_b64": [
+      "owABBgIDGgAAAAEAAUZGAAAUFL8=",
+      "owEAABQB/zlbAACAAACAACYAAAw=",
+      "owIABgIB/wADABQUAwAUBf8AALU=",
+      "owP/B57/B0b/LlT/HAcAAfkQAfA=",
+      "owT5AB0AAgQDAgH/MQMAFBQDAIs=",
+      "o/8UArYH/v8AAAAB+RAB+QAAAOo=",
+      "MwUEsAkAAAAAAAAAAAAAAAAAAIs="
+    ]
+  },
+  {
+    "name": "Easter",
+    "sceneId_b10": 17298,
+    "sceneId_b16": "004392",
+    "scenceParamId_b10": 27453,
+    "scenceParamId_b16": "006b3d",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 13514,
+    "sceneCode_b16": "0034ca",
+    "sceneCode_b16_swapped": "ca3400",
+    "params_b64": "AyNQAAAEAAH/MwHJFBQC6hQEiwD//38A/x0HAP//EAD3AACAACNVAAAEAAH/MwHJFBQC6hQEAP///x0H/38AiwD/AAD3AACAACMAAggFAAGLAACAFBQAgBQE//8AAP//iwD//wAAEAD3AACAAA==",
+    "params_b16": "0323500000040001ff3301c9141402ea14048b00ffff7f00ff1d0700ffff1000f70000800023550000040001ff3301c9141402ea140400ffffff1d07ff7f008b00ff0000f700008000230002080500018b000080141400801404ffff0000ffff8b00ffff00001000f700008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0107020323500000040001ff3301c9141402ea14048b00ffff7f00ff1d0700ffff1000f70000800023550000040001ff3301c9141402ea140400ffffff1d07ff7f008b00ff0000f700008000230002080500018b000080141400801404ffff0000ffff8b00ffff00001000f700008000",
+    "num_lines_b10": 7,
+    "num_lines_b16": "07",
+    "cmd_b16": [
+      "a3000107020323500000040001ff3301c91414d6",
+      "a30102ea14048b00ffff7f00ff1d0700ffff105b",
+      "a30200f70000800023550000040001ff3301c9a1",
+      "a303141402ea140400ffffff1d07ff7f008b00b6",
+      "a304ff0000f700008000230002080500018b0089",
+      "a3050080141400801404ffff0000ffff8b00ffc2",
+      "a3ffff00001000f70000800000000000000000c4",
+      "330504ca340000000000000000000000000000cc"
+    ],
+    "cmd_b64": [
+      "owABBwIDI1AAAAQAAf8zAckUFNY=",
+      "owEC6hQEiwD//38A/x0HAP//EFs=",
+      "owIA9wAAgAAjVQAABAAB/zMByaE=",
+      "owMUFALqFAQA////HQf/fwCLALY=",
+      "owT/AAD3AACAACMAAggFAAGLAIk=",
+      "owUAgBQUAIAUBP//AAD//4sA/8I=",
+      "o///AAAQAPcAAIAAAAAAAAAAAMQ=",
+      "MwUEyjQAAAAAAAAAAAAAAAAAAMw="
+    ]
+  },
+  {
+    "name": "New Years",
+    "sceneId_b10": 17299,
+    "sceneId_b16": "004393",
+    "scenceParamId_b10": 27454,
+    "scenceParamId_b16": "006b3e",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 13545,
+    "sceneCode_b16": "0034e9",
+    "sceneCode_b16_swapped": "e93400",
+    "params_b64": "BSlBAAADAgH/MwPyFBQD9BQG/wAA/38AB3P/AP8A/zwH//8AFADyAACABSlGAAADAgH/MwPyFBQD9BQG/wAA/38AB3P/AP8A/zwH//8AFADyAACABSlQAQAFAgH/MgPyFBQA8hQG/wAA//8AAAD/iwD//38A/zwHFgDyAACABSlVAQAFAgH/MgPyFBQA8hQG/wAA//8AAAD/iwD//38A/zwHFgDyAACAARoAAAABAAH/MwH3FBQA/xQB/zcpAACAAACAAQ==",
+    "params_b16": "0529410000030201ff3303f2141403f41406ff0000ff7f000773ff00ff00ff3c07ffff001400f20000800529460000030201ff3303f2141403f41406ff0000ff7f000773ff00ff00ff3c07ffff001400f20000800529500100050201ff3203f2141400f21406ff0000ffff000000ff8b00ffff7f00ff3c071600f20000800529550100050201ff3203f2141400f21406ff0000ffff000000ff8b00ffff7f00ff3c071600f2000080011a000000010001ff3301f7141400ff1401ff372900008000008001",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010c020529410000030201ff3303f2141403f41406ff0000ff7f000773ff00ff00ff3c07ffff001400f20000800529460000030201ff3303f2141403f41406ff0000ff7f000773ff00ff00ff3c07ffff001400f20000800529500100050201ff3203f2141400f21406ff0000ffff000000ff8b00ffff7f00ff3c071600f20000800529550100050201ff3203f2141400f21406ff0000ffff000000ff8b00ffff7f00ff3c071600f2000080011a000000010001ff3301f7141400ff1401ff372900008000008001",
+    "num_lines_b10": 12,
+    "num_lines_b16": "0c",
+    "cmd_b16": [
+      "a300010c020529410000030201ff3303f21414fc",
+      "a30103f41406ff0000ff7f000773ff00ff00ffb3",
+      "a3023c07ffff001400f200008005294600000395",
+      "a3030201ff3303f2141403f41406ff0000ff7f04",
+      "a304000773ff00ff00ff3c07ffff001400f200f1",
+      "a30500800529500100050201ff3203f214140061",
+      "a306f21406ff0000ffff000000ff8b00ffff7fb1",
+      "a30700ff3c071600f2000080052955010005027b",
+      "a30801ff3203f2141400f21406ff0000ffff0089",
+      "a3090000ff8b00ffff7f00ff3c071600f2000081",
+      "a30a80011a000000010001ff3301f7141400fff7",
+      "a3ff1401ff3729000080000080010000000000a9",
+      "330504e9340000000000000000000000000000ef"
+    ],
+    "cmd_b64": [
+      "owABDAIFKUEAAAMCAf8zA/IUFPw=",
+      "owED9BQG/wAA/38AB3P/AP8A/7M=",
+      "owI8B///ABQA8gAAgAUpRgAAA5U=",
+      "owMCAf8zA/IUFAP0FAb/AAD/fwQ=",
+      "owQAB3P/AP8A/zwH//8AFADyAPE=",
+      "owUAgAUpUAEABQIB/zID8hQUAGE=",
+      "owbyFAb/AAD//wAAAP+LAP//f7E=",
+      "owcA/zwHFgDyAACABSlVAQAFAns=",
+      "owgB/zID8hQUAPIUBv8AAP//AIk=",
+      "owkAAP+LAP//fwD/PAcWAPIAAIE=",
+      "owqAARoAAAABAAH/MwH3FBQA//c=",
+      "o/8UAf83KQAAgAAAgAEAAAAAAKk=",
+      "MwUE6TQAAAAAAAAAAAAAAAAAAO8="
+    ]
+  },
+  {
+    "name": "Saint Patrick's Day",
+    "sceneId_b10": 17300,
+    "sceneId_b16": "004394",
+    "scenceParamId_b10": 27455,
+    "scenceParamId_b16": "006b3f",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 13546,
+    "sceneCode_b16": "0034ea",
+    "sceneCode_b16_swapped": "ea3400",
+    "params_b64": "AR0AAAABAgH//wAAFBQB+RQCAP8AAAAAAADvAACAAA==",
+    "params_b16": "011d000000010201ffff0000141401f9140200ff000000000000ef00008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010202011d000000010201ffff0000141401f9140200ff000000000000ef00008000",
+    "num_lines_b10": 2,
+    "num_lines_b16": "02",
+    "cmd_b16": [
+      "a300010202011d000000010201ffff00001414bc",
+      "a3ff01f9140200ff000000000000ef0000800022",
+      "330504ea340000000000000000000000000000ec"
+    ],
+    "cmd_b64": [
+      "owABAgIBHQAAAAECAf//AAAUFLw=",
+      "o/8B+RQCAP8AAAAAAADvAACAACI=",
+      "MwUE6jQAAAAAAAAAAAAAAAAAAOw="
+    ]
+  },
+  {
+    "name": "Thanksgiving",
+    "sceneId_b10": 17301,
+    "sceneId_b16": "004395",
+    "scenceParamId_b10": 27456,
+    "scenceParamId_b16": "006b40",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 13547,
+    "sceneCode_b16": "0034eb",
+    "sceneCode_b16_swapped": "eb3400",
+    "params_b64": "AyNQAAACAAH//wAAFBQDgBQEl/4I/y8H/wAA/5AHFgD5AACABCNVAAACAAH//wAAFBQDgBQEe/4J/zEH/wAA/4AHFAD5AACABCMAAAADAAGVAAAAFBQD/BQEEf4H/wYl/30H/wgHAACAAACAAQ==",
+    "params_b16": "0323500000020001ffff000014140380140497fe08ff2f07ff0000ff90071600f90000800423550000020001ffff00001414038014047bfe09ff3107ff0000ff80071400f9000080042300000003000195000000141403fc140411fe07ff0625ff7d07ff080700008000008001",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0107020323500000020001ffff000014140380140497fe08ff2f07ff0000ff90071600f90000800423550000020001ffff00001414038014047bfe09ff3107ff0000ff80071400f9000080042300000003000195000000141403fc140411fe07ff0625ff7d07ff080700008000008001",
+    "num_lines_b10": 7,
+    "num_lines_b16": "07",
+    "cmd_b16": [
+      "a3000107020323500000020001ffff00001414d4",
+      "a3010380140497fe08ff2f07ff0000ff90071606",
+      "a30200f90000800423550000020001ffff0000a9",
+      "a3031414038014047bfe09ff3107ff0000ff80f6",
+      "a304071400f9000080042300000003000195007d",
+      "a3050000141403fc140411fe07ff0625ff7d07f8",
+      "a3ffff08070000800000800100000000000000ad",
+      "330504eb340000000000000000000000000000ed"
+    ],
+    "cmd_b64": [
+      "owABBwIDI1AAAAIAAf//AAAUFNQ=",
+      "owEDgBQEl/4I/y8H/wAA/5AHFgY=",
+      "owIA+QAAgAQjVQAAAgAB//8AAKk=",
+      "owMUFAOAFAR7/gn/MQf/AAD/gPY=",
+      "owQHFAD5AACABCMAAAADAAGVAH0=",
+      "owUAABQUA/wUBBH+B/8GJf99B/g=",
+      "o///CAcAAIAAAIABAAAAAAAAAK0=",
+      "MwUE6zQAAAAAAAAAAAAAAAAAAO0="
+    ]
+  },
+  {
+    "name": "Christmas Tree",
+    "sceneId_b10": 17302,
+    "sceneId_b16": "004396",
+    "scenceParamId_b10": 27457,
+    "scenceParamId_b16": "006b41",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 13548,
+    "sceneCode_b16": "0034ec",
+    "sceneCode_b16_swapped": "ec3400",
+    "params_b64": "BRpQAAABAgGzGQKAFBQAABQBAds5EgDlAACAABpVAAABAgGzGQCAFBQAABQBBP4/EgDlAACAACAAAgQDAAH/AAPJFBQBABQD/wAA//8A/38AAADlAACAACAAAgMCAAH/AAHYFBQBgBQD/38A/wAA//8AAACAAACAAB0ZAAABAAH//wCAFBQBABQCAAAA/48NAgDyAACAAQ==",
+    "params_b16": "051a500000010201b319028014140000140101db391200e5000080001a550000010201b319008014140000140104fe3f1200e50000800020000204030001ff0003c9141401001403ff0000ffff00ff7f000000e50000800020000203020001ff0001d8141401801403ff7f00ff0000ffff00000080000080001d190000010001ffff0080141401001402000000ff8f0d0200f200008001",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010a02051a500000010201b319028014140000140101db391200e5000080001a550000010201b319008014140000140104fe3f1200e50000800020000204030001ff0003c9141401001403ff0000ffff00ff7f000000e50000800020000203020001ff0001d8141401801403ff7f00ff0000ffff00000080000080001d190000010001ffff0080141401001402000000ff8f0d0200f200008001",
+    "num_lines_b10": 10,
+    "num_lines_b16": "0a",
+    "cmd_b16": [
+      "a300010a02051a500000010201b31902801414cf",
+      "a3010000140101db391200e5000080001a55006c",
+      "a30200010201b319008014140000140104fe3f59",
+      "a3031200e50000800020000204030001ff00030f",
+      "a304c9141401001403ff0000ffff00ff7f000007",
+      "a30500e50000800020000203020001ff0001d8c7",
+      "a306141401801403ff7f00ff0000ffff0000004c",
+      "a30780000080001d190000010001ffff00801434",
+      "a3081401001402000000ff8f0d0200f2000080a5",
+      "a3ff01000000000000000000000000000000005d",
+      "330504ec340000000000000000000000000000ea"
+    ],
+    "cmd_b64": [
+      "owABCgIFGlAAAAECAbMZAoAUFM8=",
+      "owEAABQBAds5EgDlAACAABpVAGw=",
+      "owIAAQIBsxkAgBQUAAAUAQT+P1k=",
+      "owMSAOUAAIAAIAACBAMAAf8AAw8=",
+      "owTJFBQBABQD/wAA//8A/38AAAc=",
+      "owUA5QAAgAAgAAIDAgAB/wAB2Mc=",
+      "owYUFAGAFAP/fwD/AAD//wAAAEw=",
+      "oweAAACAAB0ZAAABAAH//wCAFDQ=",
+      "owgUAQAUAgAAAP+PDQIA8gAAgKU=",
+      "o/8BAAAAAAAAAAAAAAAAAAAAAF0=",
+      "MwUE7DQAAAAAAAAAAAAAAAAAAOo="
+    ]
+  },
+  {
+    "name": "Christmas Gift",
+    "sceneId_b10": 17303,
+    "sceneId_b16": "004397",
+    "scenceParamId_b10": 27458,
+    "scenceParamId_b16": "006b42",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 13549,
+    "sceneCode_b16": "0034ed",
+    "sceneCode_b16_swapped": "ed3400",
+    "params_b64": "BCAAAAADAgH/MwEAFBQDABQDAfuNpf8MAep2AACAEgDvACAkAAABAAH//wDBFBQBABQD/wAA/38A/wAAAACAEQD0ASAgAAABAAH//wAAFBQBABQD/wAAAP8A/wAAAACAEAD0AR0AAgQDAAH//wPlFBQBgBQC/38A//8AEQDyAACAAA==",
+    "params_b16": "0420000000030201ff33010014140300140301fb8da5ff0c01ea760000801200ef0020240000010001ffff00c1141401001403ff0000ff7f00ff00000000801100f40120200000010001ffff0000141401001403ff000000ff00ff00000000801000f4011d000204030001ffff03e5141401801402ff7f00ffff001100f200008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0108020420000000030201ff33010014140300140301fb8da5ff0c01ea760000801200ef0020240000010001ffff00c1141401001403ff0000ff7f00ff00000000801100f40120200000010001ffff0000141401001403ff000000ff00ff00000000801000f4011d000204030001ffff03e5141401801402ff7f00ffff001100f200008000",
+    "num_lines_b10": 8,
+    "num_lines_b16": "08",
+    "cmd_b16": [
+      "a3000108020420000000030201ff330100141441",
+      "a3010300140301fb8da5ff0c01ea760000801298",
+      "a30200ef0020240000010001ffff00c11414018a",
+      "a303001403ff0000ff7f00ff00000000801100a6",
+      "a304f40120200000010001ffff00001414010053",
+      "a3051403ff000000ff00ff00000000801000f42a",
+      "a306011d000204030001ffff03e51414018014ce",
+      "a3ff02ff7f00ffff001100f200008000000000bd",
+      "330504ed340000000000000000000000000000eb"
+    ],
+    "cmd_b64": [
+      "owABCAIEIAAAAAMCAf8zAQAUFEE=",
+      "owEDABQDAfuNpf8MAep2AACAEpg=",
+      "owIA7wAgJAAAAQAB//8AwRQUAYo=",
+      "owMAFAP/AAD/fwD/AAAAAIARAKY=",
+      "owT0ASAgAAABAAH//wAAFBQBAFM=",
+      "owUUA/8AAAD/AP8AAAAAgBAA9Co=",
+      "owYBHQACBAMAAf//A+UUFAGAFM4=",
+      "o/8C/38A//8AEQDyAACAAAAAAL0=",
+      "MwUE7TQAAAAAAAAAAAAAAAAAAOs="
+    ]
+  },
+  {
+    "name": "Halloween B",
+    "sceneId_b10": 26284,
+    "sceneId_b16": "0066ac",
+    "scenceParamId_b10": 36957,
+    "scenceParamId_b16": "00905d",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 15382,
+    "sceneCode_b16": "003c16",
+    "sceneCode_b16_swapped": "163c00",
+    "params_b64": "BB1gAAABAAH//wCAFBQD/xQCLv4fiwD/AACAAACAAR1VAgMBAAH/AADoFBQA/xQCiwD/Lv4fAACAAACABR1kAAABAAH//wCAFBQD/xQCiwD/Lv4fAACAAACAAR1QAgMBAAH/AADoFBQA/xQCLv4fiwD/AACAAACABQ==",
+    "params_b16": "041d600000010001ffff0080141403ff14022efe1f8b00ff000080000080011d550203010001ff0000e8141400ff14028b00ff2efe1f000080000080051d640000010001ffff0080141403ff14028b00ff2efe1f000080000080011d500203010001ff0000e8141400ff14022efe1f8b00ff00008000008005",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010802041d600000010001ffff0080141403ff14022efe1f8b00ff000080000080011d550203010001ff0000e8141400ff14028b00ff2efe1f000080000080051d640000010001ffff0080141403ff14028b00ff2efe1f000080000080011d500203010001ff0000e8141400ff14022efe1f8b00ff00008000008005",
+    "num_lines_b10": 8,
+    "num_lines_b16": "08",
+    "cmd_b16": [
+      "a300010802041d600000010001ffff0080141451",
+      "a30103ff14022efe1f8b00ff00008000008001f2",
+      "a3021d550203010001ff0000e8141400ff140216",
+      "a3038b00ff2efe1f000080000080051d64000067",
+      "a304010001ffff0080141403ff14028b00ff2e97",
+      "a305fe1f000080000080011d500203010001fff5",
+      "a3060000e8141400ff14022efe1f8b00ff00001f",
+      "a3ff800000800500000000000000000000000059",
+      "330504163c000000000000000000000000000018"
+    ],
+    "cmd_b64": [
+      "owABCAIEHWAAAAEAAf//AIAUFFE=",
+      "owED/xQCLv4fiwD/AACAAACAAfI=",
+      "owIdVQIDAQAB/wAA6BQUAP8UAhY=",
+      "owOLAP8u/h8AAIAAAIAFHWQAAGc=",
+      "owQBAAH//wCAFBQD/xQCiwD/Lpc=",
+      "owX+HwAAgAAAgAEdUAIDAQAB//U=",
+      "owYAAOgUFAD/FAIu/h+LAP8AAB8=",
+      "o/+AAACABQAAAAAAAAAAAAAAAFk=",
+      "MwUEFjwAAAAAAAAAAAAAAAAAABg="
+    ]
+  },
+  {
+    "name": "Children's Day",
+    "sceneId_b10": 26285,
+    "sceneId_b16": "0066ad",
+    "scenceParamId_b10": 36958,
+    "scenceParamId_b16": "00905e",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 15383,
+    "sceneCode_b16": "003c17",
+    "sceneCode_b16_swapped": "173c00",
+    "params_b64": "AylQAwIBAAH/AACAFBQB+hQG/1hDAAAA/129AAAAgXP+AAAAAACAAACAAClVAwIBAAH/AACAFBQB+hQGiOv+AAAAV/+SAAAA/9tSAAAAAACAAACAACAAAAABAAFAAAHIFBQA+hQDiOv+V/+S/9tSAACAAACAAA==",
+    "params_b16": "0329500302010001ff000080141401fa1406ff5843000000ff5dbd0000008173fe0000000000800000800029550302010001ff000080141401fa140688ebfe00000057ff92000000ffdb520000000000800000800020000000010001400001c8141400fa140388ebfe57ff92ffdb5200008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0108020329500302010001ff000080141401fa1406ff5843000000ff5dbd0000008173fe0000000000800000800029550302010001ff000080141401fa140688ebfe00000057ff92000000ffdb520000000000800000800020000000010001400001c8141400fa140388ebfe57ff92ffdb5200008000008000",
+    "num_lines_b10": 8,
+    "num_lines_b16": "08",
+    "cmd_b16": [
+      "a3000108020329500302010001ff0000801414ac",
+      "a30101fa1406ff5843000000ff5dbd0000008131",
+      "a30273fe00000000008000008000295503020150",
+      "a3030001ff000080141401fa140688ebfe0000aa",
+      "a3040057ff92000000ffdb52000000000080006b",
+      "a30500800020000000010001400001c81414008f",
+      "a306fa140388ebfe57ff92ffdb52000080000019",
+      "a3ff8000000000000000000000000000000000dc",
+      "330504173c000000000000000000000000000019"
+    ],
+    "cmd_b64": [
+      "owABCAIDKVADAgEAAf8AAIAUFKw=",
+      "owEB+hQG/1hDAAAA/129AAAAgTE=",
+      "owJz/gAAAAAAgAAAgAApVQMCAVA=",
+      "owMAAf8AAIAUFAH6FAaI6/4AAKo=",
+      "owQAV/+SAAAA/9tSAAAAAACAAGs=",
+      "owUAgAAgAAAAAQABQAAByBQUAI8=",
+      "owb6FAOI6/5X/5L/21IAAIAAABk=",
+      "o/+AAAAAAAAAAAAAAAAAAAAAANw=",
+      "MwUEFzwAAAAAAAAAAAAAAAAAABk="
+    ]
+  },
+  {
+    "name": "Family Day",
+    "sceneId_b10": 26286,
+    "sceneId_b16": "0066ae",
+    "scenceParamId_b10": 36959,
+    "scenceParamId_b16": "00905f",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 15384,
+    "sceneCode_b16": "003c18",
+    "sceneCode_b16_swapped": "183c00",
+    "params_b64": "AyAAAwQCAAH/qAHIFBQC+hQDiOv+V/+S/9tSAACAAACABSAAAwIEAAH/qAHIFBQA+hQDiOv+V/+S/9tSAACAAACABRoAAAABAAH/mQHIFBQAARQB/65jAACAAACAAQ==",
+    "params_b16": "0320000304020001ffa801c8141402fa140388ebfe57ff92ffdb520000800000800520000302040001ffa801c8141400fa140388ebfe57ff92ffdb52000080000080051a000000010001ff9901c8141400011401ffae6300008000008001",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0106020320000304020001ffa801c8141402fa140388ebfe57ff92ffdb520000800000800520000302040001ffa801c8141400fa140388ebfe57ff92ffdb52000080000080051a000000010001ff9901c8141400011401ffae6300008000008001",
+    "num_lines_b10": 6,
+    "num_lines_b16": "06",
+    "cmd_b16": [
+      "a3000106020320000304020001ffa801c814141f",
+      "a30102fa140388ebfe57ff92ffdb52000080001c",
+      "a30200800520000302040001ffa801c81414009e",
+      "a303fa140388ebfe57ff92ffdb5200008000001c",
+      "a30480051a000000010001ff9901c81414000196",
+      "a3ff1401ffae630000800000800100000000007a",
+      "330504183c000000000000000000000000000016"
+    ],
+    "cmd_b64": [
+      "owABBgIDIAADBAIAAf+oAcgUFB8=",
+      "owEC+hQDiOv+V/+S/9tSAACAABw=",
+      "owIAgAUgAAMCBAAB/6gByBQUAJ4=",
+      "owP6FAOI6/5X/5L/21IAAIAAABw=",
+      "owSABRoAAAABAAH/mQHIFBQAAZY=",
+      "o/8UAf+uYwAAgAAAgAEAAAAAAHo=",
+      "MwUEGDwAAAAAAAAAAAAAAAAAABY="
+    ]
+  },
+  {
+    "name": "Baroque",
+    "sceneId_b10": 26287,
+    "sceneId_b16": "0066af",
+    "scenceParamId_b10": 36961,
+    "scenceParamId_b16": "009061",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 15386,
+    "sceneCode_b16": "003c1a",
+    "sceneCode_b16_swapped": "1a3c00",
+    "params_b64": "AiBQAAAEAAH/SwHFFBQCARQDmWgaAADI2ooVEADIAADXASBVAAAEAAH/SwPFFBQCARQDmWga/xIa2ooVEADIAADXAQ==",
+    "params_b16": "0220500000040001ff4b01c514140201140399681a0000c8da8a151000c80000d70120550000040001ff4b03c514140201140399681aff121ada8a151000c80000d701",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0105020220500000040001ff4b01c514140201140399681a0000c8da8a151000c80000d70120550000040001ff4b03c514140201140399681aff121ada8a151000c80000d701",
+    "num_lines_b10": 5,
+    "num_lines_b16": "05",
+    "cmd_b16": [
+      "a3000105020220500000040001ff4b01c51414a2",
+      "a3010201140399681a0000c8da8a151000c80008",
+      "a30200d70120550000040001ff4b03c514140277",
+      "a30301140399681aff121ada8a151000c8000037",
+      "a3ffd7010000000000000000000000000000008a",
+      "3305041a3c000000000000000000000000000014"
+    ],
+    "cmd_b64": [
+      "owABBQICIFAAAAQAAf9LAcUUFKI=",
+      "owECARQDmWgaAADI2ooVEADIAAg=",
+      "owIA1wEgVQAABAAB/0sDxRQUAnc=",
+      "owMBFAOZaBr/EhraihUQAMgAADc=",
+      "o//XAQAAAAAAAAAAAAAAAAAAAIo=",
+      "MwUEGjwAAAAAAAAAAAAAAAAAABQ="
+    ]
+  },
+  {
+    "name": "Rococo Style",
+    "sceneId_b10": 26288,
+    "sceneId_b16": "0066b0",
+    "scenceParamId_b10": 36962,
+    "scenceParamId_b16": "009062",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 15387,
+    "sceneCode_b16": "003c1b",
+    "sceneCode_b16_swapped": "1b3c00",
+    "params_b64": "BB0wAAABAAH/WQHNFBQAyBQC8NW4/755AACAAACAAR03AAABAAH/WQHNFBQAyBQC8NW4/755AACAAACAASBiAgQEAAG/WQHNFBQBARQD/5eEov+5ovH+AACAAACAAxpiAAABAAGdnQHNFBQAyBQB/750AACAAACAAQ==",
+    "params_b16": "041d300000010001ff5901cd141400c81402f0d5b8ffbe79000080000080011d370000010001ff5901cd141400c81402f0d5b8ffbe790000800000800120620204040001bf5901cd141401011403ff9784a2ffb9a2f1fe000080000080031a6200000100019d9d01cd141400c81401ffbe7400008000008001",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010802041d300000010001ff5901cd141400c81402f0d5b8ffbe79000080000080011d370000010001ff5901cd141400c81402f0d5b8ffbe790000800000800120620204040001bf5901cd141401011403ff9784a2ffb9a2f1fe000080000080031a6200000100019d9d01cd141400c81401ffbe7400008000008001",
+    "num_lines_b10": 8,
+    "num_lines_b16": "08",
+    "cmd_b16": [
+      "a300010802041d300000010001ff5901cd1414eb",
+      "a30100c81402f0d5b8ffbe7900008000008001d8",
+      "a3021d370000010001ff5901cd141400c814023f",
+      "a303f0d5b8ffbe79000080000080012062020440",
+      "a304040001bf5901cd141401011403ff9784a2d1",
+      "a305ffb9a2f1fe000080000080031a6200000137",
+      "a30600019d9d01cd141400c81401ffbe74000080",
+      "a3ff80000080010000000000000000000000005d",
+      "3305041b3c000000000000000000000000000015"
+    ],
+    "cmd_b64": [
+      "owABCAIEHTAAAAEAAf9ZAc0UFOs=",
+      "owEAyBQC8NW4/755AACAAACAAdg=",
+      "owIdNwAAAQAB/1kBzRQUAMgUAj8=",
+      "owPw1bj/vnkAAIAAAIABIGICBEA=",
+      "owQEAAG/WQHNFBQBARQD/5eEotE=",
+      "owX/uaLx/gAAgAAAgAMaYgAAATc=",
+      "owYAAZ2dAc0UFADIFAH/vnQAAIA=",
+      "o/+AAACAAQAAAAAAAAAAAAAAAF0=",
+      "MwUEGzwAAAAAAAAAAAAAAAAAABU="
+    ]
+  },
+  {
+    "name": "Impressionism",
+    "sceneId_b10": 26289,
+    "sceneId_b16": "0066b1",
+    "scenceParamId_b10": 36963,
+    "scenceParamId_b16": "009063",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 15388,
+    "sceneCode_b16": "003c1c",
+    "sceneCode_b16_swapped": "1c3c00",
+    "params_b64": "Ax0AAAABAAFzcwABFBQAgBQCNe//VIH+AACAAACAASBQAgICAAH/cgPNFBQBARQDNe//VIH+/2bXAACAAACABSBVAgICAAH/cgPNFBQBARQDNe//VIH+/2bXAACAAACABQ==",
+    "params_b16": "031d0000000100017373000114140080140235efff5481fe0000800000800120500202020001ff7203cd14140101140335efff5481feff66d70000800000800520550202020001ff7203cd14140101140335efff5481feff66d700008000008005",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010602031d0000000100017373000114140080140235efff5481fe0000800000800120500202020001ff7203cd14140101140335efff5481feff66d70000800000800520550202020001ff7203cd14140101140335efff5481feff66d700008000008005",
+    "num_lines_b10": 6,
+    "num_lines_b16": "06",
+    "cmd_b16": [
+      "a300010602031d000000010001737300011414b9",
+      "a3010080140235efff5481fe000080000080013b",
+      "a30220500202020001ff7203cd14140101140386",
+      "a30335efff5481feff66d70000800000800520c5",
+      "a304550202020001ff7203cd1414010114033590",
+      "a3ffefff5481feff66d70000800000800500002c",
+      "3305041c3c000000000000000000000000000012"
+    ],
+    "cmd_b64": [
+      "owABBgIDHQAAAAEAAXNzAAEUFLk=",
+      "owEAgBQCNe//VIH+AACAAACAATs=",
+      "owIgUAICAgAB/3IDzRQUAQEUA4Y=",
+      "owM17/9Ugf7/ZtcAAIAAAIAFIMU=",
+      "owRVAgICAAH/cgPNFBQBARQDNZA=",
+      "o//v/1SB/v9m1wAAgAAAgAUAACw=",
+      "MwUEHDwAAAAAAAAAAAAAAAAAABI="
+    ]
+  },
+  {
+    "name": "Minimalism",
+    "sceneId_b10": 26290,
+    "sceneId_b16": "0066b2",
+    "scenceParamId_b10": 36964,
+    "scenceParamId_b16": "009064",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 15389,
+    "sceneCode_b16": "003c1d",
+    "sceneCode_b16_swapped": "1d3c00",
+    "params_b64": "ASkAAAAOAAHW1gCAFBQC0hQG////AAAAAAAA////AAAAAAAAAACAAACAAA==",
+    "params_b16": "01290000000e0001d6d60080141402d21406ffffff000000000000ffffff00000000000000008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "01030201290000000e0001d6d60080141402d21406ffffff000000000000ffffff00000000000000008000008000",
+    "num_lines_b10": 3,
+    "num_lines_b16": "03",
+    "cmd_b16": [
+      "a30001030201290000000e0001d6d60080141404",
+      "a30102d21406ffffff000000000000ffffff0060",
+      "a3ff00000000000000800000800000000000005c",
+      "3305041d3c000000000000000000000000000013"
+    ],
+    "cmd_b64": [
+      "owABAwIBKQAAAA4AAdbWAIAUFAQ=",
+      "owEC0hQG////AAAAAAAA////AGA=",
+      "o/8AAAAAAAAAgAAAgAAAAAAAAFw=",
+      "MwUEHTwAAAAAAAAAAAAAAAAAABM="
+    ]
+  },
+  {
+    "name": "Pop Art",
+    "sceneId_b10": 26291,
+    "sceneId_b16": "0066b3",
+    "scenceParamId_b10": 36965,
+    "scenceParamId_b16": "009065",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 15390,
+    "sceneCode_b16": "003c1e",
+    "sceneCode_b16_swapped": "1e3c00",
+    "params_b64": "AiBQAAACAAH/cgHFFBQCyBQD/8Er/2M2O/H/AACAAACAACBVAAACAAH/cgPFFBQCyBQDmv9E/yO6/wsPAACAAACAAA==",
+    "params_b16": "0220500000020001ff7201c5141402c81403ffc12bff63363bf1ff0000800000800020550000020001ff7203c5141402c814039aff44ff23baff0b0f00008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "0105020220500000020001ff7201c5141402c81403ffc12bff63363bf1ff0000800000800020550000020001ff7203c5141402c814039aff44ff23baff0b0f00008000008000",
+    "num_lines_b10": 5,
+    "num_lines_b16": "05",
+    "cmd_b16": [
+      "a3000105020220500000020001ff7201c514149d",
+      "a30102c81403ffc12bff63363bf1ff0000800075",
+      "a30200800020550000020001ff7203c51414021e",
+      "a303c814039aff44ff23baff0b0f000080000043",
+      "a3ff8000000000000000000000000000000000dc",
+      "3305041e3c000000000000000000000000000010"
+    ],
+    "cmd_b64": [
+      "owABBQICIFAAAAIAAf9yAcUUFJ0=",
+      "owECyBQD/8Er/2M2O/H/AACAAHU=",
+      "owIAgAAgVQAAAgAB/3IDxRQUAh4=",
+      "owPIFAOa/0T/I7r/Cw8AAIAAAEM=",
+      "o/+AAAAAAAAAAAAAAAAAAAAAANw=",
+      "MwUEHjwAAAAAAAAAAAAAAAAAABA="
+    ]
+  },
+  {
+    "name": "Memphis Style",
+    "sceneId_b10": 26292,
+    "sceneId_b16": "0066b4",
+    "scenceParamId_b10": 36966,
+    "scenceParamId_b16": "009066",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 15391,
+    "sceneCode_b16": "003c1f",
+    "sceneCode_b16_swapped": "1f3c00",
+    "params_b64": "BR0gAAACAAH/AACAFBQCyBQCFMn//zwSAACAAACAAB0iAAACAAH/AACAFBQCyBQCbAr+/8MYAACAAACAAB0kAAACAAH/AACAFBQCyBQC/1jrK/40AACAAACAAB0mAAACAAH/AACAFBQCyBQC/z0f/wjFAACAAACAAB0oAAACAAH/AACAFBQCyBQC/1YHKyD+AACAAACAAA==",
+    "params_b16": "051d200000020001ff000080141402c8140214c9ffff3c12000080000080001d220000020001ff000080141402c814026c0afeffc318000080000080001d240000020001ff000080141402c81402ff58eb2bfe34000080000080001d260000020001ff000080141402c81402ff3d1fff08c5000080000080001d280000020001ff000080141402c81402ff56072b20fe00008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010a02051d200000020001ff000080141402c8140214c9ffff3c12000080000080001d220000020001ff000080141402c814026c0afeffc318000080000080001d240000020001ff000080141402c81402ff58eb2bfe34000080000080001d260000020001ff000080141402c81402ff3d1fff08c5000080000080001d280000020001ff000080141402c81402ff56072b20fe00008000008000",
+    "num_lines_b10": 10,
+    "num_lines_b16": "0a",
+    "cmd_b16": [
+      "a300010a02051d200000020001ff0000801414ee",
+      "a30102c8140214c9ffff3c12000080000080008d",
+      "a3021d220000020001ff000080141402c814023e",
+      "a3036c0afeffc318000080000080001d24000025",
+      "a304020001ff000080141402c81402ff58eb2b60",
+      "a305fe34000080000080001d260000020001ffab",
+      "a306000080141402c81402ff3d1fff08c5000016",
+      "a30780000080001d280000020001ff00008014f9",
+      "a3081402c81402ff56072b20fe00008000008038",
+      "a3ff00000000000000000000000000000000005c",
+      "3305041f3c000000000000000000000000000011"
+    ],
+    "cmd_b64": [
+      "owABCgIFHSAAAAIAAf8AAIAUFO4=",
+      "owECyBQCFMn//zwSAACAAACAAI0=",
+      "owIdIgAAAgAB/wAAgBQUAsgUAj4=",
+      "owNsCv7/wxgAAIAAAIAAHSQAACU=",
+      "owQCAAH/AACAFBQCyBQC/1jrK2A=",
+      "owX+NAAAgAAAgAAdJgAAAgAB/6s=",
+      "owYAAIAUFALIFAL/PR//CMUAABY=",
+      "oweAAACAAB0oAAACAAH/AACAFPk=",
+      "owgUAsgUAv9WBysg/gAAgAAAgDg=",
+      "o/8AAAAAAAAAAAAAAAAAAAAAAFw=",
+      "MwUEHzwAAAAAAAAAAAAAAAAAABE="
+    ]
+  },
+  {
+    "name": "Cyberpunk",
+    "sceneId_b10": 26293,
+    "sceneId_b16": "0066b5",
+    "scenceParamId_b10": 36967,
+    "scenceParamId_b16": "009067",
+    "sceneType_b10": 2,
+    "sceneType_b16": "02",
+    "sceneCode_b10": 15392,
+    "sceneCode_b16": "003c20",
+    "sceneCode_b16_swapped": "203c00",
+    "params_b64": "BCYwAAADAAH//wABFBQC/xQF/2C4gsD+/25sVD/+AAAAAACAAACAACYzAAADAAH/AACAFBQC/xQFgsD+AAAA/2C4VD/+/25sAACAAACAACY2AAADAAH/AACAFBQC/xQFAAAA/2C4gsD+/25sVD/+AACAAACAACYZAAABAAH/AACAFBQC/xQF/2C4gsD+/25sAAAAVD/+AACAAACAAA==",
+    "params_b16": "0426300000030001ffff0001141402ff1405ff60b882c0feff6e6c543ffe0000000000800000800026330000030001ff000080141402ff140582c0fe000000ff60b8543ffeff6e6c0000800000800026360000030001ff000080141402ff1405000000ff60b882c0feff6e6c543ffe0000800000800026190000010001ff000080141402ff1405ff60b882c0feff6e6c000000543ffe00008000008000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "",
+      "hex_prefix_add": "02",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010a020426300000030001ffff0001141402ff1405ff60b882c0feff6e6c543ffe0000000000800000800026330000030001ff000080141402ff140582c0fe000000ff60b8543ffeff6e6c0000800000800026360000030001ff000080141402ff1405000000ff60b882c0feff6e6c543ffe0000800000800026190000010001ff000080141402ff1405ff60b882c0feff6e6c000000543ffe00008000008000",
+    "num_lines_b10": 10,
+    "num_lines_b16": "0a",
+    "cmd_b16": [
+      "a300010a020426300000030001ffff00011414bb",
+      "a30102ff1405ff60b882c0feff6e6c543ffe00bd",
+      "a30200000000800000800026330000030001ff49",
+      "a303000080141402ff140582c0fe000000ff60ef",
+      "a304b8543ffeff6e6c0000800000800026360067",
+      "a30500030001ff000080141402ff140500000037",
+      "a306ff60b882c0feff6e6c543ffe0000800000d6",
+      "a307800026190000010001ff000080141402ff99",
+      "a3081405ff60b882c0feff6e6c000000543ffe49",
+      "a3ff00008000008000000000000000000000005c",
+      "330504203c00000000000000000000000000002e"
+    ],
+    "cmd_b64": [
+      "owABCgIEJjAAAAMAAf//AAEUFLs=",
+      "owEC/xQF/2C4gsD+/25sVD/+AL0=",
+      "owIAAAAAgAAAgAAmMwAAAwAB/0k=",
+      "owMAAIAUFAL/FAWCwP4AAAD/YO8=",
+      "owS4VD/+/25sAACAAACAACY2AGc=",
+      "owUAAwAB/wAAgBQUAv8UBQAAADc=",
+      "owb/YLiCwP7/bmxUP/4AAIAAANY=",
+      "oweAACYZAAABAAH/AACAFBQC/5k=",
+      "owgUBf9guILA/v9ubAAAAFQ//kk=",
+      "o/8AAIAAAIAAAAAAAAAAAAAAAFw=",
+      "MwUEIDwAAAAAAAAAAAAAAAAAAC4="
+    ]
+  }
+]
