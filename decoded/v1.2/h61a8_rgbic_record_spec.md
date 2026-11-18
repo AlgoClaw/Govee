@@ -42,7 +42,11 @@ zero-based from the beginning of the decoded `scenceParam` -- not from an
 
 * **Parameter**: the decoded API `scenceParam`, such as `01 26 ...` for
   Cha-Cha-B.
-* **Record**: one self-delimiting RGBIC effect segment inside a parameter.
+* **Record**: one self-delimiting RGBIC effect record inside a parameter. It
+  is an effect-program unit, not necessarily one physical LED segment.
+* **H61A8 physical RGBIC segment**: six consecutive LEDs that always receive
+  the same color. H61A8 has 150 such independently controllable segments
+  (900 LEDs total).
 * **Opaque control**: a byte with a stable structural position but an
   unconfirmed visual meaning. A parser reads and preserves it verbatim.
 * **Speed field**: a field structurally identified by the RGBIC serializer;
