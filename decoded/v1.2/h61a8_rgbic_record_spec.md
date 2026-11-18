@@ -1,4 +1,4 @@
-# H61A8 RGBIC scene-parameter specification — draft 0.1
+# H61A8 RGBIC scene-parameter specification — draft 0.2
 
 This document specifies a static, length-checked parser for the H61A8
 `sceneType: 2` / RGBIC parameter format. It deliberately separates three
@@ -25,13 +25,14 @@ The current `JSONs/H61A8_debug.json` corpus contains:
 | API scene type | Count | Parser disposition |
 | --- | ---: | --- |
 | `0` | 12 | Empty `scenceParam`; mode command only. |
-| `1` | 2 | A separate, currently opaque format (`Halloween-A`, `Sweet`). |
+| `1` | 2 | `Legacy-83` frame/palette format (`Halloween-A`, `Sweet`). |
 | `2` | 226 | All conform to the `RGBIC-R1` grammar below. |
 
-Thus, a parser must **not** force every command into this layout. It should
-return one of `empty`, `rgbic-r1`, or `unknown`, retaining the raw bytes for
-unknown formats. It does not need scene-specific hand-written rules for the
-226 `rgbic-r1` entries.
+Thus, the H61A8 parser dispatches to `empty`, `legacy-83`, or `rgbic-r1`.
+All 240 entries in the current H61A8 debug catalog parse exactly and receive a
+structural label for every byte; there are no per-scene offset rules. An input
+that violates the relevant length invariant returns `unknown` and retains its
+raw bytes rather than being guessed at or rewritten.
 
 ## 2. Vocabulary and integer convention
 
@@ -251,11 +252,49 @@ all other parameter bytes, and the mode packet are original. It opened with
 yellow, white, and blue. That observation is consistent with the same color
 mixing hypothesis, but—again—does not establish their physical order.
 
+### 3.6 Legacy-83 (`sceneType: 1`) grammar
+
+`Halloween-A` and `Sweet` use a second static layout. Both begin with marker
+`83`, followed by a count of five-byte frames and then an RGB palette. The
+same structure appears in the repository's H61A8 raw capture and in other
+Govee-model captures, but this specification claims conformance only for the
+two H61A8 entries.
+
+```text
+legacy83Parameter := 83 frameCount:u8 frame[frameCount] paletteCount:u8 rgb[paletteCount]
+
+frame := red:u8 green:u8 blue:u8 timingOrControl0:u8 timingOrControl1:u8
+rgb   := red:u8 green:u8 blue:u8
+```
+
+The required exact length is:
+
+```text
+3 + (5 * frameCount) + (3 * paletteCount)
+```
+
+`Sweet` starts `83 01`, contains one five-byte frame, then palette count `04`
+and four RGB triples; its exact length is `3 + 5 + (3 * 4) = 20`. `Halloween-A`
+starts `83 06`, contains six frames and four palette triples; its exact length
+is `3 + (5 * 6) + (3 * 4) = 45`.
+
+The RGB triple boundaries are structural and editable. The two frame-tail
+bytes have a stable position but an unconfirmed timing/control meaning, so the
+parser labels them without assigning a visual behavior.
+
 ## 4. Static parsing algorithm
 
-The following pseudocode is the complete `rgbic-r1` decoder. It should be
-implemented with bounds-checked reads; it never searches for color values or
-makes visual guesses.
+The top-level H61A8 parser is deterministic:
+
+```text
+parseH61A8Parameter(parameter):
+    if parameter is empty: return empty
+    if parameter[0] == 83: return parseLegacy83(parameter)
+    return parseRgbicR1(parameter)
+```
+
+Both nonempty decoders use bounds-checked reads and exact length invariants;
+neither searches for color values or makes visual guesses. `parseRgbicR1` is:
 
 ```text
 parseRgbicR1(parameter):
@@ -302,6 +341,11 @@ failure, return `unknown` and leave the original bytes unmodified. This is
 important: a parser should never reinterpret an unknown format and then write
 the resulting guess back to a device.
 
+`parseLegacy83` reads `frameCount` at offset `1`, computes the palette-count
+offset as `2 + (5 * frameCount)`, then requires the exact length stated above.
+It labels the marker, both counts, every frame RGB/tail byte, and every palette
+RGB byte.
+
 ## 5. Static encoder and edit rules
 
 The encoder is the inverse of the parser:
@@ -323,7 +367,7 @@ speed is a single-byte edit.
 
 ## 6. LAN `a3` transport decoding and encoding
 
-For H61A8 `rgbic-r1` scenes, the parameter grammar is embedded as follows:
+For H61A8 scenes with a parameter, the grammar is embedded as follows:
 
 ```text
 unframed scene payload := 01 packetCount 02 scenceParam
@@ -342,8 +386,8 @@ To decode a command array:
 4. Concatenate bytes `2-18` from those packets: each contributes 17 payload
    bytes.
 5. Require `01`, the stated packet count, and H61A8 prefix `02`.
-6. Parse the remaining bytes using `parseRgbicR1`. The record grammar determines
-   the exact parameter length, so any trailing zeroes are transport padding.
+6. Parse the remaining bytes using `parseH61A8Parameter`. Its exact structural
+   length removes any trailing transport-padding zeroes.
 
 To encode, prepend `01`, the computed packet count, and `02`; split into
 17-byte chunks; zero-pad each to 17 bytes; then emit:
@@ -371,6 +415,8 @@ it must not be used to infer RGBIC field meanings.
 
 | Parsed field | Structural confidence | Visual/behavioral confidence |
 | --- | --- | --- |
+| Empty parameter / mode-only scene | Confirmed across all 12 type-0 entries | The mode packet selects the built-in effect |
+| Legacy-83 marker, frame boundaries, palette boundaries | Confirmed across both H61A8 type-1 entries | RGB triples are editable; frame-tail bytes remain opaque |
 | Record count and lengths | Confirmed across all 226 H61A8 type-2 entries | Not visual; framing only |
 | Brightness block count and six-byte boundaries | High | Its first three bytes are record-local brightness/transition controls; the fourth byte is known to be a speed field |
 | Color palette count and RGB boundaries | High | RGB channel order confirmed on Meteor |
@@ -378,6 +424,25 @@ it must not be used to infer RGBIC field meanings.
 | `inAreaMovement.speed` | High | Not individually confirmed on H61A8 |
 | `areaMovement.speed` | High | Confirmed visible Meteor speed field at offset 32 |
 | Packed-area and mode/control fields | High boundary confidence | Direction, spread, and effect-mode meanings unknown |
+
+## 9. What still benefits from device testing
+
+No visual experiment is required to statically parse or label the current
+H61A8 catalog: each byte now has a format-derived location and field name.
+Experiments are only needed to attach **behavioral** names to opaque controls.
+
+The most useful next tests are four one-byte changes on one simple RGBIC-R1
+scene, each based on the original command rather than on another test:
+
+1. `brightnessEffect.speed`
+2. `colorEffect.speed`
+3. `inAreaMovement.speed`
+4. `areaMovement.speed` (already confirmed for Meteor)
+
+This distinguishes brightness cadence, palette-transition rate, in-area
+motion, and area motion without changing any color field. Packed-area,
+mode, and opaque control bytes can be tested afterward, one named field at a
+time. Their semantics are not prerequisites for lossless parsing or editing.
 
 The field boundaries and speed positions align with a separately
 reverse-engineered Govee RGBIC serializer and its scene-speed rewriter. That is
