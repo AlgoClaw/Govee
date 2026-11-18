@@ -34,6 +34,10 @@
     .controls label { display: flex; align-items: center; gap: 12px; min-height: 31px; }
     .controls label input, .controls label select { width: 230px; margin: 0 0 0 auto; padding: 4px 7px; }
     .controls label input[type="color"] { width: 48px; height: 29px; padding: 1px; }
+    .scene-load { display: flex; align-items: center; gap: 12px; min-height: 31px; }
+    .scene-load label { color: var(--muted); font-size: .83rem; }
+    .scene-load select { flex: 1; min-width: 0; margin-left: auto; padding: 4px 7px; }
+    .scene-load button { padding: 5px 9px; white-space: nowrap; }
     label { display: block; color: var(--muted); font-size: .83rem; }
     input { width: 100%; margin-top: 4px; border: 1px solid #4a5b70; border-radius: 6px; background: #0e131a; color: var(--text); padding: 8px; font: 15px var(--mono); }
     select { border: 1px solid #4a5b70; border-radius: 6px; background: #0e131a; color: var(--text); font: 15px var(--mono); }
@@ -79,7 +83,7 @@
   <section class="card">
     <h2>Experiment controls</h2>
     <div class="controls">
-      <label>Load H61A8 scene<select id="scene-select" disabled><option>Connect to the scene-lab server to load scenes</option></select></label>
+      <div class="scene-load"><label for="scene-select">Load H61A8 scene</label><select id="scene-select" disabled><option>Connect to the scene-lab server to load scenes</option></select><button id="send-device-top" type="button">Send command</button></div>
       <label>Output scene name<input id="scene-name" value="AAA - Test - Meteor"></label>
       <label>sceneId <span class="small">debug only</span><input id="scene-id" inputmode="numeric" value="133"></label>
       <label>scenceParamId <span class="small">debug only</span><input id="param-id" inputmode="numeric" value="115"></label>
@@ -103,8 +107,8 @@
     <h2>Send to device</h2>
     <p class="note">This sends one UDP <code>ptReal</code> JSON datagram containing the generated command array to the Govee LAN API's fixed UDP port <code>4003</code>. Browsers cannot send UDP themselves. Open this page through the scene-lab server (the Docker service or <code>node meteor_lab_server.js</code> for standalone development)—do not open this HTML file directly or through another preview server. The server sends only when this button is pressed.</p>
     <div class="controls">
-      <label>Detected Govee device<select id="device-select" disabled><option>Scanning for Govee devices…</option></select></label>
-      <label>Device IP address<input id="device-ip" inputmode="decimal" autocomplete="off" placeholder="192.168.1.123"></label>
+      <label>Detected Govee device<select id="device-select" disabled><option value="192.168.11.155" selected>H61A8 — 12:D0:C8:45:06:61:56:FF — 192.168.11.155</option></select></label>
+      <label>Device IP address<input id="device-ip" inputmode="decimal" autocomplete="off" value="192.168.11.155" placeholder="192.168.1.123"></label>
     </div>
     <div class="toolbar"><button id="discover-devices" type="button">Refresh Govee devices</button><button id="send-device" type="button">Send generated command</button></div>
     <p id="device-status" class="note" aria-live="polite">Scanning for Govee devices on the local network…</p>
@@ -176,6 +180,10 @@
     paramsHex: '01202001000a0201ff0a020000000200000300aaff00ffffffffff0000fa1001fe00'
   };
   const GOVEE_COMMAND_PORT = 4003;
+  const PREFERRED_DEVICE = {
+    ip: '192.168.11.155',
+    device: '12:D0:C8:45:06:61:56:FF'
+  };
   const state = { catalog: [], devices: [], scene: FALLBACK_METEOR, originalBytes: [], bytes: [] };
   const byteInputs = [];
   const byteMeanings = [];
@@ -467,7 +475,15 @@
       select.append(option);
     });
     select.disabled = devices.length === 0;
-    if (devices.some(device => device.ip === selectedIp)) select.value = selectedIp;
+    const selectedDevice = devices.find(device => device.ip === selectedIp);
+    const preferredDevice = devices.find(device =>
+      device.ip === PREFERRED_DEVICE.ip && (device.device || '').toUpperCase() === PREFERRED_DEVICE.device
+    );
+    const deviceToSelect = selectedDevice || (!selectedIp ? preferredDevice : null);
+    if (deviceToSelect) {
+      select.value = deviceToSelect.ip;
+      $('#device-ip').value = deviceToSelect.ip;
+    }
   }
 
   async function discoverDevices() {
@@ -503,8 +519,8 @@
     }
     const ip = $('#device-ip').value.trim();
     if (!ip) { setSendStatus('Enter the device IP address first.', 'error'); return; }
-    const button = $('#send-device');
-    button.disabled = true;
+    const buttons = [$('#send-device'), $('#send-device-top')];
+    buttons.forEach(button => { button.disabled = true; });
     setSendStatus(`Sending ${window.sceneLabEntry.cmd_b64.length} command packets to ${ip}:${GOVEE_COMMAND_PORT}…`);
     try {
       const response = await fetch('/api/send', {
@@ -517,7 +533,7 @@
     } catch (error) {
       setSendStatus(`Not sent: ${error.message}. Confirm the scene-lab server is running, then reload this page.`, 'error');
     } finally {
-      button.disabled = false;
+      buttons.forEach(button => { button.disabled = false; });
     }
   }
 
@@ -540,6 +556,7 @@
   });
   $('#discover-devices').addEventListener('click', discoverDevices);
   $('#send-device').addEventListener('click', sendToDevice);
+  $('#send-device-top').addEventListener('click', sendToDevice);
   applyScene(FALLBACK_METEOR);
   loadCatalog();
   discoverDevices();

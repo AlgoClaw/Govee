@@ -211,6 +211,18 @@ Each variant must retain the original values in the other two positions. This
 will determine whether one byte controls the off duty cycle and whether another
 one contributes to the apparent color change.
 
+### 3.5 Direct-palette color test
+
+Because the brightness-block change takes a full animation cycle to evaluate,
+the next test targets a direct, statically parsed RGB palette entry instead.
+`AAA - Test - Cha-Cha-A - Record 1 Red to White` is based on the unmodified
+Cha-Cha-A command and changes only record 1's first palette entry at parameter
+offsets `48-50`, from `FF 00 00` (red) to `FF FF FF` (white). This is one
+semantic color-field change; every other parameter byte and the selected-scene
+packet remain original. If record 1 owns one of the initial crawl sections,
+that section should become white immediately and provide a clearer record-to-
+visual-region mapping.
+
 ## 4. Static parsing algorithm
 
 The following pseudocode is the complete `rgbic-r1` decoder. It should be
