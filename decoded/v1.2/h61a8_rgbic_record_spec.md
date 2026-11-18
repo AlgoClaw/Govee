@@ -148,6 +148,42 @@ experiments. The effect engine's palette ordering, interpolation, blending,
 and brightness behavior are independent questions; the parser must not assume
 that a palette entry maps to a fixed LED position.
 
+#### Cha-Cha-B multi-palette crawler: explicit behavioral gap
+
+Cha-Cha-B has **one** RGBIC record, but the device visibly shows a crawling,
+multi-color pattern. Its record contains five RGB triples, so `paletteCount`
+is not a count of simultaneously visible physical regions; `recordCount` also
+does not by itself specify a palette's spatial distribution. A visualizer must
+not turn this palette count into fixed strip bands.
+
+The original record's relevant fields are:
+
+```text
+colorType/typeA/typeB:       03 01 01
+colorEffect:                 01 80 14, paletteCount 05
+palette:                     FF0000 FF07F4 090EFF 08FEFC 08FF0A
+inAreaMovement:              00 00 80
+areaMovement:                10 03 F5 00
+```
+
+`AAA - Test - Cha-Cha-B - No Pastel` changes only `colorEffect.speed` at
+offset `15`, from `80` to `00`; it removes the observed pastel color phase.
+`AAA - Test - Cha-Cha-B - No Pastel No Pink` additionally changes palette 2
+at offsets `21-23`, from `FF 07 F4` to `FF 00 00`. These results establish
+that the palette triples are direct color sources and that
+`colorEffect.speed` participates in the color-sequence behavior. They do not
+establish how the five palette entries are selected, repeated, blended, or
+placed along the strip.
+
+The unresolved controls responsible for the crawl are the `colorType`, type,
+color-effect control, and area/in-area movement modes. Until one-byte tests
+isolate them, the scene lab must report a one-record, multi-palette,
+nonzero-area-mode pattern as unavailable for emulation rather than invent a
+solid color or a gradient. The highest-signal next tests, each based on the
+original Cha-Cha-B command, are `areaMovement.mode: 03 -> 00`,
+`areaMovement.speed: F5 -> 00`, `inAreaMovement.speed: 80 -> 00`, and
+`colorEffect.control: 14 -> 00`—one variant per byte.
+
 ### 3.2 Meteor worked parse
 
 Meteor begins `01 20`, meaning one record with a 32-byte body. Its three RGB
