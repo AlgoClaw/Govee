@@ -425,6 +425,22 @@ it must not be used to infer RGBIC field meanings.
 | `areaMovement.speed` | High | Confirmed visible Meteor speed field at offset 32 |
 | Packed-area and mode/control fields | High boundary confidence | Direction, spread, and effect-mode meanings unknown |
 
+`Heartbeat-A` supplies the first direct whole-strip brightness observation. Its
+only RGBIC record has the brightness block `FF 00 02 D9 0A 01`, and the device
+briefly turns the entire string off about twice per second. This is behavioral
+evidence that the six-byte `BrightnessEffect` block controls temporal
+intensity—not just color or movement. The fourth byte, `D9`, is the
+structurally confirmed brightness-effect speed field.
+
+The scene-lab animation therefore reads every parsed `BrightnessEffect` block
+from every RGBIC record, rather than matching a scene name. Its preview model
+uses the first two controls as intensity endpoints, `D9 / 100` as an
+approximately 2.17 Hz cadence, and the final `0A:01` pair as an on/off duty
+ratio. Those interpretations reproduce Heartbeat-A's global flash, but the
+firmware's exact mode and waveform semantics remain unconfirmed; this is an
+explicitly approximate visual model, not a change to the lossless parser or
+encoder.
+
 ## 9. What still benefits from device testing
 
 No visual experiment is required to statically parse or label the current
