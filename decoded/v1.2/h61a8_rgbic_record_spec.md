@@ -223,6 +223,18 @@ packet remain original. If record 1 owns one of the initial crawl sections,
 that section should become white immediately and provide a clearer record-to-
 visual-region mapping.
 
+Observed result: the opening red changed to white. The original opening had
+red, blue, and an in-between color; the test opened with only white and blue.
+This confirms that record 1 palette 1 is a real initial-color source. It also
+indicates that the red is an endpoint of the opening blend, but does not yet
+prove which record owns which physical string section.
+
+The next direct-palette test is `AAA - Test - Cha-Cha-A - Record 0 Blue to
+Cyan`. It changes record 0 palette 1, offsets `18-20`, from `00 00 FF` (blue)
+to `00 FF FF` (cyan). Since the red and blue components were already `00` and
+`FF`, respectively, its only non-identical byte is offset `19`, `00 -> FF`.
+All other parameter values and the mode packet are retained from Cha-Cha-A.
+
 ## 4. Static parsing algorithm
 
 The following pseudocode is the complete `rgbic-r1` decoder. It should be
