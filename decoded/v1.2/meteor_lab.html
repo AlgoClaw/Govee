@@ -101,12 +101,13 @@
 
   <section class="card">
     <h2>Send to device</h2>
-    <p class="note">This sends one UDP <code>ptReal</code> JSON datagram containing the generated command array. Browsers cannot send UDP themselves. Open this page through the scene-lab server (the Docker service or <code>node meteor_lab_server.js</code> for standalone development)—do not open this HTML file directly or through another preview server. The server sends only when this button is pressed.</p>
+    <p class="note">This sends one UDP <code>ptReal</code> JSON datagram containing the generated command array to the Govee LAN API's fixed UDP port <code>4003</code>. Browsers cannot send UDP themselves. Open this page through the scene-lab server (the Docker service or <code>node meteor_lab_server.js</code> for standalone development)—do not open this HTML file directly or through another preview server. The server sends only when this button is pressed.</p>
     <div class="controls">
+      <label>Detected Govee device<select id="device-select" disabled><option>Scanning for Govee devices…</option></select></label>
       <label>Device IP address<input id="device-ip" inputmode="decimal" autocomplete="off" placeholder="192.168.1.123"></label>
-      <label>UDP port<input id="device-port" inputmode="numeric" value="4003"></label>
     </div>
-    <div class="toolbar"><button id="send-device" type="button">Send generated command</button></div>
+    <div class="toolbar"><button id="discover-devices" type="button">Refresh Govee devices</button><button id="send-device" type="button">Send generated command</button></div>
+    <p id="device-status" class="note" aria-live="polite">Scanning for Govee devices on the local network…</p>
     <p id="send-status" class="send-status" aria-live="polite">Not sent.</p>
   </section>
 
@@ -174,7 +175,8 @@
     sceneType: 2, sceneCode: 205,
     paramsHex: '01202001000a0201ff0a020000000200000300aaff00ffffffffff0000fa1001fe00'
   };
-  const state = { catalog: [], scene: FALLBACK_METEOR, originalBytes: [], bytes: [] };
+  const GOVEE_COMMAND_PORT = 4003;
+  const state = { catalog: [], devices: [], scene: FALLBACK_METEOR, originalBytes: [], bytes: [] };
   const byteInputs = [];
   const byteMeanings = [];
   const byteList = document.querySelector('#byte-list');
@@ -450,6 +452,44 @@
     }
   }
 
+  function populateDevices(devices) {
+    const select = $('#device-select');
+    const selectedIp = $('#device-ip').value.trim();
+    select.replaceChildren();
+    const placeholder = document.createElement('option');
+    placeholder.value = '';
+    placeholder.textContent = devices.length ? 'Select a discovered device' : 'No Govee devices found';
+    select.append(placeholder);
+    devices.forEach(device => {
+      const option = document.createElement('option');
+      option.value = device.ip;
+      option.textContent = [device.sku || 'Govee', device.device || 'device', device.ip].join(' — ');
+      select.append(option);
+    });
+    select.disabled = devices.length === 0;
+    if (devices.some(device => device.ip === selectedIp)) select.value = selectedIp;
+  }
+
+  async function discoverDevices() {
+    const button = $('#discover-devices');
+    button.disabled = true;
+    $('#device-status').textContent = 'Scanning the local network for Govee LAN API replies…';
+    try {
+      const response = await fetch('/api/discover', { method: 'POST' });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok || !Array.isArray(result.devices)) throw new Error(result.error || `HTTP ${response.status}`);
+      state.devices = result.devices;
+      populateDevices(state.devices);
+      $('#device-status').textContent = state.devices.length
+        ? `Found ${state.devices.length} Govee device${state.devices.length === 1 ? '' : 's'}. Select one to fill its IP address.`
+        : 'No Govee devices replied. Confirm LAN Control is enabled for the device in Govee Home, and that UDP ports 4001–4003 are allowed between this server and the lights.';
+    } catch (error) {
+      $('#device-status').textContent = `Could not scan for Govee devices: ${error.message}`;
+    } finally {
+      button.disabled = false;
+    }
+  }
+
   function setSendStatus(message, kind = '') {
     const status = $('#send-status');
     status.textContent = message;
@@ -462,16 +502,14 @@
       return;
     }
     const ip = $('#device-ip').value.trim();
-    const port = Number.parseInt($('#device-port').value, 10);
     if (!ip) { setSendStatus('Enter the device IP address first.', 'error'); return; }
-    if (!Number.isInteger(port) || port < 1 || port > 65535) { setSendStatus('UDP port must be an integer from 1 through 65535.', 'error'); return; }
     const button = $('#send-device');
     button.disabled = true;
-    setSendStatus(`Sending ${window.sceneLabEntry.cmd_b64.length} command packets to ${ip}:${port}…`);
+    setSendStatus(`Sending ${window.sceneLabEntry.cmd_b64.length} command packets to ${ip}:${GOVEE_COMMAND_PORT}…`);
     try {
       const response = await fetch('/api/send', {
         method: 'POST', headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ ip, port, command: window.sceneLabEntry.cmd_b64 })
+        body: JSON.stringify({ ip, command: window.sceneLabEntry.cmd_b64 })
       });
       const result = await response.json().catch(() => ({}));
       if (!response.ok) throw new Error(result.error || `HTTP ${response.status}`);
@@ -497,9 +535,14 @@
   $('#reset').addEventListener('click', () => applyScene(state.scene));
   $('#copy-json').addEventListener('click', copyFinalEntry);
   $('#copy-json-bottom').addEventListener('click', copyFinalEntry);
+  $('#device-select').addEventListener('change', () => {
+    if ($('#device-select').value) $('#device-ip').value = $('#device-select').value;
+  });
+  $('#discover-devices').addEventListener('click', discoverDevices);
   $('#send-device').addEventListener('click', sendToDevice);
   applyScene(FALLBACK_METEOR);
   loadCatalog();
+  discoverDevices();
 })();
 </script>
 </body>

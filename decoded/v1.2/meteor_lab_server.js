@@ -18,9 +18,20 @@ const port = Number.parseInt(process.argv[2] || '8080', 10);
 const pagePath = path.join(__dirname, 'meteor_lab.html');
 const sceneCatalogPath = path.join(__dirname, 'JSONs', 'H61A8_debug.json');
 const maxBodyBytes = 64 * 1024;
+const goveeScanAddress = process.env.GOVEE_LAN_SCAN_ADDRESS || '239.255.255.250';
+const goveeScanPort = Number.parseInt(process.env.GOVEE_LAN_SCAN_PORT || '4001', 10);
+const goveeListenPort = Number.parseInt(process.env.GOVEE_LAN_LISTEN_PORT || '4002', 10);
+const goveeCommandPort = 4003;
+const deviceCacheLifetimeMs = 5 * 60 * 1000;
+const discovery = { socket: null, error: null, ready: null, devices: new Map() };
 
 if (!Number.isInteger(port) || port < 1 || port > 65535) {
   throw new Error('Optional HTTP port must be an integer from 1 through 65535.');
+}
+if (!Number.isInteger(goveeScanPort) || goveeScanPort < 1 || goveeScanPort > 65535 ||
+    !Number.isInteger(goveeListenPort) || goveeListenPort < 1 || goveeListenPort > 65535 ||
+    net.isIP(goveeScanAddress) !== 4) {
+  throw new Error('Govee discovery addresses and ports must be valid IPv4 UDP destinations.');
 }
 
 function reply(response, status, body, type = 'application/json; charset=utf-8') {
@@ -101,6 +112,97 @@ function sendUdp(ip, udpPort, command) {
   });
 }
 
+function currentDevices() {
+  const cutoff = Date.now() - deviceCacheLifetimeMs;
+  for (const [ip, device] of discovery.devices) {
+    if (device.lastSeen < cutoff) discovery.devices.delete(ip);
+  }
+  return [...discovery.devices.values()]
+    .sort((left, right) => left.ip.localeCompare(right.ip))
+    .map(({ lastSeen, ...device }) => device);
+}
+
+function rememberDevice(message, remote) {
+  if (!message || message.cmd !== 'scan' || !message.data || typeof message.data !== 'object') return;
+  const data = message.data;
+  if (net.isIP(remote.address) !== 4) return;
+  discovery.devices.set(remote.address, {
+    ip: remote.address,
+    device: typeof data.device === 'string' ? data.device : '',
+    sku: typeof data.sku === 'string' ? data.sku : '',
+    bleVersionHard: typeof data.bleVersionHard === 'string' ? data.bleVersionHard : '',
+    wifiVersionHard: typeof data.wifiVersionHard === 'string' ? data.wifiVersionHard : '',
+    lastSeen: Date.now()
+  });
+}
+
+function startDiscoveryListener() {
+  discovery.ready = new Promise(resolve => {
+    const socket = dgram.createSocket('udp4');
+    let starting = true;
+    socket.on('message', (payload, remote) => {
+      try {
+        const packet = JSON.parse(payload.toString('utf8'));
+        rememberDevice(packet?.msg, remote);
+      } catch {
+        // Ignore unrelated UDP traffic and malformed packets on this port.
+      }
+    });
+    socket.on('error', error => {
+      discovery.error = error;
+      if (discovery.socket === socket) discovery.socket = null;
+      if (starting) resolve();
+    });
+    socket.bind(goveeListenPort, '0.0.0.0', () => {
+      starting = false;
+      discovery.socket = socket;
+      discovery.error = null;
+      resolve();
+    });
+  });
+}
+
+function delay(milliseconds) {
+  return new Promise(resolve => setTimeout(resolve, milliseconds));
+}
+
+function sendDiscoveryPacket() {
+  const packet = Buffer.from(JSON.stringify({
+    msg: { cmd: 'scan', data: { account_topic: 'reserve' } }
+  }), 'utf8');
+  const socket = dgram.createSocket('udp4');
+  return new Promise((resolve, reject) => {
+    const finish = error => {
+      socket.close();
+      if (error) reject(error); else resolve();
+    };
+    socket.once('error', finish);
+    socket.bind(0, '0.0.0.0', () => {
+      try {
+        socket.setMulticastTTL(1);
+        socket.send(packet, goveeScanPort, goveeScanAddress, finish);
+      } catch (error) {
+        finish(error);
+      }
+    });
+  });
+}
+
+async function discoverDevices() {
+  await discovery.ready;
+  if (!discovery.socket) {
+    const detail = discovery.error?.code === 'EADDRINUSE'
+      ? `UDP port ${goveeListenPort} is already used by another LAN-control service.`
+      : (discovery.error?.message || 'Unable to listen for Govee discovery replies.');
+    throw new Error(detail);
+  }
+  await sendDiscoveryPacket();
+  await delay(250);
+  await sendDiscoveryPacket();
+  await delay(1250);
+  return currentDevices();
+}
+
 const server = http.createServer(async (request, response) => {
   if (request.method === 'GET' && (request.url === '/' || request.url === '/meteor_lab.html')) {
     try {
@@ -121,15 +223,27 @@ const server = http.createServer(async (request, response) => {
     return;
   }
 
+  if (request.method === 'GET' && request.url === '/api/devices') {
+    reply(response, 200, { devices: currentDevices() });
+    return;
+  }
+
+  if (request.method === 'POST' && request.url === '/api/discover') {
+    try {
+      reply(response, 200, { devices: await discoverDevices() });
+    } catch (error) {
+      reply(response, 503, { error: error.message || 'Unable to discover Govee LAN devices.' });
+    }
+    return;
+  }
+
   if (request.method === 'POST' && request.url === '/api/send') {
     try {
-      const { ip, port: udpPort, command } = await readJson(request);
-      const parsedPort = Number(udpPort);
+      const { ip, command } = await readJson(request);
       if (typeof ip !== 'string' || net.isIP(ip) === 0) throw new Error('Device IP must be a valid IPv4 or IPv6 address.');
-      if (!Number.isInteger(parsedPort) || parsedPort < 1 || parsedPort > 65535) throw new Error('UDP port must be an integer from 1 through 65535.');
       if (!validCommands(command)) throw new Error('Command must contain 1–128 canonical base64 packets of exactly 20 bytes each.');
-      const bytes = await sendUdp(ip, parsedPort, command);
-      reply(response, 200, { ip, port: parsedPort, bytes });
+      const bytes = await sendUdp(ip, goveeCommandPort, command);
+      reply(response, 200, { ip, port: goveeCommandPort, bytes });
     } catch (error) {
       reply(response, 400, { error: error.message || 'Unable to send UDP command.' });
     }
@@ -138,6 +252,8 @@ const server = http.createServer(async (request, response) => {
 
   reply(response, 404, { error: 'Not found.' });
 });
+
+startDiscoveryListener();
 
 server.listen(port, host, () => {
   console.log(`H61A8 scene lab: http://${host}:${port}`);
