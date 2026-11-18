@@ -173,12 +173,8 @@ Its parsed color-bearing fields are:
 | `1` | `FF F0 00` (yellow candidate) | `#FF0000`, `#07FF5E` | Red and a green/teal-like color occur. |
 | `2` | `7F 7F 00` (olive/puke-green candidate) | `#0000FF`, `#FF0000`, `#00FF00` | Blue, red, green, and the observed olive/puke-green color occur. |
 
-This gives three useful hypotheses:
+This gives two useful hypotheses:
 
-* The first three bytes of a six-byte `brightnessEffect` are likely another
-  RGB-bearing field, rather than arbitrary unrelated controls. The repeated
-  scene-themed values across the catalog support this, but a one-field test is
-  still required.
 * Cha-Cha-A's pink need not be stored as a literal pink RGB triple: its third
   record contains blue and red, so interpolation can create magenta/pink.
 * `#07FF5E` is the best stored candidate for the observed teal-like phase.
@@ -187,11 +183,33 @@ The whiteish phase remains unresolved. The parser establishes where the fields
 are, but the current observation alone cannot distinguish a brightness envelope
 from RGB interpolation or a mode-specific effect behavior.
 
-The clean confirmation experiment is to change only record 2's leading
-brightness-block triple (`7F 7F 00`) to an unmistakable color such as
-`FF 00 FF`. If the olive/puke-green phase becomes magenta while movement and
-the color-effect palette remain unchanged, that field can be promoted from an
-RGB candidate to a confirmed RGB field.
+### 3.4 Cha-Cha-A brightness-block test result
+
+`AAA - Test - Cha-Cha-A - Brightness Magenta` changed only record 2 offsets
+`68-70`, from `7F 7F 00` to `FF 00 FF`. The observed result was:
+
+* the olive/puke-green phase disappeared;
+* approximately one third of the string -- consistent with record 2 -- became
+  off roughly 25-35% of the time; and
+* magenta may have appeared more often, but not as a direct, stable replacement.
+
+This confirms that those bytes are **record-local brightness/transition
+parameters**, not a normal static RGB palette triple. They may still contain
+color-related information, but the three-byte group must not be labeled RGB
+until its individual byte roles are isolated.
+
+The next experiments must change one byte at a time from the original
+`7F 7F 00` value:
+
+| Candidate test | Single change | Purpose |
+| --- | --- | --- |
+| A | offset `68`: `7F -> FF` | Test the first brightness/transition control. |
+| B | offset `69`: `7F -> 00` | Test the second brightness/transition control. |
+| C | offset `70`: `00 -> FF` | Test the third brightness/transition control. |
+
+Each variant must retain the original values in the other two positions. This
+will determine whether one byte controls the off duty cycle and whether another
+one contributes to the apparent color change.
 
 ## 4. Static parsing algorithm
 
@@ -314,7 +332,7 @@ it must not be used to infer RGBIC field meanings.
 | Parsed field | Structural confidence | Visual/behavioral confidence |
 | --- | --- | --- |
 | Record count and lengths | Confirmed across all 226 H61A8 type-2 entries | Not visual; framing only |
-| Brightness block count and six-byte boundaries | High | Its first three bytes are an RGB candidate; its fourth byte is known to be a speed field |
+| Brightness block count and six-byte boundaries | High | Its first three bytes are record-local brightness/transition controls; the fourth byte is known to be a speed field |
 | Color palette count and RGB boundaries | High | RGB channel order confirmed on Meteor |
 | `colorEffect.speed` | High | Candidate for color-transition rate; needs a dedicated visual result |
 | `inAreaMovement.speed` | High | Not individually confirmed on H61A8 |
