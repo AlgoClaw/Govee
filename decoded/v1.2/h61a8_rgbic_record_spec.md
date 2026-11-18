@@ -175,13 +175,59 @@ that the palette triples are direct color sources and that
 establish how the five palette entries are selected, repeated, blended, or
 placed along the strip.
 
-The unresolved controls responsible for the crawl are the `colorType`, type,
-color-effect control, and area/in-area movement modes. Until one-byte tests
-isolate them, the scene lab must report a one-record, multi-palette,
-nonzero-area-mode pattern as unavailable for emulation rather than invent a
-solid color or a gradient. The highest-signal next tests, each based on the
-original Cha-Cha-B command, are `areaMovement.mode: 03 -> 00`,
-`areaMovement.speed: F5 -> 00`, `inAreaMovement.speed: 80 -> 00`, and
+`colorEffect.icControl` at offset `14` now has a direct, cross-scene
+behavioral meaning. Cha-Cha-B retains the same alternating on/off spatial mask
+when this field changes, but changes how colors are allocated to the lit
+sections:
+
+| `icControl` | Cha-Cha-B observation |
+| --- | --- |
+| `01` | The lit sections show a simultaneous multi-colored stripe pattern, alternating with off sections. |
+| `00` | The same sections remain on and off, but all lit sections share one color at a time. That shared color cycles through red, pink, purple, blue, cyan, green, and yellow. |
+
+The strongest current interpretation is therefore **IC palette-distribution
+mode**: `00` synchronizes the palette choice across the record's active LED
+sections, while `01` distributes palette choices across individual sections.
+It does not create the on/off mask or the crawl geometry; those survive the
+change and belong to other movement/effect fields. This also explains
+Cha-Cha-A: switching one record from `00` to `01` makes only that record's
+contribution striped. The exact palette ordering, repetition, and blend rules
+remain unknown.
+
+The `areaMovement` fields now have direct behavioral evidence from isolated
+Cha-Cha-B edits. These meanings are established for this record format, but
+should not yet be assumed to apply unchanged to every Govee SKU or effect:
+
+| Field / value | Observed behavior |
+| --- | --- |
+| `areaMovement.mode = 00` | A conventional one-direction color crawl. |
+| `areaMovement.mode = 02` | The same crawl and cadence as `00`, in the opposite direction. |
+| `areaMovement.mode = 04` | Colors move back and forth by approximately one controllable position (jitter). |
+| `areaMovement.mode = 01` | Not yet characterized. |
+| `areaMovement.mode = 03` | The source Cha-Cha-B behavior; not yet reduced to a simple directional description. |
+
+`areaMovement.speed` is best understood as an **inverse delay** byte, not a
+linear rate. For the Cha-Cha-B field at parameter offset `38`, the measured
+cadence is consistent with:
+
+```text
+stepDelaySeconds ≈ 5.0 × (0xFF - speed) / 0xFF
+stepRateHz       ≈ 1 / stepDelaySeconds       (when speed < 0xFF)
+```
+
+This predicts the observations closely: `00` gives about `5 s` per step
+(`0.2 Hz`), `AA` gives about `1.67 s` per step (`0.6 Hz`), `F5` gives about
+`0.20 s` per step (`5.1 Hz`), and `FE` gives about `20 ms` per step (`51 Hz`).
+`FF` produces zero calculated delay and appears to let the effect advance at
+the device's internal render-loop rate. The perceived exponential acceleration
+is therefore the reciprocal of a roughly linearly shrinking delay.
+
+The unresolved controls responsible for palette selection and the remaining
+Cha-Cha-B behavior are `colorType`, type, color-effect control, and
+in-area-movement mode. Until one-byte tests isolate them, the scene lab must
+report a one-record, multi-palette, nonzero-area-mode pattern as unavailable
+for emulation rather than invent a solid color or a gradient. The highest-signal
+next tests are `inAreaMovement.speed: 80 -> 00` and
 `colorEffect.control: 14 -> 00`—one variant per byte.
 
 ### 3.2 Meteor worked parse
@@ -220,13 +266,47 @@ The whiteish phase remains unresolved. The parser establishes where the fields
 are, but the current observation alone cannot distinguish a brightness envelope
 from RGB interpolation or a mode-specific effect behavior.
 
-### 3.4 Cha-Cha-A brightness-block test result
+### 3.4 Cha-Cha-A color-effect IC-control test result
 
-`AAA - Test - Cha-Cha-A - Brightness Magenta` changed only record 2 offsets
-`68-70`, from `7F 7F 00` to `FF 00 FF`. The observed result was:
+All three Cha-Cha-A `colorEffect.icControl` fields are `00` in the source
+command. In `AAA - Test - Cha-Cha-A - Brightness Magenta`, changing exactly
+one of them from `00` to `01` produced record-specific striped behavior:
+
+| Parameter offset | One-based record | Observation after `00 -> 01` |
+| --- | --- | --- |
+| `14` | `1` | Roughly half of the string became striped; the sections between stripes rapidly changed color. |
+| `44` | `2` | The other broad half became striped and blinked more rapidly. |
+| `74` | `3` | On standard Cha-Cha-A, a visible striped region grows and shrinks. In the Brightness Magenta variant, the brightness edit masks much of that region as off. |
+
+This directly disproves treating `icControl` as an inconsequential prefix or a
+scene-wide color selector. Cross-scene Cha-Cha-B testing identifies its role
+more specifically: it selects synchronized (`00`) versus section-distributed
+(`01`) palette allocation for the individual record. Each record contributes
+to a different spatial and/or temporal portion of the final effect. The
+observations do **not** prove that a record owns a fixed contiguous physical
+segment: the string crosses over itself, and record 3's visible region
+dynamically grows and shrinks.
+
+For now, the lossless parser should retain the wire-format name
+`colorEffect.icControl`, while the UI may describe it as a record-local IC
+palette-distribution mode. On standard Cha-Cha-A, changing record 1
+(offset `14`) from `00` to either `02` or `03` produced no visible difference
+from `00`; changing record 2 (offset `44`) from `00` to `02` also produced no
+visible difference. In particular, `03` did not reproduce `01`'s stripes, so
+the behavior is not explained by a simple low-bit enable flag. The current
+evidence instead supports a special `01` rendering path (or an exact-value
+dispatch), with `00`, `02`, and `03` visually falling through to the normal
+path in the records tested. Value `03` in records 2 and 3, and values `02` and
+`03` in record 3, remain untested.
+
+### 3.5 Cha-Cha-A brightness-block test result
+
+`AAA - Test - Cha-Cha-A - Brightness Magenta` changed only the third record
+(zero-based record index `2`), offsets `68-70`, from `7F 7F 00` to
+`FF 00 FF`. The observed result was:
 
 * the olive/puke-green phase disappeared;
-* approximately one third of the string -- consistent with record 2 -- became
+* approximately one third of the string -- consistent with the third record -- became
   off roughly 25-35% of the time; and
 * magenta may have appeared more often, but not as a direct, stable replacement.
 
@@ -234,6 +314,14 @@ This confirms that those bytes are **record-local brightness/transition
 parameters**, not a normal static RGB palette triple. They may still contain
 color-related information, but the three-byte group must not be labeled RGB
 until its individual byte roles are isolated.
+
+The later `icControl` test strengthens the record-local interpretation: with
+the standard scene, setting the same third record's `icControl` at offset `74`
+to `01` exposes a striped region that grows and shrinks. In the Brightness
+Magenta variant, that corresponding contribution is largely off. This is
+evidence that the brightness-block controls govern the visibility or intensity
+of the same composited record layer; it does not yet identify their individual
+byte roles.
 
 The next experiments must change one byte at a time from the original
 `7F 7F 00` value:
@@ -248,7 +336,7 @@ Each variant must retain the original values in the other two positions. This
 will determine whether one byte controls the off duty cycle and whether another
 one contributes to the apparent color change.
 
-### 3.5 Direct-palette color test
+### 3.6 Direct-palette color test
 
 Because the brightness-block change takes a full animation cycle to evaluate,
 the next test targets a direct, statically parsed RGB palette entry instead.
@@ -288,7 +376,7 @@ all other parameter bytes, and the mode packet are original. It opened with
 yellow, white, and blue. That observation is consistent with the same color
 mixing hypothesis, but—again—does not establish their physical order.
 
-### 3.6 Legacy-83 (`sceneType: 1`) grammar
+### 3.7 Legacy-83 (`sceneType: 1`) grammar
 
 `Halloween-A` and `Sweet` use a second static layout. Both begin with marker
 `83`, followed by a count of five-byte frames and then an RGB palette. The
@@ -456,9 +544,10 @@ it must not be used to infer RGBIC field meanings.
 | Record count and lengths | Confirmed across all 226 H61A8 type-2 entries | Not visual; framing only |
 | Brightness block count and six-byte boundaries | High | Its first three bytes are record-local brightness/transition controls; the fourth byte is known to be a speed field |
 | Color palette count and RGB boundaries | High | RGB channel order confirmed on Meteor |
+| `colorEffect.icControl` | High | Across Cha-Cha-A and Cha-Cha-B, `00` synchronizes palette selection across active sections and `01` distributes it into simultaneous stripes; exact ordering/blending rules remain unknown |
 | `colorEffect.speed` | High | Candidate for color-transition rate; needs a dedicated visual result |
 | `inAreaMovement.speed` | High | Not individually confirmed on H61A8 |
-| `areaMovement.speed` | High | Confirmed visible Meteor speed field at offset 32 |
+| `areaMovement.speed` | High | Confirmed on Meteor and Cha-Cha-B; Cha-Cha-B timing fits a linearly decreasing delay, with `FF` as zero-delay/max-update behavior |
 | Packed-area and mode/control fields | High boundary confidence | Direction, spread, and effect-mode meanings unknown |
 
 `Heartbeat-A` supplies the first direct whole-strip brightness observation. Its
