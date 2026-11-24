@@ -100,6 +100,39 @@
 		]
 	},
 	{
+	    "models": [
+	        "H6061"
+	    ],
+	    "hex_multi_prefix": "a3",
+	    "on_command": false,
+	    "type": [
+	        {
+	            "type_entry": 0,
+	            "hex_prefix_remove": "1200000000",
+	            "hex_prefix_add": "04",
+	            "normal_command_suffix": ""
+	        },
+	        {
+	            "type_entry": 1,
+	            "hex_prefix_remove": "120000003f",
+	            "hex_prefix_add": "04",
+	            "normal_command_suffix": ""
+	        },
+	        {
+	            "type_entry": 2,
+	            "hex_prefix_remove": "1200001c00",
+	            "hex_prefix_add": "04",
+	            "normal_command_suffix": ""
+	        },
+	        {
+	            "type_entry": 3,
+	            "hex_prefix_remove": "1200001000",
+	            "hex_prefix_add": "04",
+	            "normal_command_suffix": ""
+	        }
+		]
+	},
+	{
 		"models": [
 			"H6065"
 			],
