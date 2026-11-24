@@ -31,23 +31,37 @@ tempfile_03_030="${JSONDIR}/03_030_NBSP_removed.json"
 rm -f "${tempfile_03_030}"
 
 jq '
-  [
-    .data.categories[].scenes[] as $scene |
-    $scene.lightEffects[] as $effect |
-    {
-      name: ($scene.sceneName + "-" + $effect.scenceName),
-	  sceneId_b10: $scene.sceneId,
-	  sceneId_b16: "",
-	  scenceParamId_b10: $effect.scenceParamId,
-	  scenceParamId_b16: "",
-	  sceneType_b10: $effect.sceneType,
-	  sceneType_b16: "",
-      sceneCode_b10: $effect.sceneCode,
-	  sceneCode_b16: "",
-	  sceneCode_b16_swapped: "",
-      params_b64: $effect.scenceParam
-    }
-  ]
+  def catalog: .data? // .;
+  def source_key:
+    [.name, .sceneId_b10, .scenceParamId_b10, .sceneType_b10, .sceneCode_b10, .params_b64] | tojson;
+
+  (catalog) as $catalog
+  | [
+      $catalog.categories[]?.scenes[]? as $scene |
+      $scene.lightEffects[]? as $effect |
+      {
+        name: ((($scene.sceneName // "") + "-" + ($effect.scenceName // "")) | gsub(" "; " ")),
+	    sceneId_b10: $scene.sceneId,
+	    sceneId_b16: "",
+	    scenceParamId_b10: $effect.scenceParamId,
+	    scenceParamId_b16: "",
+	    sceneType_b10: $effect.sceneType,
+	    sceneType_b16: "",
+        sceneCode_b10: $effect.sceneCode,
+	    sceneCode_b16: "",
+	    sceneCode_b16_swapped: "",
+        params_b64: $effect.scenceParam
+      }
+    ]
+  # Preserve v1-first API order while discarding the same normalized effect
+  # returned by both endpoints. Different names or commands are retained for
+  # the final command-based merger to alias or suffix as appropriate.
+  | reduce .[] as $scene (
+      { seen: {}, scenes: [] };
+      ($scene | source_key) as $key
+      | if .seen[$key] then . else .seen[$key] = true | .scenes += [$scene] end
+    )
+  | .scenes
 ' "${tempfile_03_010}" > "${tempfile_03_020}"
 
 # Replace "NBSP" whitespaces with standard spaces 
