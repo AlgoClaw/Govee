@@ -283,7 +283,7 @@ a3ff1289000000000000000000000000000000__
 330504530b0047000000000000000000000000__
 ```
 ### 16. Calculate the checksum for each line (8-bit XOR sum)
-See https://github.com/AlgoClaw/Govee/blob/main/decoded/v1.2/fcn_b16_checksum.sh
+See [`govee_xor_checksum` in `govee_fcn_lib.sh`](https://github.com/AlgoClaw/Govee/blob/main/decoded/v1.2/govee_fcn_lib.sh).
 ```
 a30001030427150f03000105000800128900121e
 a30189001289ffd831ffd83100128900128900b0
