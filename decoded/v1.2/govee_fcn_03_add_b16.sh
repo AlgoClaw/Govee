@@ -20,8 +20,8 @@ fi
 
 JSONDIR="$(dirname -- "${RAWFILE}")"
 FILENAME="$(basename -- "${RAWFILE}")"
-if [[ "${FILENAME}" == *_raw.json ]]; then
-  MODEL="${FILENAME%_raw.json}"
+if [[ "${FILENAME}" == *_raw_combined.json ]]; then
+  MODEL="${FILENAME%_raw_combined.json}"
 else
   MODEL="${FILENAME%.*}"
 fi

@@ -19,8 +19,8 @@ mkdir -p -- "${JSONDIR}"
 
 V1_RAW_FILE="${JSONDIR}/${MODEL}_raw_v1.json"
 V2_RAW_FILE="${JSONDIR}/${MODEL}_raw_v2.json"
-RAW_FILE_PATH="${JSONDIR}/${MODEL}_raw.json"
-PRETTY_FILE="${JSONDIR}/${MODEL}_raw_pretty.json"
+COMBINED_RAW_FILE_PATH="${JSONDIR}/${MODEL}_raw_combined.json"
+COMBINED_PRETTY_FILE="${JSONDIR}/${MODEL}_raw_combined_pretty.json"
 
 download_catalog() {
   local url="$1"
@@ -53,11 +53,11 @@ download_catalog() {
 download_catalog "https://app2.govee.com/appsku/v1/light-effect-libraries?sku=${MODEL}" "${V1_RAW_FILE}"
 download_catalog "https://app2.govee.com/appsku/v2/scences?sku=${MODEL}" "${V2_RAW_FILE}"
 
-combined_temporary="$(govee_temp_for "${RAW_FILE_PATH}")"
-pretty_temporary="$(govee_temp_for "${PRETTY_FILE}")"
+combined_temporary="$(govee_temp_for "${COMBINED_RAW_FILE_PATH}")"
+pretty_temporary="$(govee_temp_for "${COMBINED_PRETTY_FILE}")"
 trap 'rm -f "${combined_temporary}" "${pretty_temporary}"' EXIT
 
-# *_raw.json contains one combined categories array for the decoder.
+# *_raw_combined.json contains one categories array from both API responses.
 jq -s '
   def catalog: .data? // .;
   { categories: [ .[] | catalog | .categories[]? ] }
@@ -65,8 +65,8 @@ jq -s '
 
 # Keep a human-readable copy without relying on an external formatter.
 jq . "${combined_temporary}" > "${pretty_temporary}"
-mv -- "${combined_temporary}" "${RAW_FILE_PATH}"
-mv -- "${pretty_temporary}" "${PRETTY_FILE}"
+mv -- "${combined_temporary}" "${COMBINED_RAW_FILE_PATH}"
+mv -- "${pretty_temporary}" "${COMBINED_PRETTY_FILE}"
 trap - EXIT
 
-printf '%s\n' "${RAW_FILE_PATH}"
+printf '%s\n' "${COMBINED_RAW_FILE_PATH}"

@@ -31,8 +31,8 @@ added using the first available suffix, such as `Foo-2` or `Foo-3`.
 
 Before decoding, the pipeline downloads both of Govee's public scene catalogs
 and saves them as `JSONs/<MODEL>_raw_v1.json` and
-`JSONs/<MODEL>_raw_v2.json`. It combines them into the historical
-`JSONs/<MODEL>_raw.json` input, then removes an exact duplicate effect returned
+`JSONs/<MODEL>_raw_v2.json`. It combines them into the single
+`JSONs/<MODEL>_raw_combined.json` input, then removes an exact duplicate effect returned
 by both endpoints while preserving v1-first order. Different names or command
 payloads are intentionally retained for the command-based merger to alias or
 suffix under the rules above.
