@@ -17,22 +17,22 @@
       "on_command": false
     },
     "type": {
-      "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "type_entry": 1,
+      "hex_prefix_remove": "120000003f",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010202120000003f26152d000201640500040012890000ff17b4ff00ffff",
+    "params_b16_mod": "01020426152d000201640500040012890000ff17b4ff00ffff",
     "num_lines_b10": 2,
     "num_lines_b16": "02",
     "cmd_b16": [
-      "a300010202120000003f26152d000201640500f3",
-      "a3ff040012890000ff17b4ff00ffff0000000060",
+      "a30001020426152d000201640500040012890047",
+      "a3ff00ff17b4ff00ffff000000000000000000ff",
       "330504b50800000000000000000000000000008f"
     ],
     "cmd_b64": [
-      "owABAgISAAAAPyYVLQACAWQFAPM=",
-      "o/8EABKJAAD/F7T/AP//AAAAAGA=",
+      "owABAgQmFS0AAgFkBQAEABKJAEc=",
+      "o/8A/xe0/wD//wAAAAAAAAAAAP8=",
       "MwUEtQgAAAAAAAAAAAAAAAAAAI8="
     ]
   },
@@ -54,24 +54,22 @@
       "on_command": false
     },
     "type": {
-      "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "type_entry": 1,
+      "hex_prefix_remove": "120000003f",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010302120000003f26153601020164050006ff9e3900ff0007ca0099d513caec01ffeb24",
-    "num_lines_b10": 3,
-    "num_lines_b16": "03",
+    "params_b16_mod": "01020426153601020164050006ff9e3900ff0007ca0099d513caec01ffeb24",
+    "num_lines_b10": 2,
+    "num_lines_b16": "02",
     "cmd_b16": [
-      "a300010302120000003f261536010201640500e8",
-      "a30106ff9e3900ff0007ca0099d513caec01ff49",
-      "a3ffeb2400000000000000000000000000000093",
+      "a30001020426153601020164050006ff9e39009c",
+      "a3ffff0007ca0099d513caec01ffeb2400000026",
       "330504b60800000000000000000000000000008c"
     ],
     "cmd_b64": [
-      "owABAwISAAAAPyYVNgECAWQFAOg=",
-      "owEG/545AP8AB8oAmdUTyuwB/0k=",
-      "o//rJAAAAAAAAAAAAAAAAAAAAJM=",
+      "owABAgQmFTYBAgFkBQAG/545AJw=",
+      "o///AAfKAJnVE8rsAf/rJAAAACY=",
       "MwUEtggAAAAAAAAAAAAAAAAAAIw="
     ]
   },
@@ -93,24 +91,22 @@
       "on_command": false
     },
     "type": {
-      "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "type_entry": 1,
+      "hex_prefix_remove": "120000003f",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010302120000003f26151e010527055b040164050005640097df003fff5300ff9c00f94c00",
-    "num_lines_b10": 3,
-    "num_lines_b16": "03",
+    "params_b16_mod": "01020426151e010527055b040164050005640097df003fff5300ff9c00f94c00",
+    "num_lines_b10": 2,
+    "num_lines_b16": "02",
     "cmd_b16": [
-      "a300010302120000003f26151e010527055b04da",
-      "a3010164050005640097df003fff5300ff9c001b",
-      "a3fff94c000000000000000000000000000000e9",
+      "a30001020426151e010527055b04016405000595",
+      "a3ff640097df003fff5300ff9c00f94c00000035",
       "330504b70800000000000000000000000000008d"
     ],
     "cmd_b64": [
-      "owABAwISAAAAPyYVHgEFJwVbBNo=",
-      "owEBZAUABWQAl98AP/9TAP+cABs=",
-      "o//5TAAAAAAAAAAAAAAAAAAAAOk=",
+      "owABAgQmFR4BBScFWwQBZAUABZU=",
+      "o/9kAJffAD//UwD/nAD5TAAAADU=",
       "MwUEtwgAAAAAAAAAAAAAAAAAAI0="
     ]
   },
@@ -132,24 +128,22 @@
       "on_command": false
     },
     "type": {
-      "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "type_entry": 1,
+      "hex_prefix_remove": "120000003f",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010302120000003f26155901040152050007ff0000ff7f00ffff0000ff000000ff00ffff8b00ff",
-    "num_lines_b10": 3,
-    "num_lines_b16": "03",
+    "params_b16_mod": "01020426155901040152050007ff0000ff7f00ffff0000ff000000ff00ffff8b00ff",
+    "num_lines_b10": 2,
+    "num_lines_b16": "02",
     "cmd_b16": [
-      "a300010302120000003f261559010401520500b7",
-      "a30107ff0000ff7f00ffff0000ff000000ff00da",
-      "a3ffffff8b00ff00000000000000000000000028",
+      "a30001020426155901040152050007ff0000ff9a",
+      "a3ff7f00ffff0000ff000000ff00ffff8b00ff57",
       "330504b808000000000000000000000000000082"
     ],
     "cmd_b64": [
-      "owABAwISAAAAPyYVWQEEAVIFALc=",
-      "owEH/wAA/38A//8AAP8AAAD/ANo=",
-      "o////4sA/wAAAAAAAAAAAAAAACg=",
+      "owABAgQmFVkBBAFSBQAH/wAA/5o=",
+      "o/9/AP//AAD/AAAA/wD//4sA/1c=",
       "MwUEuAgAAAAAAAAAAAAAAAAAAII="
     ]
   },
@@ -171,24 +165,22 @@
       "on_command": false
     },
     "type": {
-      "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "type_entry": 1,
+      "hex_prefix_remove": "120000003f",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010302120000003f26153c010626056a04011e05000519ff995cd01f03ab36008b45006400",
-    "num_lines_b10": 3,
-    "num_lines_b16": "03",
+    "params_b16_mod": "01020426153c010626056a04011e05000519ff995cd01f03ab36008b45006400",
+    "num_lines_b10": 2,
+    "num_lines_b16": "02",
     "cmd_b16": [
-      "a300010302120000003f26153c010626056a04cb",
-      "a301011e05000519ff995cd01f03ab36008b4501",
-      "a3ff006400000000000000000000000000000038",
+      "a30001020426153c010626056a04011e050005fe",
+      "a3ff19ff995cd01f03ab36008b45006400000084",
       "330504b908000000000000000000000000000083"
     ],
     "cmd_b64": [
-      "owABAwISAAAAPyYVPAEGJgVqBMs=",
-      "owEBHgUABRn/mVzQHwOrNgCLRQE=",
-      "o/8AZAAAAAAAAAAAAAAAAAAAADg=",
+      "owABAgQmFTwBBiYFagQBHgUABf4=",
+      "o/8Z/5lc0B8DqzYAi0UAZAAAAIQ=",
       "MwUEuQgAAAAAAAAAAAAAAAAAAIM="
     ]
   },
@@ -211,21 +203,21 @@
     },
     "type": {
       "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "hex_prefix_remove": "1200000000",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010202120000000027151d000001050002000f9effff65",
+    "params_b16_mod": "01020427151d000001050002000f9effff65",
     "num_lines_b10": 2,
     "num_lines_b16": "02",
     "cmd_b16": [
-      "a300010202120000000027151d00000105000299",
-      "a3ff000f9effff650000000000000000000000a8",
+      "a30001020427151d000001050002000f9effff1c",
+      "a3ff650000000000000000000000000000000039",
       "330504ba08000000000000000000000000000080"
     ],
     "cmd_b64": [
-      "owABAgISAAAAACcVHQAAAQUAApk=",
-      "o/8AD57//2UAAAAAAAAAAAAAAKg=",
+      "owABAgQnFR0AAAEFAAIAD57//xw=",
+      "o/9lAAAAAAAAAAAAAAAAAAAAADk=",
       "MwUEuggAAAAAAAAAAAAAAAAAAIA="
     ]
   },
@@ -247,22 +239,22 @@
       "on_command": false
     },
     "type": {
-      "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "type_entry": 1,
+      "hex_prefix_remove": "120000003f",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010202120000003f26154e01020164050005d80101fb5607ff7100ffab05ffd200",
+    "params_b16_mod": "01020426154e01020164050005d80101fb5607ff7100ffab05ffd200",
     "num_lines_b10": 2,
     "num_lines_b16": "02",
     "cmd_b16": [
-      "a300010202120000003f26154e01020164050091",
-      "a3ff05d80101fb5607ff7100ffab05ffd20000d9",
+      "a30001020426154e01020164050005d80101fb9c",
+      "a3ff5607ff7100ffab05ffd200000000000000ff",
       "330504bb08000000000000000000000000000081"
     ],
     "cmd_b64": [
-      "owABAgISAAAAPyYVTgECAWQFAJE=",
-      "o/8F2AEB+1YH/3EA/6sF/9IAANk=",
+      "owABAgQmFU4BAgFkBQAF2AEB+5w=",
+      "o/9WB/9xAP+rBf/SAAAAAAAAAP8=",
       "MwUEuwgAAAAAAAAAAAAAAAAAAIE="
     ]
   },
@@ -285,23 +277,21 @@
     },
     "type": {
       "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "hex_prefix_remove": "1200000000",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "0103021200000000261b16010a01050007ff0000ff7f00ffff0000ff000000ff00ffff8b00ff",
-    "num_lines_b10": 3,
-    "num_lines_b16": "03",
+    "params_b16_mod": "010204261b16010a01050007ff0000ff7f00ffff0000ff000000ff00ffff8b00ff",
+    "num_lines_b10": 2,
+    "num_lines_b16": "02",
     "cmd_b16": [
-      "a3000103021200000000261b16010a0105000792",
-      "a301ff0000ff7f00ffff0000ff000000ff00ff22",
-      "a3ffff8b00ff00000000000000000000000000d7",
+      "a300010204261b16010a01050007ff0000ff7ff8",
+      "a3ff00ffff0000ff000000ff00ffff8b00ff0028",
       "330504bc08000000000000000000000000000086"
     ],
     "cmd_b64": [
-      "owABAwISAAAAACYbFgEKAQUAB5I=",
-      "owH/AAD/fwD//wAA/wAAAP8A/yI=",
-      "o///iwD/AAAAAAAAAAAAAAAAANc=",
+      "owABAgQmGxYBCgEFAAf/AAD/f/g=",
+      "o/8A//8AAP8AAAD/AP//iwD/ACg=",
       "MwUEvAgAAAAAAAAAAAAAAAAAAIY="
     ]
   },
@@ -323,22 +313,22 @@
       "on_command": false
     },
     "type": {
-      "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "type_entry": 3,
+      "hex_prefix_remove": "1200001000",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "01020212000010002b2164010d7b06d9050105000300ffff212dbe404eca",
+    "params_b16_mod": "0102042b2164010d7b06d9050105000300ffff212dbe404eca",
     "num_lines_b10": 2,
     "num_lines_b16": "02",
     "cmd_b16": [
-      "a30001020212000010002b2164010d7b06d90563",
-      "a3ff0105000300ffff212dbe404eca000000002d",
+      "a3000102042b2164010d7b06d905010500030060",
+      "a3ffffff212dbe404eca0000000000000000002a",
       "330504cd080000000000000000000000000000f7"
     ],
     "cmd_b64": [
-      "owABAgISAAAQACshZAENewbZBWM=",
-      "o/8BBQADAP//IS2+QE7KAAAAAC0=",
+      "owABAgQrIWQBDXsG2QUBBQADAGA=",
+      "o////yEtvkBOygAAAAAAAAAAACo=",
       "MwUEzQgAAAAAAAAAAAAAAAAAAPc="
     ]
   },
@@ -361,21 +351,21 @@
     },
     "type": {
       "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "hex_prefix_remove": "1200000000",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010202120000000027151d010001050002000f9effff65",
+    "params_b16_mod": "01020427151d010001050002000f9effff65",
     "num_lines_b10": 2,
     "num_lines_b16": "02",
     "cmd_b16": [
-      "a300010202120000000027151d01000105000298",
-      "a3ff000f9effff650000000000000000000000a8",
+      "a30001020427151d010001050002000f9effff1d",
+      "a3ff650000000000000000000000000000000039",
       "330504c61c0000000000000000000000000000e8"
     ],
     "cmd_b64": [
-      "owABAgISAAAAACcVHQEAAQUAApg=",
-      "o/8AD57//2UAAAAAAAAAAAAAAKg=",
+      "owABAgQnFR0BAAEFAAIAD57//x0=",
+      "o/9lAAAAAAAAAAAAAAAAAAAAADk=",
       "MwUExhwAAAAAAAAAAAAAAAAAAOg="
     ]
   },
@@ -398,21 +388,21 @@
     },
     "type": {
       "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "hex_prefix_remove": "1200000000",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "0102021200000000261958011101050004266f9137538e0044671e113c",
+    "params_b16_mod": "010204261958011101050004266f9137538e0044671e113c",
     "num_lines_b10": 2,
     "num_lines_b16": "02",
     "cmd_b16": [
-      "a3000102021200000000261958011101050004c7",
-      "a3ff266f9137538e0044671e113c00000000007e",
+      "a300010204261958011101050004266f9137536f",
+      "a3ff8e0044671e113c00000000000000000000c2",
       "330504c71c0000000000000000000000000000e9"
     ],
     "cmd_b64": [
-      "owABAgISAAAAACYZWAERAQUABMc=",
-      "o/8mb5E3U44ARGceETwAAAAAAH4=",
+      "owABAgQmGVgBEQEFAAQmb5E3U28=",
+      "o/+OAERnHhE8AAAAAAAAAAAAAMI=",
       "MwUExxwAAAAAAAAAAAAAAAAAAOk="
     ]
   },
@@ -435,21 +425,19 @@
     },
     "type": {
       "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "hex_prefix_remove": "1200000000",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010202120000000026153200020164050001fffcd3",
-    "num_lines_b10": 2,
-    "num_lines_b16": "02",
+    "params_b16_mod": "01010426153200020164050001fffcd3",
+    "num_lines_b10": 1,
+    "num_lines_b16": "01",
     "cmd_b16": [
-      "a3000102021200000000261532000201640500d3",
-      "a3ff01fffcd3000000000000000000000000008d",
+      "a3ff01010426153200020164050001fffcd300ea",
       "3305044720000000000000000000000000000055"
     ],
     "cmd_b64": [
-      "owABAgISAAAAACYVMgACAWQFANM=",
-      "o/8B//zTAAAAAAAAAAAAAAAAAI0=",
+      "o/8BAQQmFTIAAgFkBQAB//zTAOo=",
       "MwUERyAAAAAAAAAAAAAAAAAAAFU="
     ]
   },
@@ -472,21 +460,19 @@
     },
     "type": {
       "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "hex_prefix_remove": "1200000000",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "0102021200000000261532000201640500010078b4",
-    "num_lines_b10": 2,
-    "num_lines_b16": "02",
+    "params_b16_mod": "010104261532000201640500010078b4",
+    "num_lines_b10": 1,
+    "num_lines_b16": "01",
     "cmd_b16": [
-      "a3000102021200000000261532000201640500d3",
-      "a3ff010078b40000000000000000000000000091",
+      "a3ff010104261532000201640500010078b400f6",
       "330504bd08000000000000000000000000000087"
     ],
     "cmd_b64": [
-      "owABAgISAAAAACYVMgACAWQFANM=",
-      "o/8BAHi0AAAAAAAAAAAAAAAAAJE=",
+      "o/8BAQQmFTIAAgFkBQABAHi0APY=",
       "MwUEvQgAAAAAAAAAAAAAAAAAAIc="
     ]
   },
@@ -508,22 +494,22 @@
       "on_command": false
     },
     "type": {
-      "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "type_entry": 1,
+      "hex_prefix_remove": "120000003f",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010202120000003f261542010801480500058b00ffe400e7ff3b83ff694aff9176",
+    "params_b16_mod": "010204261542010801480500058b00ffe400e7ff3b83ff694aff9176",
     "num_lines_b10": 2,
     "num_lines_b16": "02",
     "cmd_b16": [
-      "a300010202120000003f261542010801480500bb",
-      "a3ff058b00ffe400e7ff3b83ff694aff917600ad",
+      "a300010204261542010801480500058b00ffe405",
+      "a3ff00e7ff3b83ff694aff917600000000000038",
       "330504c0080000000000000000000000000000fa"
     ],
     "cmd_b64": [
-      "owABAgISAAAAPyYVQgEIAUgFALs=",
-      "o/8FiwD/5ADn/zuD/2lK/5F2AK0=",
+      "owABAgQmFUIBCAFIBQAFiwD/5AU=",
+      "o/8A5/87g/9pSv+RdgAAAAAAADg=",
       "MwUEwAgAAAAAAAAAAAAAAAAAAPo="
     ]
   },
@@ -545,22 +531,22 @@
       "on_command": false
     },
     "type": {
-      "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "type_entry": 1,
+      "hex_prefix_remove": "120000003f",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010202120000003f261537010801640500056f2dbd8b00ff673dcb1f8cd0b163d3",
+    "params_b16_mod": "010204261537010801640500056f2dbd8b00ff673dcb1f8cd0b163d3",
     "num_lines_b10": 2,
     "num_lines_b16": "02",
     "cmd_b16": [
-      "a300010202120000003f261537010801640500e2",
-      "a3ff056f2dbd8b00ff673dcb1f8cd0b163d30001",
+      "a300010204261537010801640500056f2dbd8bb8",
+      "a3ff00ff673dcb1f8cd0b163d300000000000070",
       "330504c1080000000000000000000000000000fb"
     ],
     "cmd_b64": [
-      "owABAgISAAAAPyYVNwEIAWQFAOI=",
-      "o/8Fby29iwD/Zz3LH4zQsWPTAAE=",
+      "owABAgQmFTcBCAFkBQAFby29i7g=",
+      "o/8A/2c9yx+M0LFj0wAAAAAAAHA=",
       "MwUEwQgAAAAAAAAAAAAAAAAAAPs="
     ]
   },
@@ -583,23 +569,21 @@
     },
     "type": {
       "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "hex_prefix_remove": "1200000000",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010302120000000027155c000001050007ff0000ff7f00ffff0000ff000000ff00ffff8b00ff",
-    "num_lines_b10": 3,
-    "num_lines_b16": "03",
+    "params_b16_mod": "01020427155c000001050007ff0000ff7f00ffff0000ff000000ff00ffff8b00ff",
+    "num_lines_b10": 2,
+    "num_lines_b16": "02",
     "cmd_b16": [
-      "a300010302120000000027155c000001050007dc",
-      "a301ff0000ff7f00ffff0000ff000000ff00ff22",
-      "a3ffff8b00ff00000000000000000000000000d7",
+      "a30001020427155c000001050007ff0000ff7fb6",
+      "a3ff00ffff0000ff000000ff00ffff8b00ff0028",
       "330504c2080000000000000000000000000000f8"
     ],
     "cmd_b64": [
-      "owABAwISAAAAACcVXAAAAQUAB9w=",
-      "owH/AAD/fwD//wAA/wAAAP8A/yI=",
-      "o///iwD/AAAAAAAAAAAAAAAAANc=",
+      "owABAgQnFVwAAAEFAAf/AAD/f7Y=",
+      "o/8A//8AAP8AAAD/AP//iwD/ACg=",
       "MwUEwggAAAAAAAAAAAAAAAAAAPg="
     ]
   },
@@ -621,24 +605,24 @@
       "on_command": false
     },
     "type": {
-      "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "type_entry": 1,
+      "hex_prefix_remove": "120000003f",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010302120000003f261564000627053804000007ff0000ff7f00ffff0000ff000000ff00ffff8b00ff",
+    "params_b16_mod": "010304261564000627053804000007ff0000ff7f00ffff0000ff000000ff00ffff8b00ff",
     "num_lines_b10": 3,
     "num_lines_b16": "03",
     "cmd_b16": [
-      "a300010302120000003f261564000627053804c1",
-      "a301000007ff0000ff7f00ffff0000ff00000025",
-      "a3ffff00ffff8b00ff00000000000000000000d7",
+      "a300010304261564000627053804000007ff0012",
+      "a30100ff7f00ffff0000ff000000ff00ffff8ba9",
+      "a3ff00ff000000000000000000000000000000a3",
       "330504c3080000000000000000000000000000f9"
     ],
     "cmd_b64": [
-      "owABAwISAAAAPyYVZAAGJwU4BME=",
-      "owEAAAf/AAD/fwD//wAA/wAAACU=",
-      "o///AP//iwD/AAAAAAAAAAAAANc=",
+      "owABAwQmFWQABicFOAQAAAf/ABI=",
+      "owEA/38A//8AAP8AAAD/AP//i6k=",
+      "o/8A/wAAAAAAAAAAAAAAAAAAAKM=",
       "MwUEwwgAAAAAAAAAAAAAAAAAAPk="
     ]
   },
@@ -660,22 +644,22 @@
       "on_command": false
     },
     "type": {
-      "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "type_entry": 1,
+      "hex_prefix_remove": "120000003f",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010202120000003f26195d00020000030000ffff0000ffffff",
+    "params_b16_mod": "01020426195d00020000030000ffff0000ffffff",
     "num_lines_b10": 2,
     "num_lines_b16": "02",
     "cmd_b16": [
-      "a300010202120000003f26195d000200000300ec",
-      "a3ff00ffff0000ffffff000000000000000000a3",
+      "a30001020426195d00020000030000ffff0000c7",
+      "a3ffffffff0000000000000000000000000000a3",
       "330504c4080000000000000000000000000000fe"
     ],
     "cmd_b64": [
-      "owABAgISAAAAPyYZXQACAAADAOw=",
-      "o/8A//8AAP///wAAAAAAAAAAAKM=",
+      "owABAgQmGV0AAgAAAwAA//8AAMc=",
+      "o/////8AAAAAAAAAAAAAAAAAAKM=",
       "MwUExAgAAAAAAAAAAAAAAAAAAP4="
     ]
   },
@@ -695,12 +679,6 @@
     "modparams": {
       "hex_multi_prefix": "a3",
       "on_command": false
-    },
-    "type": {
-      "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
-      "normal_command_suffix": ""
     },
     "params_b16_mod": "",
     "num_lines_b10": 0,
@@ -728,12 +706,6 @@
     "modparams": {
       "hex_multi_prefix": "a3",
       "on_command": false
-    },
-    "type": {
-      "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
-      "normal_command_suffix": ""
     },
     "params_b16_mod": "",
     "num_lines_b10": 0,
@@ -764,21 +736,21 @@
     },
     "type": {
       "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "hex_prefix_remove": "1200000000",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "01020212000000002615540107015e05000507404118977533d29304161d04161d",
+    "params_b16_mod": "0102042615540107015e05000507404118977533d29304161d04161d",
     "num_lines_b10": 2,
     "num_lines_b16": "02",
     "cmd_b16": [
-      "a30001020212000000002615540107015e05008b",
-      "a3ff0507404118977533d29304161d04161d00d7",
+      "a3000102042615540107015e0500050740411884",
+      "a3ff977533d29304161d04161d000000000000cc",
       "330504c81c0000000000000000000000000000e6"
     ],
     "cmd_b64": [
-      "owABAgISAAAAACYVVAEHAV4FAIs=",
-      "o/8FB0BBGJd1M9KTBBYdBBYdANc=",
+      "owABAgQmFVQBBwFeBQAFB0BBGIQ=",
+      "o/+XdTPSkwQWHQQWHQAAAAAAAMw=",
       "MwUEyBwAAAAAAAAAAAAAAAAAAOY="
     ]
   },
@@ -801,23 +773,21 @@
     },
     "type": {
       "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "hex_prefix_remove": "1200000000",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010302120000000027154b010001050006ff6b6bffff00ff70a6ff9770c4ff0009d6ff",
-    "num_lines_b10": 3,
-    "num_lines_b16": "03",
+    "params_b16_mod": "01020427154b010001050006ff6b6bffff00ff70a6ff9770c4ff0009d6ff",
+    "num_lines_b10": 2,
+    "num_lines_b16": "02",
     "cmd_b16": [
-      "a300010302120000000027154b010001050006cb",
-      "a301ff6b6bffff00ff70a6ff9770c4ff0009d688",
-      "a3ffff00000000000000000000000000000000a3",
+      "a30001020427154b010001050006ff6b6bffff21",
+      "a3ff00ff70a6ff9770c4ff0009d6ff0000000076",
       "330504c91c0000000000000000000000000000e7"
     ],
     "cmd_b64": [
-      "owABAwISAAAAACcVSwEAAQUABss=",
-      "owH/a2v//wD/cKb/l3DE/wAJ1og=",
-      "o///AAAAAAAAAAAAAAAAAAAAAKM=",
+      "owABAgQnFUsBAAEFAAb/a2v//yE=",
+      "o/8A/3Cm/5dwxP8ACdb/AAAAAHY=",
       "MwUEyRwAAAAAAAAAAAAAAAAAAOc="
     ]
   },
@@ -840,23 +810,23 @@
     },
     "type": {
       "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "hex_prefix_remove": "1200000000",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "01030212000000002615580106eb060506012d05000796ffef0101010ddfa6010101fffb6501010169fff2",
+    "params_b16_mod": "0103042615580106eb060506012d05000796ffef0101010ddfa6010101fffb6501010169fff2",
     "num_lines_b10": 3,
     "num_lines_b16": "03",
     "cmd_b16": [
-      "a30001030212000000002615580106eb06050633",
-      "a301012d05000796ffef0101010ddfa60101017e",
-      "a3fffffb6501010169fff2000000000000000058",
+      "a3000103042615580106eb060506012d05000709",
+      "a30196ffef0101010ddfa6010101fffb65010131",
+      "a3ff0169fff20000000000000000000000000039",
       "330504c1210000000000000000000000000000d2"
     ],
     "cmd_b64": [
-      "owABAwISAAAAACYVWAEG6wYFBjM=",
-      "owEBLQUAB5b/7wEBAQ3fpgEBAX4=",
-      "o///+2UBAQFp//IAAAAAAAAAAFg=",
+      "owABAwQmFVgBBusGBQYBLQUABwk=",
+      "owGW/+8BAQEN36YBAQH/+2UBATE=",
+      "o/8Baf/yAAAAAAAAAAAAAAAAADk=",
       "MwUEwSEAAAAAAAAAAAAAAAAAANI="
     ]
   },
@@ -879,21 +849,21 @@
     },
     "type": {
       "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "hex_prefix_remove": "1200000000",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "01020212000000002615020102016405000587f8ff7bffcafff090505050fff090",
+    "params_b16_mod": "0102042615020102016405000587f8ff7bffcafff090505050fff090",
     "num_lines_b10": 2,
     "num_lines_b16": "02",
     "cmd_b16": [
-      "a3000102021200000000261502010201640500e2",
-      "a3ff0587f8ff7bffcafff090505050fff09000c7",
+      "a3000102042615020102016405000587f8ff7b08",
+      "a3ffffcafff090505050fff09000000000000039",
       "330504c2210000000000000000000000000000d1"
     ],
     "cmd_b64": [
-      "owABAgISAAAAACYVAgECAWQFAOI=",
-      "o/8Fh/j/e//K//CQUFBQ//CQAMc=",
+      "owABAgQmFQIBAgFkBQAFh/j/ewg=",
+      "o///yv/wkFBQUP/wkAAAAAAAADk=",
       "MwUEwiEAAAAAAAAAAAAAAAAAANE="
     ]
   },
@@ -916,23 +886,21 @@
     },
     "type": {
       "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "hex_prefix_remove": "1200000000",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010302120000000026192301020105000609d6ff09d6fffff0909664147afffe00ffc7",
-    "num_lines_b10": 3,
-    "num_lines_b16": "03",
+    "params_b16_mod": "01020426192301020105000609d6ff09d6fffff0909664147afffe00ffc7",
+    "num_lines_b10": 2,
+    "num_lines_b16": "02",
     "cmd_b16": [
-      "a3000103021200000000261923010201050006ac",
-      "a30109d6ff09d6fffff0909664147afffe00ff5f",
-      "a3ffc7000000000000000000000000000000009b",
+      "a30001020426192301020105000609d6ff09d646",
+      "a3fffffff0909664147afffe00ffc70000000099",
       "330504c3210000000000000000000000000000d0"
     ],
     "cmd_b64": [
-      "owABAwISAAAAACYZIwECAQUABqw=",
-      "owEJ1v8J1v//8JCWZBR6//4A/18=",
-      "o//HAAAAAAAAAAAAAAAAAAAAAJs=",
+      "owABAgQmGSMBAgEFAAYJ1v8J1kY=",
+      "o/////CQlmQUev/+AP/HAAAAAJk=",
       "MwUEwyEAAAAAAAAAAAAAAAAAANA="
     ]
   },
@@ -952,12 +920,6 @@
     "modparams": {
       "hex_multi_prefix": "a3",
       "on_command": false
-    },
-    "type": {
-      "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
-      "normal_command_suffix": ""
     },
     "params_b16_mod": "",
     "num_lines_b10": 0,
@@ -987,24 +949,22 @@
       "on_command": false
     },
     "type": {
-      "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "type_entry": 1,
+      "hex_prefix_remove": "120000003f",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010302120000003f261964000201050006ec9800ffdf0077b60a00895500ffffc5003f",
-    "num_lines_b10": 3,
-    "num_lines_b16": "03",
+    "params_b16_mod": "010204261964000201050006ec9800ffdf0077b60a00895500ffffc5003f",
+    "num_lines_b10": 2,
+    "num_lines_b16": "02",
     "cmd_b16": [
-      "a300010302120000003f261964000201050006d5",
-      "a301ec9800ffdf0077b60a00895500ffffc50024",
-      "a3ff3f0000000000000000000000000000000063",
+      "a300010204261964000201050006ec9800ffdfab",
+      "a3ff0077b60a00895500ffffc5003f00000000b1",
       "330504c5080000000000000000000000000000ff"
     ],
     "cmd_b64": [
-      "owABAwISAAAAPyYZZAACAQUABtU=",
-      "owHsmAD/3wB3tgoAiVUA///FACQ=",
-      "o/8/AAAAAAAAAAAAAAAAAAAAAGM=",
+      "owABAgQmGWQAAgEFAAbsmAD/36s=",
+      "o/8Ad7YKAIlVAP//xQA/AAAAALE=",
       "MwUExQgAAAAAAAAAAAAAAAAAAP8="
     ]
   },
@@ -1026,24 +986,22 @@
       "on_command": false
     },
     "type": {
-      "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "type_entry": 1,
+      "hex_prefix_remove": "120000003f",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010302120000003f26153201020164050007ffbe0bffc573ffe26fffb875ffc573ff9176ffffff",
-    "num_lines_b10": 3,
-    "num_lines_b16": "03",
+    "params_b16_mod": "01020426153201020164050007ffbe0bffc573ffe26fffb875ffc573ff9176ffffff",
+    "num_lines_b10": 2,
+    "num_lines_b16": "02",
     "cmd_b16": [
-      "a300010302120000003f261532010201640500ec",
-      "a30107ffbe0bffc573ffe26fffb875ffc573ff50",
-      "a3ff9176ffffff00000000000000000000000044",
+      "a30001020426153201020164050007ffbe0bff74",
+      "a3ffc573ffe26fffb875ffc573ff9176ffffff04",
       "330504c6080000000000000000000000000000fc"
     ],
     "cmd_b64": [
-      "owABAwISAAAAPyYVMgECAWQFAOw=",
-      "owEH/74L/8Vz/+Jv/7h1/8Vz/1A=",
-      "o/+Rdv///wAAAAAAAAAAAAAAAEQ=",
+      "owABAgQmFTIBAgFkBQAH/74L/3Q=",
+      "o//Fc//ib/+4df/Fc/+Rdv///wQ=",
       "MwUExggAAAAAAAAAAAAAAAAAAPw="
     ]
   },
@@ -1065,22 +1023,22 @@
       "on_command": false
     },
     "type": {
-      "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "type_entry": 1,
+      "hex_prefix_remove": "120000003f",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010202120000003f26155d0105270538040155050004ba01ffde00ff0018ff00ffff",
+    "params_b16_mod": "01020426155d0105270538040155050004ba01ffde00ff0018ff00ffff",
     "num_lines_b10": 2,
     "num_lines_b16": "02",
     "cmd_b16": [
-      "a300010202120000003f26155d010527053804fb",
-      "a3ff0155050004ba01ffde00ff0018ff00ffff8b",
+      "a30001020426155d010527053804015505000485",
+      "a3ffba01ffde00ff0018ff00ffff0000000000de",
       "330504c7080000000000000000000000000000fd"
     ],
     "cmd_b64": [
-      "owABAgISAAAAPyYVXQEFJwU4BPs=",
-      "o/8BVQUABLoB/94A/wAY/wD//4s=",
+      "owABAgQmFV0BBScFOAQBVQUABIU=",
+      "o/+6Af/eAP8AGP8A//8AAAAAAN4=",
       "MwUExwgAAAAAAAAAAAAAAAAAAP0="
     ]
   },
@@ -1103,21 +1061,21 @@
     },
     "type": {
       "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "hex_prefix_remove": "1200000000",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010202120000000027150a00000105000575c1ddd0f4de009da5b9faf8ccdbfd",
+    "params_b16_mod": "01020427150a00000105000575c1ddd0f4de009da5b9faf8ccdbfd",
     "num_lines_b10": 2,
     "num_lines_b16": "02",
     "cmd_b16": [
-      "a300010202120000000027150a00000105000589",
-      "a3ff75c1ddd0f4de009da5b9faf8ccdbfd0000a6",
+      "a30001020427150a00000105000575c1ddd0f4d0",
+      "a3ffde009da5b9faf8ccdbfd00000000000000eb",
       "330504c8080000000000000000000000000000f2"
     ],
     "cmd_b64": [
-      "owABAgISAAAAACcVCgAAAQUABYk=",
-      "o/91wd3Q9N4AnaW5+vjM2/0AAKY=",
+      "owABAgQnFQoAAAEFAAV1wd3Q9NA=",
+      "o//eAJ2lufr4zNv9AAAAAAAAAOs=",
       "MwUEyAgAAAAAAAAAAAAAAAAAAPI="
     ]
   },
@@ -1140,21 +1098,21 @@
     },
     "type": {
       "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "hex_prefix_remove": "1200000000",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010202120000000027150f000001050004fac18696c8ace98587c5003f",
+    "params_b16_mod": "01020427150f000001050004fac18696c8ace98587c5003f",
     "num_lines_b10": 2,
     "num_lines_b16": "02",
     "cmd_b16": [
-      "a300010202120000000027150f0000010500048d",
-      "a3fffac18696c8ace98587c5003f000000000002",
+      "a30001020427150f000001050004fac18696c87a",
+      "a3fface98587c5003f00000000000000000000e1",
       "330504c9080000000000000000000000000000f3"
     ],
     "cmd_b64": [
-      "owABAgISAAAAACcVDwAAAQUABI0=",
-      "o//6wYaWyKzphYfFAD8AAAAAAAI=",
+      "owABAgQnFQ8AAAEFAAT6wYaWyHo=",
+      "o/+s6YWHxQA/AAAAAAAAAAAAAOE=",
       "MwUEyQgAAAAAAAAAAAAAAAAAAPM="
     ]
   },
@@ -1176,22 +1134,22 @@
       "on_command": false
     },
     "type": {
-      "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "type_entry": 1,
+      "hex_prefix_remove": "120000003f",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010202120000003f2615480102014d0500031193528cc919c0e0e6",
+    "params_b16_mod": "0102042615480102014d0500031193528cc919c0e0e6",
     "num_lines_b10": 2,
     "num_lines_b16": "02",
     "cmd_b16": [
-      "a300010202120000003f2615480102014d0500be",
-      "a3ff031193528cc919c0e0e60000000000000015",
+      "a3000102042615480102014d0500031193528cca",
+      "a3ffc919c0e0e60000000000000000000000004a",
       "330504ca080000000000000000000000000000f0"
     ],
     "cmd_b64": [
-      "owABAgISAAAAPyYVSAECAU0FAL4=",
-      "o/8DEZNSjMkZwODmAAAAAAAAABU=",
+      "owABAgQmFUgBAgFNBQADEZNSjMo=",
+      "o//JGcDg5gAAAAAAAAAAAAAAAEo=",
       "MwUEyggAAAAAAAAAAAAAAAAAAPA="
     ]
   },
@@ -1213,24 +1171,22 @@
       "on_command": false
     },
     "type": {
-      "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "type_entry": 1,
+      "hex_prefix_remove": "120000003f",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010302120000003f26152c01030164050006ff9176ffe26fffb875ff7f00ffc573ff9176",
-    "num_lines_b10": 3,
-    "num_lines_b16": "03",
+    "params_b16_mod": "01020426152c01030164050006ff9176ffe26fffb875ff7f00ffc573ff9176",
+    "num_lines_b10": 2,
+    "num_lines_b16": "02",
     "cmd_b16": [
-      "a300010302120000003f26152c010301640500f3",
-      "a30106ff9176ffe26fffb875ff7f00ffc573ffca",
-      "a3ff9176000000000000000000000000000000bb",
+      "a30001020426152c01030164050006ff9176ff38",
+      "a3ffe26fffb875ff7f00ffc573ff917600000032",
       "330504cb080000000000000000000000000000f1"
     ],
     "cmd_b64": [
-      "owABAwISAAAAPyYVLAEDAWQFAPM=",
-      "owEG/5F2/+Jv/7h1/38A/8Vz/8o=",
-      "o/+RdgAAAAAAAAAAAAAAAAAAALs=",
+      "owABAgQmFSwBAwFkBQAG/5F2/zg=",
+      "o//ib/+4df9/AP/Fc/+RdgAAADI=",
       "MwUEywgAAAAAAAAAAAAAAAAAAPE="
     ]
   },
@@ -1253,23 +1209,23 @@
     },
     "type": {
       "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "hex_prefix_remove": "1200000000",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010302120000000027173800000105ffffff0007ff0000ff7f00ffff0000ff000000ff00ffff8b00ff",
+    "params_b16_mod": "01030427173800000105ffffff0007ff0000ff7f00ffff0000ff000000ff00ffff8b00ff",
     "num_lines_b10": 3,
     "num_lines_b16": "03",
     "cmd_b16": [
-      "a300010302120000000027173800000105ffffbd",
-      "a301ff0007ff0000ff7f00ffff0000ff000000da",
-      "a3ffff00ffff8b00ff00000000000000000000d7",
+      "a30001030427173800000105ffffff0007ff00ae",
+      "a30100ff7f00ffff0000ff000000ff00ffff8ba9",
+      "a3ff00ff000000000000000000000000000000a3",
       "330504cc080000000000000000000000000000f6"
     ],
     "cmd_b64": [
-      "owABAwISAAAAACcXOAAAAQX//70=",
-      "owH/AAf/AAD/fwD//wAA/wAAANo=",
-      "o///AP//iwD/AAAAAAAAAAAAANc=",
+      "owABAwQnFzgAAAEF////AAf/AK4=",
+      "owEA/38A//8AAP8AAAD/AP//i6k=",
+      "o/8A/wAAAAAAAAAAAAAAAAAAAKM=",
       "MwUEzAgAAAAAAAAAAAAAAAAAAPY="
     ]
   },
@@ -1291,24 +1247,22 @@
       "on_command": false
     },
     "type": {
-      "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "type_entry": 1,
+      "hex_prefix_remove": "120000003f",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010302120000003f18154c000101050007ff0000ffff0000ff0000ffff0000ffff7f008b00ff",
-    "num_lines_b10": 3,
-    "num_lines_b16": "03",
+    "params_b16_mod": "01020418154c000101050007ff0000ffff0000ff0000ffff0000ffff7f008b00ff",
+    "num_lines_b10": 2,
+    "num_lines_b16": "02",
     "cmd_b16": [
-      "a300010302120000003f18154c000101050007cd",
-      "a301ff0000ffff0000ff0000ffff0000ffff7fdd",
-      "a3ff008b00ff0000000000000000000000000028",
+      "a30001020418154c000101050007ff0000ffff18",
+      "a3ff0000ff0000ffff0000ffff7f008b00ff00a8",
       "330504ce080000000000000000000000000000f4"
     ],
     "cmd_b64": [
-      "owABAwISAAAAPxgVTAABAQUAB80=",
-      "owH/AAD//wAA/wAA//8AAP//f90=",
-      "o/8AiwD/AAAAAAAAAAAAAAAAACg=",
+      "owABAgQYFUwAAQEFAAf/AAD//xg=",
+      "o/8AAP8AAP//AAD//38AiwD/AKg=",
       "MwUEzggAAAAAAAAAAAAAAAAAAPQ="
     ]
   },
@@ -1330,24 +1284,22 @@
       "on_command": false
     },
     "type": {
-      "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "type_entry": 2,
+      "hex_prefix_remove": "1200001c00",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "0103021200001c002b2142010b01050006ff000000ff000000ffffff0000ffff8b00ff",
-    "num_lines_b10": 3,
-    "num_lines_b16": "03",
+    "params_b16_mod": "0102042b2142010b01050006ff000000ff000000ffffff0000ffff8b00ff",
+    "num_lines_b10": 2,
+    "num_lines_b16": "02",
     "cmd_b16": [
-      "a3000103021200001c002b2142010b01050006ed",
-      "a301ff000000ff000000ffffff0000ffff8b00d6",
-      "a3ffff00000000000000000000000000000000a3",
+      "a3000102042b2142010b01050006ff000000ffe4",
+      "a3ff000000ffffff0000ffff8b00ff00000000d7",
       "330504cf080000000000000000000000000000f5"
     ],
     "cmd_b64": [
-      "owABAwISAAAcACshQgELAQUABu0=",
-      "owH/AAAA/wAAAP///wAA//+LANY=",
-      "o///AAAAAAAAAAAAAAAAAAAAAKM=",
+      "owABAgQrIUIBCwEFAAb/AAAA/+Q=",
+      "o/8AAAD///8AAP//iwD/AAAAANc=",
       "MwUEzwgAAAAAAAAAAAAAAAAAAPU="
     ]
   },
@@ -1369,24 +1321,24 @@
       "on_command": false
     },
     "type": {
-      "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "type_entry": 1,
+      "hex_prefix_remove": "120000003f",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010302120000003f2619540102010500080a37ff0aff5bff4c5e964cff4cffedffe20cff0c9e0c29ff",
+    "params_b16_mod": "0103042619540102010500080a37ff0aff5bff4c5e964cff4cffedffe20cff0c9e0c29ff",
     "num_lines_b10": 3,
     "num_lines_b16": "03",
     "cmd_b16": [
-      "a300010302120000003f261954010201050008ea",
-      "a3010a37ff0aff5bff4c5e964cff4cffedffe245",
-      "a3ff0cff0c9e0c29ff00000000000000000000e7",
+      "a3000103042619540102010500080a37ff0afff6",
+      "a3015bff4c5e964cff4cffedffe20cff0c9e0c1f",
+      "a3ff29ff0000000000000000000000000000008a",
       "330504d0080000000000000000000000000000ea"
     ],
     "cmd_b64": [
-      "owABAwISAAAAPyYZVAECAQUACOo=",
-      "owEKN/8K/1v/TF6WTP9M/+3/4kU=",
-      "o/8M/wyeDCn/AAAAAAAAAAAAAOc=",
+      "owABAwQmGVQBAgEFAAgKN/8K//Y=",
+      "owFb/0xelkz/TP/t/+IM/wyeDB8=",
+      "o/8p/wAAAAAAAAAAAAAAAAAAAIo=",
       "MwUE0AgAAAAAAAAAAAAAAAAAAOo="
     ]
   },
@@ -1408,22 +1360,22 @@
       "on_command": false
     },
     "type": {
-      "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "type_entry": 1,
+      "hex_prefix_remove": "120000003f",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010202120000003f26074601020105000507beb83dccc768d8d69ceaefc4fff9",
+    "params_b16_mod": "01020426074601020105000507beb83dccc768d8d69ceaefc4fff9",
     "num_lines_b10": 2,
     "num_lines_b16": "02",
     "cmd_b16": [
-      "a300010202120000003f260746010201050005ea",
-      "a3ff07beb83dccc768d8d69ceaefc4fff9000056",
+      "a30001020426074601020105000507beb83dcc31",
+      "a3ffc768d8d69ceaefc4fff900000000000000a6",
       "330504d1080000000000000000000000000000eb"
     ],
     "cmd_b64": [
-      "owABAgISAAAAPyYHRgECAQUABeo=",
-      "o/8Hvrg9zMdo2Nac6u/E//kAAFY=",
+      "owABAgQmB0YBAgEFAAUHvrg9zDE=",
+      "o//HaNjWnOrvxP/5AAAAAAAAAKY=",
       "MwUE0QgAAAAAAAAAAAAAAAAAAOs="
     ]
   },
@@ -1446,23 +1398,21 @@
     },
     "type": {
       "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "hex_prefix_remove": "1200000000",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010302120000000026155a00070133050006ff0000ff7f00ff7f00ffff00ffff0000ff00",
-    "num_lines_b10": 3,
-    "num_lines_b16": "03",
+    "params_b16_mod": "01020426155a00070133050006ff0000ff7f00ff7f00ffff00ffff0000ff00",
+    "num_lines_b10": 2,
+    "num_lines_b16": "02",
     "cmd_b16": [
-      "a300010302120000000026155a000701330500e8",
-      "a30106ff0000ff7f00ff7f00ffff00ffff00005b",
-      "a3ffff00000000000000000000000000000000a3",
+      "a30001020426155a00070133050006ff0000fffb",
+      "a3ff7f00ff7f00ffff00ffff0000ff000000005c",
       "330504ca1c0000000000000000000000000000e4"
     ],
     "cmd_b64": [
-      "owABAwISAAAAACYVWgAHATMFAOg=",
-      "owEG/wAA/38A/38A//8A//8AAFs=",
-      "o///AAAAAAAAAAAAAAAAAAAAAKM=",
+      "owABAgQmFVoABwEzBQAG/wAA//s=",
+      "o/9/AP9/AP//AP//AAD/AAAAAFw=",
       "MwUEyhwAAAAAAAAAAAAAAAAAAOQ="
     ]
   },
@@ -1485,23 +1435,21 @@
     },
     "type": {
       "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "hex_prefix_remove": "1200000000",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010302120000000027150d000001050006ff4251ff0061ff0000ff3f00d100c4ffffff",
-    "num_lines_b10": 3,
-    "num_lines_b16": "03",
+    "params_b16_mod": "01020427150d000001050006ff4251ff0061ff0000ff3f00d100c4ffffff",
+    "num_lines_b10": 2,
+    "num_lines_b16": "02",
     "cmd_b16": [
-      "a300010302120000000027150d0000010500068c",
-      "a301ff4251ff0061ff0000ff3f00d100c4fffffa",
-      "a3ffff00000000000000000000000000000000a3",
+      "a30001020427150d000001050006ff4251ff008a",
+      "a3ff61ff0000ff3f00d100c4ffffff00000000e8",
       "330504cb1c0000000000000000000000000000e5"
     ],
     "cmd_b64": [
-      "owABAwISAAAAACcVDQAAAQUABow=",
-      "owH/QlH/AGH/AAD/PwDRAMT///o=",
-      "o///AAAAAAAAAAAAAAAAAAAAAKM=",
+      "owABAgQnFQ0AAAEFAAb/QlH/AIo=",
+      "o/9h/wAA/z8A0QDE////AAAAAOg=",
       "MwUEyxwAAAAAAAAAAAAAAAAAAOU="
     ]
   },
@@ -1524,21 +1472,21 @@
     },
     "type": {
       "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "hex_prefix_remove": "1200000000",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "0102021200000000271532000001050005000f9e0651c1000fadffffff00ffff",
+    "params_b16_mod": "010204271532000001050005000f9e0651c1000fadffffff00ffff",
     "num_lines_b10": 2,
     "num_lines_b16": "02",
     "cmd_b16": [
-      "a3000102021200000000271532000001050005b1",
-      "a3ff000f9e0651c1000fadffffff00ffff000006",
+      "a300010204271532000001050005000f9e065163",
+      "a3ffc1000fadffffff00ffff00000000000000c0",
       "330504cc1c0000000000000000000000000000e2"
     ],
     "cmd_b64": [
-      "owABAgISAAAAACcVMgAAAQUABbE=",
-      "o/8AD54GUcEAD63///8A//8AAAY=",
+      "owABAgQnFTIAAAEFAAUAD54GUWM=",
+      "o//BAA+t////AP//AAAAAAAAAMA=",
       "MwUEzBwAAAAAAAAAAAAAAAAAAOI="
     ]
   },
@@ -1561,23 +1509,21 @@
     },
     "type": {
       "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "hex_prefix_remove": "1200000000",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010302120000000026193c010701050007ff0000ff7f00ffff0000ff000000ff00ffff8b00ff",
-    "num_lines_b10": 3,
-    "num_lines_b16": "03",
+    "params_b16_mod": "01020426193c010701050007ff0000ff7f00ffff0000ff000000ff00ffff8b00ff",
+    "num_lines_b10": 2,
+    "num_lines_b16": "02",
     "cmd_b16": [
-      "a300010302120000000026193c010701050007b7",
-      "a301ff0000ff7f00ffff0000ff000000ff00ff22",
-      "a3ffff8b00ff00000000000000000000000000d7",
+      "a30001020426193c010701050007ff0000ff7fdd",
+      "a3ff00ffff0000ff000000ff00ffff8b00ff0028",
       "330504cd1c0000000000000000000000000000e3"
     ],
     "cmd_b64": [
-      "owABAwISAAAAACYZPAEHAQUAB7c=",
-      "owH/AAD/fwD//wAA/wAAAP8A/yI=",
-      "o///iwD/AAAAAAAAAAAAAAAAANc=",
+      "owABAgQmGTwBBwEFAAf/AAD/f90=",
+      "o/8A//8AAP8AAAD/AP//iwD/ACg=",
       "MwUEzRwAAAAAAAAAAAAAAAAAAOM="
     ]
   },
@@ -1599,22 +1545,22 @@
       "on_command": false
     },
     "type": {
-      "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "type_entry": 2,
+      "hex_prefix_remove": "1200001c00",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "0102021200001c002b2164010d4006c905010500020000ffff0061",
+    "params_b16_mod": "0102042b2164010d4006c905010500020000ffff0061",
     "num_lines_b10": 2,
     "num_lines_b16": "02",
     "cmd_b16": [
-      "a3000102021200001c002b2164010d4006c90544",
-      "a3ff010500020000ffff0061000000000000003b",
+      "a3000102042b2164010d4006c90501050002004a",
+      "a3ff00ffff00610000000000000000000000003d",
       "330504ce1c0000000000000000000000000000e0"
     ],
     "cmd_b64": [
-      "owABAgISAAAcACshZAENQAbJBUQ=",
-      "o/8BBQACAAD//wBhAAAAAAAAADs=",
+      "owABAgQrIWQBDUAGyQUBBQACAEo=",
+      "o/8A//8AYQAAAAAAAAAAAAAAAD0=",
       "MwUEzhwAAAAAAAAAAAAAAAAAAOA="
     ]
   },
@@ -1637,23 +1583,21 @@
     },
     "type": {
       "type_entry": 0,
-      "hex_prefix_remove": "",
-      "hex_prefix_add": "02",
+      "hex_prefix_remove": "1200000000",
+      "hex_prefix_add": "04",
       "normal_command_suffix": ""
     },
-    "params_b16_mod": "010302120000000027155a00000105000670d6ffd7a000fff06c0ddfa6ff9176ff9176",
-    "num_lines_b10": 3,
-    "num_lines_b16": "03",
+    "params_b16_mod": "01020427155a00000105000670d6ffd7a000fff06c0ddfa6ff9176ff9176",
+    "num_lines_b10": 2,
+    "num_lines_b16": "02",
     "cmd_b16": [
-      "a300010302120000000027155a000001050006db",
-      "a30170d6ffd7a000fff06c0ddfa6ff9176ff91ed",
-      "a3ff76000000000000000000000000000000002a",
+      "a30001020427155a00000105000670d6ffd7a0e0",
+      "a3ff00fff06c0ddfa6ff9176ff9176000000004b",
       "330504cf1c0000000000000000000000000000e1"
     ],
     "cmd_b64": [
-      "owABAwISAAAAACcVWgAAAQUABts=",
-      "owFw1v/XoAD/8GwN36b/kXb/ke0=",
-      "o/92AAAAAAAAAAAAAAAAAAAAACo=",
+      "owABAgQnFVoAAAEFAAZw1v/XoOA=",
+      "o/8A//BsDd+m/5F2/5F2AAAAAEs=",
       "MwUEzxwAAAAAAAAAAAAAAAAAAOE="
     ]
   }

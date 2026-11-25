@@ -1,94 +1,67 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-if [ "${1}" == "" ]; then
-    exit
+# Select a model profile type from the raw parameter prefix, then apply that
+# type's remove/add transformation to params_b16_mod.
+
+source "$(dirname -- "$(readlink -f -- "$0")")/govee_fcn_lib.sh"
+govee_enable_strict_mode
+govee_require_commands jq mktemp
+
+if [[ $# -ne 2 || -z "${1}" || -z "${2}" ]]; then
+  printf 'Usage: %s DEBUG_JSON MODEL_PROFILE_JSON\n' "$0" >&2
+  exit 1
 fi
 
-OUTPUT_JSON="${1%}"
-modelparams="${2}"
-
-type=$(echo $modelparams | jq '.type')
-
-SCRIPTDIR=$(dirname $(readlink -f $0))
-JSONDIR=$(dirname "${OUTPUT_JSON}")
-
-modparamsnotype=$(echo $modelparams | jq 'del(.type)')
-
-###############################################################
-# Add "mod_params" (without "type") to each scene
-# tempfile_04_010
-tempfile_04_010="${JSONDIR}/04_010_with_params.json"
-rm -f "${tempfile_04_010}"
-
-jq 'map(.modparams = '"${modparamsnotype}"')' "${OUTPUT_JSON}" > "${tempfile_04_010}"
-
-###############################################################
-# Determine "type" (match "hex_prefix_remove" to determine "type")
-# tempfile_04_020
-# tempfile_04_030
-tempfile_04_020="${JSONDIR}/04_020_add_type.json"
-tempfile_04_030="${JSONDIR}/04_030_add_type.json"
-rm -f "${tempfile_04_020}"
-rm -f "${tempfile_04_030}"
-
-cp "${tempfile_04_010}" "${tempfile_04_020}"
-
-type_count=$(echo $modelparams | jq '.type | length')
-
-# if there is no "type"
-if [ $type_count == 0 ]; then
-	cp "${tempfile_04_010}" "${tempfile_04_030}"
+OUTPUT_JSON="${1%/}"
+MODEL_PARAMS="$2"
+if [[ ! -f "${OUTPUT_JSON}" ]]; then
+  printf 'Debug JSON file does not exist: %s\n' "${OUTPUT_JSON}" >&2
+  exit 1
+fi
+# MODEL_PARAMS is one object from model_specific_parameters.json. It contains
+# general transport settings plus a .type list that maps source prefixes to
+# prefix removal/addition rules.
+if ! jq -e 'type == "object" and (.type | type == "array")' <<< "${MODEL_PARAMS}" >/dev/null; then
+  printf 'Invalid model profile JSON.\n' >&2
+  exit 1
 fi
 
+temporary="$(govee_temp_for "${OUTPUT_JSON}")"
+trap 'rm -f "${temporary}"' EXIT
 
-for (( i=0; i<type_count; i++ )); do
-	
-	type_data=$(echo $modelparams | jq '.type.['"${i}"']')
-	pref_rem=$(echo $modelparams | jq '.type.['"${i}"'].hex_prefix_remove')
-	pref_rem_num=$(echo "${#pref_rem}")
-	pref_rem_num=$(("${pref_rem_num}" -2 ))
-	
-	
-	jq 'map(
-		if .params_b16[0:'"${pref_rem_num}"'] == '"${pref_rem}"' then
-			.type = '"${type_data}"'
-		end
-	)' "${tempfile_04_020}" > "${tempfile_04_030}"
-	
-	cp "${tempfile_04_030}" "${tempfile_04_020}"
-	
-done
+# When several type entries match a source parameter prefix, select the final
+# matching entry. An unmatched prefix remains untouched, which is needed by
+# profiles such as H6066.
+jq --argjson profile "${MODEL_PARAMS}" '
+  def matching_type($types; $params):
+    [
+      $types[]?
+      | . as $candidate
+      | select(($params | startswith($candidate.hex_prefix_remove // "")))
+    ]
+    | if length == 0 then null else .[-1] end;
 
-###############################################################
-# Add "params_b16_mod" = "params_b16"
-# tempfile_04_040
-tempfile_04_040="${JSONDIR}/04_040_b16_mod.json"
-rm -f "${tempfile_04_040}"
+  ($profile | del(.type)) as $modparams
+  | map(
+      . as $scene
+      | matching_type($profile.type; ($scene.params_b16 // "")) as $type
+      | ($type // {hex_prefix_remove: "", hex_prefix_add: ""}) as $transform
+      | .modparams = $modparams
+      | if $type == null then del(.type) else .type = $type end
+      | if ($scene.params_b16 // "") == "" then
+          .params_b16_mod = ""
+        else
+          .params_b16_mod = (
+            ($transform.hex_prefix_add // "")
+            + (
+                ($scene.params_b16 // "") as $params
+                | ($transform.hex_prefix_remove // "") as $remove
+                | if $remove == "" then $params else ($params | ltrimstr($remove)) end
+              )
+          )
+        end
+    )
+' "${OUTPUT_JSON}" > "${temporary}"
 
-jq 'map(.params_b16_mod = .params_b16)' "${tempfile_04_030}" > "${tempfile_04_040}"
-
-###############################################################
-# Remove "hex_prefix_remove" (if present) and add "hex_prefix_add"
-# tempfile_04_050
-tempfile_04_050="${JSONDIR}/04_050_b16_prefix.json"
-rm -f "${tempfile_04_050}"
-
-jq 'map(
-	if .params_b16_mod != "" then
-		(.type.hex_prefix_remove | length ) as $len |
-			.params_b16_mod = .type.hex_prefix_add + .params_b16_mod[$len:]
-	end
-)' "${tempfile_04_040}" > "${tempfile_04_050}"
-
-###############################################################
-
-cat "${tempfile_04_050}" > "${OUTPUT_JSON}"
-
-#exit
-
-# CLEANUP
-rm -f "${tempfile_04_010}"
-rm -f "${tempfile_04_020}"
-rm -f "${tempfile_04_030}"
-rm -f "${tempfile_04_040}"
-rm -f "${tempfile_04_050}"
+mv -- "${temporary}" "${OUTPUT_JSON}"
+trap - EXIT

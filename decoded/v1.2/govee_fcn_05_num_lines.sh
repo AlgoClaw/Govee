@@ -1,41 +1,58 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-if [ "${1}" == "" ]; then
-    exit
+# Add the number of 17-byte transport payload packets required for each scene.
+
+source "$(dirname -- "$(readlink -f -- "$0")")/govee_fcn_lib.sh"
+govee_enable_strict_mode
+govee_require_commands jq mktemp
+
+if [[ $# -ne 1 || -z "${1}" ]]; then
+  printf 'Usage: %s DEBUG_JSON\n' "$0" >&2
+  exit 1
 fi
 
-OUTPUT_JSON="${1%}"
+OUTPUT_JSON="${1%/}"
+if [[ ! -f "${OUTPUT_JSON}" ]]; then
+  printf 'Debug JSON file does not exist: %s\n' "${OUTPUT_JSON}" >&2
+  exit 1
+fi
 
-SCRIPTDIR=$(dirname $(readlink -f $0))
-JSONDIR=$(dirname "${OUTPUT_JSON}")
+temporary="$(govee_temp_for "${OUTPUT_JSON}")"
+trap 'rm -f "${temporary}"' EXIT
 
-###############################################################
-# Add "num_lines_b10" field
-# tempfile_05_010
-tempfile_05_010="${JSONDIR}/05_010_num_lines_b10_added.json"
-rm -f "${tempfile_05_010}"
+# An effect packet carries 17 bytes = 34 hexadecimal characters after its
+# two-byte packet header. The payload later prepends 01 and the line count,
+# so the line count is ceil((parameter hex length + 4) / 34).
+#
+# The line-count value uses the same even-width decimal-to-hex representation
+# as the API metadata fields. It therefore has a consistent zero-padding rule.
+jq '
+  def hex_digit($number): "0123456789abcdef"[$number:$number + 1];
+  def decimal_to_hex:
+    if . < 16 then hex_digit(.)
+    else ((. / 16 | floor) | decimal_to_hex) + hex_digit(. % 16)
+    end;
+  def pad_left($width):
+    . as $value
+    | ($width - ($value | length)) as $count
+    | if $count > 0 then ([range(0; $count) | "0"] | join("")) + $value else $value end;
+  def decimal_to_even_width_hex:
+    . as $number
+    | ($number | tostring | length) as $digits
+    | (((($digits + 1) / 2) | floor) * 2) as $width
+    | ($number | decimal_to_hex | pad_left($width));
 
-# Add 4 (2 hex bytes) to account for first line "01" and "line count" bytes
-# Divide by 34, which is the length of standard line minus the first 4 characters (ax xx) and last 2 characters (checksum).
-# Round up (ceiling)
+  map(
+    if (.params_b16_mod // "") != "" then
+      ((((.params_b16_mod | length) + 4) / 34) | ceil) as $line_count
+      | .num_lines_b10 = $line_count
+      | .num_lines_b16 = ($line_count | decimal_to_even_width_hex)
+    else
+      .num_lines_b10 = 0
+      | .num_lines_b16 = (0 | decimal_to_even_width_hex)
+    end
+  )
+' "${OUTPUT_JSON}" > "${temporary}"
 
-jq 'map(if .params_b16_mod != "" then (.num_lines_b10 = ((((.params_b16_mod | length) + 4) / 34) | ceil)) else .num_lines_b10 = 0 end)' "${OUTPUT_JSON}" > "${tempfile_05_010}"
-
-###############################################################
-# Add empty "num_lines_b16" entries
-# tempfile_05_020
-tempfile_05_020="${JSONDIR}/05_020_num_lines_b16.json"
-rm -f "${tempfile_05_020}"
-
-jq 'map(.num_lines_b16 = "")' "${tempfile_05_010}" > "${tempfile_05_020}"
-
-###############################################################
-# Create bash array of "num_lines_b10_array" values
-
-"${SCRIPTDIR}/fcn_b10_2_b16_array.sh" "${tempfile_05_020}" "num_lines_b10" "num_lines_b16" "${OUTPUT_JSON}"
-
-#exit
-
-# CLEANUP
-rm -f "${tempfile_05_010}"
-rm -f "${tempfile_05_020}"
+mv -- "${temporary}" "${OUTPUT_JSON}"
+trap - EXIT

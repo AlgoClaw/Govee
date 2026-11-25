@@ -2172,6 +2172,61 @@
     ]
   },
   {
+    "name": "Classic Christmas",
+    "sceneId_b10": 34477,
+    "sceneId_b16": "0086ad",
+    "scenceParamId_b10": 46718,
+    "scenceParamId_b16": "00b67e",
+    "sceneType_b10": 5,
+    "sceneType_b16": "05",
+    "sceneCode_b10": 24906,
+    "sceneCode_b16": "00614a",
+    "sceneCode_b16_swapped": "4a6100",
+    "params_b64": "QQD/ADwAAxoAAwwAAQf///8NEy88XWV5WmQCAAH//wAAAAAaAAMMAAEH/7ENCQ0nLkJhdlZkAAAC//8AAAAAcwADZQAEGP8AAAABAgMEBQYHCAkKC3h5ent8fX5/gIGCgwz/fwAMDQ4PEBESExQVFhck/7ENJCUmJygpKissLS4vMDEyMzQ1Njc4OTo7SElKS0xNTk9QUVJTDP///2BhYmNkZWZnaGlqa1pkAQAD//8AAAAA",
+    "params_b16": "4100ff003c00031a00030c000107ffffff0d132f3c5d65795a64020001ffff000000001a00030c000107ffb10d090d272e4261765664000002ffff0000000073000365000418ff0000000102030405060708090a0b78797a7b7c7d7e7f808182830cff7f000c0d0e0f101112131415161724ffb10d2425262728292a2b2c2d2e2f303132333435363738393a3b48494a4b4c4d4e4f505152530cffffff606162636465666768696a6b5a64010003ffff00000000",
+    "modparams": {
+      "hex_multi_prefix": "a3",
+      "on_command": false
+    },
+    "type": {
+      "type_entry": 0,
+      "hex_prefix_remove": "41",
+      "hex_prefix_add": "585a",
+      "normal_command_suffix": ""
+    },
+    "params_b16_mod": "010b585a00ff003c00031a00030c000107ffffff0d132f3c5d65795a64020001ffff000000001a00030c000107ffb10d090d272e4261765664000002ffff0000000073000365000418ff0000000102030405060708090a0b78797a7b7c7d7e7f808182830cff7f000c0d0e0f101112131415161724ffb10d2425262728292a2b2c2d2e2f303132333435363738393a3b48494a4b4c4d4e4f505152530cffffff606162636465666768696a6b5a64010003ffff00000000",
+    "num_lines_b10": 11,
+    "num_lines_b16": "0b",
+    "cmd_b16": [
+      "a300010b585a00ff003c00031a00030c00010778",
+      "a301ffffff0d132f3c5d65795a64020001ffff2c",
+      "a302000000001a00030c000107ffb10d090d27d2",
+      "a3032e4261765664000002ffff00000000730098",
+      "a3040365000418ff00000001020304050607082a",
+      "a305090a0b78797a7b7c7d7e7f808182830cff5d",
+      "a3067f000c0d0e0f101112131415161724ffb1b0",
+      "a3070d2425262728292a2b2c2d2e2f30313233a9",
+      "a3083435363738393a3b48494a4b4c4d4e4f50fb",
+      "a3095152530cffffff6061626364656667686908",
+      "a3ff6a6b5a64010003ffff000000000000000061",
+      "3305044a61000000000000000000000000000019"
+    ],
+    "cmd_b64": [
+      "owABC1haAP8APAADGgADDAABB3g=",
+      "owH///8NEy88XWV5WmQCAAH//yw=",
+      "owIAAAAAGgADDAABB/+xDQkNJ9I=",
+      "owMuQmF2VmQAAAL//wAAAABzAJg=",
+      "owQDZQAEGP8AAAABAgMEBQYHCCo=",
+      "owUJCgt4eXp7fH1+f4CBgoMM/10=",
+      "owZ/AAwNDg8QERITFBUWFyT/sbA=",
+      "owcNJCUmJygpKissLS4vMDEyM6k=",
+      "owg0NTY3ODk6O0hJSktMTU5PUPs=",
+      "owlRUlMM////YGFiY2RlZmdoaQg=",
+      "o/9qa1pkAQAD//8AAAAAAAAAAGE=",
+      "MwUESmEAAAAAAAAAAAAAAAAAABk="
+    ]
+  },
+  {
     "name": "Christmas",
     "sceneId_b10": 11318,
     "sceneId_b16": "002c36",
@@ -3685,61 +3740,6 @@
       "owtKTAP/UwBuens/ZAMAAf//ADc=",
       "o/8AAAAAAAAAAAAAAAAAAAAAAFw=",
       "MwUEAFoAAAAAAAAAAAAAAAAAAGg="
-    ]
-  },
-  {
-    "name": "Classic Christmas",
-    "sceneId_b10": 34477,
-    "sceneId_b16": "0086ad",
-    "scenceParamId_b10": 46718,
-    "scenceParamId_b16": "00b67e",
-    "sceneType_b10": 5,
-    "sceneType_b16": "05",
-    "sceneCode_b10": 24906,
-    "sceneCode_b16": "00614a",
-    "sceneCode_b16_swapped": "4a6100",
-    "params_b64": "QQD/ADwAAxoAAwwAAQf///8NEy88XWV5WmQCAAH//wAAAAAaAAMMAAEH/7ENCQ0nLkJhdlZkAAAC//8AAAAAcwADZQAEGP8AAAABAgMEBQYHCAkKC3h5ent8fX5/gIGCgwz/fwAMDQ4PEBESExQVFhck/7ENJCUmJygpKissLS4vMDEyMzQ1Njc4OTo7SElKS0xNTk9QUVJTDP///2BhYmNkZWZnaGlqa1pkAQAD//8AAAAA",
-    "params_b16": "4100ff003c00031a00030c000107ffffff0d132f3c5d65795a64020001ffff000000001a00030c000107ffb10d090d272e4261765664000002ffff0000000073000365000418ff0000000102030405060708090a0b78797a7b7c7d7e7f808182830cff7f000c0d0e0f101112131415161724ffb10d2425262728292a2b2c2d2e2f303132333435363738393a3b48494a4b4c4d4e4f505152530cffffff606162636465666768696a6b5a64010003ffff00000000",
-    "modparams": {
-      "hex_multi_prefix": "a3",
-      "on_command": false
-    },
-    "type": {
-      "type_entry": 0,
-      "hex_prefix_remove": "41",
-      "hex_prefix_add": "585a",
-      "normal_command_suffix": ""
-    },
-    "params_b16_mod": "010b585a00ff003c00031a00030c000107ffffff0d132f3c5d65795a64020001ffff000000001a00030c000107ffb10d090d272e4261765664000002ffff0000000073000365000418ff0000000102030405060708090a0b78797a7b7c7d7e7f808182830cff7f000c0d0e0f101112131415161724ffb10d2425262728292a2b2c2d2e2f303132333435363738393a3b48494a4b4c4d4e4f505152530cffffff606162636465666768696a6b5a64010003ffff00000000",
-    "num_lines_b10": 11,
-    "num_lines_b16": "0b",
-    "cmd_b16": [
-      "a300010b585a00ff003c00031a00030c00010778",
-      "a301ffffff0d132f3c5d65795a64020001ffff2c",
-      "a302000000001a00030c000107ffb10d090d27d2",
-      "a3032e4261765664000002ffff00000000730098",
-      "a3040365000418ff00000001020304050607082a",
-      "a305090a0b78797a7b7c7d7e7f808182830cff5d",
-      "a3067f000c0d0e0f101112131415161724ffb1b0",
-      "a3070d2425262728292a2b2c2d2e2f30313233a9",
-      "a3083435363738393a3b48494a4b4c4d4e4f50fb",
-      "a3095152530cffffff6061626364656667686908",
-      "a3ff6a6b5a64010003ffff000000000000000061",
-      "3305044a61000000000000000000000000000019"
-    ],
-    "cmd_b64": [
-      "owABC1haAP8APAADGgADDAABB3g=",
-      "owH///8NEy88XWV5WmQCAAH//yw=",
-      "owIAAAAAGgADDAABB/+xDQkNJ9I=",
-      "owMuQmF2VmQAAAL//wAAAABzAJg=",
-      "owQDZQAEGP8AAAABAgMEBQYHCCo=",
-      "owUJCgt4eXp7fH1+f4CBgoMM/10=",
-      "owZ/AAwNDg8QERITFBUWFyT/sbA=",
-      "owcNJCUmJygpKissLS4vMDEyM6k=",
-      "owg0NTY3ODk6O0hJSktMTU5PUPs=",
-      "owlRUlMM////YGFiY2RlZmdoaQg=",
-      "o/9qa1pkAQAD//8AAAAAAAAAAGE=",
-      "MwUESmEAAAAAAAAAAAAAAAAAABk="
     ]
   },
   {

@@ -1,81 +1,51 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-if [ "${1}" == "" ]; then
-    exit
+# Add Base64 LAN command arrays alongside the hexadecimal command arrays.
+
+source "$(dirname -- "$(readlink -f -- "$0")")/govee_fcn_lib.sh"
+govee_enable_strict_mode
+govee_require_commands jq xxd base64 mktemp
+
+if [[ $# -ne 1 || -z "${1}" ]]; then
+  printf 'Usage: %s DEBUG_JSON\n' "$0" >&2
+  exit 1
 fi
 
-OUTPUT_JSON="${1%}"
+OUTPUT_JSON="${1%/}"
+if [[ ! -f "${OUTPUT_JSON}" ]]; then
+  printf 'Debug JSON file does not exist: %s\n' "${OUTPUT_JSON}" >&2
+  exit 1
+fi
 
-SCRIPTDIR=$(dirname $(readlink -f $0))
-JSONDIR=$(dirname "${OUTPUT_JSON}")
+# Like stage 06, use JSON Lines for a safe Bash-to-jq boundary: one converted
+# command per line, then group them back into each scene's command array.
+command_lines="$(govee_temp_for "${OUTPUT_JSON}")"
+command_groups="$(govee_temp_for "${OUTPUT_JSON}")"
+output_temporary="$(govee_temp_for "${OUTPUT_JSON}")"
+trap 'rm -f "${command_lines}" "${command_groups}" "${output_temporary}"' EXIT
 
-##############
-##############
-# 
-# tempfile_07_010
-tempfile_07_010="${JSONDIR}/07_010_input_file.json"
-rm -f "${tempfile_07_010}"
+while IFS=$'\t' read -r index command; do
+  # Home Assistant and the Govee LAN payload use Base64 packet strings.
+  command_b64="$(govee_hex_to_b64 "${command}")"
+  jq -cn --argjson index "${index}" --arg command_b64 "${command_b64}" \
+    '{index: $index, cmd_b64: $command_b64}' >> "${command_lines}"
+done < <(
+  jq -r 'to_entries[] | .key as $index | .value.cmd_b16[] | [$index, .] | @tsv' "${OUTPUT_JSON}"
+)
 
-cp "${OUTPUT_JSON}" "${tempfile_07_010}"
+# Preserve packet order while rebuilding cmd_b64 per scene.
+jq -s '
+  group_by(.index)
+  | map({index: .[0].index, cmd_b64: map(.cmd_b64)})
+' "${command_lines}" > "${command_groups}"
 
-##############
-# 
-# tempfile_07_020
-tempfile_07_020="${JSONDIR}/07_020_b16_multi_checksum.json"
-rm -f "${tempfile_07_020}"
+jq --slurpfile command_groups "${command_groups}" '
+  reduce $command_groups[0][] as $command_group (
+    .;
+    .[$command_group.index].cmd_b64 = $command_group.cmd_b64
+  )
+' "${OUTPUT_JSON}" > "${output_temporary}"
 
-declare -a cmd_b16
-mapfile -t cmd_b16 < <(jq -r '.[] | .cmd_b16 | join(",")' "${tempfile_07_010}")
-
-declare -a modified_bash_array
-unset modified_bash_array
-
-counter=0
-
-for original_string in "${cmd_b16[@]}"; do
-  IFS=',' read -r -a cmd_b16 <<< "$original_string"
-  num_values=${#cmd_b16[@]}
-
-  unset modified_values
-  declare -a modified_values
-  
-  for (( i=0; i<num_values; i++ )); do
-		current_value="${cmd_b16[i]}"
-		b64=$("${SCRIPTDIR}/fcn_b16_2_b64.sh" ${current_value})
-
-		modified_values[($i)]="${b64}"
-		
-  done
-  
-  modified_bash_array[($counter)]=$(printf "%s," "${modified_values[@]}")
-
-  counter=$(($counter+1))
-  
-done
-
-# Fix annoying bash and jq stuff --> add to JSON
-
-unset json_array_string
-json_array_string=$(printf '["%s"] ' "${modified_bash_array[@]}")
-json_array_string="${json_array_string%,}"
-json_array_string=${json_array_string//','/'","'}
-json_array_string=${json_array_string//'",""]'/'"]'}
-json_array_string=(`echo ${json_array_string[0]}`)
-
-unset JSON_to_merge
-JSON_to_merge=$(printf "%s\n" "${json_array_string[@]}" | jq -nR '[inputs | {cmd_b64: .}]')
-JSON_to_merge=${JSON_to_merge//'"['/'['}
-JSON_to_merge=${JSON_to_merge//']"'/']'}
-JSON_to_merge=${JSON_to_merge//'\"'/'"'}
-
-echo "${JSON_to_merge[@]}" > "${tempfile_07_020}"
-
-#JSON_output=$(cat "${OUTPUT_JSON}" "${tempfile_07_020}" | jq -n '[inputs] | transpose | map(add)')
-#echo "${JSON_output}" > "${OUTPUT_JSON}"
-jq -n '[inputs] | transpose | map(add)' "${tempfile_07_010}" "${tempfile_07_020}" > "${OUTPUT_JSON}"
-
-#exit
-
-# CLEANUP
-rm -f "${tempfile_07_010}"
-rm -f "${tempfile_07_020}"
+mv -- "${output_temporary}" "${OUTPUT_JSON}"
+trap - EXIT
+rm -f -- "${command_lines}" "${command_groups}"

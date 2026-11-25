@@ -1,87 +1,58 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# /path/to/govee_fcn_00_all.sh "H61A8"
+# Run the complete v1.2 catalog-to-command pipeline for one Govee SKU.
 
-if [ "${1}" == "" ]; then
-    exit
+source "$(dirname -- "$(readlink -f -- "$0")")/govee_fcn_lib.sh"
+govee_enable_strict_mode
+# Fail before downloading anything if the tools used by downstream stages are
+# absent. This script is the one-SKU orchestration entry point.
+govee_require_commands curl jq base64 od xxd mktemp
+
+if [[ $# -ne 1 || -z "${1}" ]]; then
+  printf 'Usage: %s SKU\n' "$0" >&2
+  exit 1
 fi
 
-MODEL="${1}"
+MODEL="$1"
+SCRIPTDIR="$(govee_script_dir)"
+JSONDIR="${SCRIPTDIR}/JSONs"
+# All generated catalog artifacts live together, one set per SKU.
+mkdir -p -- "${JSONDIR}"
 
-# Directory this script is in
-SCRIPTDIR=$(dirname $(readlink -f $0))
+# The profile is a local, versioned input. Refresh it explicitly with
+# govee_fcn_01_get_params.sh --refresh so a normal scene run never replaces
+# local model-profile work.
+MODEL_PARAMS="$(bash "${SCRIPTDIR}/govee_fcn_01_get_params.sh" "${MODEL}")"
 
-# Make JSONs subdir (if not exist)
-sudo mkdir -p ${SCRIPTDIR}/JSONs/
+# Stage 02 preserves the raw v1/v2 API responses and prints the combined raw
+# catalog path. Stages 03-07 progressively replace fields in *_debug.json.
+RAW_JSON_PATH="$(bash "${SCRIPTDIR}/govee_fcn_02_get_scene_json.sh" "${MODEL}")"
+OUTPUT_FILE_PATH="$(bash "${SCRIPTDIR}/govee_fcn_03_add_b16.sh" "${RAW_JSON_PATH}")"
 
-# Delete non-JSONs in subdir
-sudo find ${SCRIPTDIR}/JSONs/ -type f  ! -name "*.*" -delete
+# Interpret the model-specific parameter wrapper, calculate packet count,
+# create checksummed hexadecimal commands, then add their Base64 equivalents.
+bash "${SCRIPTDIR}/govee_fcn_04_model_specific_changes.sh" "${OUTPUT_FILE_PATH}" "${MODEL_PARAMS}"
+bash "${SCRIPTDIR}/govee_fcn_05_num_lines.sh" "${OUTPUT_FILE_PATH}"
+bash "${SCRIPTDIR}/govee_fcn_06_cmd_b16.sh" "${OUTPUT_FILE_PATH}" "${MODEL_PARAMS}"
+bash "${SCRIPTDIR}/govee_fcn_07_cmd_b64.sh" "${OUTPUT_FILE_PATH}"
 
-################
-# 01
-# Get Parameters for Model
-modelparams=$(bash ${SCRIPTDIR}/govee_fcn_01_get_params.sh "${MODEL}")
-
-#echo $modelparams
-
-################
-# 02
-# Get Scenes JSON for Model (via Govee's public API)
-RAW_JSON_PATH=$(bash ${SCRIPTDIR}/govee_fcn_02_get_scene_json.sh "${MODEL}")
-
-#echo $RAW_JSON_PATH
-
-################
-# 03
-# Add *Raw* b16 (hex) Commands to JSON and Get File Path
-OUTPUT_FILE_PATH=$(bash ${SCRIPTDIR}/govee_fcn_03_add_b16.sh "${RAW_JSON_PATH}")  
-
-#echo $OUTPUT_FILE_PATH
-
-################
-# 04
-# Add Model-Specific Stuff
-bash ${SCRIPTDIR}/govee_fcn_04_model_specific_changes.sh "${OUTPUT_FILE_PATH}" "${modelparams}"
-
-################
-# 05
-# Count number of lines and add to JSON
-bash ${SCRIPTDIR}/govee_fcn_05_num_lines.sh "${OUTPUT_FILE_PATH}"
-
-################
-# 06
-# Create Multiline b16 (hex) Commands
-bash ${SCRIPTDIR}/govee_fcn_06_cmd_b16.sh "${OUTPUT_FILE_PATH}" "${modelparams}"
-
-################
-# 07
-# Create Multiline base64 Commands
-bash ${SCRIPTDIR}/govee_fcn_07_cmd_b64.sh "${OUTPUT_FILE_PATH}"
-
-################
-# 08
-# Create the replaceable current scene file. Do not overwrite the existing
-# _final.json file: it is the seed for the durable merged scene library.
-JSONDIR=$(dirname "${OUTPUT_FILE_PATH}")
 GENERATED_FILE="${JSONDIR}/${MODEL}_final_current.json"
 MERGED_FILE="${JSONDIR}/${MODEL}_final_merged.json"
-LEGACY_FINAL_FILE="${JSONDIR}/${MODEL}_final.json"
+EXISTING_FINAL_FILE="${JSONDIR}/${MODEL}_final.json"
 
-bash ${SCRIPTDIR}/govee_fcn_08_simplest_file.sh "${MODEL}" "${OUTPUT_FILE_PATH}" "${GENERATED_FILE}"
+bash "${SCRIPTDIR}/govee_fcn_08_simplest_file.sh" "${MODEL}" "${OUTPUT_FILE_PATH}" "${GENERATED_FILE}"
 
-################
-# 09
-# Merge the current API output into the durable scene library. Once a merged
-# file exists it becomes the master on later runs; otherwise retain the
-# existing legacy _final.json as the initial master.
-if [ -f "${MERGED_FILE}" ]; then
-	MASTER_FILE="${MERGED_FILE}"
-elif [ -f "${LEGACY_FINAL_FILE}" ]; then
-	MASTER_FILE="${LEGACY_FINAL_FILE}"
+# Once present, the merged file is the durable library. If it does not exist,
+# an existing _final.json can seed the first merge.
+if [[ -f "${MERGED_FILE}" ]]; then
+  MASTER_FILE="${MERGED_FILE}"
+elif [[ -f "${EXISTING_FINAL_FILE}" ]]; then
+  MASTER_FILE="${EXISTING_FINAL_FILE}"
 else
-	# First-ever run: merging the fresh output with itself simply creates the
-	# durable merged file without requiring a legacy _final.json.
-	MASTER_FILE="${GENERATED_FILE}"
+  MASTER_FILE="${GENERATED_FILE}"
 fi
 
-bash ${SCRIPTDIR}/govee_fcn_09_merged_file.sh "${MASTER_FILE}" "${GENERATED_FILE}" "${MERGED_FILE}"
+# This does not modify MASTER_FILE. It writes a new durable merged library
+# which keeps commands Govee no longer advertises but the physical device can
+# still run.
+bash "${SCRIPTDIR}/govee_fcn_09_merged_file.sh" "${MASTER_FILE}" "${GENERATED_FILE}" "${MERGED_FILE}"

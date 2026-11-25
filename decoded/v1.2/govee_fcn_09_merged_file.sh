@@ -8,7 +8,9 @@
 # MASTER_JSON is never modified.  MERGED_JSON is written atomically and can
 # be passed as MASTER_JSON on the next run.
 
-set -euo pipefail
+source "$(dirname -- "$(readlink -f -- "$0")")/govee_fcn_lib.sh"
+govee_enable_strict_mode
+govee_require_commands jq mktemp
 
 if [ "$#" -ne 3 ]; then
     echo "Usage: $0 MASTER_JSON GENERATED_JSON MERGED_JSON" >&2
@@ -30,6 +32,8 @@ if [ ! -f "${GENERATED_JSON}" ]; then
 fi
 
 validate_scene_file() {
+    # A valid merged input has the minimum data needed to compare complete
+    # command sequences and preserve a scene under its user-visible name.
     jq -e '
       type == "array"
       and all(.[]; type == "object" and (.name | type == "string") and has("cmd_b64"))
@@ -46,17 +50,21 @@ if ! validate_scene_file "${GENERATED_JSON}"; then
     exit 1
 fi
 
+# Write beside the destination then rename atomically, so an interrupted merge
+# cannot leave the durable library as a truncated JSON file.
 mkdir -p "$(dirname "${MERGED_JSON}")"
 TEMP_OUTPUT=$(mktemp "${MERGED_JSON}.tmp.XXXXXX")
 trap 'rm -f "${TEMP_OUTPUT}"' EXIT
 
+# Merge rules implemented by the jq program below:
+# - The full cmd_b64 packet array is the scene identity, not its name.
+# - A duplicate command retains the first record and appends a name alias.
+# - A distinct command whose name is occupied gains -2, -3, and so on.
+# - Existing master scenes are kept even when Govee no longer returns them.
+# - Existing duplicate commands are normalized before adding fresh scenes.
 jq -n --slurpfile master "${MASTER_JSON}" --slurpfile generated "${GENERATED_JSON}" '
-  # cmd_b64 is an array in v1.2.  JSON serialization compares the whole
-  # command sequence, including packet order, without relying on its name.
   def command_key: .cmd_b64 | tojson;
 
-  # A command may be rediscovered on later runs.  Keep each alias only once,
-  # including when the original name is the leading portion of "Foo (Bar)".
   def append_alias($alias):
     . as $current
     | if $current == $alias
@@ -66,8 +74,6 @@ jq -n --slurpfile master "${MASTER_JSON}" --slurpfile generated "${GENERATED_JSO
       else $current + " (" + $alias + ")"
       end;
 
-  # Existing names are immutable.  A fresh command using one gets the first
-  # unused suffix: Foo, Foo-2, Foo-3, and so on.
   def next_available_name($base; $used):
     if ($used | index($base)) == null then $base
     else
@@ -79,9 +85,6 @@ jq -n --slurpfile master "${MASTER_JSON}" --slurpfile generated "${GENERATED_JSO
       )
     end;
 
-  # Add a scene unless that command already exists. When it does, retain the
-  # first entry and add the incoming name as an alias. This also collapses
-  # duplicate v1/v2 entries when a first run uses generated output as master.
   def add_or_alias($scene):
     ($scene | command_key) as $scene_command
     | [to_entries[] | select((.value | command_key) == $scene_command) | .key] as $matches
@@ -92,8 +95,6 @@ jq -n --slurpfile master "${MASTER_JSON}" --slurpfile generated "${GENERATED_JSO
         . + [$scene]
       end;
 
-  # New commands retain their name when available, or receive the first free
-  # numerical suffix without changing an existing master name.
   def merge_generated_scene($scene):
     ($scene | command_key) as $scene_command
     | [to_entries[] | select((.value | command_key) == $scene_command) | .key] as $matches
