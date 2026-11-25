@@ -17,11 +17,11 @@ Modify the [govee_00_multi.sh script](https://github.com/AlgoClaw/Govee/blob/mai
 ### Preserving scenes removed from Govee's API
 
 The full pipeline keeps a durable scene library in
-`JSONs/<MODEL>_final_merged.json`. On its first run it uses the existing
-`JSONs/<MODEL>_final.json` as the master (or the fresh result itself when no
+`JSONs/<MODEL>/<MODEL>_final_merged.json`. On its first run it uses the existing
+`JSONs/<MODEL>/<MODEL>_final.json` as the master (or the fresh result itself when no
 legacy file exists); on later runs it uses the prior `_final_merged.json` as
 the master. The fresh, replaceable API result is written separately to
-`JSONs/<MODEL>_final_current.json` and is merged by
+`JSONs/<MODEL>/<MODEL>_final_current.json` and is merged by
 `govee_fcn_09_merged_file.sh`.
 
 The merger never removes a master scene. If a fresh scene has the same complete
@@ -30,9 +30,9 @@ example, `Foo (Bar)`). If it has a different command but collides on name, it is
 added using the first available suffix, such as `Foo-2` or `Foo-3`.
 
 Before decoding, the pipeline downloads both of Govee's public scene catalogs
-and saves them as `JSONs/<MODEL>_raw_v1.json` and
-`JSONs/<MODEL>_raw_v2.json`. It combines them into the single
-`JSONs/<MODEL>_raw_combined.json` input, then removes an exact duplicate effect returned
+and saves them as `JSONs/<MODEL>/<MODEL>_raw_v1.json` and
+`JSONs/<MODEL>/<MODEL>_raw_v2.json`. It combines them into the single
+`JSONs/<MODEL>/<MODEL>_raw_combined.json` input, then removes an exact duplicate effect returned
 by both endpoints while preserving v1-first order. Different names or command
 payloads are intentionally retained for the command-based merger to alias or
 suffix under the rules above.

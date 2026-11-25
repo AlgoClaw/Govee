@@ -14,7 +14,7 @@ fi
 
 MODEL="$1"
 SCRIPTDIR="$(govee_script_dir)"
-JSONDIR="${SCRIPTDIR}/JSONs"
+JSONDIR="${SCRIPTDIR}/JSONs/${MODEL}"
 mkdir -p -- "${JSONDIR}"
 
 V1_RAW_FILE="${JSONDIR}/${MODEL}_raw_v1.json"

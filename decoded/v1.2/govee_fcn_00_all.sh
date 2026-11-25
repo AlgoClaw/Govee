@@ -15,9 +15,9 @@ fi
 
 MODEL="$1"
 SCRIPTDIR="$(govee_script_dir)"
-JSONDIR="${SCRIPTDIR}/JSONs"
-# All generated catalog artifacts live together, one set per SKU.
-mkdir -p -- "${JSONDIR}"
+SKU_JSON_DIR="${SCRIPTDIR}/JSONs/${MODEL}"
+# Keep every catalog artifact for a SKU in its own directory.
+mkdir -p -- "${SKU_JSON_DIR}"
 
 # The profile is a local, versioned input. Refresh it explicitly with
 # govee_fcn_01_get_params.sh --refresh so a normal scene run never replaces
@@ -36,9 +36,9 @@ bash "${SCRIPTDIR}/govee_fcn_05_num_lines.sh" "${OUTPUT_FILE_PATH}"
 bash "${SCRIPTDIR}/govee_fcn_06_cmd_b16.sh" "${OUTPUT_FILE_PATH}" "${MODEL_PARAMS}"
 bash "${SCRIPTDIR}/govee_fcn_07_cmd_b64.sh" "${OUTPUT_FILE_PATH}"
 
-GENERATED_FILE="${JSONDIR}/${MODEL}_final_current.json"
-MERGED_FILE="${JSONDIR}/${MODEL}_final_merged.json"
-EXISTING_FINAL_FILE="${JSONDIR}/${MODEL}_final.json"
+GENERATED_FILE="${SKU_JSON_DIR}/${MODEL}_final_current.json"
+MERGED_FILE="${SKU_JSON_DIR}/${MODEL}_final_merged.json"
+EXISTING_FINAL_FILE="${SKU_JSON_DIR}/${MODEL}_final.json"
 
 bash "${SCRIPTDIR}/govee_fcn_08_simplest_file.sh" "${MODEL}" "${OUTPUT_FILE_PATH}" "${GENERATED_FILE}"
 
